@@ -1,0 +1,131 @@
+
+Chapter 3
+
+System Analysis
+Requirements Elicitation
+Requirements elicitation process was carried out to ensure that the actual requirements of the target users are understood and that the Mazaj+ system can solve real-world problems. The requirements elicitation process was mainly carried out among university students and young adults, who are considered to be the primary users of the system. For this process, both informal interview methods and a simple survey were carried out.
+The questions were related to:
+Eating habits
+Behavior while under stress
+Existing nutrition-related applications
+Results and Findings
+The results revealed that most users are likely to eat unhealthy food while under stress. In addition to this, most users felt that existing applications are very complex and require more user involvement. Therefore, they are not motivated to use such applications.
+Needs Identified
+After conducting this process, several needs were identified based on the results:
+Fast and easy food recommendations
+Emotional state while making decisions
+Less user effort required
+Safe recommendations according to health conditions
+The requirements elicitation process was helpful to design the system with user needs in mind. The main objective of this process was to provide better support to make healthy food decisions in an easy way.
+
+Key Business Needs Extracted from Pilot
+From the gathered data through interviews and surveys, some of the business needs that were extracted are as follows:
+Fast and Simple Decision-Making: First is the need for users to have a fast and simple way of making food decisions, especially during stressful situations.
+Simple Interaction Methods: Users prefer simple communication methods such as chat instead of complex forms.
+Safe Recommendations: The system should consider health conditions to pro- vide safe food options.
+Reduced User Effort: The system should reduce effort in tracking and input, such as using image recognition.
+Continuous Lifestyle Support: Users need simple daily consumption tracking, healthy alternatives, hydration follow-up, and easy reminder support.
+Controlled Tiered Value: Users should be able to unlock paid Pro and Ultra functions, including upload-based analysis and advanced follow-up features, without affecting the simplicity of core usage.
+All these business needs were considered in the development of Mazaj+, ensuring that the system is simple, safe, and provides real-time decision-making.
+
+Functional and Non-Functional Requirements
+Based on the business needs identified, the system requirements are classified into func- tional and non-functional requirements.
+
+Functional Requirements
+The key functional requirements include:
+
+Users should be able to register and log in to their accounts
+Users should be able to input personal details (age, weight, height, health condi- tions, goals)
+Users should be able to interact with the system via a chat interface. The system retrieves all nutritional data and recommendations from its internal database, while an external AI service (Gemini API) is used only to format the response and present it in a user-friendly way without affecting the decision logic.
+Users should receive food recommendations based on mood and health conditions
+Users should be able to create nutritional plans
+
+Pro and Ultra users should be able to upload food images and receive nutritional details. For these paid-tier users, the system uses an AI-based image recognition service (Gemini Vision) to read and identify the food from the uploaded image, and then retrieves the nutritional data from the internal database to return estimated calories, protein, and fat.
+Ultra users should be able to track daily consumption
+The system should provide healthy alternative suggestions for unhealthy food
+The system should calculate daily water intake and send reminders
+The system should generate weekly nutrition reports for Ultra users (calories, mood, trends)
+Ultra users should be able to review saved interaction history and longer-term progress
+The system should support Pro and Ultra subscription/payment activation for tier-restricted features
+The system should display a daily nutrition tip
+
+Non-Functional Requirements
+Responsiveness: Fast system response
+Usability: Simple and easy interface
+Security: Secure data storage
+Accessibility: Works on different devices
+Reliability: Stable system performance
+
+Data Requirements Identified
+The system operates based on user data, food data, and system-generated data.
+Note: The system database is the primary source for all nutritional data and recom- mendations. External AI services such as Gemini are used only for response formatting and image recognition, and do not generate or modify the nutritional decisions.
+
+User Data
+Age and gender
+Weight and height
+Health conditions and allergies
+User goals
+Account type (Free, Pro, or Ultra)
+Paid-tier subscription/payment status
+
+Food Data
+Food name
+Calories
+Protein
+Fat
+Carbohydrates
+Data is collected from USDA, OpenFoodFacts, and Kaggle, then cleaned and stan- dardized.
+
+User Activity Data
+Chat history
+Food logs
+User activity
+Water intake tracking
+Mood history
+Water reminder history
+
+Additional System Data
+Weekly reports data
+Daily tips content
+Healthy alternatives mapping
+Daily water-intake targets and reminder schedules
+
+Paid-Tier Data
+Food image analysis (Pro and Ultra feature: AI reads the uploaded food image, database provides estimated calories, protein, and fat)
+InBody report upload (Pro and Ultra feature)
+Pro and Ultra payment and subscription activation records
+
+Admin Data
+Manage users
+Manage food data
+Ensure data accuracy
+Manage Pro and Ultra subscriptions and payment status
+
+User Roles Defined
+Free User
+Register and log in
+Manage personal data
+Use chat system
+Receive recommendations
+Generate basic nutrition plan
+Receive daily nutrition tips
+Receive healthy alternative suggestions
+Track daily water intake and reminders
+View current nutrition guidance
+
+Pro User
+All Free-user features
+Food image analysis with estimated calories, protein, and fat (image processed by AI, data retrieved from database)
+Pro subscription/payment activation
+InBody report upload
+
+Ultra User
+All Pro-user features
+Track daily consumption
+Receive weekly nutrition reports
+Review saved interaction history and longer-term progress
+Administrator (Admin)
+Manage users
+Manage food database
+Monitor system
+Ensure data accuracy

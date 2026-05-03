@@ -1,0 +1,428 @@
+
+
+
+
+Proposal of
+Final Year Graduation Project
+
+{ Mazaj+ } 
+
+Project No. { 12 }
+
+
+Team members 
+
+
+
+Year 2025
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.1 Background
+Nutrition planning and food selection play a critical role in maintaining human health, physical performance, and overall well-being. The quality of daily food choices directly affects energy levels, body balance, and long-term health outcomes. Despite this importance, food-related decisions are among the least planned decisions in everyday life. Individuals rarely evaluate nutritional value, health constraints, or long-term consequences before choosing what to eat. Instead, these decisions are frequently made under emotional, psychological, and situational pressure.
+University students represent a major group affected by this challenge. Academic workload, examination stress, irregular schedules, limited budgets, and time constraints significantly influence students’ eating behavior. As a result, many students rely on fast food, online searches, social media content, or informal advice when deciding what to eat. In most cases, these sources provide generalized information that does not account for individual emotional state, nutritional needs, or personal health conditions.
+Similarly, individuals with health-related constraints such as weight imbalance, digestive disorders, or chronic dietary restrictions require careful and consistent nutrition planning. However, many of these individuals depend on non-professional sources, including friends, social media influencers, or generic diet applications. These sources often overlook medical limitations, ignore food allergies, and provide advice that may be unsuitable or unsafe for specific users.
+Currently, nutrition guidance is commonly obtained through Google searches, social media platforms, static diet plans, or general-purpose nutrition applications. While these methods are easily accessible, they suffer from significant limitations. Most of them provide static content, lack personalization, and require users to manually search, compare, and interpret large amounts of information. During periods of stress, fatigue, or emotional discomfort, this process becomes inefficient and overwhelming, reducing the likelihood of making appropriate food decisions.
+One of the most critical gaps in existing nutrition solutions is the lack of emotional awareness. Emotional states such as stress, sadness, boredom, and fatigue strongly influence eating behavior. During these moments, individuals tend to prioritize comfort and immediacy over nutritional quality and health safety. Repeated emotional eating may lead to poor food choices, weight imbalance, deterioration of health quality, and reduced trust in nutrition applications that fail to provide relevant support at the moment decisions are made.
+In addition to emotional factors, many existing nutrition systems do not adequately enforce food safety. Medical conditions and food allergies are often treated as optional inputs or are insufficiently validated, increasing the risk of inappropriate or unsafe recommendations. This issue is particularly critical for users whose health depends on careful dietary control.
+From a business and digital transformation perspective, these limitations reveal a clear mismatch between how nutrition systems are designed and how users actually make food-related decisions in real-life situations. Traditional interaction models such as complex forms, static plans, and data-heavy dashboards assume that users are consistently motivated, organized, and emotionally stable. In practice, food decisions are often made quickly, under pressure, and with limited cognitive capacity.
+These challenges highlight the need for a structured digital nutrition support approach that adapts to emotional context, reduces user effort, and ensures food safety. Such an approach provides the foundation for the proposed project.
+
+1.2 Project Idea
+Mazaj+ is proposed as a web-based nutrition decision-support system that operates primarily through conversational interaction. The chat interface is not an additional feature, but the main interaction layer through which users communicate with the system, submit requests, and receive personalized nutrition guidance. The system is designed to support different user needs in a simple and structured way while reducing unnecessary effort and repeated input.
+To enable secure, continuous, and personalized guidance, Mazaj+ requires users to register and log in before using the system. After the first successful login, the user completes a mandatory onboarding process that collects the personal, body-related, and health information required for later interactions. This profile data is stored in the internal database and retrieved during future conversations so that the system can respond without repeatedly asking for the same information.
+Mazaj+ is designed to support two clearly defined and internally separated core operations through the same chat interface. The chatbot identifies the user’s intention from the conversation, confirms the requested operation, and then routes the interaction to the appropriate system function without switching automatically between operations. 
+The first operation focuses on short-term food recommendation based on the user’s emotional state. This operation is intended for cases in which users seek immediate guidance related to stress, sadness, fatigue, or emotional discomfort. In this case, the system interprets the request as mood-based food guidance, retrieves the relevant user profile data from the internal database, applies rule-based safety checks using health conditions and allergies, excludes unsafe options, and generates food suggestions suitable for the user’s current emotional condition.
+The second operation focuses on personalized nutrition plan generation for users who explicitly request structured, longer-term guidance. In this case, the system retrieves the user’s stored body-related and health-related data, uses them to support BMI calculation and daily calorie estimation, considers the user’s saved goals, and generates a personalized nutrition plan through the same chat interface. In addition to plan generation, the system provides healthy alternative suggestions and daily water-intake calculation with reminder support. Paid access is organized into Pro and Ultra levels. Pro access includes food image upload analysis that returns estimated calories, protein, and fat for the recognized food, as well as InBody report upload when applicable. Ultra access includes all Pro features and adds daily consumption tracking, weekly nutrition reports that summarize user nutrition behavior over time, and broader saved-progress review.
+Mazaj+ relies on the internal system database as the primary source of nutritional data, food-related rules, user profile data, and generated outputs. External AI services are used only in limited supporting roles. Gemini API is used only to format responses in a clearer conversational style, while Gemini Vision is used only for image recognition in upload-based features. These services do not generate or modify nutritional decisions, which remain based on internal database retrieval and transparent rule-based logic.
+The system is therefore designed as a database-centered, profile-aware, and chat-driven academic prototype that supports safer and more suitable food-related decisions according to the user’s emotional context, body condition, health constraints, nutrition goals, hydration needs, and recorded daily consumption patterns.
+Operation 1: Food Recommendation Based on Emotional State
+
+This operation is designed for users who are emotionally affected and want immediate food guidance. The operation begins when the user starts a conversation and expresses an emotional condition such as stress, sadness, fatigue, or emotional discomfort. Upon receiving this input, the system identifies that the user is requesting short-term food guidance rather than a long-term nutrition plan.
+If the emotional condition is unclear, the system asks the user for clarification before continuing. Once the emotional state is clear, the system retrieves the relevant user profile data from the internal database rather than repeatedly requesting information that has already been collected during onboarding. This includes the safety-related information needed to support appropriate recommendation generation.
+Using the stored profile, the system retrieves the relevant food data and recommendation rules from the internal database. The system then applies validation rules to exclude food options that may conflict with the user’s health conditions or food allergies. Once unsafe options are removed, the system generates food recommendations that are suitable for the user’s emotional state and support stable energy levels.
+The output may include meal suggestions, snack options, or general food categories. Each recommendation is accompanied by a brief explanation clarifying why it is suitable for the user’s situation. This operation focuses on short-term guidance only and does not involve long-term nutrition planning.
+
+
+
+Operation 2: Personalized Nutrition Plan Generation
+This operation is activated only when the user explicitly requests a personalized nutrition plan. The system confirms the user’s intention before proceeding to ensure readiness for structured guidance.
+Rather than repeatedly collecting already known information, the system retrieves the required personal, body-related, and health-related data from the stored user profile in the internal database. This includes age, weight, height, gender, relevant health conditions, and saved nutrition goals. Optional body composition data, such as InBody measurements, may also be used when available through upload-based features.
+Using this information, the system calculates the Body Mass Index (BMI) and estimates daily calorie needs. Based on the BMI value, the system internally classifies the user’s body condition for planning purposes. This classification is used solely to guide nutrition planning and is not presented as a medical diagnosis.
+The system then confirms or uses the user’s saved nutrition goal, such as weight loss, weight gain, or weight maintenance. Based on the body profile, health constraints, calorie estimation, and selected goal, the system generates a personalized nutrition plan. The plan focuses on balanced food categories, appropriate meal distribution, and sustainable nutrition habits. The plan is delivered through the chat interface in a clear and structured manner that allows the user to understand and follow it easily
+Interaction Boundaries and Ethical Considerations
+
+Mazaj+ operates as a nutrition decision-support system only. User interaction takes place through the chat interface, and guidance is generated based on stored user profile data, current user input, internal database retrieval, and structured rule-based logic. The system does not diagnose diseases, replace medical professionals, or provide medical treatment.
+All guidance provided by the system is advisory and intended to support better food-related decision-making. If a user requests medical diagnosis, treatment, or other out-of-scope services, the system clarifies its limitations and redirects the interaction toward appropriate nutrition-related guidance within its defined scope.
+
+
+
+
+1.3 Project Scope
+The scope of the Mazaj+ project defines the functional, technical, and operational boundaries of the proposed system. Clearly defining the scope ensures that the project remains achievable within the graduation timeframe, avoids unnecessary complexity, and aligns with academic, ethical, and practical requirements.
+
+Mazaj+ is developed as an academic prototype web-based nutrition support system. The system focuses on providing nutrition-related decision support through conversational interaction and does not aim to replace professional medical or nutritional services.
+1.3.1 Functional Scope
+The functional scope of Mazaj+ includes the features required to support safe, personalized, and chat-driven nutrition guidance through a web-based interface. The system will include the following functionalities:
+• Mandatory user registration and login to enable secure personalized interaction, profile-based continuity, and controlled feature access.
+• A mandatory onboarding process after the first successful login to collect the personal, body-related, and health information required for personalized guidance.
+• Chat-based interaction as the primary communication method between the user and the system.
+• Food recommendation based on the user’s emotional state.
+• Personalized nutrition plan generation based on body data and user-defined goals.
+• Retrieval of stored user profile data during later interactions to avoid repeated input and reduce user effort.
+• Calculation of Body Mass Index (BMI) using user profile height and weight data.
+• Estimation of daily calorie needs to support nutrition planning.
+• Healthy alternative suggestions for selected meals or unhealthy food choices.
+• Daily water-intake calculation with reminder support.
+• Storage of chat history, generated recommendations, nutrition plans, and tracking data associated with each user account, with extended user-facing history review available in Ultra.
+• Paid-tier upload-based features, available to Pro and Ultra users, including food image analysis that estimates calories, protein, and fat, and body composition report upload such as InBody data when available.
+• Ultra-tier follow-up features including daily consumption tracking for meals, snacks, and beverages, weekly nutrition reports that summarize calories, hydration, and nutrition behavior trends, and broader progress review.
+• Tiered subscription payment handling to activate Pro and Ultra features.
+• Account-based access control to distinguish between Free, Pro, and Ultra features.
+These functions are included because they directly support the core objective of the project, which is to assist users in making safer and more suitable food-related decisions based on their emotional context, body condition, health constraints, and nutrition goals through a simple conversational interaction model.
+
+1.3.2 Excluded Scope
+To maintain academic feasibility and avoid over-scoping, the following functionalities are explicitly excluded from the project:
+•  Medical diagnosis or disease detection.
+•  Medical treatment or prescription generation.
+•  Psychological therapy or mental health counseling.
+•  Real-time medical or physiological monitoring.
+•  Integration with wearable medical or fitness devices.
+•  Direct consultation with professional nutritionists or healthcare providers.
+By excluding these areas, Mazaj+ remains a decision-support system rather than a medical system, which reduces ethical, legal, and technical risks.
+1.3.3 Platform Scope
+Mazaj+ is designed as a web-based application that can be accessed through standard web browsers on both desktop and mobile devices. This approach allows users to interact with the system from different environments without the need to install platform-specific applications.
+
+The project does not include native mobile applications or desktop software. All system functionalities are delivered through the web interface, which supports accessibility, ease of deployment, and controlled development complexity. This platform choice reflects common usage patterns of the target users while maintaining manageable development scope
+1.3.4 Data Scope
+The system will handle only the data required to provide personalized, safe, and continuous nutrition guidance. This includes:
+• Personal profile information such as age and gender.
+• Body measurements including height and weight.
+• User-defined nutrition goals.
+• Self-declared medical conditions.
+• Self-declared food allergies.
+• Chat messages exchanged between the user and the system.
+• Daily food and beverage logs recorded by Ultra users.
+• Calculated daily water-intake targets, hydration records, and reminder status.
+• Weekly nutrition report summaries, including calories, hydration, and behavioral trends, for Ultra users.
+• Stored chat history, generated recommendations, and generated nutrition plans associated with each user account, with broader review access available in Ultra.
+• Uploaded images related to paid-tier upload-based features, including food images and body composition reports such as InBody reports, for Pro and Ultra users.
+• Tier-related access data, including account type, subscription tier status, and payment records required for controlled Pro and Ultra feature activation.
+All core data will be stored securely within the system database and used as the primary source for nutrition-related decision support. External AI services may be used only in limited supporting roles. Gemini API is used only to format system-generated responses for clearer presentation, and Gemini Vision is used only for image recognition in upload-based features. These services do not generate, change, or override nutritional decisions. Data usage is limited strictly to system functionality, testing, and academic evaluation purposes.
+1.3.5 Intelligence and Decision Scope
+
+The decision-making capability of Mazaj+ is limited to structured, rule-based logic supported by data retrieved from the internal system database. The system applies predefined rules to validate safety constraints, such as health conditions and food allergies, and to generate appropriate nutrition guidance based on the user’s emotional context, body-related data, and nutrition goals.
+The system does not perform autonomous learning, self-training, or independent medical decision-making. Nutritional decisions are not generated by external AI services. Instead, external AI is used only in limited supporting roles, such as response formatting and image recognition for upload-based features, without changing or overriding the internal decision logic. All decision logic is designed to be transparent, explainable, and suitable for an academic prototype.
+1.3.6 User Scope
+The system supports four types of users:
+• Free Users, who register, log in, complete onboarding, and interact with the system through the chat interface to receive emotion-based food recommendations, generate basic personalized nutrition plans, receive healthy alternatives, monitor daily water intake with reminders, and receive daily nutrition tips.
+• Pro Users, who have all Free-user capabilities in addition to paid upload-based features such as food image upload analysis that returns estimated calories, protein, and fat, and body composition report upload, including InBody data when supported.
+• Ultra Users, who have all Pro-user capabilities in addition to daily consumption tracking, weekly nutrition reports, and broader access to saved interaction history and long-term progress review.
+• System Administrators, who manage users, maintain nutrition-related content and food data, monitor system operation, and oversee paid-tier feature availability at an academic level.
+No professional nutritionists or healthcare providers interact directly with users through the system. Mazaj+ remains a nutrition decision-support prototype and does not provide professional consultation, diagnosis, or treatment. 
+
+1.3.7 Academic Scope
+Mazaj+ is developed strictly as an academic prototype for graduation project purposes. The system is intended for demonstration, evaluation, and learning and is not designed as a fully commercial or large-scale production system.
+This limitation ensures that the project remains realistic, manageable, and aligned with the academic objectives of the graduation program.
+1.4 Problem Statement
+Food-related decisions are frequently made under emotional and situational pressure rather than careful nutritional consideration. When users experience specific emotional states such as stress, sadness, fatigue, or emotional discomfort, they often seek immediate comfort through food. During these moments, users tend to prioritize emotional relief over nutritional value, health conditions, or long-term dietary goals.
+This problem affects university students and individuals with health conditions equally. University students commonly face academic pressure, irregular daily routines, and limited time, which leads to unstructured eating habits and reliance on quick food choices. At the same time, individuals with health conditions such as weight imbalance or chronic dietary restrictions face additional risks when food decisions are made without proper guidance. In both cases, users struggle to apply nutritional knowledge at the moment decisions are required.
+Existing nutrition solutions fail to adequately address this issue. Many current systems provide generic advice that does not adapt to the user’s emotional state or personal context. These systems often ignore medical conditions and food allergies, require extensive manual input, and present information in complex formats. As a result, they are difficult to use during moments of stress or emotional vulnerability, which is precisely when users need guidance the most.
+The core challenge is not only the availability of nutritional information, but the difficulty users face in making the right food decision at the right time. Even when information is accessible, users lack practical support that helps them translate this information into suitable actions under emotional or time pressure. This gap leads to repeated poor food choices, weight imbalance, and gradual deterioration of health quality.
+From a business and digital transformation perspective, there is a clear gap in current nutrition systems. Most existing solutions focus on information presentation rather than decision support and fail to integrate emotional awareness, personalization, and safety constraints into a single interaction model. This gap highlights the need for a more effective approach that supports users during real-life decision moments while reducing effort and minimizing risk.
+1.5 System Objectives
+The system objectives of the Mazaj+ project define what the proposed system aims to achieve and how it addresses the identified problem. These objectives are derived directly from the problem statement and are intended to guide the design, implementation, and evaluation of the system throughout the project lifecycle.
+The objectives focus on improving food-related decision-making by providing structured nutrition guidance that adapts to the user’s emotional state, body condition, and personal goals. To ensure clarity and academic rigor, the objectives are divided into a general objective and a set of specific objectives.
+1.5.1 General Objective
+The general objective of Mazaj+ is to design and develop a web-based, chat-driven nutrition support system that assists users in making suitable, safe, and informed food-related decisions by combining emotional context, personal body data, and health constraints within a simple and accessible interaction model.
+1.5.2 Specific Objectives
+To achieve the general objective, the Mazaj+ system aims to accomplish the following specific objectives:
+• To enable users to interact with the system through a conversational interface that supports natural and intuitive communication without reliance on complex forms or unnecessary repeated manual input.
+• To provide immediate food recommendations based on the user’s emotional state, allowing users to receive suitable nutrition guidance during moments of stress, fatigue, sadness, or emotional discomfort.
+• To generate personalized nutrition plans based on stored profile data, body-related information, and clearly defined nutrition goals such as weight loss, weight gain, or weight maintenance.
+• To support higher-tier daily consumption tracking and weekly nutrition reporting in order to improve continuity and user awareness over time.
+• To provide healthy alternative suggestions that help users replace unsuitable or unhealthy choices with more appropriate options.
+• To calculate daily water needs and support reminder-based hydration follow-up during the day.
+• To ensure food safety by validating health conditions and food allergies before generating any food recommendation or nutrition plan.
+• To reduce user effort and cognitive load by collecting the required profile data once during onboarding, storing it in the internal database, and retrieving it during later interactions instead of repeatedly requesting the same information.
+• To perform internal Body Mass Index (BMI) calculations and daily calorie estimation to support structured nutrition-planning decisions based on standardized health indicators.
+• To store user interaction history, generated recommendations, nutrition plans, and tracking information in order to support continuity, review, and more consistent personalized guidance over time.
+• To maintain a database-centered and rule-based decision-support process in which nutritional decisions are generated from internal data and safety rules, while external AI services are limited to supporting roles such as response formatting and image recognition.
+• To support controlled feature access through Free-user, Pro-user, and Ultra-user account levels within the academic prototype, including paid activation for upload-based services and advanced follow-up features.
+
+1.6 System Features
+The system features of Mazaj+ describe the functional services provided to users through a chat-based interaction model. These features explain how the system behaves in response to user input and how it supports nutrition-related decision-making in realistic usage scenarios. All features are presented from the user’s perspective and focus on observable system behavior rather than technical implementation details.
+
+The features are organized to reflect the natural flow of interaction, beginning with system access, followed by conversational guidance, hydration follow-up, paid-tier feature access, and the higher-tier follow-up functions used for tracking and progress review.
+1.6.1 User Account Access and Session Management
+Mazaj+ requires users to register and log in before using the system through the web-based chat interface. This access model is used to support secure personalized interaction, controlled feature access, and continuity across sessions. After the first successful login, the user completes a mandatory onboarding process to provide the personal, body-related, and health information required for personalized guidance.
+Once the profile is completed, the system stores the user’s profile data, chat history, generated recommendations, and nutrition plans in the internal database and associates them with the user account. During later sessions, the system retrieves the stored profile and previous interaction data to reduce repeated input and support more consistent guidance over time.
+Login is therefore not optional in the implemented system. Instead, it functions as a core requirement for profile-based continuity, database-linked personalization, and access management across Free, Pro, and Ultra features.
+
+1.6.2 Chat-Based Interaction Interface
+The chat interface represents the core feature of the Mazaj+ system. All communication between the user and the system takes place through conversational text messages. Users interact with the system by describing how they feel, requesting food suggestions, or asking for structured nutrition guidance.
+
+The interaction progresses incrementally. The system processes each user message individually and determines the next response based on the current context of the conversation. Questions are asked only when needed, allowing the system to guide users step by step without requiring long forms, predefined menus, or complex navigation.
+1.6.3 Emotional State-Based Food Recommendation
+This feature supports users who seek immediate food guidance based on their emotional condition.
+When a user expresses emotions such as stress, sadness, fatigue, or emotional discomfort, the system identifies the request as short-term food guidance. If the emotional state is unclear, the system asks the user for clarification before continuing. Once the emotional condition is clear, the system retrieves the relevant user profile data from the internal database rather than repeatedly requesting information that has already been collected during onboarding.
+Using the stored profile, the system retrieves the relevant food data and recommendation rules from the internal database. It then validates safety constraints by checking the user’s health conditions and food allergies, excludes unsuitable or unsafe food options, and matches the remaining safe options to the user’s current emotional state. The system then generates food suggestions that are nutritionally appropriate and supportive of stable energy levels.
+Each recommendation is accompanied by a brief explanation to help the user understand why the suggested food is suitable for the current situation. The final response is presented through the chat interface, while any external AI service is limited to response formatting only and does not generate or modify the nutritional decision itself. This feature provides immediate guidance only and does not involve long-term nutrition planning.
+1.6.4 Personalized Nutrition Plan Generation
+This feature supports users who explicitly request structured nutrition guidance.
+When such a request is made, the system confirms the user’s intention before proceeding. Rather than repeatedly requesting already known information, the system retrieves the required personal, body-related, and health-related data from the stored user profile in the internal database. This includes age, weight, height, gender, relevant health conditions, and saved nutrition goals. Optional body composition data, such as InBody measurements, may also be used when available through upload-based features. 
+Using the retrieved information, the system calculates the Body Mass Index (BMI) and estimates daily calorie needs. Based on the BMI value, the system internally interprets the user’s body condition to support structured nutrition planning. This interpretation is used only as a planning aid and is not presented as a medical diagnosis. 
+The system then confirms or uses the user’s saved nutrition goal, such as weight loss, weight gain, or weight maintenance. Based on the body profile, health constraints, calorie estimation, and selected goal, the system generates a personalized nutrition plan. The plan focuses on balanced food categories, appropriate meal distribution, and sustainable nutrition habits. The final plan is delivered clearly through the chat interface to ensure ease of understanding and practical use. 
+The nutritional decision itself is based on internal database retrieval and structured rule-based logic. Any external AI service is used only in a limited supporting role, such as response formatting, without generating or modifying the nutritional decision. 
+Beyond core recommendation and planning, Mazaj+ provides healthier alternative suggestions for selected foods and daily water-intake reminder support. Paid access is separated into Pro and Ultra levels. Pro access extends the feature set through payment-based activation and food-photo upload analysis, through which the system can identify uploaded food and return estimated calories, protein, and fat based on the recognized item and the nutrition data stored in the internal database, in addition to body composition report upload where supported. Ultra includes all Pro capabilities and adds daily consumption tracking, weekly nutrition reports summarizing calories, hydration behavior, and nutrition patterns, and broader saved-progress review.
+1.6.5 Health Condition and Allergy Validation
+Mazaj+ continuously validates all food recommendations and nutrition plans against the user’s reported medical conditions and food allergies.
+
+If a potential conflict is identified, the system automatically excludes the unsafe food option from the recommendation process. This validation mechanism operates during both emotional state–based food recommendation and personalized nutrition planning, ensuring that user safety is consistently prioritized.
+1.6.6 Body Mass Index (BMI) Calculation Support
+Mazaj+ performs internal Body Mass Index (BMI) calculation to support structured nutrition planning. The system uses the user’s stored height and weight data from the profile to calculate BMI and interpret the user’s body condition for planning purposes.
+The BMI result is used only as a decision-support indicator to help structure the personalized nutrition plan. It supports goal-oriented planning such as weight loss, weight gain, or weight maintenance, but it is not presented as a medical diagnosis and does not replace professional health assessment.
+1.6.7 Chat History Storage, Continuity, and Tier-Based Review
+Mazaj+ stores chat messages, generated recommendations, and nutrition plans in association with the authenticated user account. This stored data supports continuity across sessions for all authenticated users.
+By maintaining interaction history, the system avoids repeating unnecessary questions and enables more consistent and personalized guidance over time. The stored profile and relevant chat context are retrieved during later sessions to support smoother interaction and reduce repeated user input. Full user-facing review of saved interaction history and longer-term progress follow-up are provided as Ultra-tier features.
+1.6.8 Ethical and Safety Boundaries
+Mazaj+ operates strictly as a nutrition decision-support system. It does not diagnose medical conditions, provide medical treatment, or replace healthcare professionals. All guidance is advisory and based on stored user profile data, current user input, and internal nutrition-related decision logic.
+If a user requests medical diagnosis or treatment, the system responds by clarifying its limitations and redirecting the interaction toward appropriate nutrition-related guidance within its defined scope. This ensures responsible use and adherence to ethical and academic standards.
+1.7 Related Work and Comparative Study
+This section reviews existing web-based nutrition solutions that address food guidance and nutrition support, and compares them with the proposed Mazaj+ system. The purpose of this section is to analyze how current solutions support nutrition-related decision-making, identify their limitations in real-life usage scenarios, and justify the need for the proposed project
+1.7.1 Related Work
+Existing web-based nutrition systems can be broadly classified into three main categories based on their primary functionality: tracking-based systems, plan-based systems, and profile-based recommendation systems.
+The first category includes calorie tracking and food logging applications. These systems require users to manually record meals, monitor calorie intake, and review numerical summaries over time. While such systems can be effective for highly motivated users, they require continuous effort and assume that users are willing to engage in detailed data entry. During periods of stress, fatigue, or emotional pressure, users are less likely to use these systems consistently, reducing their practical effectiveness.
+The second category includes platforms that provide predefined diet plans or general dietary advice. These systems usually offer static plans designed for broad user groups rather than individual contexts. As a result, they lack flexibility and adaptability to daily changes in user needs, emotional state, or situational constraints. Users are expected to follow fixed recommendations without interactive guidance or adjustment.
+The third category includes systems that attempt personalization by collecting user profile data through forms and dashboards. Although these systems offer a higher level of personalization, they still rely heavily on structured input, multiple steps, and complex navigation. Users must complete extensive forms before receiving guidance, which increases cognitive load and limits usability during moments when fast and simple support is required.
+Overall, most existing nutrition solutions emphasize information presentation and data collection rather than decision support. They provide options and numerical insights but leave the responsibility of interpretation and final decision-making entirely to the user. This limits their effectiveness in supporting users during real-life food decision moments influenced by emotional or situational factors.
+
+
+1.7.2 Comparative Study
+To further clarify the position of the proposed system, a comparative study is conducted between existing web-based nutrition applications and the Mazaj+ system. The comparison focuses on interaction style, personalization, safety handling, user effort, and decision-support capability.
+The comparison shows that existing systems primarily emphasize data collection and information display. Users are expected to search, filter, and interpret information independently, which can be challenging during emotionally demanding or time-constrained situations.
+Mazaj+ addresses these limitations by focusing on guided interaction through conversation. Instead of requiring users to navigate complex interfaces or complete long forms, the system supports decision-making by asking relevant questions, validating safety constraints, and providing structured nutrition guidance at the appropriate time. This approach reduces user effort and supports more suitable food-related decisions while maintaining a clear advisory role.
+
+
+1.8 Project Planned Price
+The planned pricing approach of Mazaj+ is defined according to its current role as an academic graduation project while remaining consistent with the system’s implemented feature structure. At this stage, the purpose of pricing is not profit generation, but controlled access organization, feasibility evaluation, and feature-level differentiation within the prototype. 
+During the graduation project implementation and evaluation phase, Mazaj+ adopts a prototype access-tier model consisting of Free, Pro, and Ultra accounts. This distinction is used primarily to organize user access to system features rather than to establish a finalized commercial subscription strategy. Free users can access the core chat-based guidance functions, including emotion-based food recommendations, basic personalized nutrition plan generation, healthy alternatives, hydration reminders, and daily nutrition tips. Pro users can access all Free features in addition to paid upload-based functions such as food image upload analysis that returns estimated calories, protein, and fat, as well as InBody report upload. Ultra users can access all Pro features in addition to daily consumption tracking, weekly nutrition reports, and broader saved-progress review.
+From a feasibility perspective, the pricing approach remains symbolic and academic in nature. Free access may be maintained for most users during testing and evaluation, while Pro and Ultra access may be granted selectively, symbolically, or through a minimal experimental fee if needed for prototype assessment. This fee represents a simple tier-activation step used to enable paid-tier features within the prototype and does not represent a finalized business model.
+At this stage, the pricing discussion reflects general cost awareness without including detailed financial calculations. The main considerations include development effort, basic hosting and maintenance requirements, database preparation and management, hydration reminder support, paid upload-based feature handling, higher-tier tracking and report generation support, limited supporting use of external AI services for response formatting and image recognition, and simple payment handling for tier activation. These considerations are presented only at a conceptual level, consistent with the scope and resources of a graduation project.
+In future development beyond the academic stage, the prototype access-tier model may evolve into a clearer freemium or subscription-based structure with a more formalized payment mechanism. However, within the current graduation-project scope, the distinction between Free, Pro, and Ultra accounts is used mainly to support feature organization, controlled testing, and practical system evaluation.
+Overall, the planned pricing approach prioritizes accessibility, academic feasibility, ethical responsibility, and consistency with the implemented system design. It aligns the project’s current prototype stage with its defined user roles, feature access structure, and practical evaluation needs. 
+1.9 Project Planned Place
+The planned place of the Mazaj+ system defines the channel through which the proposed service is delivered to its users and how users access the system in practice. Due to the digital nature of the project and its focus on accessibility and ease of use, Mazaj+ is designed to be delivered exclusively as a web-based application that can be accessed through standard internet browsers.
+By adopting a web-based delivery model, the system allows users to interact with Mazaj+ without the need to install any software or depend on specific operating systems or devices. This approach ensures that the system can be used consistently across different environments and supports the project’s goal of minimizing technical barriers for users who seek nutrition guidance.
+Mazaj+ is intended to be accessible from any location with a stable internet connection. Users can access the system from personal environments such as homes, as well as from universities, workplaces, or other locations where online access is available. This flexibility is important because food-related decisions often occur in different contexts and at unpredictable times. Providing browser-based access allows users to receive nutrition guidance whenever it is needed, rather than being restricted to a fixed location.
+From a business and feasibility perspective, the system is planned to have global online availability through its web interface. This global reach does not indicate commercial expansion at the current stage, but rather reflects the nature of web-based services, which are not constrained by physical distribution channels or geographic boundaries. Since Mazaj+ is developed as an academic prototype, no physical offices, service centers, or commercial locations are required or included within the project scope.
+Hosting considerations are addressed at a general level to ensure continuous system availability during testing and evaluation phases. The hosting environment is selected to support reliable access while remaining consistent with the limited resources and academic objectives of a graduation project. Detailed commercial hosting strategies or large-scale deployment plans are intentionally excluded.
+Overall, the planned place strategy for Mazaj+ emphasizes digital accessibility, ease of reach, and flexibility of use. It aligns with standard business and marketing principles for digital services while remaining fully consistent with the academic purpose of the project and its role as a non-commercial, web-based decision-support system
+1.10 Project Planned Promotion
+The planned promotion strategy for Mazaj+ is designed to support system awareness, user testing, and academic evaluation rather than commercial marketing. As the system is developed as a graduation project, all promotional activities are aligned with educational objectives and aim to demonstrate system functionality, collect user feedback, and support assessment and learning outcomes.
+
+Promotion efforts will primarily target university students and users interested in nutrition guidance, as these groups represent the intended audience during the testing and evaluation phase. Academic promotion channels will include university presentations, graduation project demonstrations, and academic exhibitions. These channels provide an appropriate environment for supervisors, examiners, and students to observe how the system operates, how the chat-based interaction guides users, and how nutrition advice is delivered through conversational decision support.
+
+In addition to academic channels, limited awareness activities may be conducted through social media posts and word-of-mouth communication among students. These activities are intended to increase system visibility and encourage voluntary participation in usability testing, without creating commercial expectations or competitive positioning. Promotional messages will emphasize ease of use, decision-support capability, and personalized nutrition guidance, while strictly avoiding medical claims, treatment promises, or health guarantees. In future development stages, broader promotion strategies may be considered; however, this remains outside the scope of the current project. Promotion activities are designed solely to support evaluation and learning outcomes, not market competition
+
+1.11 System Requirements
+This section defines the system requirements of the Mazaj+ project. System requirements describe what the system must be able to do and how well it must perform, without explaining how the system is implemented or which technologies are used. These requirements are derived directly from the project objectives, system features, and defined project scope to ensure consistency and alignment across the proposal.
+To ensure clarity and completeness, the system requirements are divided into functional requirements and non-functional requirements. This separation allows a clear distinction between system behavior and system quality attributes.
+
+1.11.1 Functional Requirements
+Functional requirements specify the services and behaviors that the Mazaj+ system must provide in order to support nutrition guidance through conversational interaction.
+The system shall:
+Require users to register and log in before using the system. 
+Require users to complete a mandatory onboarding process after the first successful login. 
+Collect and store user profile data during onboarding, including age, gender, height, weight, relevant health conditions, food allergies, and nutrition goals. 
+Allow authenticated users to interact with the system through a chat-based interface. 
+Receive and process user messages written in natural language. 
+Maintain a stored user profile for each authenticated user and retrieve it during later interactions. 
+Identify whether the user is requesting immediate food guidance, a personalized nutrition plan, a tier-restricted feature, or clarification within the chat. 
+Accept user input describing emotional states such as stress, sadness, fatigue, or emotional discomfort. 
+Request clarification when the user’s emotional state or intended request is incomplete or unclear. 
+Retrieve the user’s stored profile data from the internal database before generating personalized guidance. 
+Retrieve relevant nutrition data, food-related rules, and recommendation constraints from the internal database before generating guidance. 
+Validate safety constraints using stored health conditions and food allergies. 
+Exclude unsafe or unsuitable food options based on stored medical conditions. 
+Exclude unsafe food options based on stored food allergies. 
+Generate food recommendations that are suitable for the user’s reported emotional state. 
+Provide short explanations explaining why each food recommendation is suitable for the user. 
+Allow users to explicitly request a personalized nutrition plan. 
+Retrieve body-related data including weight, height, gender, age, and relevant health information from the stored profile for nutrition planning. 
+Accept optional upload-based body composition data, such as InBody reports, when provided through supported features. 
+Calculate Body Mass Index (BMI) using stored or uploaded height and weight data. 
+Internally classify the user’s body condition based on BMI results for nutrition-planning purposes. 
+Use the user’s stored or confirmed nutrition goal, such as weight loss, weight gain, or weight maintenance, during plan generation. 
+Estimate daily calorie needs to support nutrition planning. 
+Generate a personalized nutrition plan based on body data, health constraints, calorie estimation, and selected goals. 
+Present nutrition plans in a clear and structured conversational format. 
+Store chat history, generated recommendations, and generated nutrition plans in association with the authenticated user account. 
+Retrieve previous interaction history to support continuity and reduce repeated user input. 
+Allow Ultra users to record daily food and beverage consumption.
+Provide healthy alternative suggestions for selected meals or unhealthy food choices.
+Calculate recommended daily water intake based on stored user profile data.
+Send water-intake reminders during the day according to the user’s calculated hydration target.
+Generate weekly nutrition reports for Ultra users, summarizing calories, food logs, hydration, and nutrition behavior trends.
+Allow Ultra users to review saved interaction history and longer-term progress over time.
+Support Pro and Ultra subscription payment or payment-status activation for tier-restricted access.
+Allow Pro and Ultra users to upload food photos for nutritional estimation.
+Return estimated calories, protein, and fat for recognized foods from uploaded Pro or Ultra food images.
+Distinguish between Free-user, Pro-user, and Ultra-user feature access. 
+Restrict upload-based paid features to Pro and Ultra users, and restrict advanced tracking, weekly reporting, and full saved-history review to Ultra users only. 
+Display an upgrade or restricted-access message when a lower-tier user requests a Pro-only or Ultra-only feature. 
+Use external AI services only in limited supporting roles such as response formatting and image recognition, without allowing them to generate or override nutritional decisions. 
+Clarify system limitations and redirect the interaction when the user requests medical diagnosis, treatment, or other out-of-scope services. 
+These functional requirements ensure that Mazaj+ operates as a profile-aware, database-centered, chat-driven nutrition decision-support system that responds appropriately to user input and provides safer guidance based on emotional context, personal data, health constraints, and nutrition goals.
+1.11.2 Non-Functional Requirements
+Non-functional requirements define the quality attributes and operational constraints of the Mazaj+ system. These requirements ensure that the system remains usable, reliable, and ethically compliant throughout its operation.
+The system shall:
+
+1. Be easy to use and require minimal learning effort from users.
+2. Provide responses within an acceptable time to maintain natural conversational flow.
+3. Support multiple users interacting with the system concurrently during academic testing.
+4. Ensure user data privacy by storing information securely within the system.
+5. Limit data usage strictly to system functionality and academic evaluation purposes.
+6. Operate reliably under normal academic testing and demonstration conditions.
+7. Maintain consistency in recommendations across multiple user sessions.
+8. Avoid providing medical diagnoses or treatment instructions.
+9. Clearly communicate that all nutrition guidance is advisory and does not replace professional medical advice.
+10. Be scalable enough to support future academic extensions within defined project constraints
+Alignment with Project Scope and Objectives
+The defined system requirements are fully aligned with the project scope, system objectives, and system features described in previous sections. These requirements focus exclusively on user-facing behavior and decision-support functionality, while intentionally avoiding implementation details, technical architecture, or medical decision-making.
+This alignment ensures that Mazaj+ remains feasible as a graduation project, ethically responsible, and fully compliant with academic evaluation standards
+1.12 System Users
+The Mazaj+ system is designed to support a limited and clearly defined set of users in order to maintain clarity of interaction, ethical responsibility, and academic feasibility. Defining system users explicitly ensures that each role has well-defined responsibilities and interaction boundaries, which is consistent with the system’s role as a nutrition decision-support prototype rather than a medical platform. 
+The system supports four main user types, each with distinct access levels and responsibilities:
+
+1.12.1 Free User
+The Free User represents the standard end user of the Mazaj+ system. This user registers, logs in, completes onboarding, and interacts with the system primarily through the chat interface. The Free User can manage personal profile data, receive emotion-based food recommendations, generate basic personalized nutrition plans, receive healthier alternatives, monitor daily water intake with reminders, and receive daily nutrition tips.
+The Free User is responsible for providing accurate and truthful information related to emotional state, body-related data, health conditions, allergies, and nutrition goals. All guidance generated for this user is advisory in nature and depends on the accuracy of the stored and provided information. 
+1.12.2 Pro User
+The Pro User includes all capabilities available to the Free User, in addition to paid upload-based features and paid Pro activation. These advanced features include food image analysis that allows the user to upload a food photo and receive estimated calories, protein, and fat, as well as body composition report upload, such as InBody reports, when supported by the system. Pro access is used to organize advanced feature availability within the academic prototype and does not imply full commercial deployment at this stage.
+Like the Free User, the Pro User interacts with the system through the chat interface and receives advisory nutrition support based on stored profile data, internal database retrieval, and structured rule-based logic.
+1.12.3 Ultra User
+The Ultra User includes all capabilities available to the Pro User in addition to extended follow-up and progress-review functions. These higher-tier functions include daily food and beverage consumption tracking, review of weekly nutrition reports summarizing calories, hydration, and nutrition behavior trends, and broader access to saved interaction history and long-term progress review.
+Like other end users, the Ultra User interacts with the system through the chat interface and receives advisory nutrition support based on stored profile data, internal database retrieval, and structured rule-based logic, while benefiting from the most comprehensive follow-up layer available in the prototype.
+1.12.4 System Administrator
+The System Administrator is responsible for overseeing the operation of the Mazaj+ system at an academic level. This role does not provide nutrition advice and does not act as a healthcare professional. The administrator is responsible for managing users, maintaining food and nutrition data, monitoring system activity, and ensuring data accuracy and system consistency. 
+The System Administrator role exists solely to support system functionality, stability, and academic assessment. It does not involve medical diagnosis, treatment, or direct professional consultation with users. 
+1.12.5 Excluded User Roles
+To ensure ethical compliance and avoid medical or legal implications, the Mazaj+ system explicitly excludes the following user roles from the system scope:
+• Medical doctors
+• Licensed nutritionists
+• Healthcare professionals
+• Mental health specialists
+The system does not provide diagnosis, medical treatment, or professional health consultation. All guidance offered by Mazaj+ is intended for decision support only and does not replace professional advice. 
+
+
+
+
+1.12.6 Academic Context of System Users
+All system users and roles are defined within the context of an academic graduation project. The inclusion of Free-user, Pro-user, and Ultra-user access levels is intended to support feature organization, evaluation, and prototype demonstration rather than to establish a finalized commercial deployment model. This definition of system users ensures consistency across project scope, system features, system requirements, and ethical boundaries. 
+1.13 System Tools
+This section describes the main tools used in the development of the Mazaj+ system. The selected tools are chosen to support the academic objectives of the project, ensure development feasibility within the graduation timeframe, and remain consistent with the defined project scope. The tools are presented according to their functional role in the system and do not describe implementation details, system architecture, or technical algorithms.
+
+The system tools are grouped into frontend tools, backend tools, database tools, authentication tools, decision-support tools, and development and documentation tools.
+1.13.1 Frontend Tools
+Frontend tools are responsible for presenting the user interface and enabling interaction between the user and the Mazaj+ system through the chat-based interface.
+The frontend of Mazaj+ utilizes standard web technologies, including:
+
+• HTML, which defines the structure of the web pages and organizes the chat interface layout.
+• CSS, which controls the visual appearance of the system and ensures a clear, readable, and user-friendly interface.
+• JavaScript, which enables dynamic interaction within the chat interface, such as sending user messages and displaying system responses in real time.
+• Django Templates, which allow the integration of dynamic content between the frontend pages and the backend logic.
+
+These tools enable users to access and interact with the system through a standard web browser without requiring any additional software installation.
+1.13.2 Backend Tools
+Backend tools are responsible for managing the core system behavior and coordinating the interaction between user input and system responses.
+The backend tools include:
+
+• Django Framework, which manages application flow, handles user requests, controls chat sessions, and coordinates system operations.
+• Python, which is used to implement the system’s decision-support logic, higher-tier tracking workflows, water reminder logic, weekly report generation, and paid-tier feature handling.
+
+These tools support the processing of conversational input, the application of decision rules, the generation of appropriate nutrition guidance, and the management of tracking, reminder, report, and paid-tier workflows.
+
+1.13.3 Database Tools
+Database tools are used to store system data securely and reliably throughout system operation.
+The Mazaj+ system uses:
+
+• SQLite during the development and testing phase due to its simplicity and suitability for academic prototypes.
+• PostgreSQL in deployment or extended testing scenarios due to its stability and ability to manage larger datasets.
+
+The database stores user profiles, chat interaction history, generated recommendations, nutrition plans, and system-related data required for continuity and evaluation.
+1.13.4 Authentication and User Management Tools
+User access, authentication, and session handling in Mazaj+ are managed using built-in backend capabilities that are suitable for an academic prototype while still supporting secure and controlled personalized interaction. 
+The system uses:
+• Django built-in authentication, which supports mandatory account creation, login functionality, profile-linked access, and controlled access to standard and paid-tier features.
+• Session-based login, which allows the system to maintain authenticated user sessions and associate chat history, generated recommendations, nutrition plans, food logs, hydration records, and stored profile data with individual user accounts.
+• Profile-based access continuity, through which user profile data collected during onboarding is stored in the internal database and retrieved during later interactions to reduce repeated input and support personalized guidance.
+• Tier-status handling, which supports controlled Pro and Ultra activation after payment or approved academic access within the prototype.
+These tools ensure secure and controlled access while keeping system complexity appropriate for a graduation project. They also support the implemented system logic in which users register, log in, complete onboarding, and then continue interacting through a profile-aware chat interface with differentiated access to Pro and Ultra features.
+
+1.13.5 Decision-Support Logic Tools
+Mazaj+ relies on structured decision-support logic to provide nutrition guidance in a transparent and explainable manner.
+The system uses:
+
+• Rule-based logic, which applies predefined rules to validate safety constraints such as medical conditions and food allergies, and to guide food recommendations and nutrition planning.
+
+This approach ensures that system behavior remains predictable, explainable, and suitable for academic evaluation. The system does not perform autonomous learning, self-training, or medical intelligence.
+
+
+
+1.13.6 Development and Documentation Tools
+To support system development, collaboration, and documentation, the following tools are used:
+
+• Integrated Development Environments (IDEs) such as Visual Studio Code for writing, organizing, and maintaining source code.
+• Version control tools such as Git and GitHub to manage code changes and support team collaboration.
+• Microsoft Word for preparing documentation, reports, and the final graduation project submission.
+
+These tools support organized development practices and ensure high-quality academic documentation.
+1.13.7 Tool Scope and Limitations
+To maintain academic focus and control project scope, the Mazaj+ system intentionally excludes cloud-dependent deployment requirements, native mobile application frameworks, medical software systems, autonomous artificial intelligence systems, and advanced AI frameworks for independent nutritional decision-making or model training.
+The project allows only limited supporting use of external AI services where necessary, such as response formatting and image recognition in upload-based features. These services do not generate, override, or modify the nutritional decisions of the system. Nutritional guidance remains based on the internal database and structured rule-based logic. These limitations ensure that the system remains manageable, ethically appropriate, explainable, and suitable for evaluation as a graduation project. 
+1.14 Project Time Plan
+This section presents the planned timeline for the Mazaj+ project. The project time plan is designed to ensure that all required activities are completed within the academic semester while maintaining logical sequencing, clear task separation, and realistic workload distribution. The time plan reflects both technical development and business-related analysis, in alignment with the BIDT program requirements.
+
+The total project duration is 12 weeks, and the project is executed by a team of six members. Team responsibilities cover frontend development, backend development, system testing, documentation, and business analysis. Although team members collaborate throughout the project, responsibilities are distributed according to project phases to ensure efficiency and accountability.
+
+The project follows an agile, iterative, and incremental development approach. This approach allows system components to be developed progressively, evaluated continuously, and refined based on testing and feedback. Agile development supports early validation of system features while ensuring alignment with academic objectives and project scope.
+
+The project is divided into sequential phases, where the completion of each phase is required before moving to the next. This structure ensures clarity in execution, effective monitoring of progress, and controlled delivery within the graduation timeframe.
+Project Phases and Duration
+
+Phase Description
+Phase 1 – Requirements Analysis (Weeks 1–2)
+This phase focuses on establishing a clear and detailed understanding of the project requirements. Activities include analyzing user needs, reviewing academic and business references, defining functional and non-functional requirements, and finalizing the project scope. Business analysis tasks are conducted to ensure that the proposed system addresses a real decision-support problem and aligns with user behavior. This phase ensures that all team members share a unified understanding of project objectives, constraints, and expected outcomes before proceeding to system design.
+Phase 2 – System Design (Weeks 3–4)
+During this phase, the conceptual and logical design of the system is developed. Activities include defining the chat-based interaction flow, designing data structures, outlining user access behavior, and mapping system features to system requirements. Design decisions are reviewed to ensure consistency with the project scope, system objectives, and ethical boundaries. This phase produces a clear system blueprint that guides the implementation phase.
+Phase 3 – Implementation (Weeks 5–8)
+This phase involves the development of the core system components. Backend logic, frontend chat interface, database integration, and rule-based nutrition guidance are implemented incrementally. Agile iterations are used to develop features in stages, allowing continuous internal testing and refinement. Frontend and backend development activities proceed in parallel while maintaining coordination to ensure system integration and functional consistency.
+Phase 4 – Testing and Validation (Weeks 9–10)
+The system is tested to verify correctness, usability, and alignment with defined requirements. Testing activities include functional testing of chat interactions, validation of food recommendation behavior, verification of safety rules related to health conditions and allergies, and testing of data storage and retrieval. Any issues identified during this phase are documented and resolved before final submission.
+Phase 5 – Documentation and Final Submission (Weeks 11–12)
+The final phase focuses on preparing all required academic documentation, including the final graduation proposal, system description, and evaluation materials. The system is finalized for demonstration purposes, and all academic submission requirements defined by the university are completed. This phase ensures that both the technical system and accompanying documentation meet academic standards.
+
+
+
+
+
+
+
+
+
+
+Gantt Chart Description
+The Gantt chart visually represents the project timeline, illustrating the duration, sequence, and dependencies of each project phase across the 12-week period. The chart supports planning, coordination among team members, and academic evaluation by clearly showing milestones and phase transitions. It serves as a monitoring tool to track progress and ensure that project activities remain aligned with the planned schedule. 
+
+
