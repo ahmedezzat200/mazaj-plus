@@ -8,70 +8,40 @@ interface RightSupportPanelProps {
 }
 
 export function RightSupportPanel({ userData }: RightSupportPanelProps) {
-  // Mock profile data
-  const profileData = {
-    age: 28,
-    gender: 'Female',
-    goal: 'Balanced nutrition',
-    allergies: ['Shellfish'],
-    conditions: ['None'],
-  };
-
   return (
     <aside className="hidden lg:block w-80 border-l border-border bg-card overflow-y-auto">
       <div className="p-6 space-y-4">
-        {/* Profile Summary */}
+        {/* Safety Profile Notice */}
         <Card>
           <CardHeader className="pb-3">
             <div className="flex items-center gap-2">
-              <User className="h-4 w-4 text-primary" />
-              <CardTitle className="text-sm">Profile Summary</CardTitle>
+              <ShieldCheck className="h-4 w-4 text-primary" />
+              <CardTitle className="text-sm">Safety Profile</CardTitle>
             </div>
           </CardHeader>
-          <CardContent className="space-y-3">
-            <div className="space-y-2">
-              <div className="flex justify-between text-sm">
-                <span className="text-muted-foreground">Age</span>
-                <span className="text-foreground font-medium">{profileData.age}</span>
-              </div>
-              <div className="flex justify-between text-sm">
-                <span className="text-muted-foreground">Gender</span>
-                <span className="text-foreground font-medium">{profileData.gender}</span>
-              </div>
-              <div className="flex justify-between text-sm">
-                <span className="text-muted-foreground">Goal</span>
-                <Badge variant="secondary" className="text-xs">
-                  {profileData.goal}
-                </Badge>
-              </div>
+          <CardContent className="space-y-4">
+            <div className="bg-muted/30 rounded-lg p-3 border border-border/50">
+              <p className="text-xs text-foreground leading-relaxed italic">
+                "Your saved safety profile is used privately by the backend to filter recommendations. Private health details are not shown here."
+              </p>
             </div>
             
-            <div className="pt-2 border-t border-border">
-              <p className="text-xs text-muted-foreground mb-2">Allergies</p>
-              <div className="flex flex-wrap gap-1">
-                {profileData.allergies.map((allergy) => (
-                  <Badge key={allergy} variant="outline" className="text-xs">
-                    {allergy}
-                  </Badge>
-                ))}
+            <div className="space-y-2.5">
+              <div className="flex justify-between text-xs items-center">
+                <span className="text-muted-foreground">Safety filtering</span>
+                <Badge variant="secondary" className="bg-green-500/10 text-green-500 border-green-500/20 text-[10px]">
+                  Active
+                </Badge>
+              </div>
+              <div className="flex justify-between text-xs items-center">
+                <span className="text-muted-foreground">Allergen rules</span>
+                <span className="text-foreground font-medium text-[10px]">Applied server-side</span>
+              </div>
+              <div className="flex justify-between text-xs items-center">
+                <span className="text-muted-foreground">Condition logic</span>
+                <span className="text-foreground font-medium text-[10px]">Applied server-side</span>
               </div>
             </div>
-          </CardContent>
-        </Card>
-
-        {/* Transparency Card */}
-        <Card className="bg-secondary/5 border-secondary/20">
-          <CardHeader className="pb-3">
-            <div className="flex items-center gap-2">
-              <ShieldCheck className="h-4 w-4 text-secondary" />
-              <CardTitle className="text-sm">How It Works</CardTitle>
-            </div>
-          </CardHeader>
-          <CardContent>
-            <p className="text-xs text-muted-foreground leading-relaxed">
-              Recommendations are generated using your stored health profile, dietary preferences, 
-              and safety rules. All suggestions are validated against your allergies and health conditions.
-            </p>
           </CardContent>
         </Card>
 
@@ -97,46 +67,27 @@ export function RightSupportPanel({ userData }: RightSupportPanelProps) {
               {userData.tier}
             </Badge>
             
-            <div className="space-y-1.5 text-xs">
-              {userData.tier === 'Free' && (
-                <>
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                    <span>5 chat messages per day</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <div className="w-1.5 h-1.5 rounded-full bg-muted-foreground/40"></div>
-                    <span>Basic recommendations</span>
-                  </div>
-                </>
-              )}
-              
-              {userData.tier === 'Pro' && (
-                <>
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                    <span>Unlimited chat messages</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                    <span>Upload features enabled</span>
-                  </div>
-                </>
-              )}
-              
-              {userData.tier === 'Ultra' && (
-                <>
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                    <span>Full feature access</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                    <span>Weekly reports & daily logs</span>
-                  </div>
-                </>
+            <div className="space-y-1.5 text-xs text-muted-foreground">
+              {userData.tier === 'Free' ? (
+                <span>Basic safety access active</span>
+              ) : (
+                <span>Premium safety rules active</span>
               )}
             </div>
+          </CardContent>
+        </Card>
+
+        {/* Advisory Card */}
+        <Card className="bg-orange-500/5 border-orange-500/10">
+          <CardHeader className="pb-2">
+            <CardTitle className="text-[10px] text-orange-600/80 uppercase font-bold tracking-wider">
+              Medical Disclaimer
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-[11px] text-foreground/70 leading-relaxed">
+              Advisory only — not medical advice. Always consult a healthcare professional before making major dietary changes.
+            </p>
           </CardContent>
         </Card>
       </div>

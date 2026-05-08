@@ -192,8 +192,8 @@ export function OnboardingFlow() {
         height_cm: parseFloat(formData.height),
         weight_kg: parseFloat(formData.weight),
         nutrition_goal: mapGoal(formData.goal),
-        health_conditions: [],
-        allergies: []
+        health_conditions: formData.conditions.map(name => conditionMap[name]).filter(id => id !== undefined),
+        allergies: formData.allergies.map(name => allergyMap[name]).filter(id => id !== undefined)
       };
       
       const response = await api.post('/onboarding/', payload, {

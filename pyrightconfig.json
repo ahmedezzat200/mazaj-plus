@@ -1,0 +1,15 @@
+{
+  "include": [
+    "source code/backend"
+  ],
+  "executionEnvironments": [
+    {
+      "root": "source code/backend",
+      "extraPaths": [
+        "source code/backend"
+      ]
+    }
+  ],
+  "venvPath": "source code/backend",
+  "venv": ".venv"
+}

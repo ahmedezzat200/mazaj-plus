@@ -93,7 +93,7 @@ def generate_nutrition_plan(user, title):
     profile = user.profile
     
     with transaction.atomic():
-        check_and_increment_usage(user, FeatureKey.NUTRITION_PLAN, limit=1)
+        check_and_increment_usage(user, FeatureKey.NUTRITION_PLAN, limit=5)
 
         bmi = None
         estimated_calories = None

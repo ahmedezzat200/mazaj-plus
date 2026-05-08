@@ -51,6 +51,28 @@ export function AlternativeResultCard({ result, onTryAnother }: AlternativeResul
           <p className="text-sm text-foreground leading-relaxed">{result.reason}</p>
         </div>
 
+        {/* Nutritional Data */}
+        {(result.calories || result.protein || result.carbs || result.fat) && (
+          <div className="grid grid-cols-4 gap-2 mb-6">
+            <div className="bg-card rounded-lg p-2 border border-border text-center">
+              <p className="text-[10px] text-muted-foreground uppercase">Cals</p>
+              <p className="text-sm font-bold text-foreground">{result.calories || '-'}</p>
+            </div>
+            <div className="bg-card rounded-lg p-2 border border-border text-center">
+              <p className="text-[10px] text-muted-foreground uppercase">Prot</p>
+              <p className="text-sm font-bold text-foreground">{result.protein || '-'}g</p>
+            </div>
+            <div className="bg-card rounded-lg p-2 border border-border text-center">
+              <p className="text-[10px] text-muted-foreground uppercase">Carb</p>
+              <p className="text-sm font-bold text-foreground">{result.carbs || '-'}g</p>
+            </div>
+            <div className="bg-card rounded-lg p-2 border border-border text-center">
+              <p className="text-[10px] text-muted-foreground uppercase">Fat</p>
+              <p className="text-sm font-bold text-foreground">{result.fat || '-'}g</p>
+            </div>
+          </div>
+        )}
+
         {/* Actions */}
         <div className="flex flex-wrap gap-2">
           <Button asChild variant="outline" size="sm">

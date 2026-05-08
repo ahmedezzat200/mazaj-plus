@@ -69,15 +69,15 @@ class NutritionPlanGenerateView(APIView):
             response_data = NutritionPlanSerializer(plan).data
             
             record.status = IdempotencyStatus.COMPLETED
-            record.response_body = response_data
+            record.response_body = {"plan": response_data}
             record.save()
-            return success_response(response_data)
+            return success_response({"plan": response_data})
             
         except Exception as e:
             record.status = IdempotencyStatus.FAILED
             record.save()
             if str(e) == "USAGE_LIMIT_EXCEEDED":
-                return error_response("USAGE_LIMIT_EXCEEDED", "Weekly limit of 1 nutrition plan exceeded for free tier.", stat=status.HTTP_403_FORBIDDEN)
+                return error_response("USAGE_LIMIT_EXCEEDED", "Weekly limit of 5 nutrition plans exceeded for free tier.", stat=status.HTTP_403_FORBIDDEN)
             return error_response("PLAN_GENERATION_FAILED", "An error occurred.", details={}, stat=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 class NutritionPlanListView(APIView):
@@ -161,7 +161,7 @@ class AlternativeSearchView(APIView):
 
         try:
             with transaction.atomic():
-                check_and_increment_usage(request.user, FeatureKey.HEALTHY_ALTERNATIVE, limit=2)
+                check_and_increment_usage(request.user, FeatureKey.HEALTHY_ALTERNATIVE, limit=10)
                 
             food_name = serializer.validated_data['food_name']
             alts = get_healthy_alternatives(food_name, request.user)
@@ -170,7 +170,13 @@ class AlternativeSearchView(APIView):
             for alt in alts:
                 alt_list.append({
                     "original_food_name": alt.original_food_name,
-                    "alternative_food": { "name": alt.alternative_food.name, "calories": str(alt.alternative_food.calories), "protein_g": str(alt.alternative_food.protein_g), "carbs_g": str(alt.alternative_food.carbs_g), "fat_g": str(alt.alternative_food.fat_g) },
+                    "alternative_food": { 
+                        "name": alt.alternative_food.name, 
+                        "calories": str(alt.alternative_food.calories), 
+                        "protein_g": str(alt.alternative_food.protein_g), 
+                        "carbs_g": str(alt.alternative_food.carbs_g), 
+                        "fat_g": str(alt.alternative_food.fat_g) 
+                    },
                     "reason": alt.reason
                 })
 
@@ -188,7 +194,7 @@ class AlternativeSearchView(APIView):
             record.status = IdempotencyStatus.FAILED
             record.save()
             if str(e) == "USAGE_LIMIT_EXCEEDED":
-                return error_response("USAGE_LIMIT_EXCEEDED", "Daily limit of 2 alternative requests exceeded for free tier.", stat=status.HTTP_403_FORBIDDEN)
+                return error_response("USAGE_LIMIT_EXCEEDED", "Daily limit of 10 alternative requests exceeded for free tier.", stat=status.HTTP_403_FORBIDDEN)
             return error_response("SEARCH_FAILED", "An error occurred.", details={}, stat=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 class HydrationTargetView(APIView):
@@ -319,4 +325,3 @@ class AllergyListView(APIView):
         allergies = Allergy.objects.filter(is_active=True).order_by('id')
         data = [{'id': a.id, 'name': a.name} for a in allergies]
         return success_response({'allergies': data})
-

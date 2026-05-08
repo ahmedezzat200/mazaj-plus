@@ -414,3 +414,33 @@ export const plansApi = {
     };
   },
 };
+
+// "?"?"? Option Lookups API helpers "?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?
+
+export const optionsApi = {
+  async getHealthConditions(): Promise<{
+    ok: boolean;
+    health_conditions?: { id: number; name: string }[];
+    error?: { code: string; message: string };
+  }> {
+    const res = await api.get('/health-conditions/');
+    const json = await res.json();
+    if (json.success) {
+      return { ok: true, health_conditions: json.data?.health_conditions ?? [] };
+    }
+    return { ok: false, error: json.error ?? { code: 'UNKNOWN', message: 'An unexpected error occurred.' } };
+  },
+
+  async getAllergies(): Promise<{
+    ok: boolean;
+    allergies?: { id: number; name: string }[];
+    error?: { code: string; message: string };
+  }> {
+    const res = await api.get('/allergies/');
+    const json = await res.json();
+    if (json.success) {
+      return { ok: true, allergies: json.data?.allergies ?? [] };
+    }
+    return { ok: false, error: json.error ?? { code: 'UNKNOWN', message: 'An unexpected error occurred.' } };
+  }
+};

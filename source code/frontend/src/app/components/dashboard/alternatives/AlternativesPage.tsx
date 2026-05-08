@@ -15,6 +15,10 @@ export interface AlternativeResult {
   alternativeFood: string;
   reason: string;
   safetyValidated: boolean;
+  calories?: string;
+  protein?: string;
+  carbs?: string;
+  fat?: string;
 }
 
 export interface HydrationData {
@@ -28,6 +32,10 @@ function mapAlternative(a: BackendAlternative): AlternativeResult {
     alternativeFood: a.alternative_food?.name ?? 'Whole Food Option',
     reason: a.reason,
     safetyValidated: true, // backend validates safety before returning
+    calories: a.alternative_food?.calories,
+    protein: a.alternative_food?.protein_g,
+    carbs: a.alternative_food?.carbs_g,
+    fat: a.alternative_food?.fat_g,
   };
 }
 
