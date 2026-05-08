@@ -2,11 +2,13 @@ from rest_framework import serializers
 from .models import UserProfile
 from apps.nutrition.models import HealthCondition, Allergy
 
+from decimal import Decimal
+
 class OnboardingSerializer(serializers.Serializer):
     age = serializers.IntegerField(min_value=1, max_value=120)
     gender = serializers.CharField(max_length=50)
-    height_cm = serializers.DecimalField(max_digits=5, decimal_places=2, min_value=30.0, max_value=300.0)
-    weight_kg = serializers.DecimalField(max_digits=5, decimal_places=2, min_value=10.0, max_value=500.0)
+    height_cm = serializers.DecimalField(max_digits=5, decimal_places=2, min_value=Decimal('30.0'), max_value=Decimal('300.0'))
+    weight_kg = serializers.DecimalField(max_digits=5, decimal_places=2, min_value=Decimal('10.0'), max_value=Decimal('500.0'))
     nutrition_goal = serializers.CharField(max_length=50)
     health_conditions = serializers.ListField(child=serializers.IntegerField(), required=False, default=list)
     allergies = serializers.ListField(child=serializers.IntegerField(), required=False, default=list)
@@ -44,7 +46,7 @@ class ProfileSerializer(serializers.ModelSerializer):
 class ProfileUpdateSerializer(OnboardingSerializer):
     age = serializers.IntegerField(min_value=1, max_value=120, required=False)
     gender = serializers.CharField(max_length=50, required=False)
-    height_cm = serializers.DecimalField(max_digits=5, decimal_places=2, min_value=30.0, max_value=300.0, required=False)
-    weight_kg = serializers.DecimalField(max_digits=5, decimal_places=2, min_value=10.0, max_value=500.0, required=False)
+    height_cm = serializers.DecimalField(max_digits=5, decimal_places=2, min_value=Decimal('30.0'), max_value=Decimal('300.0'), required=False)
+    weight_kg = serializers.DecimalField(max_digits=5, decimal_places=2, min_value=Decimal('10.0'), max_value=Decimal('500.0'), required=False)
     nutrition_goal = serializers.CharField(max_length=50, required=False)
     # health_conditions and allergies inherit required=False from OnboardingSerializer

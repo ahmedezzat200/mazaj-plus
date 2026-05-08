@@ -1,8 +1,11 @@
+import { Link } from 'react-router';
+
 export function Pricing() {
   const plans = [
     {
       name: "Free",
-      price: "$0",
+      priceEGP: "0",
+      priceUSD: "0",
       period: "forever",
       description: "Perfect for getting started with nutrition guidance",
       features: [
@@ -10,7 +13,6 @@ export function Pricing() {
         "Personalized nutrition plans",
         "Hydration tracking & reminders",
         "Daily nutrition tips",
-        "Emotion-based recommendations",
         "Healthy alternatives"
       ],
       cta: "Get Started Free",
@@ -18,7 +20,8 @@ export function Pricing() {
     },
     {
       name: "Pro",
-      price: "$9",
+      priceEGP: "500",
+      priceUSD: "10",
       period: "per month",
       description: "Enhanced features for deeper insights",
       features: [
@@ -29,12 +32,13 @@ export function Pricing() {
         "Priority chat support",
         "Custom recipe suggestions"
       ],
-      cta: "Start Pro Trial",
+      cta: "Start Pro",
       highlighted: true
     },
     {
       name: "Ultra",
-      price: "$19",
+      priceEGP: "800",
+      priceUSD: "16",
       period: "per month",
       description: "Complete nutrition decision support",
       features: [
@@ -45,7 +49,7 @@ export function Pricing() {
         "Goal tracking & milestones",
         "Export data anytime"
       ],
-      cta: "Start Ultra Trial",
+      cta: "Start Ultra",
       highlighted: false
     }
   ];
@@ -54,9 +58,7 @@ export function Pricing() {
     <section id="pricing" className="py-20 bg-muted/30">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-4">
-            Choose Your Plan
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-4">Choose Your Plan</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Start free and upgrade as your nutrition journey grows
           </p>
@@ -64,35 +66,32 @@ export function Pricing() {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
           {plans.map((plan, index) => (
-            <div
-              key={index}
-              className={`bg-card rounded-2xl p-8 border ${
-                plan.highlighted
-                  ? "border-primary shadow-xl ring-2 ring-primary/20 scale-105"
-                  : "border-border shadow-sm"
-              }`}
-            >
+            <div key={index} className={`bg-card rounded-2xl p-8 border ${plan.highlighted ? "border-primary shadow-xl ring-2 ring-primary/20 scale-105" : "border-border shadow-sm"}`}>
               {plan.highlighted && (
-                <div className="inline-block px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full mb-4">
-                  Most Popular
-                </div>
+                <div className="inline-block px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full mb-4">Most Popular</div>
               )}
               <h3 className="text-2xl font-semibold text-foreground mb-2">{plan.name}</h3>
-              <div className="mb-4">
-                <span className="text-4xl font-semibold text-foreground">{plan.price}</span>
-                <span className="text-muted-foreground ml-2">/ {plan.period}</span>
+              <div className="mb-1">
+                {plan.priceEGP === '0' ? (
+                  <span className="text-4xl font-semibold text-foreground">Free</span>
+                ) : (
+                  <>
+                    <div className="flex items-baseline gap-2">
+                      <span className="text-4xl font-semibold text-foreground">{plan.priceEGP}</span>
+                      <span className="text-muted-foreground">EGP / {plan.period.replace('per ', '')}</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground mt-0.5">${plan.priceUSD} USD / {plan.period.replace('per ', '')}</p>
+                  </>
+                )}
               </div>
-              <p className="text-sm text-muted-foreground mb-6">{plan.description}</p>
+              <p className="text-sm text-muted-foreground mb-6 mt-3">{plan.description}</p>
 
-              <button
-                className={`w-full py-3 rounded-lg font-medium transition-all mb-6 ${
-                  plan.highlighted
-                    ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-md"
-                    : "bg-muted text-foreground hover:bg-muted/70"
-                }`}
+              <Link
+                to="/register"
+                className={`w-full py-3 rounded-lg font-medium transition-all mb-6 block text-center ${plan.highlighted ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-md" : "bg-muted text-foreground hover:bg-muted/70"}`}
               >
                 {plan.cta}
-              </button>
+              </Link>
 
               <ul className="space-y-3">
                 {plan.features.map((feature, fIndex) => (
@@ -109,9 +108,9 @@ export function Pricing() {
         </div>
 
         <div className="text-center">
-          <button className="text-primary hover:underline font-medium">
-            See Full Pricing Details →
-          </button>
+          <Link to="/register" className="text-primary hover:underline font-medium">
+            Create your free account →
+          </Link>
         </div>
       </div>
     </section>

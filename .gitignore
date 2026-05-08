@@ -36,3 +36,26 @@ yarn-error.log*
 .vscode/
 .idea/
 .pytest_cache/
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node
+node_modules/
+dist/
+build/
+
+# Local temp files
+build_output.txt
+
+# VSCode
+.vscode/
+
+# UI source backups
+UI,UX/mazaj_perfect/
+UI,UX/*.zip
+
+# SQLite optional
+*.sqlite3
+db.sqlite3

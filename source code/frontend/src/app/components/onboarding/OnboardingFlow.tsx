@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
-import { api } from '../../../lib/api';
+import { api, optionsApi } from '../../../lib/api';
 import { useAuth } from '../../../contexts/AuthContext';
 import { OnboardingHeader } from './OnboardingHeader';
 import { ProgressIndicator } from './ProgressIndicator';
@@ -44,6 +44,43 @@ export function OnboardingFlow() {
     weight: false,
     goal: false
   });
+
+  const [conditionMap, setConditionMap] = useState<Record<string, number>>({});
+  const [allergyMap, setAllergyMap] = useState<Record<string, number>>({});
+  const [optionsLoaded, setOptionsLoaded] = useState(false);
+  const [optionsError, setOptionsError] = useState(false);
+
+  useEffect(() => {
+    let mounted = true;
+    const loadOptions = async () => {
+      try {
+        const [condRes, algRes] = await Promise.all([
+          optionsApi.getHealthConditions(),
+          optionsApi.getAllergies()
+        ]);
+        
+        if (mounted) {
+          if (condRes.ok && algRes.ok) {
+            const cMap: Record<string, number> = {};
+            condRes.health_conditions?.forEach(c => cMap[c.name] = c.id);
+            setConditionMap(cMap);
+
+            const aMap: Record<string, number> = {};
+            algRes.allergies?.forEach(a => aMap[a.name] = a.id);
+            setAllergyMap(aMap);
+            
+            setOptionsLoaded(true);
+          } else {
+            setOptionsError(true);
+          }
+        }
+      } catch (err) {
+        if (mounted) setOptionsError(true);
+      }
+    };
+    loadOptions();
+    return () => { mounted = false; };
+  }, []);
 
   const stepTitles = [
     'Personal Information',
@@ -190,6 +227,35 @@ export function OnboardingFlow() {
   const errors = getStepErrors(currentStep);
   const isStepValid = validateStep(currentStep);
 
+  if (optionsError) {
+    return (
+      <div className="min-h-screen bg-background flex flex-col items-center justify-center p-6 text-center">
+        <div className="bg-destructive/10 text-destructive p-6 rounded-lg max-w-md border border-destructive/20">
+          <svg className="w-12 h-12 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>
+          <h2 className="text-xl font-semibold mb-2">Could not load safety options</h2>
+          <p className="mb-4">Please refresh and try again.</p>
+          <button 
+            onClick={() => window.location.reload()}
+            className="px-4 py-2 bg-destructive text-destructive-foreground rounded-lg hover:bg-destructive/90"
+          >
+            Refresh
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (!optionsLoaded && !isComplete) {
+    return (
+      <div className="min-h-screen bg-background flex flex-col items-center justify-center">
+        <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+        <p className="mt-4 text-muted-foreground">Loading onboarding...</p>
+      </div>
+    );
+  }
+
   if (isComplete) {
     return (
       <div className="min-h-screen bg-background flex flex-col">
@@ -257,6 +323,7 @@ export function OnboardingFlow() {
                 {currentStep === 3 && (
                   <HealthConditions
                     data={{ conditions: formData.conditions }}
+                    options={Object.keys(conditionMap)}
                     onChange={handleFieldChange}
                   />
                 )}
@@ -264,6 +331,7 @@ export function OnboardingFlow() {
                 {currentStep === 4 && (
                   <FoodAllergies
                     data={{ allergies: formData.allergies }}
+                    options={Object.keys(allergyMap)}
                     onChange={handleFieldChange}
                   />
                 )}

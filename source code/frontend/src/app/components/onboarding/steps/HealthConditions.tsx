@@ -2,24 +2,12 @@ interface HealthConditionsProps {
   data: {
     conditions: string[];
   };
+  options?: string[];
   onChange: (field: string, value: string[]) => void;
 }
 
-export function HealthConditions({ data, onChange }: HealthConditionsProps) {
-  const commonConditions = [
-    'None',
-    'Diabetes Type 1',
-    'Diabetes Type 2',
-    'Hypertension',
-    'High Cholesterol',
-    'Heart Disease',
-    'Kidney Disease',
-    'Liver Disease',
-    'Thyroid Disorder',
-    'PCOS',
-    'Celiac Disease',
-    'IBS'
-  ];
+export function HealthConditions({ data, options, onChange }: HealthConditionsProps) {
+  const commonConditions = ['None', ...(options || [])];
 
   const toggleCondition = (condition: string) => {
     if (condition === 'None') {

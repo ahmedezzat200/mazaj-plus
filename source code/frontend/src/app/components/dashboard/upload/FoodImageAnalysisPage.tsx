@@ -12,7 +12,7 @@ import { LockedUploadState } from './LockedUploadState';
 import { UploadSupportCards } from './UploadSupportCards';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 
-export type UploadState = 
+export type UploadState =
   | 'idle'
   | 'preview'
   | 'processing'
@@ -36,7 +36,7 @@ export interface UploadedImage {
 
 export function FoodImageAnalysisPage() {
   const { userData } = useOutletContext<{ userData: UserData }>();
-  
+
   const [uploadState, setUploadState] = useState<UploadState>('idle');
   const [uploadedImage, setUploadedImage] = useState<UploadedImage | null>(null);
   const [analysisResult, setAnalysisResult] = useState<NutritionAnalysis | null>(null);
@@ -76,7 +76,7 @@ export function FoodImageAnalysisPage() {
     // Simulate processing
     setTimeout(() => {
       const random = Math.random();
-      
+
       // 10% chance of no recognition
       if (random < 0.1) {
         setUploadState('no-recognition');
@@ -125,14 +125,14 @@ export function FoodImageAnalysisPage() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <Tabs defaultValue="food" className="w-full">
             <TabsList className="bg-transparent border-0 h-auto p-0">
-              <TabsTrigger 
-                value="food" 
+              <TabsTrigger
+                value="food"
                 className="data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none px-4 py-3"
               >
                 Food Image Analysis
               </TabsTrigger>
-              <TabsTrigger 
-                value="inbody" 
+              <TabsTrigger
+                value="inbody"
                 className="data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none px-4 py-3"
                 disabled
               >
@@ -185,7 +185,7 @@ export function FoodImageAnalysisPage() {
               {uploadState === 'error' && errorMessage && (
                 <div className="bg-destructive/10 border border-destructive/20 rounded-xl p-5">
                   <p className="text-sm text-destructive">{errorMessage}</p>
-                  <button 
+                  <button
                     onClick={handleReset}
                     className="text-sm text-primary hover:underline mt-2"
                   >
@@ -218,9 +218,12 @@ function generateMockAnalysis(): NutritionAnalysis {
   ];
 
   const food = foods[Math.floor(Math.random() * foods.length)];
-  
+
   return {
-    ...food,
+    foodName: food.name,
+    calories: food.calories,
+    protein: food.protein,
+    fat: food.fat,
     servingNote: 'per standard serving (approximately 100g)',
   };
 }

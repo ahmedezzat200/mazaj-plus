@@ -1,7 +1,7 @@
 from django.utils import timezone
 from django.db import transaction
 from .models import UsageLimitCounter
-from apps.common.enums import Tier, SubscriptionStatus
+from apps.common.enums import Tier, SubscriptionStatus, FeatureKey
 
 def check_and_increment_usage(user, feature_key, limit=3):
     """

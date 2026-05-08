@@ -2,24 +2,12 @@ interface FoodAllergiesProps {
   data: {
     allergies: string[];
   };
+  options?: string[];
   onChange: (field: string, value: string[]) => void;
 }
 
-export function FoodAllergies({ data, onChange }: FoodAllergiesProps) {
-  const commonAllergies = [
-    'None',
-    'Peanuts',
-    'Tree Nuts',
-    'Milk/Dairy',
-    'Eggs',
-    'Wheat/Gluten',
-    'Soy',
-    'Fish',
-    'Shellfish',
-    'Sesame',
-    'Corn',
-    'Sulfites'
-  ];
+export function FoodAllergies({ data, options, onChange }: FoodAllergiesProps) {
+  const commonAllergies = ['None', ...(options || [])];
 
   const toggleAllergy = (allergy: string) => {
     if (allergy === 'None') {

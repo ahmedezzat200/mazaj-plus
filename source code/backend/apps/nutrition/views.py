@@ -11,7 +11,7 @@ from apps.common.enums import IdempotencyStatus, UserRole
 from apps.common.policies import require_authenticated
 from .serializers import NutritionPlanGenerateSerializer, NutritionPlanSerializer
 from .services import generate_nutrition_plan
-from .models import NutritionPlan
+from .models import NutritionPlan, HealthCondition, Allergy
 
 class NutritionPlanGenerateView(APIView):
     permission_classes = [permissions.IsAuthenticated]
@@ -170,11 +170,7 @@ class AlternativeSearchView(APIView):
             for alt in alts:
                 alt_list.append({
                     "original_food_name": alt.original_food_name,
-                    "alternative_food": alt.alternative_food.name,
-                    "calories": str(alt.alternative_food.calories),
-                    "protein_g": str(alt.alternative_food.protein_g),
-                    "carbs_g": str(alt.alternative_food.carbs_g),
-                    "fat_g": str(alt.alternative_food.fat_g),
+                    "alternative_food": { "name": alt.alternative_food.name, "calories": str(alt.alternative_food.calories), "protein_g": str(alt.alternative_food.protein_g), "carbs_g": str(alt.alternative_food.carbs_g), "fat_g": str(alt.alternative_food.fat_g) },
                     "reason": alt.reason
                 })
 
@@ -307,3 +303,20 @@ class DailyTipView(APIView):
             return success_response({"tip": None, "advisory": "Advisory only. No tips available."})
         serializer = DailyTipSerializer(tip)
         return success_response({"tip": serializer.data, "advisory": "Advisory only."})
+
+class HealthConditionListView(APIView):
+    permission_classes = [permissions.AllowAny]
+
+    def get(self, request):
+        conditions = HealthCondition.objects.filter(is_active=True).order_by('id')
+        data = [{'id': c.id, 'name': c.name} for c in conditions]
+        return success_response({'health_conditions': data})
+
+class AllergyListView(APIView):
+    permission_classes = [permissions.AllowAny]
+
+    def get(self, request):
+        allergies = Allergy.objects.filter(is_active=True).order_by('id')
+        data = [{'id': a.id, 'name': a.name} for a in allergies]
+        return success_response({'allergies': data})
+

@@ -32,7 +32,7 @@ export function Navigation() {
               Login
             </Link>
             <Link to="/register" className="px-5 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
-              Get Started
+              Get Started Free
             </Link>
           </div>
 
