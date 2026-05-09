@@ -5,6 +5,7 @@ class ChatMode(models.TextChoices):
     MOOD_RECOMMENDATION = 'MOOD_RECOMMENDATION', 'Mood Recommendation'
     NUTRITION_PLAN_REQUEST = 'NUTRITION_PLAN_REQUEST', 'Nutrition Plan Request'
     CLARIFICATION = 'CLARIFICATION', 'Clarification'
+    GREETING = 'GREETING', 'Greeting'
 
 class ChatSender(models.TextChoices):
     USER = 'USER', 'User'

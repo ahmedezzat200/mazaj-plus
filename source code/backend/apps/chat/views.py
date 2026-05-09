@@ -74,7 +74,7 @@ class ChatMessageView(APIView):
         except Exception as e:
             record.status = IdempotencyStatus.FAILED
             record.save()
-            if str(e) == "DAILY_LIMIT_EXCEEDED":
+            if str(e) == "USAGE_LIMIT_EXCEEDED":
                 return error_response("USAGE_LIMIT_EXCEEDED", "Daily limit of 3 chat messages exceeded for free tier.", stat=status.HTTP_403_FORBIDDEN)
             if isinstance(e, ObjectDoesNotExist):
                  return error_response("NOT_FOUND", "Session not found.", stat=status.HTTP_404_NOT_FOUND)

@@ -21,7 +21,7 @@ def detect_intent(text):
     greeting_words = ['hello', 'hi', 'hey', 'thanks', 'thank you', 'how are you']
     # Check exact match or start of word to avoid matching substrings
     if any(text_lower.startswith(word) or text_lower == word for word in greeting_words):
-        return 'GREETING', None
+        return ChatMode.GREETING, None
         
     for word, mood in mood_map.items():
         if word in text_lower:
@@ -57,7 +57,7 @@ def process_chat_message(user, message_text, session_id=None):
         
         if mode == ChatMode.NUTRITION_PLAN_REQUEST:
             reply_text = "Advisory only: Nutrition plan generation will be handled by the plan module later. I can only provide simple mood-based food guidance right now."
-        elif mode == 'GREETING':
+        elif mode == ChatMode.GREETING:
             reply_text = "Hello! I can help with mood-based food guidance. Tell me how you feel or what food you want advice about."
         elif mode == ChatMode.CLARIFICATION:
             reply_text = "I'm not sure I understand your mood. Could you clarify if you are feeling stressed, sad, fatigued, or need focus?"
@@ -93,16 +93,29 @@ def process_chat_message(user, message_text, session_id=None):
                 warnings=warnings_data
             )
             
+        # Optional Gemini Formatting with robust fallback
+        try:
+            from .gemini_formatter import format_chat_reply_with_gemini
+            formatted_reply = format_chat_reply_with_gemini(
+                reply_text, 
+                foods_data, 
+                warnings_data, 
+                mode
+            )
+        except Exception:
+            # Absolute fallback to original reply_text
+            formatted_reply = reply_text
+        
         ChatMessage.objects.create(
             session=session,
             sender=ChatSender.ASSISTANT,
-            message=reply_text
+            message=formatted_reply
         )
         
     return {
         "session_id": session.id,
         "mode": mode,
-        "reply": reply_text,
+        "reply": formatted_reply,
         "foods": foods_data,
         "warnings": warnings_data
     }
