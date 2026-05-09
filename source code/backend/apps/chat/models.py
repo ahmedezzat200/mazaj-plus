@@ -6,6 +6,9 @@ class ChatMode(models.TextChoices):
     NUTRITION_PLAN_REQUEST = 'NUTRITION_PLAN_REQUEST', 'Nutrition Plan Request'
     CLARIFICATION = 'CLARIFICATION', 'Clarification'
     GREETING = 'GREETING', 'Greeting'
+    HELP = 'HELP', 'Help'
+    HEALTHY_ALTERNATIVE = 'HEALTHY_ALTERNATIVE', 'Healthy Alternative'
+    HYDRATION = 'HYDRATION', 'Hydration'
 
 class ChatSender(models.TextChoices):
     USER = 'USER', 'User'
@@ -15,6 +18,13 @@ class ChatSession(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='chat_sessions')
     title = models.CharField(max_length=255, blank=True)
     mode = models.CharField(max_length=50, choices=ChatMode.choices, default=ChatMode.CLARIFICATION)
+    
+    # New state fields for conversation understanding
+    conversation_state = models.CharField(max_length=50, default='READY')
+    pending_intent = models.CharField(max_length=50, blank=True, null=True)
+    pending_mood = models.CharField(max_length=50, blank=True, null=True)
+    pending_food_name = models.CharField(max_length=100, blank=True, null=True)
+    
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

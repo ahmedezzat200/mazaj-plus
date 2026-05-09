@@ -83,6 +83,26 @@ def get_daily_tip():
     """Return the topmost active daily tip."""
     return DailyTip.objects.filter(is_active=True).first()
 
+def get_hydration_data(user):
+    """Return hydration target and today's total for a user."""
+    from .models import WaterIntakeLog
+    from django.db.models import Sum
+    from django.utils import timezone
+    
+    weight = user.profile.weight_kg
+    target_ml = int(float(weight) * 35) if weight else 2000
+    
+    now = timezone.now()
+    today_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    today_total_ml = WaterIntakeLog.objects.filter(
+        user=user, logged_at__gte=today_start
+    ).aggregate(total=Sum("amount_ml"))["total"] or 0
+    
+    return {
+        "target_ml": target_ml,
+        "today_total_ml": today_total_ml
+    }
+
 from decimal import Decimal
 from apps.common.enums import FeatureKey
 from apps.subscriptions.services import check_and_increment_usage
