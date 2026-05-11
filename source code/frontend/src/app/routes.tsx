@@ -18,6 +18,7 @@ import { AdminDashboard } from "./components/admin/AdminDashboard";
 import { ManagementPage } from "./components/admin/ManagementPage";
 import { TipsSubscriptionPage } from "./components/admin/TipsSubscriptionPage";
 import { ProtectedRoute } from "./components/ProtectedRoute";
+import { ProfilePage } from "./components/dashboard/profile/ProfilePage";
 
 export const router = createBrowserRouter([
   {
@@ -83,7 +84,7 @@ export const router = createBrowserRouter([
           },
           {
             path: "profile",
-            element: <div className="p-6">Profile (Coming Soon)</div>,
+            element: <ProfilePage />,
           },
           {
             path: "subscription",

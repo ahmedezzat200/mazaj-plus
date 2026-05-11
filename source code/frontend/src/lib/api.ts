@@ -415,7 +415,57 @@ export const plansApi = {
   },
 };
 
-// "?"?"? Option Lookups API helpers "?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?"?
+// ─── Profile API helpers ──────────────────────────────────────────────────────
+export interface UserProfileData {
+  age: number | null;
+  gender: string | null;
+  height_cm: string | null;
+  weight_kg: string | null;
+  nutrition_goal: string | null;
+  onboarding_complete: boolean;
+  health_conditions: { health_condition_id: number; health_condition__name: string }[];
+  allergies: { allergy_id: number; allergy__name: string }[];
+}
+
+export const profileApi = {
+  async getMe(): Promise<{
+    ok: boolean;
+    status: number;
+    profile?: UserProfileData;
+    error?: { code: string; message: string };
+  }> {
+    const res = await api.get('/profile/me/');
+    const json = await res.json();
+    if (json.success) {
+      return { ok: true, status: res.status, profile: json.data as UserProfileData };
+    }
+    return {
+      ok: false,
+      status: res.status,
+      error: json.error ?? { code: 'UNKNOWN', message: 'An unexpected error occurred.' },
+    };
+  },
+
+  async updateMe(data: Partial<UserProfileData> & { health_conditions?: number[]; allergies?: number[] }): Promise<{
+    ok: boolean;
+    status: number;
+    profile?: UserProfileData;
+    error?: { code: string; message: string };
+  }> {
+    const res = await api.patch('/profile/me/', data);
+    const json = await res.json();
+    if (json.success) {
+      return { ok: true, status: res.status, profile: json.data as UserProfileData };
+    }
+    return {
+      ok: false,
+      status: res.status,
+      error: json.error ?? { code: 'UNKNOWN', message: 'An unexpected error occurred.' },
+    };
+  },
+};
+
+// ─── Option Lookups API helpers ──────────────────────────────────────────────
 
 export const optionsApi = {
   async getHealthConditions(): Promise<{
