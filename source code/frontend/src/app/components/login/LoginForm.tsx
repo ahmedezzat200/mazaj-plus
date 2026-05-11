@@ -89,11 +89,22 @@ export function LoginForm() {
       if (result.success) {
         setRedirecting(true);
         const user = result.data.user;
-        const targetPath = user.onboarding_complete ? '/dashboard' : '/onboarding';
         
-        setRedirectMessage(user.onboarding_complete 
-          ? 'Login successful, redirecting to dashboard...' 
-          : 'Login successful, please complete your profile...');
+        // Admin user -> /admin
+        // Normal user with onboarding_complete = false -> /onboarding
+        // Normal user with onboarding_complete = true -> /dashboard
+        let targetPath = '/dashboard';
+        if (user.role === 'ADMIN') {
+          targetPath = '/admin';
+        } else if (!user.onboarding_complete) {
+          targetPath = '/onboarding';
+        }
+        
+        setRedirectMessage(user.role === 'ADMIN' 
+          ? 'Login successful, redirecting to admin panel...'
+          : user.onboarding_complete 
+            ? 'Login successful, redirecting to dashboard...' 
+            : 'Login successful, please complete your profile...');
           
         setTimeout(() => {
           navigate(targetPath);
@@ -103,7 +114,7 @@ export function LoginForm() {
         setIsSubmitting(false);
       }
     } catch (err: any) {
-      setCredentialsError('Please check your connection and try again.');
+      setCredentialsError('Unable to reach the server. Please check your connection.');
       setIsSubmitting(false);
     }
   };

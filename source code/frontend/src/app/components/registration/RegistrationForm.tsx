@@ -120,10 +120,10 @@ export function RegistrationForm() {
       if (result.success) {
         setIsSuccess(true);
       } else {
-        setServerError(result.error?.message || 'Registration failed.');
+        setServerError(result.error?.message || 'Registration failed. Please try again.');
       }
     } catch (err: any) {
-      setServerError('Please check your connection and try again.');
+      setServerError('Unable to reach the server. Please check your connection.');
     } finally {
       setIsSubmitting(false);
     }

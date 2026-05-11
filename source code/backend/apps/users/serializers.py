@@ -9,7 +9,7 @@ class RegisterSerializer(serializers.Serializer):
 
     def validate_email(self, value):
         if User.objects.filter(username=value).exists():
-            raise serializers.ValidationError("A user with this email already exists.")
+            raise serializers.ValidationError("This email is already registered. Please log in instead.")
         return value
 
     def validate_advisory_terms_accepted(self, value):

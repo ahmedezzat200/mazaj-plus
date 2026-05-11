@@ -11,7 +11,8 @@ class RegisterView(APIView):
     def post(self, request):
         serializer = RegisterSerializer(data=request.data)
         if not serializer.is_valid():
-            return error_response("VALIDATION_ERROR", "Invalid registration data.", details=serializer.errors)
+            first_error = next(iter(serializer.errors.values()))[0] if serializer.errors else "Invalid registration data."
+            return error_response("VALIDATION_ERROR", first_error, details=serializer.errors)
 
         try:
             register_user(serializer.validated_data)

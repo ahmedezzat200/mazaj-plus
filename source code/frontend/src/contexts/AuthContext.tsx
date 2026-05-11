@@ -57,21 +57,35 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const login = async (credentials: any) => {
-    const response = await api.post('/auth/login/', credentials);
-    const result = await response.json();
-    if (result.success) {
-      await refreshUser();
+    try {
+      const response = await api.post('/auth/login/', credentials);
+      const result = await response.json();
+      if (result.success) {
+        await refreshUser();
+      }
+      return result;
+    } catch (error) {
+      return {
+        success: false,
+        error: { code: 'NETWORK_ERROR', message: 'Unable to reach the server. Please check your connection.' }
+      };
     }
-    return result;
   };
-
+  
   const register = async (userData: any) => {
-    const response = await api.post('/auth/register/', userData);
-    const result = await response.json();
-    if (result.success) {
-      await refreshUser();
+    try {
+      const response = await api.post('/auth/register/', userData);
+      const result = await response.json();
+      if (result.success) {
+        await refreshUser();
+      }
+      return result;
+    } catch (error) {
+      return {
+        success: false,
+        error: { code: 'NETWORK_ERROR', message: 'Unable to reach the server. Please check your connection.' }
+      };
     }
-    return result;
   };
 
   const logout = async () => {
