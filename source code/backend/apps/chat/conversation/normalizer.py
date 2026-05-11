@@ -30,6 +30,9 @@ def handle_typos(text: str) -> str:
         r'mazaj+': 'mazaj',
         r'brun+ed out': 'burned out',
         r'burn+ed out': 'burned out',
+        r'n[utr]*io[n]*\s+plan': 'nutrition plan',
+        r'nutr[it]*on': 'nutrition',
+        r'ntrion': 'nutrition',
     }
     
     for pattern, replacement in typo_map.items():

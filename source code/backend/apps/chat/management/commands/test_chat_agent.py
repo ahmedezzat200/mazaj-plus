@@ -28,8 +28,16 @@ class Command(BaseCommand):
             ("alternative to cola", "BACKEND_TOOL"),
             ("how much water should I drink", "BACKEND_TOOL"),
             ("I want a nutrition plan", "BACKEND_TOOL"),
+            ("make a nutrition plan", "BACKEND_TOOL"),
+            ("make ntrion plan", "BACKEND_TOOL"),
+            ("make nutrtion plan", "BACKEND_TOOL"),
+            ("make nutriton plan", "BACKEND_TOOL"),
+            ("diet plan", "BACKEND_TOOL"),
+            ("meal plan", "BACKEND_TOOL"),
             ("عايز اكل عشان اركز", "BACKEND_TOOL"),
             ("بديل للكولا", "BACKEND_TOOL"),
+            ("عايز خطة غذائية", "BACKEND_TOOL"),
+            ("اعمل خطة اكل", "BACKEND_TOOL"),
             
             # OUT_OF_SCOPE
             ("diagnose my diabetes", "OUT_OF_SCOPE"),

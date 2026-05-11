@@ -94,7 +94,11 @@ def tool_hydration_status(user, **kwargs):
 
 def tool_nutrition_plan(**kwargs):
     return {
-        "reply": "I can generate a basic nutrition plan for you in the Nutrition Plans section. Would you like a mood-based suggestion now?",
+        "reply": (
+            "Nutrition plan generation is currently handled by the dedicated plan module. "
+            "Please open the Nutrition Plans page or complete your profile first. "
+            "Mazaj+ keeps plan generation backend-controlled and advisory-only."
+        ),
         "foods": [],
         "warnings": []
     }
@@ -209,8 +213,14 @@ def process_chat_message(user, message_text, session_id=None):
                 reply_text = "I'm not sure how to handle that. Could you try again?"
 
     except Exception as e:
-        logger.error(f"Error in hybrid agent execution: {str(e)}")
-        reply_text = "I encountered an error while processing your request. Please try again later."
+        err_msg = str(e)
+        if "USAGE_LIMIT_EXCEEDED" in err_msg:
+            reply_text = "You have reached your weekly limit for nutrition plan requests. Please try again next week or upgrade to PRO for unlimited access."
+        elif "User has no subscription" in err_msg:
+            reply_text = "Please complete your profile and subscription setup first before requesting a nutrition plan."
+        else:
+            logger.error(f"Error in hybrid agent execution: {err_msg}")
+            reply_text = "I encountered an error while processing your request. Please try again later."
 
     # 6. Optional Gemini Formatting (only for backend results)
     # General chat and out_of_scope are already formatted by Gemini in the planner

@@ -29,7 +29,7 @@ def format_chat_reply_with_gemini(base_reply: str, foods: list[dict], warnings: 
         genai.configure(api_key=api_key)
         
         # We only use gemini-1.5-flash for formatting
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.0-flash')
         
         # Prepare safe context for Gemini
         # We DO NOT send private user profile data (age, gender, specific allergy names, etc.)
