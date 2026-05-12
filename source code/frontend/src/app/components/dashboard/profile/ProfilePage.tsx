@@ -1,14 +1,29 @@
 import { useState, useEffect } from 'react';
 import { profileApi, optionsApi, UserProfileData } from '../../../../lib/api';
 import { useAuth } from '../../../../contexts/AuthContext';
+import { useOutletContext, Link } from 'react-router';
+import { UserData } from '../DashboardLayout';
+import { Card, CardContent, CardHeader, CardTitle } from '../../ui/card';
+import { Button } from '../../ui/button';
+import { Badge } from '../../ui/badge';
+import { Avatar, AvatarFallback } from '../../ui/avatar';
+import { Progress } from '../../ui/progress';
+import { Input } from '../../ui/input';
+import { 
+  User, Mail, Calendar, Weight, Ruler, Target, Heart, 
+  Edit2, Check, X, Crown, AlertCircle, Info, ShieldCheck
+} from 'lucide-react';
 
 export function ProfilePage() {
   const { user, refreshUser } = useAuth();
+  const { userData } = useOutletContext<{ userData: UserData }>();
+  
   const [profile, setProfile] = useState<UserProfileData | null>(null);
   const [healthOptions, setHealthOptions] = useState<{ id: number; name: string }[]>([]);
   const [allergyOptions, setAllergyOptions] = useState<{ id: number; name: string }[]>([]);
   
   const [loading, setLoading] = useState(true);
+  const [isEditing, setIsEditing] = useState(false);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
@@ -41,15 +56,7 @@ export function ProfilePage() {
       if (profileRes.ok && profileRes.profile) {
         const p = profileRes.profile;
         setProfile(p);
-        setFormData({
-          age: p.age?.toString() || '',
-          gender: p.gender || '',
-          height_cm: p.height_cm || '',
-          weight_kg: p.weight_kg || '',
-          nutrition_goal: p.nutrition_goal || '',
-          health_conditions: p.health_conditions.map(hc => hc.health_condition_id),
-          allergies: p.allergies.map(a => a.allergy_id),
-        });
+        updateFormDataFromProfile(p);
       } else {
         setError('Unable to load your profile. Please try again.');
       }
@@ -64,6 +71,18 @@ export function ProfilePage() {
     }
   };
 
+  const updateFormDataFromProfile = (p: UserProfileData) => {
+    setFormData({
+      age: p.age?.toString() || '',
+      gender: p.gender || '',
+      height_cm: p.height_cm || '',
+      weight_kg: p.weight_kg || '',
+      nutrition_goal: p.nutrition_goal || 'MAINTENANCE',
+      health_conditions: p.health_conditions.map(hc => hc.health_condition_id),
+      allergies: p.allergies.map(a => a.allergy_id),
+    });
+  };
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
@@ -72,6 +91,7 @@ export function ProfilePage() {
   };
 
   const handleToggleOption = (type: 'health_conditions' | 'allergies', id: number) => {
+    if (!isEditing) return;
     setFormData(prev => {
       const current = prev[type];
       const next = current.includes(id) 
@@ -83,25 +103,29 @@ export function ProfilePage() {
     setError(null);
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
     setSaving(true);
     setError(null);
     setSuccess(null);
 
     try {
       const payload = {
-        ...formData,
         age: formData.age ? parseInt(formData.age) : null,
+        gender: formData.gender || null,
         height_cm: formData.height_cm || null,
         weight_kg: formData.weight_kg || null,
+        nutrition_goal: formData.nutrition_goal || null,
+        health_conditions: formData.health_conditions,
+        allergies: formData.allergies,
       };
 
       const res = await profileApi.updateMe(payload);
       if (res.ok) {
         setSuccess('Profile updated successfully.');
         setProfile(res.profile || null);
-        await refreshUser(); // Refresh auth context user data
+        if (res.profile) updateFormDataFromProfile(res.profile);
+        setIsEditing(false);
+        await refreshUser();
       } else {
         setError(res.error?.message || 'Please check the profile information and try again.');
       }
@@ -112,241 +136,322 @@ export function ProfilePage() {
     }
   };
 
+  const handleCancel = () => {
+    if (profile) updateFormDataFromProfile(profile);
+    setIsEditing(false);
+    setError(null);
+    setSuccess(null);
+  };
+
+  // UI Helpers
+  const getInitials = (name: string) =>
+    name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
+
+  const bmi = formData.height_cm && formData.weight_kg
+    ? (parseFloat(formData.weight_kg) / Math.pow(parseFloat(formData.height_cm) / 100, 2)).toFixed(1)
+    : null;
+
+  const filledCount = [formData.age, formData.gender, formData.height_cm, formData.weight_kg, formData.nutrition_goal].filter(Boolean).length;
+  const completeness = Math.round(filledCount / 5 * 100);
+
   if (loading) {
     return (
-      <div className="p-8 flex justify-center items-center min-h-[400px]">
+      <div className="p-8 flex flex-col justify-center items-center min-h-[400px] gap-4">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-      </div>
-    );
-  }
-
-  if (error && !profile) {
-    return (
-      <div className="p-8">
-        <div className="bg-destructive/10 border border-destructive/20 text-destructive p-4 rounded-lg">
-          {error}
-          <button 
-            onClick={fetchInitialData}
-            className="ml-4 underline font-medium"
-          >
-            Retry
-          </button>
-        </div>
+        <p className="text-muted-foreground animate-pulse">Loading your profile...</p>
       </div>
     );
   }
 
   return (
-    <div className="p-4 lg:p-8 max-w-4xl mx-auto">
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-foreground">User Profile</h1>
-        <p className="text-muted-foreground">Manage your personal information and health preferences.</p>
-      </div>
-
+    <div className="p-4 md:p-6 lg:p-8 max-w-5xl mx-auto space-y-6">
+      
+      {/* Messages */}
       {success && (
-        <div className="mb-6 p-4 bg-green-500/10 border border-green-500/20 text-green-600 rounded-lg flex items-center gap-3">
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-          </svg>
+        <div className="flex items-center gap-3 px-4 py-3 bg-green-500/10 border border-green-500/20 rounded-lg text-green-600 text-sm">
+          <Check className="h-4 w-4 flex-shrink-0" />
           {success}
         </div>
       )}
-
       {error && (
-        <div className="mb-6 p-4 bg-destructive/10 border border-destructive/20 text-destructive rounded-lg flex items-center gap-3">
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
+        <div className="flex items-center gap-3 px-4 py-3 bg-destructive/10 border border-destructive/20 rounded-lg text-destructive text-sm">
+          <AlertCircle className="h-4 w-4 flex-shrink-0" />
           {error}
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="space-y-8">
-        {/* Account Info (Read Only) */}
-        <div className="bg-card rounded-xl border border-border p-6">
-          <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-            <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-            </svg>
-            Account Information
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <p className="text-sm text-muted-foreground mb-1">Full Name</p>
-              <p className="font-medium">{user?.full_name}</p>
+      {/* Header card */}
+      <Card>
+        <CardContent className="p-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <div className="relative flex-shrink-0">
+              <Avatar className="h-20 w-20">
+                <AvatarFallback className="bg-primary text-primary-foreground text-2xl font-semibold">
+                  {getInitials(user?.full_name || 'U')}
+                </AvatarFallback>
+              </Avatar>
             </div>
-            <div>
-              <p className="text-sm text-muted-foreground mb-1">Email Address</p>
-              <p className="font-medium">{user?.email}</p>
+
+            <div className="flex-1 min-w-0">
+              <div className="flex flex-wrap items-center gap-3 mb-1">
+                <h2 className="text-xl font-semibold text-foreground truncate">{user?.full_name}</h2>
+                <Badge variant="secondary" className={
+                  userData.tier === 'Ultra' ? 'bg-primary text-primary-foreground' :
+                  userData.tier === 'Pro' ? 'bg-secondary text-secondary-foreground' :
+                  'bg-muted text-muted-foreground'
+                }>
+                  {userData.tier === 'Ultra' && <Crown className="h-3 w-3 mr-1" />}
+                  {userData.tier} Plan
+                </Badge>
+              </div>
+              <p className="text-sm text-muted-foreground">{user?.email}</p>
+
+              {/* Completeness */}
+              <div className="mt-3 max-w-xs">
+                <div className="flex items-center justify-between mb-1">
+                  <span className="text-xs text-muted-foreground">Profile completeness</span>
+                  <span className="text-xs font-medium text-foreground">{completeness}%</span>
+                </div>
+                <Progress value={completeness} className="h-1.5" />
+              </div>
             </div>
-            <div>
-              <p className="text-sm text-muted-foreground mb-1">Current Tier</p>
-              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary uppercase">
-                {user?.tier || 'Free'}
-              </span>
+
+            <div className="flex gap-2 self-start sm:self-center">
+              {isEditing ? (
+                <>
+                  <Button size="sm" onClick={handleSubmit} disabled={saving}>
+                    {saving ? 'Saving...' : <><Check className="h-4 w-4 mr-1.5" />Save</>}
+                  </Button>
+                  <Button size="sm" variant="outline" onClick={handleCancel} disabled={saving}>
+                    <X className="h-4 w-4 mr-1.5" />Cancel
+                  </Button>
+                </>
+              ) : (
+                <Button size="sm" variant="outline" onClick={() => setIsEditing(true)}>
+                  <Edit2 className="h-4 w-4 mr-1.5" />Edit Profile
+                </Button>
+              )}
             </div>
           </div>
+        </CardContent>
+      </Card>
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="lg:col-span-2 space-y-6">
+
+          {/* Personal Info */}
+          <Card>
+            <CardHeader className="pb-4 border-b border-border/50 mb-4">
+              <CardTitle className="flex items-center gap-2 text-base">
+                <User className="h-4 w-4 text-primary" />Personal Information
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div className="space-y-1.5">
+                <label className="text-xs text-muted-foreground">Age</label>
+                {isEditing ? (
+                  <div className="flex items-center gap-2">
+                    <Input type="number" name="age" value={formData.age} onChange={handleInputChange} className="h-9" placeholder="Years" />
+                    <span className="text-xs text-muted-foreground">years</span>
+                  </div>
+                ) : (
+                  <p className="text-sm font-medium">{formData.age ? `${formData.age} years` : 'Not set'}</p>
+                )}
+              </div>
+
+              <div className="space-y-1.5">
+                <label className="text-xs text-muted-foreground">Gender</label>
+                {isEditing ? (
+                  <select name="gender" value={formData.gender} onChange={handleInputChange} className="w-full h-9 px-3 text-sm border border-input rounded-md bg-background focus:ring-1 focus:ring-primary outline-none">
+                    <option value="">Select gender</option>
+                    <option value="MALE">Male</option>
+                    <option value="FEMALE">Female</option>
+                    <option value="OTHER">Other</option>
+                    <option value="PREFER_NOT_TO_SAY">Prefer not to say</option>
+                  </select>
+                ) : (
+                  <p className="text-sm font-medium">{formData.gender ? formData.gender.replace(/_/g, ' ') : 'Not set'}</p>
+                )}
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Body Measurements */}
+          <Card>
+            <CardHeader className="pb-4 border-b border-border/50 mb-4">
+              <CardTitle className="flex items-center gap-2 text-base">
+                <Ruler className="h-4 w-4 text-primary" />Body Measurements
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div className="space-y-1.5">
+                  <label className="text-xs text-muted-foreground">Height</label>
+                  {isEditing ? (
+                    <div className="flex items-center gap-2">
+                      <Input type="number" name="height_cm" value={formData.height_cm} onChange={handleInputChange} className="h-9" placeholder="cm" />
+                      <span className="text-xs text-muted-foreground">cm</span>
+                    </div>
+                  ) : (
+                    <p className="text-sm font-medium">{formData.height_cm ? `${formData.height_cm} cm` : 'Not set'}</p>
+                  )}
+                </div>
+
+                <div className="space-y-1.5">
+                  <label className="text-xs text-muted-foreground">Weight</label>
+                  {isEditing ? (
+                    <div className="flex items-center gap-2">
+                      <Input type="number" name="weight_kg" value={formData.weight_kg} onChange={handleInputChange} className="h-9" placeholder="kg" />
+                      <span className="text-xs text-muted-foreground">kg</span>
+                    </div>
+                  ) : (
+                    <p className="text-sm font-medium">{formData.weight_kg ? `${formData.weight_kg} kg` : 'Not set'}</p>
+                  )}
+                </div>
+              </div>
+
+              {/* BMI Card */}
+              {bmi ? (
+                <div className="p-4 bg-muted/30 rounded-lg border border-border/50">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">BMI Reference</p>
+                      <p className="text-2xl font-bold text-foreground">{bmi}</p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-[10px] text-muted-foreground leading-relaxed italic max-w-[120px]">
+                        For profile reference only. This is not a medical diagnosis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="flex items-center gap-2 p-3 bg-muted/20 rounded-lg text-muted-foreground">
+                  <Info className="h-4 w-4" />
+                  <p className="text-xs italic">BMI will appear when height and weight are completed.</p>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+
+          {/* Health & Safety */}
+          <Card>
+            <CardHeader className="pb-4 border-b border-border/50 mb-4">
+              <CardTitle className="flex items-center gap-2 text-base">
+                <Heart className="h-4 w-4 text-primary" />Health & Safety Preferences
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div>
+                <p className="text-xs text-muted-foreground mb-3">Health Conditions</p>
+                <div className="flex flex-wrap gap-2">
+                  {healthOptions.length > 0 ? healthOptions.map(option => (
+                    <button
+                      key={option.id}
+                      type="button"
+                      disabled={!isEditing}
+                      onClick={() => handleToggleOption('health_conditions', option.id)}
+                      className={`px-3 py-1.5 rounded-full border text-xs transition-all ${
+                        formData.health_conditions.includes(option.id)
+                          ? 'bg-primary border-primary text-primary-foreground shadow-sm'
+                          : 'bg-muted/50 border-border text-muted-foreground hover:border-primary/50 disabled:hover:border-border'
+                      }`}
+                    >
+                      {option.name}
+                    </button>
+                  )) : <p className="text-xs text-muted-foreground italic">Loading options...</p>}
+                </div>
+              </div>
+
+              <div>
+                <p className="text-xs text-muted-foreground mb-3">Food Allergies</p>
+                <div className="flex flex-wrap gap-2">
+                  {allergyOptions.length > 0 ? allergyOptions.map(option => (
+                    <button
+                      key={option.id}
+                      type="button"
+                      disabled={!isEditing}
+                      onClick={() => handleToggleOption('allergies', option.id)}
+                      className={`px-3 py-1.5 rounded-full border text-xs transition-all ${
+                        formData.allergies.includes(option.id)
+                          ? 'bg-destructive border-destructive text-destructive-foreground shadow-sm'
+                          : 'bg-muted/50 border-border text-muted-foreground hover:border-destructive/50 disabled:hover:border-border'
+                      }`}
+                    >
+                      {option.name}
+                    </button>
+                  )) : <p className="text-xs text-muted-foreground italic">Loading options...</p>}
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
-        {/* Physical Profile */}
-        <div className="bg-card rounded-xl border border-border p-6">
-          <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-            <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-            </svg>
-            Physical Profile
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div>
-              <label className="block text-sm font-medium mb-2">Age</label>
-              <input 
-                type="number"
-                name="age"
-                value={formData.age}
-                onChange={handleInputChange}
-                className="w-full px-4 py-2 bg-input-background border border-border rounded-lg focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                placeholder="Years"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium mb-2">Gender</label>
-              <select 
-                name="gender"
-                value={formData.gender}
-                onChange={handleInputChange}
-                className="w-full px-4 py-2 bg-input-background border border-border rounded-lg focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-              >
-                <option value="">Select Gender</option>
-                <option value="MALE">Male</option>
-                <option value="FEMALE">Female</option>
-                <option value="OTHER">Other</option>
-                <option value="PREFER_NOT_TO_SAY">Prefer not to say</option>
-              </select>
-            </div>
-            <div>
-              <label className="block text-sm font-medium mb-2">Height (cm)</label>
-              <input 
-                type="number"
-                step="0.1"
-                name="height_cm"
-                value={formData.height_cm}
-                onChange={handleInputChange}
-                className="w-full px-4 py-2 bg-input-background border border-border rounded-lg focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                placeholder="cm"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium mb-2">Weight (kg)</label>
-              <input 
-                type="number"
-                step="0.1"
-                name="weight_kg"
-                value={formData.weight_kg}
-                onChange={handleInputChange}
-                className="w-full px-4 py-2 bg-input-background border border-border rounded-lg focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                placeholder="kg"
-              />
-            </div>
-            <div className="sm:col-span-2">
-              <label className="block text-sm font-medium mb-2">Nutrition Goal</label>
-              <select 
-                name="nutrition_goal"
-                value={formData.nutrition_goal}
-                onChange={handleInputChange}
-                className="w-full px-4 py-2 bg-input-background border border-border rounded-lg focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-              >
-                <option value="MAINTENANCE">Maintenance</option>
-                <option value="WEIGHT_LOSS">Weight Loss</option>
-                <option value="WEIGHT_GAIN">Weight Gain</option>
-              </select>
-            </div>
+        {/* Right Sidebar */}
+        <div className="space-y-6">
+          
+          {/* Nutrition Goal */}
+          <Card className="bg-primary/5 border-primary/20">
+            <CardHeader className="pb-4">
+              <CardTitle className="flex items-center gap-2 text-base">
+                <Target className="h-4 w-4 text-primary" />Current Goal
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              {isEditing ? (
+                <select name="nutrition_goal" value={formData.nutrition_goal} onChange={handleInputChange} className="w-full h-9 px-3 text-sm border border-primary/30 rounded-md bg-white focus:ring-1 focus:ring-primary outline-none">
+                  <option value="MAINTENANCE">Maintenance</option>
+                  <option value="WEIGHT_LOSS">Weight Loss</option>
+                  <option value="WEIGHT_GAIN">Weight Gain</option>
+                </select>
+              ) : (
+                <div className="space-y-2">
+                  <p className="text-lg font-bold text-primary">
+                    {formData.nutrition_goal ? formData.nutrition_goal.replace(/_/g, ' ') : 'Maintenance'}
+                  </p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Based on this goal, our advisory system will suggest appropriate portions and alternatives.
+                  </p>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+
+          {/* Plan Info */}
+          <Card>
+            <CardHeader className="pb-4">
+              <CardTitle className="flex items-center gap-2 text-base">
+                <Crown className="h-4 w-4 text-secondary" />Subscription
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="flex items-center justify-between">
+                <span className="text-sm font-medium">{userData.tier} Tier</span>
+                {userData.tier !== 'Ultra' && (
+                  <Link to="/dashboard/subscription" className="text-xs text-primary hover:underline font-medium">Upgrade →</Link>
+                )}
+              </div>
+              <p className="text-xs text-muted-foreground">
+                {userData.tier === 'Ultra' 
+                  ? 'You have full access to all premium tracking and reporting features.'
+                  : 'Upgrade to Ultra for daily tracking, weekly reports, and premium support.'}
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Privacy & Advisory */}
+          <div className="p-5 bg-muted/30 rounded-xl border border-border space-y-3">
+            <h3 className="text-sm font-semibold flex items-center gap-2 text-foreground">
+              <ShieldCheck className="h-4 w-4 text-primary" /> Privacy & Safety
+            </h3>
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              Your profile data is stored securely in our private backend. We use it only for rule-based nutrition guidance.
+            </p>
+            <p className="text-[10px] text-muted-foreground italic leading-relaxed border-t border-border/50 pt-2">
+              Mazaj+ is an advisory system. Always consult a healthcare professional for medical or diagnostic advice.
+            </p>
           </div>
         </div>
-
-        {/* Health Conditions */}
-        <div className="bg-card rounded-xl border border-border p-6">
-          <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-            <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-            </svg>
-            Health Conditions
-          </h2>
-          <p className="text-sm text-muted-foreground mb-4">Select all that apply to you for safe nutrition guidance.</p>
-          <div className="flex flex-wrap gap-2">
-            {healthOptions.map(option => (
-              <button
-                key={option.id}
-                type="button"
-                onClick={() => handleToggleOption('health_conditions', option.id)}
-                className={`px-4 py-2 rounded-lg border text-sm transition-all ${
-                  formData.health_conditions.includes(option.id)
-                    ? 'bg-primary border-primary text-primary-foreground'
-                    : 'bg-input-background border-border text-foreground hover:border-primary/50'
-                }`}
-              >
-                {option.name}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Allergies */}
-        <div className="bg-card rounded-xl border border-border p-6">
-          <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-            <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-            </svg>
-            Allergies
-          </h2>
-          <p className="text-sm text-muted-foreground mb-4">Select any allergies to help us filter out unsafe food recommendations.</p>
-          <div className="flex flex-wrap gap-2">
-            {allergyOptions.map(option => (
-              <button
-                key={option.id}
-                type="button"
-                onClick={() => handleToggleOption('allergies', option.id)}
-                className={`px-4 py-2 rounded-lg border text-sm transition-all ${
-                  formData.allergies.includes(option.id)
-                    ? 'bg-destructive border-destructive text-destructive-foreground'
-                    : 'bg-input-background border-border text-foreground hover:border-destructive/50'
-                }`}
-              >
-                {option.name}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="flex justify-end pt-4">
-          <button
-            type="submit"
-            disabled={saving}
-            className="w-full sm:w-auto px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all shadow-sm disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-          >
-            {saving ? (
-              <>
-                <svg className="w-4 h-4 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                </svg>
-                Saving Changes...
-              </>
-            ) : (
-              'Save Profile'
-            )}
-          </button>
-        </div>
-      </form>
-
-      <div className="mt-12 p-6 bg-muted/30 rounded-xl border border-border">
-        <h3 className="text-sm font-medium mb-2 flex items-center gap-2">
-          <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          Advisory Information
-        </h3>
-        <p className="text-xs text-muted-foreground leading-relaxed">
-          The information provided here is used to tailor your nutrition decision support experience. Mazaj+ uses rule-based logic to identify potential risks based on your profile. However, this is not a substitute for professional medical advice. Always consult with a healthcare provider before making significant dietary changes.
-        </p>
       </div>
     </div>
   );
