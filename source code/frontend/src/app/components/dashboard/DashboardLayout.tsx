@@ -11,6 +11,7 @@ export type UserTier = 'Free' | 'Pro' | 'Ultra';
 
 export interface UserData {
   name: string;
+  email: string;
   tier: UserTier;
   avatar?: string;
 }
@@ -27,6 +28,7 @@ export function DashboardLayout() {
 
   const userData: UserData = {
     name: user?.full_name || 'User',
+    email: user?.email || '',
     tier: mappedTier,
   };
 

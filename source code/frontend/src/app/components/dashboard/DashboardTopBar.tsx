@@ -1,8 +1,11 @@
-import { Menu } from 'lucide-react';
+import { Menu, LogOut, User as UserIcon } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Avatar, AvatarFallback } from '../ui/avatar';
 import { Badge } from '../ui/badge';
 import { UserData } from './DashboardLayout';
+import { useState } from 'react';
+import { useAuth } from '../../../contexts/AuthContext';
+import { useNavigate, Link } from 'react-router';
 
 interface DashboardTopBarProps {
   userData: UserData;
@@ -10,6 +13,10 @@ interface DashboardTopBarProps {
 }
 
 export function DashboardTopBar({ userData, onMenuClick }: DashboardTopBarProps) {
+  const { logout } = useAuth();
+  const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const getInitials = (name: string) => {
     return name
       .split(' ')
@@ -30,6 +37,11 @@ export function DashboardTopBar({ userData, onMenuClick }: DashboardTopBarProps)
       default:
         return 'bg-muted text-muted-foreground';
     }
+  };
+
+  const handleLogout = async () => {
+    await logout();
+    navigate('/login');
   };
 
   return (
@@ -53,16 +65,46 @@ export function DashboardTopBar({ userData, onMenuClick }: DashboardTopBarProps)
           </div>
         </div>
 
-        {/* Right: Tier badge + Avatar */}
-        <div className="flex items-center gap-3">
+        {/* Right: Tier badge + Avatar with Dropdown */}
+        <div className="flex items-center gap-3 relative">
           <Badge className={getTierColor(userData.tier)} variant="secondary">
             {userData.tier}
           </Badge>
-          <Avatar className="h-9 w-9 cursor-pointer hover:ring-2 ring-ring transition-all">
-            <AvatarFallback className="bg-primary text-primary-foreground text-sm">
-              {getInitials(userData.name)}
-            </AvatarFallback>
-          </Avatar>
+          <div className="relative">
+            <Avatar 
+              className="h-9 w-9 cursor-pointer hover:ring-2 ring-ring transition-all"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              <AvatarFallback className="bg-primary text-primary-foreground text-sm">
+                {getInitials(userData.name)}
+              </AvatarFallback>
+            </Avatar>
+
+            {menuOpen && (
+              <>
+                <div className="fixed inset-0 z-10" onClick={() => setMenuOpen(false)} />
+                <div className="absolute right-0 mt-2 w-48 bg-card border border-border rounded-lg shadow-lg z-20 py-1">
+                  <div className="px-3 py-2 border-b border-border">
+                    <p className="text-sm font-medium text-foreground truncate">{userData.name}</p>
+                    <p className="text-xs text-muted-foreground truncate">{userData.email}</p>
+                  </div>
+                  <Link
+                    to="/dashboard/profile"
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-2 px-3 py-2 text-sm text-foreground hover:bg-muted transition-colors"
+                  >
+                    <UserIcon className="h-4 w-4" /> My Profile
+                  </Link>
+                  <button
+                    onClick={handleLogout}
+                    className="w-full flex items-center gap-2 px-3 py-2 text-sm text-destructive hover:bg-muted transition-colors"
+                  >
+                    <LogOut className="h-4 w-4" /> Logout
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </div>
     </header>

@@ -14,7 +14,7 @@ export function DashboardIntro({ userName }: DashboardIntroProps) {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <div>
             <h2 className="text-2xl font-semibold text-foreground mb-2">
-              Your Nutrition Support Dashboard
+              Welcome back, {userName}!
             </h2>
             <p className="text-muted-foreground max-w-2xl">
               Get personalized nutrition guidance, track your progress, and discover healthier choices. 
