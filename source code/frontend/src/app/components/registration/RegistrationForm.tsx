@@ -153,16 +153,16 @@ export function RegistrationForm() {
             </svg>
           </div>
           <h2 className="text-2xl font-semibold text-foreground mb-3">
-            Account created successfully
+            Account created successfully!
           </h2>
           <p className="text-muted-foreground mb-8">
-            Your account is ready. Please log in to complete your profile and start using Mazaj+
+            Complete your profile to get personalized nutrition plans.
           </p>
           <button 
-            onClick={() => navigate('/login')}
+            onClick={() => navigate('/onboarding')}
             className="w-full px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all shadow-sm hover:shadow-md"
           >
-            Go to Login
+            Continue to Setup
           </button>
         </div>
       </div>
@@ -176,7 +176,7 @@ export function RegistrationForm() {
           Create your account
         </h2>
         <p className="text-sm text-muted-foreground">
-          Start on Free. Upgrade later if you need more.
+          Start on Free. Upgrade anytime.
         </p>
       </div>
 
@@ -204,12 +204,7 @@ export function RegistrationForm() {
             placeholder="Enter your full name"
           />
           {touched.fullName && errors.fullName && (
-            <p className="mt-2 text-sm text-destructive flex items-center gap-1">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              {errors.fullName}
-            </p>
+            <p className="mt-2 text-sm text-destructive">{errors.fullName}</p>
           )}
         </div>
 
@@ -227,12 +222,7 @@ export function RegistrationForm() {
             placeholder="your@email.com"
           />
           {touched.email && errors.email && (
-            <p className="mt-2 text-sm text-destructive flex items-center gap-1">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              {errors.email}
-            </p>
+            <p className="mt-2 text-sm text-destructive">{errors.email}</p>
           )}
         </div>
 
@@ -250,12 +240,7 @@ export function RegistrationForm() {
             placeholder="At least 8 characters"
           />
           {touched.password && errors.password && (
-            <p className="mt-2 text-sm text-destructive flex items-center gap-1">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              {errors.password}
-            </p>
+            <p className="mt-2 text-sm text-destructive">{errors.password}</p>
           )}
         </div>
 
@@ -273,16 +258,11 @@ export function RegistrationForm() {
             placeholder="Re-enter your password"
           />
           {touched.confirmPassword && errors.confirmPassword && (
-            <p className="mt-2 text-sm text-destructive flex items-center gap-1">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              {errors.confirmPassword}
-            </p>
+            <p className="mt-2 text-sm text-destructive">{errors.confirmPassword}</p>
           )}
         </div>
 
-        <div className="pt-4">
+        <div className="pt-2">
           <div className="bg-accent/10 border border-accent/30 rounded-lg p-4">
             <label className="flex items-start gap-3 cursor-pointer">
               <input
@@ -292,16 +272,11 @@ export function RegistrationForm() {
                 className="mt-1 w-4 h-4 rounded border-border text-primary focus:ring-2 focus:ring-primary/20"
               />
               <span className="text-sm text-foreground leading-relaxed">
-                I understand that Mazaj+ provides <strong>advisory nutrition guidance only</strong>. This platform does not diagnose medical conditions, prescribe treatment, or replace the advice of qualified healthcare professionals.
+                I understand that Mazaj+ provides <strong>advisory nutrition guidance only</strong> and does not replace qualified healthcare professionals.
               </span>
             </label>
             {errors.advisoryAccepted && !formData.advisoryAccepted && (
-              <p className="mt-2 ml-7 text-sm text-destructive flex items-center gap-1">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                {errors.advisoryAccepted}
-              </p>
+              <p className="mt-2 ml-7 text-sm text-destructive">{errors.advisoryAccepted}</p>
             )}
           </div>
         </div>
@@ -309,7 +284,7 @@ export function RegistrationForm() {
         <button
           type="submit"
           disabled={!isFormValid || isSubmitting}
-          className="w-full px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-primary disabled:hover:shadow-sm"
+          className="w-full px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? 'Creating account...' : 'Create Free Account'}
         </button>

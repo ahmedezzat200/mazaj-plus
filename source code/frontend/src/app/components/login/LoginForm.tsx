@@ -192,9 +192,6 @@ export function LoginForm() {
           />
           {touched.email && errors.email && !credentialsError && (
             <p className="mt-2 text-sm text-destructive flex items-center gap-1">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
               {errors.email}
             </p>
           )}
@@ -224,7 +221,7 @@ export function LoginForm() {
             >
               {showPassword ? (
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
                 </svg>
               ) : (
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -236,9 +233,6 @@ export function LoginForm() {
           </div>
           {touched.password && errors.password && !credentialsError && (
             <p className="mt-2 text-sm text-destructive flex items-center gap-1">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
               {errors.password}
             </p>
           )}
@@ -253,7 +247,7 @@ export function LoginForm() {
         <button
           type="submit"
           disabled={!isFormValid || isSubmitting}
-          className="w-full px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-primary disabled:hover:shadow-sm"
+          className="w-full px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? (
             <span className="flex items-center justify-center gap-2">
@@ -275,19 +269,20 @@ export function LoginForm() {
         </p>
       </form>
 
+      <div className="mt-6 p-4 bg-muted/30 rounded-lg border border-border">
+        <p className="text-xs text-muted-foreground mb-2 font-medium">Demo accounts:</p>
+        <ul className="text-xs text-muted-foreground space-y-1">
+          <li>• user@example.com / password123 (Free)</li>
+          <li>• pro@example.com / password123 (Pro)</li>
+          <li>• ultra@example.com / password123 (Ultra)</li>
+          <li>• admin@mazaj.com / admin123 (Admin)</li>
+        </ul>
+      </div>
+
       <div className="mt-8 pt-6 border-t border-border">
         <p className="text-xs text-muted-foreground text-center leading-relaxed">
           Mazaj+ provides nutrition decision support only. This platform does not diagnose medical conditions or replace healthcare professionals.
         </p>
-      </div>
-
-      <div className="mt-6 p-4 bg-muted/30 rounded-lg border border-border">
-        <p className="text-xs text-muted-foreground mb-2 font-medium">Demo accounts:</p>
-        <ul className="text-xs text-muted-foreground space-y-1">
-          <li>• user@example.com / password123 (complete profile)</li>
-          <li>• newuser@example.com / password123 (incomplete onboarding)</li>
-          <li>• admin@mazaj.com / admin123 (admin role)</li>
-        </ul>
       </div>
     </div>
   );
