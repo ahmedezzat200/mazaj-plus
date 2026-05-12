@@ -7,7 +7,7 @@ import { PlanHistoryPanel } from './PlanHistoryPanel';
 import { PlanSupportCards } from './PlanSupportCards';
 import { DashboardAdvisoryBanner } from '../DashboardAdvisoryBanner';
 import { Button } from '../../ui/button';
-import { Plus, Loader2 } from 'lucide-react';
+import { Plus, Loader2, AlertCircle } from 'lucide-react';
 import { plansApi, BackendNutritionPlan } from '../../../../lib/api';
 
 export interface NutritionPlanData {
@@ -131,11 +131,35 @@ export function NutritionPlansPage() {
 
       {/* Main content */}
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-6 md:py-8">
+        {/* Header section */}
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+          <div>
+            <h1 className="text-2xl font-bold text-foreground">Nutrition Plans</h1>
+            <p className="text-muted-foreground mt-1">
+              Your personalized, safety-validated meal recommendations.
+            </p>
+          </div>
+          
+          {hasPlan && (
+            <Button
+              onClick={handleGenerate}
+              disabled={isGenerating}
+              className="md:w-auto"
+            >
+              {isGenerating ? (
+                <><Loader2 className="h-4 w-4 mr-2 animate-spin" />Generating…</>
+              ) : (
+                <><Plus className="h-4 w-4 mr-2" />New Plan</>
+              )}
+            </Button>
+          )}
+        </div>
 
         {/* Inline error notice */}
         {pageError && (
-          <div className="mb-6 px-4 py-3 rounded-xl bg-destructive/10 border border-destructive/20 text-sm text-destructive">
-            {pageError}
+          <div className="mb-8 p-4 rounded-xl bg-destructive/10 border border-destructive/20 flex items-center gap-3 text-sm text-destructive">
+            <AlertCircle className="h-5 w-5 flex-shrink-0" />
+            <span>{pageError}</span>
           </div>
         )}
 
@@ -151,22 +175,6 @@ export function NutritionPlansPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Main plan area */}
             <div className="lg:col-span-2 space-y-6">
-              {/* Generate new plan button when plans exist */}
-              <div className="flex justify-end">
-                <Button
-                  size="sm"
-                  onClick={handleGenerate}
-                  disabled={isGenerating}
-                  variant="outline"
-                >
-                  {isGenerating ? (
-                    <><Loader2 className="h-4 w-4 mr-2 animate-spin" />Generating…</>
-                  ) : (
-                    <><Plus className="h-4 w-4 mr-2" />Generate New Plan</>
-                  )}
-                </Button>
-              </div>
-
               <PlanCard plan={currentPlan} />
             </div>
 

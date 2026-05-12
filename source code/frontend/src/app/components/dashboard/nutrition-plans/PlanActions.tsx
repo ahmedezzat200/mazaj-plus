@@ -26,13 +26,6 @@ export function PlanActions() {
           </Link>
         </Button>
 
-        {/* Text action: Generate New Plan */}
-        <Button asChild variant="ghost" className="gap-2">
-          <Link to="/dashboard/nutrition-plans">
-            <Plus className="h-4 w-4" />
-            Generate New Plan
-          </Link>
-        </Button>
       </div>
     </div>
   );
