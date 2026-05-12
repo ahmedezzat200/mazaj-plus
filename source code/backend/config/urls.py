@@ -7,5 +7,6 @@ urlpatterns = [
     path('api/v1/', include('apps.profiles.urls')),
     path('api/v1/', include('apps.nutrition.urls')),
     path('api/v1/chat/', include('apps.chat.urls')),
+    path('api/v1/subscription/', include('apps.subscriptions.urls')),
     path('api/v1/', include('apps.common.urls')),
 ]

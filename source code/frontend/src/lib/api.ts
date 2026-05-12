@@ -465,6 +465,52 @@ export const profileApi = {
   },
 };
 
+// ─── Subscription API helpers ──────────────────────────────────────────────
+export interface SubscriptionData {
+  tier: string;
+  is_active: boolean;
+  features: Record<string, boolean>;
+  limits: Record<string, number | null>;
+}
+
+export const subscriptionApi = {
+  async getMe(): Promise<{
+    ok: boolean;
+    status: number;
+    data?: SubscriptionData;
+    error?: { code: string; message: string };
+  }> {
+    const res = await api.get('/subscription/me/');
+    const json = await res.json();
+    if (json.success) {
+      return { ok: true, status: res.status, data: json.data as SubscriptionData };
+    }
+    return {
+      ok: false,
+      status: res.status,
+      error: json.error ?? { code: 'UNKNOWN', message: 'An unexpected error occurred.' },
+    };
+  },
+
+  async upgrade(targetTier: string): Promise<{
+    ok: boolean;
+    status: number;
+    data?: SubscriptionData;
+    error?: { code: string; message: string };
+  }> {
+    const res = await api.post('/subscription/upgrade/', { target_tier: targetTier });
+    const json = await res.json();
+    if (json.success) {
+      return { ok: true, status: res.status, data: json.data as SubscriptionData };
+    }
+    return {
+      ok: false,
+      status: res.status,
+      error: json.error ?? { code: 'UNKNOWN', message: 'An unexpected error occurred.' },
+    };
+  },
+};
+
 // ─── Option Lookups API helpers ──────────────────────────────────────────────
 
 export const optionsApi = {

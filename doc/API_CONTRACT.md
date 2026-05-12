@@ -215,15 +215,27 @@ This document defines the backend API contract for the Mazaj+ nutrition decision
 
 ### Get Current Subscription
 - Module: `apps.subscriptions`
-- Status: **MISSING**
-- Suggested URL: `/api/v1/subscription/me/`
-- Note: Currently frontend mocks the subscription status from the User/Profile object.
+- Status: **READY**
+- Method: `GET`
+- URL: `/api/v1/subscription/me/`
+- Auth required: yes
+- Success response shape: `{ "success": true, "data": { "tier": "FREE", "is_active": true, "features": { ... }, "limits": { ... } } }`
+- Feature Matrix:
+    - **FREE**: core_chat, healthy_alternatives, hydration, daily_tips. (Usage caps active)
+    - **PRO**: All FREE + food_image_upload, inbody_upload. (Usage caps removed)
+    - **ULTRA**: All PRO + daily_tracking, weekly_reports, full_history.
+- Frontend page: `/dashboard/subscription`
 
 ### Upgrade Subscription
 - Module: `apps.subscriptions`
-- Status: **MISSING**
-- Suggested URL: `/api/v1/subscription/upgrade/`
-- Note: High priority for monetization demo.
+- Status: **READY**
+- Method: `POST`
+- URL: `/api/v1/subscription/upgrade/`
+- Auth required: yes
+- Request body: `{ "target_tier": "PRO" }` or `{ "target_tier": "ULTRA" }`
+- Success response shape: Same as GET /subscription/me/
+- Error response shape: `{ "success": false, "error": { "code": "INVALID_TIER", "message": "..." } }`
+- Important business rules: Symbolic upgrade for academic prototype. Updates user tier and activation metadata.
 
 ---
 
@@ -246,8 +258,8 @@ This document defines the backend API contract for the Mazaj+ nutrition decision
 ## 8. Uploads & Tracking
 
 ### Food Image Analysis
-- Status: **PLACEHOLDER**
-- Note: Frontend has a UI but `hasAccess = false` and uses `generateMockAnalysis`.
+- Status: **MOCK-DEPENDENT**
+- Note: Access is backend-controlled. Recognition workflow is placeholder. No nutrition estimate is generated (prevents fake macros/calories).
 
 ### InBody Upload
 - Status: **MISSING**
@@ -260,14 +272,6 @@ This document defines the backend API contract for the Mazaj+ nutrition decision
 ---
 
 ## Missing or Incomplete APIs Needed for New UI
-
-- **Endpoint**: `GET /api/v1/subscription/me/`
-- **Why**: Display detailed tier benefits and expiry.
-- **Priority**: High
-
-- **Endpoint**: `POST /api/v1/subscription/upgrade/`
-- **Why**: Allow users to simulated-upgrade to Pro/Ultra.
-- **Priority**: High
 
 - **Endpoint**: `GET /api/v1/admin/dashboard/`
 - **Why**: Show real system usage to admins.

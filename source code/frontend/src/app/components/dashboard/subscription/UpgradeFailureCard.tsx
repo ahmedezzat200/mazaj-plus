@@ -5,9 +5,10 @@ import { Button } from '../../ui/button';
 interface UpgradeFailureCardProps {
   onTryAgain: () => void;
   onReturnToDashboard: () => void;
+  errorMessage?: string | null;
 }
 
-export function UpgradeFailureCard({ onTryAgain, onReturnToDashboard }: UpgradeFailureCardProps) {
+export function UpgradeFailureCard({ onTryAgain, onReturnToDashboard, errorMessage }: UpgradeFailureCardProps) {
   return (
     <Card className="p-8 text-center border-2 border-destructive/20">
       <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-destructive/10 mb-4">
@@ -16,8 +17,7 @@ export function UpgradeFailureCard({ onTryAgain, onReturnToDashboard }: UpgradeF
 
       <h2 className="mb-2">Upgrade Could Not Be Completed</h2>
       <p className="text-muted-foreground mb-6">
-        We encountered an issue while processing your subscription upgrade.
-        Please try again or contact support if the problem persists.
+        {errorMessage || "We encountered an issue while processing your subscription upgrade. Please try again or contact support if the problem persists."}
       </p>
 
       <div className="bg-muted/50 rounded-lg p-4 mb-6 text-left max-w-md mx-auto">
@@ -29,12 +29,6 @@ export function UpgradeFailureCard({ onTryAgain, onReturnToDashboard }: UpgradeF
         </ul>
       </div>
 
-      <div className="p-3 bg-accent/10 border border-accent/20 rounded-lg mb-6">
-        <p className="text-sm text-accent-foreground">
-          <strong>Note:</strong> This is a simulated error for demonstration purposes.
-          In a production environment, specific error details would be provided.
-        </p>
-      </div>
 
       <div className="flex flex-col sm:flex-row gap-3 justify-center">
         <Button size="lg" onClick={onTryAgain}>

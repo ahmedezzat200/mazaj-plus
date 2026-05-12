@@ -1,7 +1,8 @@
 from django.utils import timezone
 from django.db import transaction
-from .models import UsageLimitCounter
+from .models import UsageLimitCounter, Subscription
 from apps.common.enums import Tier, SubscriptionStatus, FeatureKey
+from apps.users.services import log_audit
 
 def check_and_increment_usage(user, feature_key, limit=3):
     """
@@ -42,3 +43,60 @@ def check_and_increment_usage(user, feature_key, limit=3):
         counter.save()
     
     return True
+
+def get_subscription_data(user):
+    if not hasattr(user, 'subscription'):
+        # Auto-create FREE subscription if missing
+        sub = Subscription.objects.create(user=user, tier=Tier.FREE, status=SubscriptionStatus.ACTIVE)
+    else:
+        sub = user.subscription
+
+    features = {
+        "core_chat": True,
+        "healthy_alternatives": True,
+        "hydration": True,
+        "daily_tips": True,
+        "food_image_upload": sub.tier in [Tier.PRO, Tier.ULTRA],
+        "inbody_upload": sub.tier in [Tier.PRO, Tier.ULTRA],
+        "daily_tracking": sub.tier == Tier.ULTRA,
+        "weekly_reports": sub.tier == Tier.ULTRA,
+        "full_history": sub.tier == Tier.ULTRA,
+        "free_usage_caps_removed": sub.tier in [Tier.PRO, Tier.ULTRA]
+    }
+
+    limits = {
+        "chat_guidance_daily": 3 if sub.tier == Tier.FREE else None,
+        "healthy_alternatives_daily": 2 if sub.tier == Tier.FREE else None,
+        "nutrition_plan_weekly": 1 if sub.tier == Tier.FREE else None
+    }
+
+    return {
+        "tier": sub.tier,
+        "is_active": sub.status == SubscriptionStatus.ACTIVE,
+        "features": features,
+        "limits": limits
+    }
+
+def upgrade_subscription(user, target_tier):
+    if target_tier not in [Tier.PRO, Tier.ULTRA]:
+        raise ValueError("INVALID_TIER")
+
+    with transaction.atomic():
+        sub, created = Subscription.objects.get_or_create(
+            user=user,
+            defaults={'tier': target_tier, 'status': SubscriptionStatus.ACTIVE, 'activation_date': timezone.now()}
+        )
+        if not created:
+            sub.tier = target_tier
+            sub.status = SubscriptionStatus.ACTIVE
+            sub.activation_date = timezone.now()
+            sub.save()
+        
+        log_audit(
+            actor=user,
+            action=f"subscription_upgraded_{target_tier}",
+            resource_type="Subscription",
+            resource_id=str(sub.id)
+        )
+    
+    return get_subscription_data(user)

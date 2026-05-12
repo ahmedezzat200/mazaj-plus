@@ -16,7 +16,7 @@ This document outlines the strategy for replacing the current frontend UI with a
 | Nutrition Plans (`/dashboard/nutrition-plans`) | **PARTIAL** | `plans/generate/`, `plans/` | Refine | Medium |
 | Healthy Alternatives (`/dashboard/alternatives`) | **REAL** | `alternatives/search/` | Keep | Medium |
 | Hydration (`/dashboard/tracking`) | **REAL** | `hydration/target/`, `hydration/log/` | Keep | Medium |
-| Subscription (`/dashboard/subscription`) | **MOCK** | None | Replace with API | Medium |
+| Subscription (`/dashboard/subscription`) | **REAL** | `subscription/me/`, `subscription/upgrade/` | Connected to backend | High |
 | Food Image Analysis (`/dashboard/upload`) | **PLACEHOLDER** | None | Rebuild with API | Low |
 | InBody Upload | **MISSING** | None | Add if required | Low |
 | Daily Tracking Log | **MOCK** | None | Replace with API | Medium |
@@ -39,8 +39,8 @@ This document outlines the strategy for replacing the current frontend UI with a
 
 ### Food Image Analysis
 - **File**: `src/app/components/dashboard/upload/FoodImageAnalysisPage.tsx`
-- **Mock Data**: `generateMockAnalysis` function and `hasAccess = false`.
-- **Replacement**: Requires a new Vision-based analysis API.
+- **Mock Data**: Removed `generateMockAnalysis`. `hasAccess` is now backend-controlled.
+- **Replacement**: Currently shows a safe "Under Development" placeholder for authorized users to prevent fake nutrition output. Requires a new Vision-based analysis API for real functionality.
 - **Priority**: Low
 
 ### Daily Intake Log
@@ -70,7 +70,7 @@ This document outlines the strategy for replacing the current frontend UI with a
 2. **Dashboard Shell**: Connect summary widgets to real hydration/tip data.
 3. **Chat**: Stabilized and ready.
 4. **User Profile**: Stabilized and ready.
-5. **Subscription Status**: Replace mock tier display with backend-driven data from `/auth/me/`.
+5. **Subscription Status**: **DONE** - Backend-controlled tier and feature access implemented.
 
 ### Priority 2 — Decision Support Features
 1. **Nutrition Plans**: Ensure plan generation uses real user attributes (age, weight, goal).

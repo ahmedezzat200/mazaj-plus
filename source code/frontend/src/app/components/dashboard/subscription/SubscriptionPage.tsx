@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useOutletContext } from 'react-router';
 import { UserData, UserTier } from '../DashboardLayout';
 import { SubscriptionAdvisoryBanner } from './SubscriptionAdvisoryBanner';
@@ -8,34 +8,77 @@ import { FeatureComparison } from './FeatureComparison';
 import { UpgradeModal } from './UpgradeModal';
 import { UpgradeSuccessCard } from './UpgradeSuccessCard';
 import { UpgradeFailureCard } from './UpgradeFailureCard';
+import { subscriptionApi, SubscriptionData } from '../../../../lib/api';
+import { useAuth } from '../../../../contexts/AuthContext';
 
 type UpgradeState = 'idle' | 'confirming' | 'processing' | 'success' | 'failure';
 
 export function SubscriptionPage() {
   const { userData } = useOutletContext<{ userData: UserData }>();
+  const { refreshUser } = useAuth();
+
   const [upgradeState, setUpgradeState] = useState<UpgradeState>('idle');
   const [selectedPlan, setSelectedPlan] = useState<UserTier | null>(null);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [backendSub, setBackendSub] = useState<SubscriptionData | null>(null);
+
+  const currentTier =
+    (backendSub?.tier?.toLowerCase() as UserTier | undefined) || userData.tier;
+
+  useEffect(() => {
+    fetchSubscription();
+  }, []);
+
+  const fetchSubscription = async () => {
+    try {
+      const res = await subscriptionApi.getMe();
+
+      if (res.ok && res.data) {
+        setBackendSub(res.data);
+      } else {
+        setErrorMessage(res.error?.message || 'Unable to load subscription details.');
+      }
+    } catch {
+      setErrorMessage('Unable to reach the server. Please check your connection.');
+    }
+  };
 
   const handleUpgradeClick = (tier: UserTier) => {
     setSelectedPlan(tier);
     setUpgradeState('confirming');
+    setErrorMessage(null);
   };
 
   const handleConfirmUpgrade = async () => {
+    if (!selectedPlan) return;
+
     setUpgradeState('processing');
+    setErrorMessage(null);
 
-    // Simulate payment/activation
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    try {
+      const targetTier = selectedPlan.toUpperCase();
+      const res = await subscriptionApi.upgrade(targetTier);
 
-    // Simulate random success/failure for demo
-    const success = Math.random() > 0.2; // 80% success rate
-
-    setUpgradeState(success ? 'success' : 'failure');
+      if (res.ok) {
+        setUpgradeState('success');
+        await refreshUser();
+        await fetchSubscription();
+      } else {
+        setErrorMessage(
+          res.error?.message || 'Something went wrong while updating your subscription.'
+        );
+        setUpgradeState('failure');
+      }
+    } catch {
+      setErrorMessage('Unable to reach the server. Please check your connection.');
+      setUpgradeState('failure');
+    }
   };
 
   const handleCancelUpgrade = () => {
     setUpgradeState('idle');
     setSelectedPlan(null);
+    setErrorMessage(null);
   };
 
   const handleRetry = () => {
@@ -64,6 +107,7 @@ export function SubscriptionPage() {
       <div className="min-h-full">
         <div className="max-w-4xl mx-auto px-6 py-12">
           <UpgradeFailureCard
+            errorMessage={errorMessage}
             onTryAgain={handleRetry}
             onReturnToDashboard={handleReturnToDashboard}
           />
@@ -74,17 +118,13 @@ export function SubscriptionPage() {
 
   return (
     <div className="min-h-full">
-      {/* Advisory Banner */}
       <div className="max-w-7xl mx-auto px-6 pt-6">
         <SubscriptionAdvisoryBanner />
       </div>
 
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto px-6 py-6 space-y-8">
-        {/* Current Plan */}
-        <CurrentPlanCard currentTier={userData.tier} />
+        <CurrentPlanCard currentTier={currentTier} />
 
-        {/* Pricing Cards */}
         <div>
           <div className="text-center mb-8">
             <h2>Choose Your Plan</h2>
@@ -92,22 +132,21 @@ export function SubscriptionPage() {
               Select the plan that best supports your nutrition guidance needs
             </p>
           </div>
+
           <PricingCards
-            currentTier={userData.tier}
+            currentTier={currentTier}
             onUpgrade={handleUpgradeClick}
           />
         </div>
 
-        {/* Feature Comparison */}
         <FeatureComparison />
       </div>
 
-      {/* Upgrade Modal */}
       <UpgradeModal
         isOpen={upgradeState === 'confirming' || upgradeState === 'processing'}
         isProcessing={upgradeState === 'processing'}
         selectedPlan={selectedPlan}
-        currentTier={userData.tier}
+        currentTier={currentTier}
         onConfirm={handleConfirmUpgrade}
         onCancel={handleCancelUpgrade}
       />

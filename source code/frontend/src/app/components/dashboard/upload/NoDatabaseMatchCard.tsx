@@ -21,8 +21,8 @@ export function NoDatabaseMatchCard({ onAnalyzeAnother }: NoDatabaseMatchCardPro
               Nutrition Data Not Available
             </h3>
             <p className="text-sm text-muted-foreground max-w-md mx-auto">
-              The food was recognized, but nutrition data is not currently available in our database. 
-              We're constantly expanding our database to include more foods.
+              Nutritional data is not currently available for this food in the Mazaj+ database. 
+              We're constantly expanding our food database.
             </p>
           </div>
 

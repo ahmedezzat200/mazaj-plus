@@ -20,8 +20,8 @@ export function NoRecognitionCard({ onTryAgain }: NoRecognitionCardProps) {
               Could Not Identify Food
             </h3>
             <p className="text-sm text-muted-foreground max-w-md mx-auto">
-              Mazaj+ could not identify the food in this image. 
-              Please try uploading a clearer photo with the food clearly visible.
+              We could not identify a food item in this image. 
+              Please upload a clear food image with the food clearly visible.
             </p>
           </div>
 
