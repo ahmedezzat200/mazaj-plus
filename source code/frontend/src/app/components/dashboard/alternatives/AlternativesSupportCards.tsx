@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '../../ui/card';
 import { Badge } from '../../ui/badge';
-import { User, Crown } from 'lucide-react';
+import { Crown, Info } from 'lucide-react';
 import { UserData } from '../DashboardLayout';
 
 interface AlternativesSupportCardsProps {
@@ -8,37 +8,23 @@ interface AlternativesSupportCardsProps {
 }
 
 export function AlternativesSupportCards({ userData }: AlternativesSupportCardsProps) {
-  // Mock profile data
-  const profileData = {
-    age: 28,
-    gender: 'Female',
-    goal: 'Balanced nutrition',
-  };
-
   return (
     <div className="space-y-4">
-      {/* Profile Context */}
+      {/* Personalized Context Info */}
       <Card>
         <CardHeader className="pb-3">
           <div className="flex items-center gap-2">
-            <User className="h-4 w-4 text-primary" />
-            <CardTitle className="text-sm">Profile Context</CardTitle>
+            <Info className="h-4 w-4 text-primary" />
+            <CardTitle className="text-sm">Personalized Guidance</CardTitle>
           </div>
         </CardHeader>
-        <CardContent className="space-y-2">
-          <div className="flex justify-between text-sm">
-            <span className="text-muted-foreground">Age</span>
-            <span className="text-foreground font-medium">{profileData.age}</span>
-          </div>
-          <div className="flex justify-between text-sm">
-            <span className="text-muted-foreground">Gender</span>
-            <span className="text-foreground font-medium">{profileData.gender}</span>
-          </div>
-          <div className="flex justify-between text-sm">
-            <span className="text-muted-foreground">Goal</span>
-            <Badge variant="secondary" className="text-xs">
-              {profileData.goal}
-            </Badge>
+        <CardContent className="space-y-2 text-xs text-muted-foreground leading-relaxed">
+          <p>
+            Suggestions are tailored to your unique profile, goals, and safety requirements stored in the Mazaj+ backend.
+          </p>
+          <div className="flex items-center gap-1.5 text-primary font-medium">
+            <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+            <span>Profile-aware searching</span>
           </div>
         </CardContent>
       </Card>
@@ -69,11 +55,11 @@ export function AlternativesSupportCards({ userData }: AlternativesSupportCardsP
             {userData.tier === 'Free' && (
               <>
                 <div className="flex items-center gap-2 text-muted-foreground">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
-                  <span>5 alternative searches per day</span>
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  <span>10 alternative searches per day</span>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                   <span>Unlimited hydration tracking</span>
                 </div>
               </>
@@ -82,11 +68,11 @@ export function AlternativesSupportCards({ userData }: AlternativesSupportCardsP
             {(userData.tier === 'Pro' || userData.tier === 'Ultra') && (
               <>
                 <div className="flex items-center gap-2 text-muted-foreground">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                   <span>Unlimited alternative searches</span>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                   <span>Unlimited hydration tracking</span>
                 </div>
               </>

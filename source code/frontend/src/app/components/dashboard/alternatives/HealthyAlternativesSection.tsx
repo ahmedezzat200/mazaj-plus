@@ -17,7 +17,7 @@ interface HealthyAlternativesSectionProps {
   onClearResult: () => void;
 }
 
-const quickExamples = ['Fries', 'Sugary Snack', 'Soft Drink', 'Fast Food Meal'];
+const quickExamples = ['Soda', 'Cola', 'Chocolate', 'Fries', 'Burger'];
 
 export function HealthyAlternativesSection({
   onSearch,
@@ -64,19 +64,19 @@ export function HealthyAlternativesSection({
           {/* Search input */}
           <div className="flex gap-2">
             <Input
-              placeholder="Enter a food (e.g., Fries, Pizza, Soda)"
+              placeholder="Enter a food (e.g., Soda, Pizza, Fries)"
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              disabled={isLimitReached}
+              disabled={isLimitReached || isSearching}
               className="flex-1"
             />
-            <Button
-              onClick={handleSearch}
+            <Button 
+              onClick={handleSearch} 
               disabled={!searchInput.trim() || isLimitReached || isSearching}
             >
               {isSearching ? (
-                <><Loader2 className="h-4 w-4 mr-2 animate-spin" />Searching…</>
+                <><Loader2 className="h-4 w-4 mr-2 animate-spin" />Searching...</>
               ) : (
                 <><Search className="h-4 w-4 mr-2" />Search</>
               )}
@@ -95,6 +95,7 @@ export function HealthyAlternativesSection({
                     size="sm"
                     onClick={() => handleQuickExample(example)}
                     className="rounded-full"
+                    disabled={isSearching}
                   >
                     {example}
                   </Button>
