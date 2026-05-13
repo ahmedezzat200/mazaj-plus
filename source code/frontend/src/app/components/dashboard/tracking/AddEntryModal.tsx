@@ -42,13 +42,8 @@ export function AddEntryModal({ isOpen, onClose, selectedDate }: AddEntryModalPr
     }
 
     setIsSubmitting(true);
-
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
-    toast.success('Entry saved successfully');
+    toast('Food logging is still under development. No local entry was saved.');
     setIsSubmitting(false);
-    handleClose();
   };
 
   const handleClose = () => {

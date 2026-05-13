@@ -224,8 +224,54 @@ export function ChatPage() {
     }
   };
 
-  const handleQuickReply = (reply: string) => {
-    handleSendMessage(reply);
+  const handleQuickAction = (actionId: string, prompt: string) => {
+    // Features already supported by backend chat
+    const supportedActions = ['mood', 'alternatives', 'hydration', 'plan'];
+    
+    if (supportedActions.includes(actionId)) {
+      handleSendMessage(prompt);
+      return;
+    }
+
+    // Tier-aware features (Local placeholders for development)
+    const tier = userData.tier;
+    
+    // Add user message to UI for context
+    const userMessage: ChatMessage = {
+      id: `user-action-${Date.now()}`,
+      type: 'user',
+      content: prompt,
+      timestamp: new Date(),
+    };
+    setMessages((prev) => [...prev, userMessage]);
+
+    let placeholderReply = '';
+    
+    if (actionId === 'upload' || actionId === 'inbody') {
+      if (tier === 'Free') {
+        placeholderReply = `This feature requires a Pro or Ultra subscription. Upgrade your plan in the Subscription page to access advanced analysis tools.`;
+      } else {
+        placeholderReply = `This feature is included in your ${tier} plan! However, the ${actionId === 'upload' ? 'food image analysis' : 'InBody parsing'} workflow is still under development in this prototype. Stay tuned for updates!`;
+      }
+    } else if (actionId === 'tracking') {
+      if (tier !== 'Ultra') {
+        placeholderReply = `Detailed tracking and weekly progress reports require an Ultra subscription. Upgrade to access long-term nutrition trends.`;
+      } else {
+        placeholderReply = `Tracking and weekly reports are available for your Ultra tier! The detailed analytics dashboard is currently under development in this prototype.`;
+      }
+    }
+
+    if (placeholderReply) {
+      setTimeout(() => {
+        const assistantMessage: ChatMessage = {
+          id: `asst-placeholder-${Date.now()}`,
+          type: 'assistant',
+          content: placeholderReply,
+          timestamp: new Date(),
+        };
+        setMessages((prev) => [...prev, assistantMessage]);
+      }, 500);
+    }
   };
 
   const handleNewChat = () => {
@@ -253,12 +299,12 @@ export function ChatPage() {
         {/* Messages area */}
         <div className="flex-1 overflow-y-auto">
           {messages.length === 0 ? (
-            <ChatEmpty onQuickEmotion={handleQuickReply} />
+            <ChatEmpty onQuickAction={handleQuickAction} />
           ) : (
             <ChatMessages
               messages={messages}
               isLoading={isLoading}
-              onQuickReply={handleQuickReply}
+              onQuickReply={handleSendMessage}
               onNewChat={handleNewChat}
             />
           )}

@@ -6,7 +6,6 @@ import {
   Lightbulb,
   CreditCard,
   Activity,
-  Upload,
   LogOut,
   Shield,
   Leaf
@@ -55,11 +54,6 @@ const navItems: NavItem[] = [
     label: 'Activity Monitoring',
     icon: <Activity className="h-5 w-5" />,
     path: '/admin/activity',
-  },
-  {
-    label: 'Upload Review',
-    icon: <Upload className="h-5 w-5" />,
-    path: '/admin/uploads',
   },
 ];
 

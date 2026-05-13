@@ -4,7 +4,7 @@ import { useAuth } from '../../../contexts/AuthContext';
 import { DashboardSidebar } from './DashboardSidebar';
 import { DashboardTopBar } from './DashboardTopBar';
 import { DashboardTopBarCustom } from './DashboardTopBarCustom';
-import { X, RotateCcw, Droplet, Plus } from 'lucide-react';
+import { X, RotateCcw, Droplet } from 'lucide-react';
 import { Button } from '../ui/button';
 
 export type UserTier = 'Free' | 'Pro' | 'Ultra';
@@ -35,7 +35,7 @@ export function DashboardLayout() {
   // Determine if we need custom top bar
   const isChatPage = location.pathname === '/dashboard/chat';
   const isPlanPage = location.pathname === '/dashboard/plan-chat';
-  const isNutritionPlansPage = location.pathname === '/dashboard/nutrition-plans';
+  const isNutritionPlansPage = location.pathname === '/dashboard/nutrition-plans' || location.pathname === '/dashboard/plans';
   const isAlternativesPage = location.pathname === '/dashboard/alternatives';
   const isUploadPage = location.pathname === '/dashboard/upload';
   const isTrackingPage = location.pathname === '/dashboard/tracking';
@@ -53,12 +53,6 @@ export function DashboardLayout() {
 
   const handleUploadAnother = () => {
     window.location.reload();
-  };
-
-  const handleAddEntry = () => {
-    // This will be handled by the tracking page component
-    const event = new CustomEvent('openAddEntry');
-    window.dispatchEvent(event);
   };
 
   return (
@@ -98,8 +92,8 @@ export function DashboardLayout() {
           <DashboardTopBarCustom 
             userData={userData} 
             onMenuClick={() => setSidebarOpen(true)}
-            title="Chat Guidance"
-            subtitle="Emotion-Based Food Recommendations"
+            title="Mazaj+ Chat"
+            subtitle="Ask for mood-based food guidance, alternatives, hydration, or nutrition plans."
             action={
               <Button variant="outline" size="sm" onClick={handleNewChat}>
                 <RotateCcw className="h-4 w-4 mr-2" />
@@ -128,7 +122,7 @@ export function DashboardLayout() {
             subtitle="Review your personalized nutrition guidance"
             action={
               <Button size="sm" asChild>
-                <a href="/dashboard/plan-chat">
+                <a href="/dashboard/plans">
                   <RotateCcw className="h-4 w-4 mr-2" />
                   Generate New Plan
                 </a>
@@ -166,15 +160,7 @@ export function DashboardLayout() {
             userData={userData}
             onMenuClick={() => setSidebarOpen(true)}
             title="Tracking & Reports"
-            subtitle="Log your daily food intake and review weekly nutrition progress"
-            action={
-              userData.tier === 'Ultra' ? (
-                <Button size="sm" onClick={handleAddEntry}>
-                  <Plus className="h-4 w-4 mr-2" />
-                  Add Entry
-                </Button>
-              ) : undefined
-            }
+            subtitle="Tracking and reports are tier-gated and under development"
           />
         ) : (
           <DashboardTopBar userData={userData} onMenuClick={() => setSidebarOpen(true)} />

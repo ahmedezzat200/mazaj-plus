@@ -1,3 +1,5 @@
+import os
+
 from django.core.management.base import BaseCommand
 from apps.chat.agent.orchestrator import get_orchestrator
 
@@ -5,6 +7,8 @@ class Command(BaseCommand):
     help = 'Test Hybrid Gemini Chat Agent'
 
     def handle(self, *args, **options):
+        original_gemini_key = os.environ.pop("GEMINI_API_KEY", None)
+
         test_cases = [
             # GENERAL_CHAT
             ("hello", "GENERAL_CHAT"),
@@ -53,50 +57,54 @@ class Command(BaseCommand):
 
         self.stdout.write(self.style.SUCCESS("--- Hybrid Gemini Chat Agent Test ---"))
         
-        orchestrator = get_orchestrator()
-        total = len(test_cases)
-        passed = 0
-        failed = 0
-        
-        for msg, expected_mode in test_cases:
-            try:
-                action = orchestrator.plan(msg)
-                
-                # Use ascii safe representation for messages with unicode if needed
-                safe_msg = msg.encode('ascii', 'ignore').decode('ascii') if not all(ord(c) < 128 for c in msg) else msg
-                if not safe_msg.strip():
-                    safe_msg = "[Unicode/Arabic Message]"
+        try:
+            orchestrator = get_orchestrator()
+            total = len(test_cases)
+            passed = 0
+            failed = 0
+            
+            for msg, expected_mode in test_cases:
+                try:
+                    action = orchestrator.plan(msg)
+                    
+                    # Use ascii safe representation for messages with unicode if needed
+                    safe_msg = msg.encode('ascii', 'ignore').decode('ascii') if not all(ord(c) < 128 for c in msg) else msg
+                    if not safe_msg.strip():
+                        safe_msg = "[Unicode/Arabic Message]"
 
-                is_pass = (action.mode == expected_mode)
-                if is_pass:
-                    passed += 1
-                    status_text = self.style.SUCCESS("PASS")
-                else:
+                    is_pass = (action.mode == expected_mode)
+                    if is_pass:
+                        passed += 1
+                        status_text = self.style.SUCCESS("PASS")
+                    else:
+                        failed += 1
+                        status_text = self.style.ERROR(f"FAIL (Expected {expected_mode})")
+
+                    self.stdout.write("-" * 40)
+                    self.stdout.write(f"Input: {safe_msg}")
+                    self.stdout.write(f"Mode: {action.mode} | {status_text}")
+                    self.stdout.write(f"Action: {action.action}")
+                    self.stdout.write(f"Intent: {action.intent}")
+                    self.stdout.write(f"Tool: {action.tool}")
+                    self.stdout.write(f"Arguments: {action.arguments}")
+                    self.stdout.write(f"Confidence: {action.confidence:.2f}")
+                    self.stdout.write(f"Source: {action.source}")
+                    
+                    if action.mode == "GENERAL_CHAT" and action.direct_response:
+                        self.stdout.write(f"Response: {action.direct_response[:50]}...")
+                    
+                except Exception as e:
                     failed += 1
-                    status_text = self.style.ERROR(f"FAIL (Expected {expected_mode})")
+                    safe_msg = msg.encode('ascii', 'ignore').decode('ascii') if not all(ord(c) < 128 for c in msg) else msg
+                    self.stdout.write(self.style.ERROR(f"CRASH processing '{safe_msg}': {str(e)}"))
 
-                self.stdout.write("-" * 40)
-                self.stdout.write(f"Input: {safe_msg}")
-                self.stdout.write(f"Mode: {action.mode} | {status_text}")
-                self.stdout.write(f"Action: {action.action}")
-                self.stdout.write(f"Intent: {action.intent}")
-                self.stdout.write(f"Tool: {action.tool}")
-                self.stdout.write(f"Arguments: {action.arguments}")
-                self.stdout.write(f"Confidence: {action.confidence:.2f}")
-                self.stdout.write(f"Source: {action.source}")
-                
-                if action.mode == "GENERAL_CHAT" and action.direct_response:
-                    self.stdout.write(f"Response: {action.direct_response[:50]}...")
-                
-            except Exception as e:
-                failed += 1
-                safe_msg = msg.encode('ascii', 'ignore').decode('ascii') if not all(ord(c) < 128 for c in msg) else msg
-                self.stdout.write(self.style.ERROR(f"CRASH processing '{safe_msg}': {str(e)}"))
-
-        self.stdout.write("-" * 40)
-        self.stdout.write(f"TOTAL: {total}")
-        self.stdout.write(self.style.SUCCESS(f"PASSED: {passed}"))
-        if failed > 0:
-            self.stdout.write(self.style.ERROR(f"FAILED: {failed}"))
-        else:
-            self.stdout.write(self.style.SUCCESS("ALL TESTS PASSED!"))
+            self.stdout.write("-" * 40)
+            self.stdout.write(f"TOTAL: {total}")
+            self.stdout.write(self.style.SUCCESS(f"PASSED: {passed}"))
+            if failed > 0:
+                self.stdout.write(self.style.ERROR(f"FAILED: {failed}"))
+            else:
+                self.stdout.write(self.style.SUCCESS("ALL TESTS PASSED!"))
+        finally:
+            if original_gemini_key is not None:
+                os.environ["GEMINI_API_KEY"] = original_gemini_key

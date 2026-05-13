@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter, Navigate } from "react-router";
 import { LandingPage } from "./components/LandingPage";
 import { Login } from "./components/Login";
 import { Registration } from "./components/Registration";
@@ -6,7 +6,6 @@ import { OnboardingFlow } from "./components/onboarding/OnboardingFlow";
 import { DashboardLayout } from "./components/dashboard/DashboardLayout";
 import { Dashboard } from "./components/dashboard/Dashboard";
 import { ChatPage } from "./components/dashboard/chat/ChatPage";
-import { PlanChatPage } from "./components/dashboard/plan/PlanChatPage";
 import { NutritionPlansPage } from "./components/dashboard/nutrition-plans/NutritionPlansPage";
 import { AlternativesPage } from "./components/dashboard/alternatives/AlternativesPage";
 import { FoodImageAnalysisPage } from "./components/dashboard/upload/FoodImageAnalysisPage";
@@ -67,8 +66,12 @@ export const router = createBrowserRouter([
             element: <NutritionPlansPage />,
           },
           {
+            path: "plans",
+            element: <NutritionPlansPage />,
+          },
+          {
             path: "plan-chat",
-            element: <PlanChatPage />,
+            element: <Navigate to="/dashboard/plans" replace />,
           },
           {
             path: "alternatives",
@@ -132,7 +135,7 @@ export const router = createBrowserRouter([
           },
           {
             path: "uploads",
-            element: <div className="p-6">Upload Review (Coming Soon)</div>,
+            element: <div className="p-6">Private upload data is not available in the admin interface.</div>,
           },
         ]
       }

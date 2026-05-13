@@ -1,9 +1,9 @@
-import { UserPlus, TrendingUp, Upload, CreditCard, Clock } from 'lucide-react';
+import { UserPlus, TrendingUp, CreditCard, Clock } from 'lucide-react';
 import { Card } from '../ui/card';
 import { Badge } from '../ui/badge';
 
 interface Activity {
-  type: 'registration' | 'tier-change' | 'upload' | 'subscription';
+  type: 'registration' | 'tier-change' | 'subscription';
   description: string;
   time: string;
   icon: React.ReactNode;
@@ -26,12 +26,6 @@ const activities: Activity[] = [
     badge: 'Ultra',
   },
   {
-    type: 'upload',
-    description: 'Food image uploaded for analysis',
-    time: '23 minutes ago',
-    icon: <Upload className="h-4 w-4" />,
-  },
-  {
     type: 'subscription',
     description: 'Pro subscription renewed',
     time: '1 hour ago',
@@ -51,12 +45,6 @@ const activities: Activity[] = [
     time: '3 hours ago',
     icon: <TrendingUp className="h-4 w-4" />,
     badge: 'Pro',
-  },
-  {
-    type: 'upload',
-    description: 'InBody data uploaded',
-    time: '4 hours ago',
-    icon: <Upload className="h-4 w-4" />,
   },
 ];
 

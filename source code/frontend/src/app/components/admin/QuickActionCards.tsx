@@ -1,4 +1,4 @@
-import { Users, UtensilsCrossed, Upload, Lightbulb, CreditCard, ArrowRight } from 'lucide-react';
+import { Users, UtensilsCrossed, Lightbulb, CreditCard, ArrowRight } from 'lucide-react';
 import { Card } from '../ui/card';
 import { Button } from '../ui/button';
 
@@ -21,12 +21,6 @@ const quickActions: QuickAction[] = [
     description: 'Add, edit, and organize nutrition database entries',
     icon: <UtensilsCrossed className="h-6 w-6" />,
     href: '/admin/food-data',
-  },
-  {
-    title: 'Review Upload Activity',
-    description: 'Monitor food image and InBody upload submissions',
-    icon: <Upload className="h-6 w-6" />,
-    href: '/admin/uploads',
   },
   {
     title: 'Manage Daily Tips',

@@ -42,11 +42,7 @@ export function PlanResponseCard({ content, plan, planActions, onPlanAction, onN
 
               {/* Plan summary */}
               <div className="px-6 py-5 bg-card/30">
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  <div className="space-y-1">
-                    <p className="text-xs text-muted-foreground">Current BMI</p>
-                    <p className="text-2xl font-semibold text-foreground">{plan.bmi}</p>
-                  </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1">
                     <p className="text-xs text-muted-foreground">Daily Calorie Target</p>
                     <p className="text-2xl font-semibold text-foreground">{plan.dailyCalories}</p>

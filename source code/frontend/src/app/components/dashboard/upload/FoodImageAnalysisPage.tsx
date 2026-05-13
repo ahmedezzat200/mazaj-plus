@@ -12,8 +12,9 @@ import { LockedUploadState } from './LockedUploadState';
 import { UploadSupportCards } from './UploadSupportCards';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { Button } from '../../ui/button';
-import { Upload } from 'lucide-react';
-import { subscriptionApi, SubscriptionData } from '../../../../lib/api';
+import { Card, CardContent } from '../../ui/card';
+import { RefreshCw, Upload } from 'lucide-react';
+import { subscriptionApi } from '../../../../lib/api';
 
 export type UploadState =
   | 'idle'
