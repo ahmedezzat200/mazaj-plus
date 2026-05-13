@@ -17,7 +17,7 @@ interface ChatMessagesProps {
 
 export function ChatMessages({ messages, isLoading, onQuickReply, onNewChat }: ChatMessagesProps) {
   return (
-    <div className="max-w-4xl mx-auto px-4 md:px-6 py-6 space-y-6">
+    <div className="max-w-3xl mx-auto px-4 md:px-6 py-8 space-y-8">
       {messages.map((message) => (
         <div key={message.id}>
           {message.type === 'user' && (
