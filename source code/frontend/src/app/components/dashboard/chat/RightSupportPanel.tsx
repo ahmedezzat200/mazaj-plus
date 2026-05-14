@@ -3,50 +3,85 @@ import { Badge } from '../../ui/badge';
 import { UserData } from '../DashboardLayout';
 import { ShieldCheck, Crown, Info } from 'lucide-react';
 import { Link } from 'react-router';
+import { FoodImageUploadPanel } from './FoodImageUploadPanel';
+import { InBodyUploadPanel } from './InBodyUploadPanel';
+import { NutritionPlanActionCard } from './NutritionPlanActionCard';
 
 interface RightSupportPanelProps {
   userData: UserData;
+  featureFlags: {
+    food_image_upload: boolean;
+    inbody_upload: boolean;
+  };
+  onRequestPlan: (message: string) => void;
+  isChatLoading: boolean;
 }
 
-export function RightSupportPanel({ userData }: RightSupportPanelProps) {
+export function RightSupportPanel({
+  userData,
+  featureFlags,
+  onRequestPlan,
+  isChatLoading,
+}: RightSupportPanelProps) {
   return (
     <aside className="hidden lg:block w-80 border-l border-border bg-card overflow-y-auto">
-      <div className="p-6 space-y-4">
-        {/* How It Works / Safety Notice */}
-        <Card>
-          <CardHeader className="pb-3">
-            <div className="flex items-center gap-2">
-              <ShieldCheck className="h-4 w-4 text-primary" />
-              <CardTitle className="text-sm">How It Works</CardTitle>
-            </div>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="bg-muted/30 rounded-lg p-3 border border-border/50">
-              <p className="text-xs text-foreground leading-relaxed italic">
-                "Recommendations are generated using your stored health profile and safety rules. All suggestions are validated against your allergies and conditions privately on the server."
-              </p>
-            </div>
-            
-            <div className="space-y-2.5">
-              <div className="flex justify-between text-xs items-center">
-                <span className="text-muted-foreground">Safety Filtering</span>
-                <Badge variant="secondary" className="bg-green-500/10 text-green-500 border-green-500/20 text-[10px]">
-                  Active
-                </Badge>
-              </div>
-              <div className="flex justify-between text-xs items-center">
-                <span className="text-muted-foreground">Allergen Rules</span>
-                <span className="text-foreground font-medium text-[10px]">Applied</span>
-              </div>
-              <div className="flex justify-between text-xs items-center">
-                <span className="text-muted-foreground">Condition Logic</span>
-                <span className="text-foreground font-medium text-[10px]">Applied</span>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+      <div className="p-6 space-y-5">
 
-        {/* Tier Status */}
+        {/* ── Nutrition Plan Action ──────────────────────────── */}
+        <NutritionPlanActionCard
+          onRequestPlan={onRequestPlan}
+          isLoading={isChatLoading}
+        />
+
+        {/* ── Food Image Upload Panel ────────────────────────── */}
+        <div className="border-t border-border pt-5">
+          <FoodImageUploadPanel hasAccess={featureFlags.food_image_upload} />
+        </div>
+
+        {/* ── InBody Upload Panel ────────────────────────────── */}
+        <div className="border-t border-border pt-5">
+          <InBodyUploadPanel hasAccess={featureFlags.inbody_upload} />
+        </div>
+
+        {/* ── How It Works ──────────────────────────────────── */}
+        <div className="border-t border-border pt-5">
+          <Card>
+            <CardHeader className="pb-3">
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="h-4 w-4 text-primary" />
+                <CardTitle className="text-sm">How It Works</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="bg-muted/30 rounded-lg p-3 border border-border/50">
+                <p className="text-xs text-foreground leading-relaxed italic">
+                  "Recommendations are generated using your stored profile and backend safety rules. All suggestions are validated privately on the server before reaching you."
+                </p>
+              </div>
+              <div className="space-y-2.5">
+                <div className="flex justify-between text-xs items-center">
+                  <span className="text-muted-foreground">Safety Checks</span>
+                  <Badge
+                    variant="secondary"
+                    className="bg-green-500/10 text-green-500 border-green-500/20 text-[10px]"
+                  >
+                    Active
+                  </Badge>
+                </div>
+                <div className="flex justify-between text-xs items-center">
+                  <span className="text-muted-foreground">Profile rules</span>
+                  <span className="text-foreground font-medium text-[10px]">Handled securely</span>
+                </div>
+                <div className="flex justify-between text-xs items-center">
+                  <span className="text-muted-foreground">Recommendations</span>
+                  <span className="text-foreground font-medium text-[10px]">Backend-controlled</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* ── Tier Status ───────────────────────────────────── */}
         <Card>
           <CardHeader className="pb-3">
             <div className="flex items-center gap-2">
@@ -55,10 +90,10 @@ export function RightSupportPanel({ userData }: RightSupportPanelProps) {
             </div>
           </CardHeader>
           <CardContent className="space-y-3">
-            <Badge 
-              variant="secondary" 
+            <Badge
+              variant="secondary"
               className={
-                userData.tier === 'Ultra' 
+                userData.tier === 'Ultra'
                   ? 'bg-primary text-primary-foreground'
                   : userData.tier === 'Pro'
                   ? 'bg-secondary text-secondary-foreground'
@@ -67,46 +102,46 @@ export function RightSupportPanel({ userData }: RightSupportPanelProps) {
             >
               {userData.tier} Plan
             </Badge>
-            
             <div className="space-y-2 text-xs">
               {userData.tier === 'Free' && (
                 <>
                   <div className="flex items-start gap-2 text-muted-foreground">
                     <div className="w-1 h-1 rounded-full bg-primary mt-1.5 flex-shrink-0" />
-                    <span>Basic safety-validated chat guidance</span>
+                    <span>Safety-validated chat guidance</span>
                   </div>
                   <div className="flex items-start gap-2 text-muted-foreground">
                     <div className="w-1 h-1 rounded-full bg-primary mt-1.5 flex-shrink-0" />
-                    <span>View most recent nutrition plan</span>
+                    <span>Nutrition plan access via chat</span>
                   </div>
-                  <Link to="/dashboard/subscription" className="block mt-2 text-primary hover:underline font-medium">
-                    Upgrade for unlimited history →
+                  <Link
+                    to="/dashboard/subscription"
+                    className="block mt-2 text-primary hover:underline font-medium"
+                  >
+                    Upgrade for full access →
                   </Link>
                 </>
               )}
-
               {userData.tier === 'Pro' && (
                 <>
                   <div className="flex items-start gap-2 text-muted-foreground">
                     <div className="w-1 h-1 rounded-full bg-primary mt-1.5 flex-shrink-0" />
-                    <span>Unlimited chat messages enabled</span>
+                    <span>Food image upload available</span>
                   </div>
                   <div className="flex items-start gap-2 text-muted-foreground">
                     <div className="w-1 h-1 rounded-full bg-primary mt-1.5 flex-shrink-0" />
-                    <span>Full food image analysis access</span>
+                    <span>InBody upload available</span>
                   </div>
                 </>
               )}
-
               {userData.tier === 'Ultra' && (
                 <>
                   <div className="flex items-start gap-2 text-muted-foreground">
                     <div className="w-1 h-1 rounded-full bg-primary mt-1.5 flex-shrink-0" />
-                    <span>Full unlimited feature access</span>
+                    <span>Full feature access</span>
                   </div>
                   <div className="flex items-start gap-2 text-muted-foreground">
                     <div className="w-1 h-1 rounded-full bg-primary mt-1.5 flex-shrink-0" />
-                    <span>Weekly progress reports enabled</span>
+                    <span>Priority support</span>
                   </div>
                 </>
               )}
@@ -114,7 +149,7 @@ export function RightSupportPanel({ userData }: RightSupportPanelProps) {
           </CardContent>
         </Card>
 
-        {/* Advisory Card */}
+        {/* ── Advisory ──────────────────────────────────────── */}
         <Card className="bg-orange-500/5 border-orange-500/10">
           <CardHeader className="pb-2">
             <div className="flex items-center gap-2">
@@ -126,10 +161,11 @@ export function RightSupportPanel({ userData }: RightSupportPanelProps) {
           </CardHeader>
           <CardContent>
             <p className="text-[11px] text-foreground/70 leading-relaxed">
-              Advisory only — not medical advice. Always consult a healthcare professional before making major dietary changes or interpreting nutrition data.
+              Advisory decision-support only — not a substitute for medical advice. Consult a qualified healthcare professional before making dietary changes.
             </p>
           </CardContent>
         </Card>
+
       </div>
     </aside>
   );
