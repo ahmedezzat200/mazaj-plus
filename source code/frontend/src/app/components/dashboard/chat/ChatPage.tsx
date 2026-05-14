@@ -44,6 +44,8 @@ export interface FoodRecommendation {
 interface FeatureFlags {
   food_image_upload: boolean;
   inbody_upload: boolean;
+  daily_tracking: boolean;
+  weekly_reports: boolean;
 }
 
 const STORAGE_KEY = 'mazaj_current_chat_session_id';
@@ -51,6 +53,8 @@ const STORAGE_KEY = 'mazaj_current_chat_session_id';
 const DEFAULT_FLAGS: FeatureFlags = {
   food_image_upload: false,
   inbody_upload: false,
+  daily_tracking: false,
+  weekly_reports: false,
 };
 
 export function ChatPage() {
@@ -74,6 +78,8 @@ export function ChatPage() {
           setFeatureFlags({
             food_image_upload: !!res.data.features.food_image_upload,
             inbody_upload: !!res.data.features.inbody_upload,
+            daily_tracking: !!res.data.features.daily_tracking,
+            weekly_reports: !!res.data.features.weekly_reports,
           });
         }
         // On API error keep defaults (all locked) — safe fallback
@@ -259,7 +265,7 @@ export function ChatPage() {
       return;
     }
 
-    // upload/inbody/tracking — direct user to sidebar panels, no inline tier check
+    // upload/inbody — direct user to sidebar panels, no frontend AI or fake analysis
     if (actionId === 'upload' || actionId === 'inbody') {
       const userMsg: ChatMessage = {
         id: `user-action-${Date.now()}`,
@@ -274,6 +280,26 @@ export function ChatPage() {
           actionId === 'upload'
             ? 'Use the Food Image Analysis panel in the right sidebar to select a food photo.'
             : 'Use the InBody Upload panel in the right sidebar to select your report.',
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, userMsg, assistantMsg]);
+      return;
+    }
+
+    if (actionId === 'tracking') {
+      const userMsg: ChatMessage = {
+        id: `user-action-${Date.now()}`,
+        type: 'user',
+        content: prompt,
+        timestamp: new Date(),
+      };
+      const assistantMsg: ChatMessage = {
+        id: `asst-action-${Date.now()}`,
+        type: 'assistant',
+        content:
+          featureFlags.daily_tracking && featureFlags.weekly_reports
+            ? 'Tracking and reports are available for Ultra, but backend reporting is still under development. No fake charts or food logs are generated.'
+            : 'This feature requires Ultra.',
         timestamp: new Date(),
       };
       setMessages((prev) => [...prev, userMsg, assistantMsg]);

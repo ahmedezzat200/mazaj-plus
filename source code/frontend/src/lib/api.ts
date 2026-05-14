@@ -52,6 +52,21 @@ export const api = {
     });
   },
 
+  async postForm(endpoint: string, data: FormData, options: RequestInit = {}) {
+    const csrftoken = await ensureCsrfToken();
+    return fetch(`${API_BASE_URL}${endpoint}`, {
+      ...options,
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        ...(csrftoken ? { 'X-CSRFToken': csrftoken } : {}),
+        ...options.headers,
+      },
+      credentials: 'include',
+      body: data,
+    });
+  },
+
   async put(endpoint: string, data: any, options: RequestInit = {}) {
     const csrftoken = await ensureCsrfToken();
     return fetch(`${API_BASE_URL}${endpoint}`, {
@@ -105,8 +120,11 @@ function generateIdempotencyKey(): string {
   if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
     return crypto.randomUUID();
   }
-  // Fallback: timestamp + random string
-  return `${Date.now()}-${Math.random().toString(36).slice(2, 11)}`;
+  if (typeof crypto !== 'undefined' && typeof crypto.getRandomValues === 'function') {
+    const values = crypto.getRandomValues(new Uint32Array(2));
+    return `${Date.now()}-${values[0].toString(36)}-${values[1].toString(36)}`;
+  }
+  return `${Date.now()}-${performance.now().toString(36).replace('.', '')}`;
 }
 
 export interface BackendFoodItem {
@@ -412,6 +430,83 @@ export const plansApi = {
       status: res.status,
       error: json.error ?? { code: 'UNKNOWN', message: 'An unexpected error occurred.' },
     };
+  },
+};
+
+// Upload API helpers
+export interface FoodImageUploadSuccess {
+  success: true;
+  recognized_food: string;
+  matched_food: {
+    id: number;
+    name: string;
+    calories: number;
+    protein: number;
+    fat: number;
+    carbs: number;
+  };
+  source: string;
+  message: string;
+}
+
+export interface UploadFailure {
+  success: false;
+  code: string;
+  message: string;
+  recognized_food?: string;
+}
+
+export interface InBodyUploadSuccess {
+  success: true;
+  message: string;
+  status: string;
+}
+
+async function parseUploadResponse<TSuccess>(res: Response): Promise<{
+  ok: boolean;
+  status: number;
+  data?: TSuccess;
+  error?: UploadFailure;
+}> {
+  const json = await res.json();
+  if (json.success) {
+    return { ok: true, status: res.status, data: json as TSuccess };
+  }
+  return {
+    ok: false,
+    status: res.status,
+    error: {
+      success: false,
+      code: json.code ?? json.error?.code ?? 'UNKNOWN',
+      message: json.message ?? json.error?.message ?? 'Something went wrong. Please try again.',
+      recognized_food: json.recognized_food,
+    },
+  };
+}
+
+export const uploadsApi = {
+  async uploadFoodImage(file: File): Promise<{
+    ok: boolean;
+    status: number;
+    data?: FoodImageUploadSuccess;
+    error?: UploadFailure;
+  }> {
+    const formData = new FormData();
+    formData.append('image', file);
+    const res = await api.postForm('/uploads/food-image/', formData);
+    return parseUploadResponse<FoodImageUploadSuccess>(res);
+  },
+
+  async uploadInBody(file: File): Promise<{
+    ok: boolean;
+    status: number;
+    data?: InBodyUploadSuccess;
+    error?: UploadFailure;
+  }> {
+    const formData = new FormData();
+    formData.append('file', file);
+    const res = await api.postForm('/uploads/inbody/', formData);
+    return parseUploadResponse<InBodyUploadSuccess>(res);
   },
 };
 

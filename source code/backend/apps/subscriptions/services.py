@@ -51,17 +51,21 @@ def get_subscription_data(user):
     else:
         sub = user.subscription
 
+    is_active = sub.status == SubscriptionStatus.ACTIVE
+    is_pro_or_ultra = is_active and sub.tier in [Tier.PRO, Tier.ULTRA]
+    is_ultra = is_active and sub.tier == Tier.ULTRA
+
     features = {
         "core_chat": True,
         "healthy_alternatives": True,
         "hydration": True,
         "daily_tips": True,
-        "food_image_upload": sub.tier in [Tier.PRO, Tier.ULTRA],
-        "inbody_upload": sub.tier in [Tier.PRO, Tier.ULTRA],
-        "daily_tracking": sub.tier == Tier.ULTRA,
-        "weekly_reports": sub.tier == Tier.ULTRA,
-        "full_history": sub.tier == Tier.ULTRA,
-        "free_usage_caps_removed": sub.tier in [Tier.PRO, Tier.ULTRA]
+        "food_image_upload": is_pro_or_ultra,
+        "inbody_upload": is_pro_or_ultra,
+        "daily_tracking": is_ultra,
+        "weekly_reports": is_ultra,
+        "full_history": is_ultra,
+        "free_usage_caps_removed": is_pro_or_ultra
     }
 
     limits = {
@@ -72,7 +76,7 @@ def get_subscription_data(user):
 
     return {
         "tier": sub.tier,
-        "is_active": sub.status == SubscriptionStatus.ACTIVE,
+        "is_active": is_active,
         "features": features,
         "limits": limits
     }

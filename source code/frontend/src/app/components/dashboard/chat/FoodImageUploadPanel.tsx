@@ -1,19 +1,21 @@
-import { useState, useRef } from 'react';
-import { Camera, Upload, X } from 'lucide-react';
+import { useRef, useState } from 'react';
+import { Camera, Loader2, Upload, X } from 'lucide-react';
 import { Button } from '../../ui/button';
 import { FeatureAccessNotice } from './FeatureAccessNotice';
+import { FoodImageUploadSuccess, uploadsApi } from '../../../../lib/api';
 
 interface FoodImageUploadPanelProps {
   hasAccess: boolean;
 }
 
-// Only two states: idle (no file chosen yet) or selected (file chosen locally)
-type PanelState = 'idle' | 'selected';
+type PanelState = 'idle' | 'selected' | 'uploading' | 'result' | 'error';
 
 export function FoodImageUploadPanel({ hasAccess }: FoodImageUploadPanelProps) {
   const [panelState, setPanelState] = useState<PanelState>('idle');
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
-  const [fileError, setFileError] = useState<string | null>(null);
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [message, setMessage] = useState<string | null>(null);
+  const [result, setResult] = useState<FoodImageUploadSuccess | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   if (!hasAccess) {
@@ -28,34 +30,64 @@ export function FoodImageUploadPanel({ hasAccess }: FoodImageUploadPanelProps) {
     );
   }
 
+  const resetPreview = () => {
+    if (previewUrl) URL.revokeObjectURL(previewUrl);
+    setPreviewUrl(null);
+    setSelectedFile(null);
+  };
+
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
+    e.target.value = '';
     if (!file) return;
 
     const validTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp'];
     if (!validTypes.includes(file.type)) {
-      setFileError('Unsupported format. Use JPG, PNG, or WebP.');
+      setMessage('Unsupported format. Use JPG, PNG, or WebP.');
+      setPanelState('error');
       return;
     }
-    const maxSize = 10 * 1024 * 1024;
-    if (file.size > maxSize) {
-      setFileError('File too large. Maximum size is 10MB.');
+    if (file.size > 10 * 1024 * 1024) {
+      setMessage('File too large. Maximum size is 10MB.');
+      setPanelState('error');
       return;
     }
 
-    setFileError(null);
-    if (previewUrl) URL.revokeObjectURL(previewUrl);
-    const url = URL.createObjectURL(file);
-    setPreviewUrl(url);
+    resetPreview();
+    setResult(null);
+    setMessage(null);
+    setSelectedFile(file);
+    setPreviewUrl(URL.createObjectURL(file));
     setPanelState('selected');
-    e.target.value = '';
+  };
+
+  const handleUpload = async () => {
+    if (!selectedFile) return;
+
+    setPanelState('uploading');
+    setMessage(null);
+    setResult(null);
+
+    try {
+      const response = await uploadsApi.uploadFoodImage(selectedFile);
+      if (response.ok && response.data) {
+        setResult(response.data);
+        setPanelState('result');
+        return;
+      }
+      setMessage(response.error?.message || 'Something went wrong. Please try again.');
+      setPanelState('error');
+    } catch {
+      setMessage('Unable to reach the server. Please check your connection.');
+      setPanelState('error');
+    }
   };
 
   const handleReset = () => {
-    if (previewUrl) URL.revokeObjectURL(previewUrl);
-    setPreviewUrl(null);
+    resetPreview();
+    setResult(null);
+    setMessage(null);
     setPanelState('idle');
-    setFileError(null);
   };
 
   return (
@@ -68,17 +100,9 @@ export function FoodImageUploadPanel({ hasAccess }: FoodImageUploadPanelProps) {
       {panelState === 'idle' && (
         <div className="rounded-lg border border-dashed border-border bg-muted/20 p-4 text-center space-y-3">
           <p className="text-xs text-muted-foreground leading-relaxed">
-            Select a food photo to preview it. Recognition workflow is under development — no file is uploaded and no nutrition estimates are generated yet.
+            Upload a food photo. Recognition is handled by the backend, and nutrition values come only from the Mazaj+ database.
           </p>
-          {fileError && (
-            <p className="text-xs text-destructive">{fileError}</p>
-          )}
-          <Button
-            variant="outline"
-            size="sm"
-            className="gap-2 w-full"
-            onClick={() => inputRef.current?.click()}
-          >
+          <Button variant="outline" size="sm" className="gap-2 w-full" onClick={() => inputRef.current?.click()}>
             <Upload className="h-3.5 w-3.5" />
             Choose Image
           </Button>
@@ -92,38 +116,48 @@ export function FoodImageUploadPanel({ hasAccess }: FoodImageUploadPanelProps) {
         </div>
       )}
 
-      {panelState === 'selected' && previewUrl && (
+      {(panelState === 'selected' || panelState === 'uploading') && previewUrl && (
         <div className="space-y-3">
           <div className="relative rounded-lg overflow-hidden border border-border">
-            <img
-              src={previewUrl}
-              alt="Selected food image preview"
-              className="w-full h-28 object-cover"
-            />
+            <img src={previewUrl} alt="Selected food image preview" className="w-full h-28 object-cover" />
             <button
               onClick={handleReset}
               className="absolute top-1.5 right-1.5 rounded-full bg-black/60 p-0.5 hover:bg-black/80 transition-colors"
               aria-label="Remove selected image"
+              disabled={panelState === 'uploading'}
             >
               <X className="h-3 w-3 text-white" />
             </button>
           </div>
+          <Button size="sm" className="gap-2 w-full" onClick={handleUpload} disabled={panelState === 'uploading'}>
+            {panelState === 'uploading' ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Upload className="h-3.5 w-3.5" />}
+            {panelState === 'uploading' ? 'Analyzing...' : 'Analyze with Backend'}
+          </Button>
+        </div>
+      )}
 
-          {/* Safe placeholder — no backend call, no fake analysis */}
-          <div className="rounded-lg border border-amber-500/20 bg-amber-500/5 p-3 space-y-1">
-            <p className="text-xs text-foreground leading-relaxed">
-              <strong>Image selected.</strong> Food image recognition workflow is under development. No file is uploaded and no nutrition estimate is generated yet.
-            </p>
+      {panelState === 'result' && result && (
+        <div className="rounded-lg border border-primary/20 bg-primary/5 p-3 space-y-2">
+          <p className="text-xs font-semibold text-foreground">{result.matched_food.name}</p>
+          <p className="text-[11px] text-muted-foreground">Recognized: {result.recognized_food}</p>
+          <div className="grid grid-cols-2 gap-2 text-[11px]">
+            <span>Calories: {result.matched_food.calories}</span>
+            <span>Protein: {result.matched_food.protein}g</span>
+            <span>Carbs: {result.matched_food.carbs}g</span>
+            <span>Fat: {result.matched_food.fat}g</span>
           </div>
+          <p className="text-[11px] text-muted-foreground">{result.message}</p>
+          <Button variant="outline" size="sm" className="w-full" onClick={handleReset}>
+            Analyze Another Image
+          </Button>
+        </div>
+      )}
 
-          <Button
-            variant="outline"
-            size="sm"
-            className="gap-2 w-full"
-            onClick={handleReset}
-          >
-            <Upload className="h-3.5 w-3.5" />
-            Choose Another Image
+      {panelState === 'error' && message && (
+        <div className="rounded-lg border border-destructive/20 bg-destructive/5 p-3 space-y-3">
+          <p className="text-xs text-destructive leading-relaxed">{message}</p>
+          <Button variant="outline" size="sm" className="w-full" onClick={handleReset}>
+            Try Again
           </Button>
         </div>
       )}

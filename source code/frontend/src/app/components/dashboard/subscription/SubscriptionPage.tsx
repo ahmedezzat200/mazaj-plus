@@ -13,6 +13,13 @@ import { useAuth } from '../../../../contexts/AuthContext';
 
 type UpgradeState = 'idle' | 'confirming' | 'processing' | 'success' | 'failure';
 
+function normalizeTier(tier?: string): UserTier {
+  const normalized = tier?.toUpperCase();
+  if (normalized === 'PRO') return 'Pro';
+  if (normalized === 'ULTRA') return 'Ultra';
+  return 'Free';
+}
+
 export function SubscriptionPage() {
   const { userData } = useOutletContext<{ userData: UserData }>();
   const { refreshUser } = useAuth();
@@ -22,8 +29,7 @@ export function SubscriptionPage() {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [backendSub, setBackendSub] = useState<SubscriptionData | null>(null);
 
-  const currentTier =
-    (backendSub?.tier?.toLowerCase() as UserTier | undefined) || userData.tier;
+  const currentTier = backendSub ? normalizeTier(backendSub.tier) : userData.tier;
 
   useEffect(() => {
     fetchSubscription();

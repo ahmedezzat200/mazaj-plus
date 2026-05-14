@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { useOutletContext } from 'react-router';
 import { UserData } from '../DashboardLayout';
 import { UploadAdvisoryBanner } from './UploadAdvisoryBanner';
@@ -14,7 +14,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs';
 import { Button } from '../../ui/button';
 import { Card, CardContent } from '../../ui/card';
 import { RefreshCw, Upload } from 'lucide-react';
-import { subscriptionApi } from '../../../../lib/api';
+import { subscriptionApi, uploadsApi } from '../../../../lib/api';
 
 export type UploadState =
   | 'idle'
@@ -31,6 +31,7 @@ export interface NutritionAnalysis {
   foodName: string;
   calories: number;
   protein: number;
+  carbs: number;
   fat: number;
   servingNote: string;
 }
@@ -50,6 +51,10 @@ export function FoodImageAnalysisPage() {
   const [hasAccess, setHasAccess] = useState(false);
   const [hasInBodyAccess, setHasInBodyAccess] = useState(false);
   const [fetchError, setFetchError] = useState(false);
+  const [inBodyStatus, setInBodyStatus] = useState<string | null>(null);
+  const [inBodyError, setInBodyError] = useState<string | null>(null);
+  const [isInBodyUploading, setIsInBodyUploading] = useState(false);
+  const inBodyInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     const checkAccess = async () => {
@@ -71,7 +76,7 @@ export function FoodImageAnalysisPage() {
 
   const handleImageUpload = (file: File) => {
     // Validate file
-    const validTypes = ['image/jpeg', 'image/jpg', 'image/png'];
+    const validTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp'];
     if (!validTypes.includes(file.type)) {
       setErrorMessage('Unsupported format. Please upload a JPG or PNG image.');
       setUploadState('error');
@@ -92,16 +97,68 @@ export function FoodImageAnalysisPage() {
     setErrorMessage('');
   };
 
-  const handleAnalyze = () => {
+  const handleAnalyze = async () => {
     if (!uploadedImage) return;
 
     setUploadState('processing');
+    setErrorMessage('');
 
-    // Simulate processing delay only
-    setTimeout(() => {
-      // Always show "Under Development" state as real recognition backend is not yet implemented
-      setUploadState('under-development');
-    }, 3000);
+    try {
+      const result = await uploadsApi.uploadFoodImage(uploadedImage.file);
+      if (result.ok && result.data) {
+        setAnalysisResult({
+          foodName: result.data.matched_food.name,
+          calories: result.data.matched_food.calories,
+          protein: result.data.matched_food.protein,
+          carbs: result.data.matched_food.carbs,
+          fat: result.data.matched_food.fat,
+          servingNote: result.data.message,
+        });
+        setUploadState('result');
+      } else if (result.error?.code === 'NO_FOOD_DETECTED') {
+        setUploadState('no-recognition');
+      } else if (result.error?.code === 'NO_DATABASE_MATCH') {
+        setUploadState('no-database-match');
+      } else {
+        setErrorMessage(result.error?.message || 'Something went wrong. Please try again.');
+        setUploadState('error');
+      }
+    } catch {
+      setErrorMessage('Unable to reach the server. Please check your connection.');
+      setUploadState('error');
+    }
+  };
+
+  const handleInBodyFile = async (file: File | undefined) => {
+    if (!file) return;
+
+    const validTypes = ['application/pdf', 'image/jpeg', 'image/jpg', 'image/png'];
+    if (!validTypes.includes(file.type)) {
+      setInBodyError('Unsupported format. Please upload a PDF, JPG, or PNG file.');
+      return;
+    }
+    if (file.size > 20 * 1024 * 1024) {
+      setInBodyError('File too large. Maximum size is 20MB.');
+      return;
+    }
+
+    setIsInBodyUploading(true);
+    setInBodyError(null);
+    setInBodyStatus(null);
+
+    try {
+      const result = await uploadsApi.uploadInBody(file);
+      if (result.ok && result.data) {
+        setInBodyStatus(result.data.message);
+      } else {
+        setInBodyError(result.error?.message || 'Something went wrong. Please try again.');
+      }
+    } catch {
+      setInBodyError('Unable to reach the server. Please check your connection.');
+    } finally {
+      setIsInBodyUploading(false);
+      if (inBodyInputRef.current) inBodyInputRef.current.value = '';
+    }
   };
 
   const handleReset = () => {
@@ -182,7 +239,7 @@ export function FoodImageAnalysisPage() {
                         <div className="bg-primary/5 border border-primary/20 rounded-xl p-5 mb-2">
                           <p className="text-sm text-foreground flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                            <strong>Pro/Ultra Benefit:</strong> Food image upload is available for your tier, but the full AI vision workflow is still under development for this academic prototype.
+                            <strong>Pro/Ultra Benefit:</strong> Food image recognition is backend-controlled. Nutrition values come only from the Mazaj+ database.
                           </p>
                         </div>
                         
@@ -205,7 +262,6 @@ export function FoodImageAnalysisPage() {
                           <AnalysisResultCard
                             result={analysisResult}
                             onAnalyzeAnother={handleReset}
-                            userTier={userData.tier}
                           />
                         )}
 
@@ -275,13 +331,34 @@ export function FoodImageAnalysisPage() {
                         </div>
                         <h2 className="text-2xl font-semibold">InBody Data Integration</h2>
                         <p className="text-muted-foreground">
-                          {userData.tier} Benefit: InBody scan upload is available for your tier, but the parsing workflow is still under development for this academic prototype.
+                          {userData.tier} Benefit: InBody upload is validated by the backend. Automated parsing is still under development.
                         </p>
                         <div className="pt-6">
-                          <Button disabled variant="outline">
-                            Coming Soon
+                          <Button
+                            variant="outline"
+                            disabled={isInBodyUploading}
+                            onClick={() => inBodyInputRef.current?.click()}
+                          >
+                            {isInBodyUploading ? 'Uploading...' : 'Choose InBody File'}
                           </Button>
+                          <input
+                            ref={inBodyInputRef}
+                            type="file"
+                            accept="application/pdf,image/jpeg,image/jpg,image/png"
+                            className="hidden"
+                            onChange={(event) => handleInBodyFile(event.target.files?.[0])}
+                          />
                         </div>
+                        {inBodyStatus && (
+                          <div className="bg-primary/5 border border-primary/20 rounded-xl p-4 text-sm text-foreground">
+                            {inBodyStatus}
+                          </div>
+                        )}
+                        {inBodyError && (
+                          <div className="bg-destructive/10 border border-destructive/20 rounded-xl p-4 text-sm text-destructive">
+                            {inBodyError}
+                          </div>
+                        )}
                       </div>
                     </div>
                   )}

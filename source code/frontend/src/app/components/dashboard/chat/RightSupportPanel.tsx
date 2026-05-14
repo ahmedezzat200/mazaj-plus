@@ -24,7 +24,7 @@ export function RightSupportPanel({
   isChatLoading,
 }: RightSupportPanelProps) {
   return (
-    <aside className="hidden lg:block w-80 border-l border-border bg-card overflow-y-auto">
+  <aside className="w-full lg:w-80 border-t lg:border-t-0 lg:border-l border-border bg-card overflow-y-auto">
       <div className="p-6 space-y-5">
 
         {/* ── Nutrition Plan Action ──────────────────────────── */}
