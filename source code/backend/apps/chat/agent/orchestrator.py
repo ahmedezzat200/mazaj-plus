@@ -44,7 +44,7 @@ class HybridAgentOrchestrator:
             action = "answer_direct"
             direct_response = "You're welcome! Let me know if you need anything else."
         elif intent == "help":
-            mode = "GENERAL_CHAT"
+            mode = "BACKEND_TOOL"
             action = "call_tool" 
             tool = "help"
         elif intent == "out_of_scope":

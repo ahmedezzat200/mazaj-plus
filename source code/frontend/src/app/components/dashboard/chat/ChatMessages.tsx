@@ -3,6 +3,7 @@ import { UserMessage } from './UserMessage';
 import { AssistantMessage } from './AssistantMessage';
 import { ClarificationCard } from './ClarificationCard';
 import { RecommendationCard } from './RecommendationCard';
+import { UploadResultCard } from './UploadResultCard';
 import { LimitReachedCard } from './LimitReachedCard';
 import { NoSafeRecommendationCard } from './NoSafeRecommendationCard';
 import { AmbiguousFallbackCard } from './AmbiguousFallbackCard';
@@ -21,7 +22,11 @@ export function ChatMessages({ messages, isLoading, onQuickReply, onNewChat }: C
       {messages.map((message) => (
         <div key={message.id}>
           {message.type === 'user' && (
-            <UserMessage content={message.content} timestamp={message.timestamp} />
+            <UserMessage
+              content={message.content}
+              timestamp={message.timestamp}
+              attachment={message.attachment}
+            />
           )}
           
           {message.type === 'assistant' && (
@@ -43,6 +48,14 @@ export function ChatMessages({ messages, isLoading, onQuickReply, onNewChat }: C
               warnings={message.warnings || []}
               suggestions={message.suggestions || []}
               onSuggestion={onQuickReply}
+            />
+          )}
+
+          {message.type === 'upload-result' && (
+            <UploadResultCard
+              content={message.content}
+              timestamp={message.timestamp}
+              foods={message.foods || []}
             />
           )}
           

@@ -9,6 +9,7 @@ import { RightSupportPanel } from './RightSupportPanel';
 import {
   chatApi,
   subscriptionApi,
+  uploadsApi,
   BackendFoodItem,
   BackendWarning,
   BackendRecommendation,
@@ -21,7 +22,8 @@ export type ChatMessageType =
   | 'recommendation'
   | 'limit-reached'
   | 'no-safe-recommendation'
-  | 'ambiguous-fallback';
+  | 'ambiguous-fallback'
+  | 'upload-result';
 
 export interface ChatMessage {
   id: string;
@@ -32,6 +34,10 @@ export interface ChatMessage {
   warnings?: BackendWarning[];
   quickReplies?: string[];
   suggestions?: string[];
+  attachment?: {
+    name: string;
+    type: 'food_image' | 'inbody';
+  };
 }
 
 // Kept for compatibility with any non-chat imports that reference this type.
@@ -258,6 +264,104 @@ export function ChatPage() {
     }
   };
 
+  const handleFileUpload = async (file: File, type: 'food_image' | 'inbody') => {
+    if (isLoading) return;
+
+    // Check feature access
+    if (type === 'food_image' && !featureFlags.food_image_upload) {
+      const lockMessage: ChatMessage = {
+        id: `lock-${Date.now()}`,
+        type: 'assistant',
+        content: 'Food image upload is a Pro/Ultra benefit. Upgrade your plan to use this feature.',
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, lockMessage]);
+      return;
+    }
+
+    if (type === 'inbody' && !featureFlags.inbody_upload) {
+      const lockMessage: ChatMessage = {
+        id: `lock-${Date.now()}`,
+        type: 'assistant',
+        content: 'InBody report upload is a Pro/Ultra benefit. Upgrade your plan to use this feature.',
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, lockMessage]);
+      return;
+    }
+
+    // Add user message with attachment info
+    const userMessage: ChatMessage = {
+      id: `user-upload-${Date.now()}`,
+      type: 'user',
+      content: `Uploaded ${type === 'food_image' ? 'food image' : 'InBody report'}: ${file.name}`,
+      timestamp: new Date(),
+      attachment: { name: file.name, type },
+    };
+    setMessages((prev) => [...prev, userMessage]);
+    setIsLoading(true);
+    setChatError(null);
+
+    try {
+      if (type === 'food_image') {
+        const result = await uploadsApi.uploadFoodImage(file);
+        if (result.ok && result.data) {
+          const { matched_food, message } = result.data;
+          const assistantMessage: ChatMessage = {
+            id: `asst-upload-${Date.now()}`,
+            type: 'upload-result',
+            content: message,
+            timestamp: new Date(),
+            foods: [
+              {
+                name: matched_food.name,
+                calories: String(matched_food.calories),
+                protein_g: String(matched_food.protein),
+                fat_g: String(matched_food.fat),
+                carbs_g: String(matched_food.carbs),
+                reason: 'Retrieved from Mazaj+ database.',
+              },
+            ],
+          };
+          setMessages((prev) => [...prev, assistantMessage]);
+        } else {
+          const errorMessage = result.error?.message || 'Something went wrong while analyzing the image.';
+          const errorMsg: ChatMessage = {
+            id: `asst-error-${Date.now()}`,
+            type: 'assistant',
+            content: errorMessage,
+            timestamp: new Date(),
+          };
+          setMessages((prev) => [...prev, errorMsg]);
+        }
+      } else {
+        const result = await uploadsApi.uploadInBody(file);
+        if (result.ok && result.data) {
+          const assistantMessage: ChatMessage = {
+            id: `asst-upload-${Date.now()}`,
+            type: 'assistant',
+            content: result.data.message || 'InBody report uploaded successfully. Automated parsing is still under development.',
+            timestamp: new Date(),
+          };
+          setMessages((prev) => [...prev, assistantMessage]);
+        } else {
+          const errorMessage = result.error?.message || 'Something went wrong while uploading the report.';
+          const errorMsg: ChatMessage = {
+            id: `asst-error-${Date.now()}`,
+            type: 'assistant',
+            content: errorMessage,
+            timestamp: new Date(),
+          };
+          setMessages((prev) => [...prev, errorMsg]);
+        }
+      }
+    } catch {
+      setChatError('Unable to reach the server. Please check your connection and try again.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const handleQuickAction = (actionId: string, prompt: string) => {
     const chatActions = ['mood', 'alternatives', 'hydration', 'plan'];
     if (chatActions.includes(actionId)) {
@@ -265,24 +369,18 @@ export function ChatPage() {
       return;
     }
 
-    // upload/inbody — direct user to sidebar panels, no frontend AI or fake analysis
+    // Direct users to use the plus button flow
     if (actionId === 'upload' || actionId === 'inbody') {
-      const userMsg: ChatMessage = {
-        id: `user-action-${Date.now()}`,
-        type: 'user',
-        content: prompt,
-        timestamp: new Date(),
-      };
       const assistantMsg: ChatMessage = {
         id: `asst-action-${Date.now()}`,
         type: 'assistant',
         content:
           actionId === 'upload'
-            ? 'Use the Food Image Analysis panel in the right sidebar to select a food photo.'
-            : 'Use the InBody Upload panel in the right sidebar to select your report.',
+            ? 'You can now upload food images directly using the "+" button in the chat input.'
+            : 'You can now upload InBody reports directly using the "+" button in the chat input.',
         timestamp: new Date(),
       };
-      setMessages((prev) => [...prev, userMsg, assistantMsg]);
+      setMessages((prev) => [...prev, assistantMsg]);
       return;
     }
 
@@ -343,6 +441,7 @@ export function ChatPage() {
           value={inputValue}
           onChange={setInputValue}
           onSend={handleSendMessage}
+          onUpload={handleFileUpload}
           isLoading={isLoading}
         />
       </div>

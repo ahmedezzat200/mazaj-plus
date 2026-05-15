@@ -1,10 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from '../../ui/card';
 import { Badge } from '../../ui/badge';
 import { UserData } from '../DashboardLayout';
-import { ShieldCheck, Crown, Info } from 'lucide-react';
+import { ShieldCheck, Crown, Info, Sparkles, Plus } from 'lucide-react';
 import { Link } from 'react-router';
-import { FoodImageUploadPanel } from './FoodImageUploadPanel';
-import { InBodyUploadPanel } from './InBodyUploadPanel';
 import { NutritionPlanActionCard } from './NutritionPlanActionCard';
 
 interface RightSupportPanelProps {
@@ -33,14 +31,21 @@ export function RightSupportPanel({
           isLoading={isChatLoading}
         />
 
-        {/* ── Food Image Upload Panel ────────────────────────── */}
+        {/* ── Chat Attachment Guidance ─────────────────────── */}
         <div className="border-t border-border pt-5">
-          <FoodImageUploadPanel hasAccess={featureFlags.food_image_upload} />
-        </div>
-
-        {/* ── InBody Upload Panel ────────────────────────────── */}
-        <div className="border-t border-border pt-5">
-          <InBodyUploadPanel hasAccess={featureFlags.inbody_upload} />
+          <Card className="bg-primary/5 border-primary/10">
+            <CardHeader className="pb-2">
+              <div className="flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-primary" />
+                <CardTitle className="text-sm">New: Chat Upload</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                You can now upload food images and InBody reports directly in the chat! Just click the <span className="inline-flex items-center justify-center w-4 h-4 rounded bg-muted border border-border"><Plus className="w-2.5 h-2.5" /></span> button in the input area.
+              </p>
+            </CardContent>
+          </Card>
         </div>
 
         {/* ── How It Works ──────────────────────────────────── */}
