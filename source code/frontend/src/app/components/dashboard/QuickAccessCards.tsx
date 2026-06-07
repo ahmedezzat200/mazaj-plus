@@ -1,13 +1,14 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
 import { Button } from '../ui/button';
 import { Lock, MessageSquare, UtensilsCrossed, Droplet, Upload, BookOpen, FileText } from 'lucide-react';
+import { type ReactNode } from 'react';
 import { UserTier } from './DashboardLayout';
 import { Link } from 'react-router';
 
 interface QuickAccessCard {
   title: string;
   description: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
   path: string;
   locked?: {
     Free: boolean;
@@ -15,6 +16,8 @@ interface QuickAccessCard {
     Ultra: boolean;
   };
   buttonText: string;
+  iconBg: string;
+  iconColor: string;
 }
 
 const quickAccessCards: QuickAccessCard[] = [
@@ -24,6 +27,8 @@ const quickAccessCards: QuickAccessCard[] = [
     icon: <MessageSquare className="h-6 w-6" />,
     path: '/dashboard/chat',
     buttonText: 'Start Chat',
+    iconBg: 'bg-primary/10',
+    iconColor: 'text-primary',
   },
   {
     title: 'Nutrition Plans',
@@ -31,6 +36,8 @@ const quickAccessCards: QuickAccessCard[] = [
     icon: <UtensilsCrossed className="h-6 w-6" />,
     path: '/dashboard/nutrition-plans',
     buttonText: 'View Plans',
+    iconBg: 'bg-green-500/10',
+    iconColor: 'text-green-600',
   },
   {
     title: 'Healthy Alternatives & Hydration',
@@ -38,6 +45,8 @@ const quickAccessCards: QuickAccessCard[] = [
     icon: <Droplet className="h-6 w-6" />,
     path: '/dashboard/alternatives',
     buttonText: 'Explore',
+    iconBg: 'bg-blue-500/10',
+    iconColor: 'text-blue-500',
   },
   {
     title: 'Upload Food Image / InBody',
@@ -46,6 +55,8 @@ const quickAccessCards: QuickAccessCard[] = [
     path: '/dashboard/upload',
     locked: { Free: true, Pro: false, Ultra: false },
     buttonText: 'Upload',
+    iconBg: 'bg-purple-500/10',
+    iconColor: 'text-purple-500',
   },
   {
     title: 'Track Daily Intake',
@@ -54,6 +65,8 @@ const quickAccessCards: QuickAccessCard[] = [
     path: '/dashboard/tracking',
     locked: { Free: true, Pro: true, Ultra: false },
     buttonText: 'Log Entry',
+    iconBg: 'bg-orange-500/10',
+    iconColor: 'text-orange-500',
   },
   {
     title: 'View Weekly Reports',
@@ -62,6 +75,8 @@ const quickAccessCards: QuickAccessCard[] = [
     path: '/dashboard/tracking',
     locked: { Free: true, Pro: true, Ultra: false },
     buttonText: 'View Reports',
+    iconBg: 'bg-rose-500/10',
+    iconColor: 'text-rose-500',
   },
 ];
 
@@ -82,7 +97,7 @@ export function QuickAccessCards({ userTier }: QuickAccessCardsProps) {
   };
 
   return (
-    <div>
+    <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
       <h3 className="text-lg font-semibold text-foreground mb-4">Quick Access</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {quickAccessCards.map((card) => {
@@ -90,15 +105,15 @@ export function QuickAccessCards({ userTier }: QuickAccessCardsProps) {
           const requiredTier = getRequiredTier(card);
 
           return (
-            <Card 
-              key={card.path} 
+            <Card
+              key={`${card.path}-${card.title}`}
               className={`
-                hover:shadow-md transition-all
-                ${locked ? 'relative overflow-hidden' : ''}
+                group hover:shadow-md hover:-translate-y-1 transition-all duration-200
+                ${locked ? 'relative overflow-hidden opacity-80' : ''}
               `}
             >
               {locked && (
-                <div className="absolute inset-0 bg-gradient-to-b from-background/60 to-background/80 backdrop-blur-[2px] z-10 flex flex-col items-center justify-center p-6 text-center">
+                <div className="absolute inset-0 bg-gradient-to-b from-background/60 to-background/85 backdrop-blur-[2px] z-10 flex flex-col items-center justify-center p-6 text-center">
                   <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mb-3">
                     <Lock className="h-6 w-6 text-muted-foreground" />
                   </div>
@@ -115,19 +130,19 @@ export function QuickAccessCards({ userTier }: QuickAccessCardsProps) {
                   </Button>
                 </div>
               )}
-              
+
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-3">
+                <div className={`w-12 h-12 rounded-xl ${card.iconBg} ${card.iconColor} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-200`}>
                   {card.icon}
                 </div>
-                <CardTitle>{card.title}</CardTitle>
+                <CardTitle className="text-base">{card.title}</CardTitle>
                 <CardDescription>{card.description}</CardDescription>
               </CardHeader>
               <CardContent>
-                <Button 
+                <Button
                   asChild={!locked}
                   disabled={locked}
-                  className="w-full"
+                  className="w-full transition-all duration-200"
                   variant={locked ? 'outline' : 'default'}
                 >
                   {locked ? (

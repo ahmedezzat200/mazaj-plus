@@ -1,0 +1,1501 @@
+﻿food_key,nutrition_basis,basis_amount_g,basis_note
+almonds_dry_roasted,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+american_cheese,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+american_cheese_restaurant,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+apple,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+apple_fuji,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+apple_gala,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+apple_granny_smith,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+apple_honeycrisp,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+apple_juice,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+apple_red_delicious,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+avocado,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+bacon_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+baladi_bread,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+banana,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+banana_overripe,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+banana_ripe,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+basbousa,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+bean_pupusas,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+beans_black,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+beans_kidney,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+beef_breakfast_sausage,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+beef_eye_round_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+beef_hot_dog,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+beef_kebab,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+beef_steak_grilled,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+beef_tenderloin_roasted,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+beef_top_loin_steak,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+beef_top_round_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+biryani_chicken,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+blueberries,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+boiled_egg,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+bread_white,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+bread_whole_wheat,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+broccoli_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+broccoli_steamed,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+burger_beef,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+cake_chocolate,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+calamari_fried,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+candy_gummy,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+cantaloupe_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+carrots_frozen,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+carrots_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+cereal_cornflakes,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+cheddar_cheese,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+chicken_breast_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+chicken_breast_grilled,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+chicken_drumstick_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+chicken_fried,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+chicken_nuggets,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+chicken_shawarma,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+chicken_with_rice,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+chickpeas_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+chocolate_bar,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+chorizo_pork,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+coconut_oil,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+cod_baked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+coffee_black,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+coffee_milk_sugar,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+cola_diet,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+cola_regular,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+cookies_chocolate_chip,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+corn_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+cottage_cheese_lowfat,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+couscous_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+cream_cheese,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+cucumber,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+dark_chocolate,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+dates,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+deli_ham,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+diced_tomatoes_canned,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+dill_pickles,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+donut_glazed,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+egg_white_dried,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+egg_white_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+egg_whole_dried,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+egg_whole_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+egg_yolk_dried,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+egg_yolk_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+energy_drink,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+falafel,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+falafel_taameya,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+fatta_egyptian,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+feta_cheese,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+figs_dried,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+fish_baked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+fish_fried,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+fish_with_rice,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+flour_ap_bleached,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+flour_ap_unbleached,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+flour_ap_unenriched,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+flour_bread_white,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+flour_corn_yellow,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+flour_pastry,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+flour_rice_brown,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+flour_rice_glutinous,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+flour_rice_white,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+flour_soy_defatted,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+flour_soy_full_fat,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+flour_whole_wheat,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+foul_medames,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+french_fries,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+fried_chicken_piece,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+fried_rice_chinese,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+garlic_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+granola_bar,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+granulated_sugar,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+grapefruit_juice,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+grapes,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+greek_yogurt_plain,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+greek_yogurt_strawberry,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+green_beans_canned,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+green_olives,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+grilled_fish,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+ground_turkey_93_lean,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+haddock_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+ham_restaurant,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+hawawshi,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+hot_dog,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+hummus,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+ice_cream_vanilla,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+italian_pork_sausage,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+kabsa_chicken,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+kale_frozen_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+kale_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+kebab_grilled,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+ketchup,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+kiwi,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+kiwi_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+kofta_grilled,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+koshari,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+kunafa,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+labneh,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+lamb_chop_grilled,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+lamb_shank_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+lamb_with_rice,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+large_egg_white,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+large_egg_whole,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+large_egg_yolk,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+lasagna,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+lemonade,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+lentil_soup,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+lentils_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+lettuce,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+macaroni_bechamel,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+mahshi,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+mandi_chicken,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+mango,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+marinara_sauce,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+meatballs,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+milk_1_percent,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+milk_2_percent,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+milk_skim,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+milk_whole,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+mixed_salad,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+molokhia,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+mozzarella_cheese,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+nectarines_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+nuts_mixed,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+oatmeal_raisin_cookies,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+oats_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+onion_rings_baked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+orange,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+orange_juice,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+oranges_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+parmesan_cheese,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+pasta_alfredo,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+pasta_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+peaches_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+peanut_butter,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+peanuts,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+pear,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+pears_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+peas_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+pineapple,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+pita_bread,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+pizza_slice,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+pollock_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+popcorn_butter,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+popcorn_plain,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+pork_tamale,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+porterhouse_steak,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+potato_baked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+potato_chips,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+queso_seco,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+quinoa_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+red_onion_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+rice_brown_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+rice_pudding,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+rice_white_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+ricotta_cheese,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+roasted_lamb,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+romaine_lettuce,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+salmon_grilled,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+salsa,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+sandwich_cheese,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+sandwich_turkey,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+sardines_canned,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+sausage_beef,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+scrambled_egg,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+sea_bass_grilled,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+shawarma_chicken,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+shrimp_cooked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+smoothie_fruit,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+soup_chicken,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+spaghetti_tomato_sauce,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+sparkling_water,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+spinach,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+sports_drink,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+strawberries,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+strawberries_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+sunflower_seeds,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+sweet_potato_baked,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+sweet_sour_pork,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+swiss_cheese,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+tbone_steak_grilled,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+tea_sweetened,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+tea_unsweetened,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+tilapia_grilled,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+tofu_firm,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+tomato,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+tomatoes_grape,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+tortilla_wrap,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+tuna_canned,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+turkey_breakfast_sausage,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+turkey_slices,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+veggie_burger,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+water,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+watermelon,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+white_onion_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+yellow_mustard,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+yellow_onion_raw,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+yogurt_fruit,per_100g,100,All nutrient values in foods.csv are expressed per 100 g edible portion.
+fndds_goat_milk,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_buttermilk,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_evaporated_whole,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_lactose_free_whole,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_reduced_fat_2,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_evaporated_reduced_fat_2,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_lactose_free_reduced_fat_2,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_kefir,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_low_fat_1,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_lactose_free_low_fat_1,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_fat_free_skim,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_dry_reconstituted_nonfat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_evaporated_fat_free_skim,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_lactose_free_fat_free_skim,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_strawberry_milk_whole,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_milk_whole,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_condensed_sweetened,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_milk_reduced_sugar_whole,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_malted,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_strawberry_milk_reduced_fat_2,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_milk_reduced_fat_2,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hot_chocolate_cocoa_with_whipped_cream,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_milk_reduced_sugar_reduced_fat_2,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_strawberry_milk_reduced_sugar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_strawberry_milk_low_fat_1,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_milk_low_fat_1,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_milk_reduced_sugar_low_fat_1,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_strawberry_milk_fat_free_skim,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_milk_fat_free_skim,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hot_chocolate_cocoa_dry_mix_made_with_water,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_milk_reduced_sugar_fat_free_skim,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hot_chocolate_cocoa_dry_mix_reduced_sugar_made_with_water,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_eggnog,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_shake_with_malt,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_milk_drink,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ice_cream_soda_chocolate,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_shake_bottled_chocolate,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_shake_home_recipe_chocolate,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_ball,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_queso_fresco,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_queso_cotija,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_queso_asadero,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_brie,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_feta,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_goat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_imitation_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_brick,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_colby,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_swiss,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_paneer,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_cheddar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_ricotta,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_puerto_rican_white_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cottage_cheese_farmer_s,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_cottage_low_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_cottage_dry_curd,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_cottage_with_fruit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_cottage_with_vegetables,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yogurt_tube,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yogurt_liquid,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yogurt_whole_milk_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yogurt_nonfat_milk_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yogurt_parfait_with_fruit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yogurt_low_fat_milk_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yogurt_greek_with_oats,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yogurt_greek_whole_milk_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yogurt_greek_nonfat_milk_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yogurt_greek_low_fat_milk_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yogurt_greek_whole_milk_fruit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_oat_milk,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rice_milk,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coconut_milk,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soy_milk_sweetened,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soy_milk_chocolate,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soy_milk_unsweetened,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_almond_milk_sweetened,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yogurt_soy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yogurt_almond_milk,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yogurt_coconut_milk,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_veal_chop,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_roast,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_oxtails,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_brisket,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_shortribs,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_pot_roast,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_stew_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_neck_bones,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_sandwich_steak,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_ground,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_veal_ground,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_ground_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_ground_patty,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_ribs,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_ears,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_roast,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_bones,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_belly,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_skin_rinds,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_ground,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_carnitas,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_goat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bear,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_moose,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bison,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rabbit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beaver,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_caribou,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_heart,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tripe,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_kidney,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_brains,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tongue,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_gizzard,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_skin,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_back,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_tail,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_ground,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_wing_stewed,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_wing_sauteed,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_wing_rotisserie,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_wing_baked_coated,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_feet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_wing_grilled_with_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_chicken_roll_roasted,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_canned_meat_only,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_wing_grilled_without_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_wings_plain_from_precooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_neck_or_ribs,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_thigh_stewed_skin_eaten,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_breast_stewed_skin_eaten,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_thigh_sauteed_skin_eaten,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_breast_sauteed_skin_eaten,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_wing_fried_coated_from_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_fillet_grilled,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_patty_breaded,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_fillet_breaded,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_nuggets_from_frozen,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_nuggets_from_other_sources,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_nuggets_from_fast_food,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ostrich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_quail_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_dove_fried,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pheasant_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_turkey_neck,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_turkey_tail,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_turkey_back,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_duck_peking,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_turkey_canned,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_turkey_ground,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_turkey_nuggets,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_caviar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_eel,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_carp,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_pike,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_stick,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_shark,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_canned,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_smoked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_mullet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_anchovy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_croaker,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_halibut,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_herring,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_pickled,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_snapper,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_tuna_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crab,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_turtle,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_octopus,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_abalone,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lobster,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mussels,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_escargot,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_frog_legs,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_clams_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_oysters_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_souffle,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_duck_egg_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_creamed,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_deviled,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_huevos_rancheros,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_goose_egg_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_benedict,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_quail_egg_canned,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_yolk_only_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_white_only_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_whole_pickled,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_whole_boiled_or_poached,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_whole_fried_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_whole_baked_fat_added,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_salad_made_with_mayonnaise,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_white_cooked_fat_added,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_whole_fried_with_butter,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_whole_fried_no_added_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_whole_baked_no_added_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spam,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bologna,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_jerky,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_jerky,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mortadella,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_liverwurst,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_head_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_roll,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ham_canned,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ham_ground,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_venison_sausage,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bacon_bits,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_turkey_bacon_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_bacon_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bacon_or_side_pork_fresh_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_bacon_smoked_or_cured_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hot_dog_beef,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hot_dog_turkey,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hot_dog_reduced_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hot_dog_meat_and_poultry,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chorizo,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bratwurst,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_thuringer,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_knockwurst,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_sausage,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_blood_sausage,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_polish_sausage,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_dal,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_baked_beans,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soy_nuts,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_wasabi_peas,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_refried_beans,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_and_beans,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_edamame_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soybeans_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beans_and_franks,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fava_beans_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pink_beans_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mung_beans_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_black_beans_with_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pinto_beans_with_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tahini,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chestnuts,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hazelnuts,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pine_nuts,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_flax_seeds,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chia_seeds,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_brazil_nuts,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mixed_seeds,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_almond_paste,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sesame_seeds,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_almond_butter,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cashew_butter,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coconut_fresh,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macadamia_nuts,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soybean_curd,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soy_nut_butter,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soybean_curd_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_meatball_meatless,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_vegetarian_fillet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hot_dog_vegetarian,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bacon_strip_meatless,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_hash,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_curry,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_salad,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_swiss_steak,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_veal_marsala,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pepper_steak,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_burgundy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_steak_tartare,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sausage_gravy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ham_croquette,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_stew_pork,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_stew_beef,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_stew_lamb,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ham_stroganoff,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_shepherd_s_pie,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chili_with_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_with_gravy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_stroganoff,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_veal_scallopini,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_veal_parmigiana,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_kiev,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_curry,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chili_white,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_barbecue_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_stew_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_turkey_with_gravy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_cornbread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chili_with_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_with_gravy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pot_pie_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_adobo_with_rice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_or_turkey_hash,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_adobo_with_noodles,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_curry_with_rice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_with_mole_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_or_turkey_divan,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_or_turkey_souffle,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_or_turkey_fricassee,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_or_turkey_cacciatore,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chili_with_chicken_and_beans,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ceviche,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lau_lau,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_curry,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crab_salad,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lomi_salmon,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_gefilte_fish,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_clams_casino,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_shrimp_toast,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_salmon_salad,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_shrimp_salad,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_shrimp_gumbo,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lobster_salad,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_seafood_salad,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lobster_gumbo,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_stew_fish,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crab_cake,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_seafood_souffle,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bean_cake,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lentil_curry,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_black_bean_salad,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pot_pie_no_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beans_and_white_rice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beans_and_brown_rice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chili_vegetarian,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_vegetarian_stroganoff,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_channa_saag,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ratatouille,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_palak_paneer,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_vegetarian_stew,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spinach_souffle,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_vegetable_curry,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_stew_vegetable,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_green_bean_casserole,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mushrooms_stuffed,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tomatoes_scalloped,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_idli,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rice_pilaf,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_dirty_rice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rice_dressing,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rice_croquette,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_biryani_with_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rice_with_raisins,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_paella_with_seafood,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bibimbap_korean,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_congee_with_egg,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_biryani_with_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_flavored_rice_mixture,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_biryani_with_vegetables,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_congee_with_vegetables,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spanish_rice_fat_added,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_jambalaya_with_meat_and_rice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cake_made_with_glutinous_rice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_flavored_pasta,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_noodle_pudding,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lasagna_with_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_gnocchi_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_gnocchi_potato,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lasagna_meatless,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lasagna_with_meat_canned,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lasagna_with_meat_frozen,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lasagna_with_meat_and_spinach,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lasagna_with_chicken_or_turkey,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macaroni_or_pasta_salad_with_egg,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macaroni_or_pasta_salad_with_tuna,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macaroni_or_pasta_salad_with_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lasagna_with_meat_home_recipe,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macaroni_or_pasta_salad_with_shrimp,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macaroni_or_pasta_salad_with_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macaroni_or_pasta_salad_with_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ravioli_meat_filled_no_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macaroni_or_pasta_salad_with_crab_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pasta_with_cream_sauce_home_recipe,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macaroni_or_noodles_with_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macaroni_or_noodles_with_cheese_and_egg,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macaroni_or_noodles_with_cheese_and_tuna,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macaroni_or_noodles_with_cheese_and_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macaroni_or_noodles_with_cheese_and_tomato,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macaroni_or_noodles_with_cheese_canned,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_macaroni_or_noodles_with_cheese_whole_grain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_vada,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_knish,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_samosa,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pierogi,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tabbouleh,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spanakopita,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_stuffing,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_empanada_beef,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cornbread_stuffing,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crepe_with_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pad_thai_with_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lo_mein_meatless,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pad_thai_with_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pad_thai_with_seafood,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lo_mein_with_pork,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lo_mein_with_beef,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pad_thai_meatless,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lo_mein_with_shrimp,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lo_mein_with_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rice_fried_meatless,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hunan_beef,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_szechuan_beef,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_kung_pao_beef,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_kung_pao_pork,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_steak_teriyaki,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_orange_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sesame_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_almond_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_shrimp_teriyaki,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_moo_goo_gai_pan,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_kung_pao_shrimp,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_kung_pao_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beef_and_broccoli,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_egg_foo_yung,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bao_bun,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sushi_roll_tuna,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sushi_roll_eel,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bao_bun_no_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_roll_meatless,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sushi_roll_salmon,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sushi_roll_shrimp,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sushi_roll_avocado,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_taco_fish,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_taco_cheese_only,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_burrito_cheese_only,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_taco_meat_no_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_burrito_beef_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_burrito_pork_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_taco_or_tostada_salad_with_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_burrito_chicken_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_burrito_meat_no_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_taco_or_tostada_salad_with_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_taco_with_beans_no_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_burrito_with_beans_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nachos_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nachos_with_beans,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nachos_cheese_only,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nachos_beef_or_pork,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_frito_pie,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chilaquiles,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mexican_pizza,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tamale_beef,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tamale_pork,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pupusa_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_gordita_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fajita_shrimp,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_enchilada_beef,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_enchilada_pork,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tamale_chicken,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tamale_no_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pizza_rolls,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_topping_from_meat_pizza,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_topping_from_cheese_pizza,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_topping_from_vegetable_pizza,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_calzone_with_meat_and_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pizza_cheese_stuffed_crust,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pizza_no_cheese_thin_crust,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pizza_no_cheese_thick_crust,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pizza_with_extra_meat_thin_crust,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_topping_from_meat_and_vegetable_pizza,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_calzone_with_cheese_meatless,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pizza_with_extra_meat_thick_crust,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pizza_extra_cheese_thin_crust,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_white_pizza_cheese_thin_crust,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pizza_with_pepperoni_stuffed_crust,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pizza_with_extra_meat_medium_crust,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hamburger_slider,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheeseburger_slider,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_big_mac_mcdonalds,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mcdouble_mcdonalds,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hamburger_mcdonalds,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_whopper_burger_king,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hamburger_burger_king,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheeseburger_mcdonalds,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_whopper_jr_burger_king,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheeseburger_burger_king,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_quarter_pounder_mcdonalds,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_double_cheeseburger_mcdonalds,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_whopper_with_cheese_burger_king,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_double_cheeseburger_burger_king,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_corn_dog,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pig_in_a_blanket,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_italian_sausage_sandwich_on_white,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chili_hot_dog_sandwich_on_white_bun,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chili_hot_dog_sandwich_on_wheat_bun,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chili_hot_dog_sandwich_on_white_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chili_hot_dog_sandwich_on_wheat_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hot_dog_sandwich_beef_on_white_bun,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hot_dog_sandwich_beef_on_wheat_bun,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_salad_sandwich_wrap,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_salad_sandwich_on_white,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_salad_sandwich_on_wheat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_fillet_sandwich_grilled_on_white_bun,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_fillet_sandwich_grilled_on_wheat_bun,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_fillet_biscuit_from_fast_food,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicken_fillet_sandwich_fried_on_white_bun,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_burrito,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_taquito_egg,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_white_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_biscuit_with_gravy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_quesadilla_egg,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ham_biscuit_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_sandwich_on_bagel,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bacon_biscuit_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_sandwich_on_biscuit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sausage_biscuit_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_breakfast_pizza_with_egg,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_egg_burrito_with_ham,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_sandwich_cheddar_cheese_on_white_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_sandwich_cheddar_cheese_on_wheat_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_sandwich_american_cheese_on_white_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_sandwich_american_cheese_on_wheat_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_grilled_cheese_sandwich_cheddar_cheese_on_white_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_grilled_cheese_sandwich_cheddar_cheese_on_wheat_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutella_sandwich_on_white_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutella_sandwich_on_wheat_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_jelly_sandwich_on_white_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_jelly_sandwich_on_wheat_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_almond_butter_sandwich_on_white_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_almond_butter_sandwich_on_wheat_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_almond_butter_and_jelly_sandwich_on_white_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sardine_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crab_cake_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_wrap_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_salmon_cake_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_sandwich_grilled,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fried_seafood_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_seafood_salad_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spam_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_reuben_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ham_sandwich_wrap,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_french_dip_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_turkey_sandwich_wrap,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ham_sandwich_on_white,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ham_sandwich_on_wheat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_club_sandwich_on_white,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_club_sandwich_on_wheat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_turkey_sandwich_on_white,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_turkey_sandwich_on_wheat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_salami_sandwich_on_white,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_salami_sandwich_on_wheat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bologna_sandwich_on_white,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_gyro_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cuban_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_meatloaf_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_barbecue_rib_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_meatball_sandwich_or_sub,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pork_sandwich_with_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bruschetta,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_falafel_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_vegetable_sandwich_wrap,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tomato_sandwich_on_white,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tomato_sandwich_on_wheat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_bean,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_rice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_beef,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_broth,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_fruit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_pozole,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_lentil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_barley,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_tomato,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_borscht,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_meatball,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_bisque,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_peanut,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_potato,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_pumpkin,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_pepperpot,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_french_onion,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_wonton,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_seaweed,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_egg_drop,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ramen_bowl_with_beef,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ramen_bowl_with_fish,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soup_hot_and_sour,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_congee,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rice_cooked_with_milk,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rice_sweet_cooked_with_honey,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yellow_rice_cooked_fat_added,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yellow_rice_cooked_no_added_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rice_white_cooked_glutinous,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rice_white_cooked_no_added_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rice_brown_cooked_no_added_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_barley,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_millet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_noodles_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_buckwheat_groats,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rice_noodles_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_quinoa_fat_added,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bulgur_fat_added,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_rye,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_soy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_naan,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_pita,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_puri,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_rice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_cuban,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_onion,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_black,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_potato,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_raisin,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_barley,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_paratha,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_oatmeal,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_cinnamon,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_oat_bran,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_vegetable,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_roll_rye,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_roll_diet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_roll_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_roll_garlic,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_roll_oatmeal,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_roll_egg_bread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_roll_sour_dough,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_roll_multigrain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_roll_whole_wheat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_roll_gluten_free,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bagel,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bagel_wheat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_muffin_english,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bagel_oat_bran,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bagel_wheat_bran,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bagel_multigrain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bagel_whole_wheat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bagel_with_raisins,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bagel_pumpernickel,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tortilla_corn,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tortilla_flour,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_taco_shell_corn,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_taco_shell_flour,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_scone,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_popover,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hush_puppy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_johnnycake,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spoonbread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_muffin_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_nut,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_corn_pone_baked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bread_fruit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_arepa_dominicana,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_muffin_fruit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_muffin_wheat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_dosa_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crepe_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_waffle_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pancakes_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chinese_pancake,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_waffle_fruit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pancakes_fruit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_french_toast_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_french_toast_sticks,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_waffle_cinnamon,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pancakes_pumpkin,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_waffle_chocolate,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_crunch,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_granola,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_fruit_rings,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_fruit_crispy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_cinnamon_toast,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_flavored_puffs,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_chocolate_puffs,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_other_honey,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_plain_puffs,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_o_s_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_corn_puffs,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_multigrain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_k_s_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_oat_bunches,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_oat_squares,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_oatmeal_multigrain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_oatmeal_reduced_sugar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_oatmeal_fast_food_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_oatmeal_fast_food_flavored,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_oatmeal_instant_maple_flavored_fat_added,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_oatmeal_instant_fruit_flavored_fat_added,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_oatmeal_instant_maple_flavored_no_added_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_oatmeal_instant_fruit_flavored_no_added_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_upma,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cream_of_rice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_hominy_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_masa_harina_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_oat_bran_cereal_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_whole_wheat_cereal_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cornmeal_mush_fat_added,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_chips_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_sticks_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_chips_baked_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_chips_unsalted,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_sticks_flavored,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_chips_reduced_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_sticks_fry_shaped,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_chips_popped_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_chips_other_flavored,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soy_chips,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_corn_nuts,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bean_chips,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_taro_chips,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_shrimp_chips,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cracker_chips,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_plantain_chips,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chips_rice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_vegetable_chips,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_corn_chips_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_popcorn_caramel_coated,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_popcorn_microwave_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_popcorn_chocolate_coated,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_popcorn_ready_to_eat_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_popcorn_microwave_kettle,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_popcorn_ready_to_eat_kettle,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_popcorn_microwave_low_sodium,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_popcorn_microwave_plain_light,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_snack_mix,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pretzel_chips_hard_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_snack_mix_plain_chex_mix,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pretzels_hard_flavored,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pretzels_hard_multigrain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pretzels_soft_multigrain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pretzels_soft_gluten_free,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pretzels_hard_plain_salted,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pretzel_chips_hard_flavored,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pretzels_hard_yogurt_coated,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pretzels_hard_cheese_filled,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_croutons,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rice_cake,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rice_paper,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pita_chips,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_melba_toast,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_bagel_chips,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_popcorn_cake,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_zwieback_toast,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crackers_milk,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crackers_rice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crackers_matzo,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crackers_water,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crackers_wheat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crackers_oyster,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crackers_saltine,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crackers_saltine_multigrain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crackers_saltine_reduced_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_milk_n_cereal_bar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_snack_bar_oatmeal,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_or_granola_bar_nonfat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_or_granola_bar_fruit_and_nut,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_or_granola_bar_with_rice_cereal,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_or_granola_bar_quaker_granola_bites,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_breakfast_bar_date_with_yogurt_coating,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_or_granola_bar_kind_fruit_and_nut_bar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_or_granola_bar_kellogg_s_special_k_bar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutrition_bar_clif_bar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutrition_bar_powerbar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutrition_bar_tiger_s_milk,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_or_granola_bar_kashi_chewy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutrition_bar_balance_original_bar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cereal_or_granola_bar_kashi_crunchy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_baklava,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tiramisu,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pie_shell,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_dessert_pizza,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pie_apple,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pie_berry,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pie_lemon,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pie_peach,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pie_pecan,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ice_cream_cake,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pie_strawberry,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cake_cream,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cake_pound,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cake_torte,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pie_cherry,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cake_sponge,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pocky,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_marie_biscuit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_anisette_toast,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_graham_crackers,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cookie_almond,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cookie_raisin,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cookie_animal,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cookie_coconut,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cookie_fig_bar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cookie_fortune,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cookie_granola,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cookie_oatmeal,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cookie_pumpkin,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_crackers_cuban,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cookie_biscotti,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cookie_macaroon,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cookie_meringue,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_brioche,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_churros,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beignet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_croissant,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pannetone,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fritter_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_doughnut_holes,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_breakfast_tart,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pastry_puff,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tamale_sweet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fritter_fruit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_doughnut_jelly,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_pastry_puffs,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_croissant_fruit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_candy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_chips,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_dark_chocolate_candy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_candy_with_nuts,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_candy_fudge,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_candy_with_cereal,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_dark_chocolate_candy_with_nuts,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_candy_sugar_free,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cough_drops,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chewing_gum,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_candy_mint,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_candy_hard,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_candy_taffy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_candy_cotton,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_candy_caramel,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_candy_licorice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_creamsicle,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fudgesicle,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_banana_split,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_gelato_vanilla,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ice_cream_candy_bar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ice_cream_fried,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_gelato_chocolate,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fudgesicle_light,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_frozen_yogurt_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ice_cream_chocolate,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sherbet_all_flavors,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ice_cream_cookie_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_frozen_yogurt_vanilla,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_flan,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mousse,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_trifle,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_haupia,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_custard,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_meringues,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_creme_brulee,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lime_souffle,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yokan,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sorbet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_popsicle,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_snow_cone,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_italian_ice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_freezer_pop,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_gelatin_dessert,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_apple_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_apple_baked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_apple_pie_filling,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_apple_candied,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_banana_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_banana_baked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_grapes_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_peach_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nectarine_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_peach_frozen,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_peach_canned_in_syrup,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_strawberries_canned,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_strawberries_frozen,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cranberry_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_blueberries_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cranberries_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_raspberries_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_blackberries_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lime_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lemon_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_orange_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_kumquat_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tangerine_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_watermelon_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_melon_frozen,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_honeydew_melon_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_date,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_raisins,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_banana_chips,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fig_dried,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pear_dried,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_apple_dried,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mango_dried,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lychee,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rhubarb,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fig_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tamarind,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_ambrosia,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_plum_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_guava_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_apricot_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_dragon_fruit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cherries_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_starfruit_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pear_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pear_asian_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pear_canned_in_syrup,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pear_canned_juice_pack,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pineapple_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pineapple_frozen,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pineapple_canned_in_syrup,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pineapple_canned_juice_pack,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mango_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_papaya_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mango_canned,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mango_frozen,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tomatoes_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sun_dried_tomatoes,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tomatoes_fresh_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tomatoes_canned_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_carrots_glazed_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_carrots_fresh_cooked_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_carrots_frozen_cooked_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_carrots_canned_cooked_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_carrots_fresh_cooked_no_added_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_carrots_frozen_cooked_no_added_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pumpkin_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_winter_squash_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_peppers_red_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spaghetti_squash_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sweet_potato_candied,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pumpkin_canned_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_peppers_sweet_red_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_broccoli_raab_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_broccoli_raab_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_broccoli_chinese_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_broccoli_chinese_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_broccoli_fresh_cooked_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spinach_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spinach_creamed,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spinach_fresh_cooked_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spinach_frozen_cooked_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spinach_canned_cooked_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lettuce_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_radicchio_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lettuce_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mixed_salad_greens_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lettuce_boston_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lettuce_arugula_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chard_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cress_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chard_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_collards_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cress_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_watercress_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beet_greens_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_escarole_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_watercress_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beet_greens_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mustard_greens_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_green_beans_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yellow_string_beans_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_green_beans_fresh_cooked_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_green_beans_frozen_cooked_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_green_beans_canned_cooked_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_green_beans_fresh_cooked_no_added_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cabbage_red_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cabbage_green_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cabbage_red_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cabbage_chinese_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cabbage_savoy_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_leeks,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_onions_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_onions_green_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_onions_pearl_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_corn_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_corn_creamed,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_corn_fresh_cooked_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_corn_frozen_cooked_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_corn_canned_cooked_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_corn_fresh_cooked_no_added_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fufu,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_taro_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_plantain_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_water_chesnut,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cassava_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_green_peas_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_breadfruit_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_plantain_cooked_with_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lima_beans_from_canned,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_blackeyed_peas_from_canned,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_radish,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_artichoke,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beets_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cactus_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_celery_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_jicama_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_turnip_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_avocado_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_seaweed_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cucumber_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_eggplant_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_kohlrabi_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_rutabaga_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_snowpeas_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_asparagus_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mushrooms_raw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_celery_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_turnip_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_burdock_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pakora,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_yuca_fries,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fried_okra,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fried_broccoli,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fried_eggplant,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fried_mushrooms,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sweet_potato_tots,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fried_green_beans,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coleslaw,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pea_salad,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_broccoli_slaw_salad,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pea_salad_with_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_carrots_raw_salad,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coleslaw_with_fruit,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cucumber_and_vegetable_namasu,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_onions_for_use_on_a_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pepper_for_use_on_a_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_avocado_for_use_on_a_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lettuce_for_use_on_a_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spinach_for_use_on_a_sandwich,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_baked_peel_eaten,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_baked_peel_not_eaten,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_boiled_ready_to_heat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_roasted_ready_to_heat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_canned_no_added_fat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_baked_peel_eaten_with_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_baked_peel_eaten_with_chili,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_baked_peel_eaten_with_butter,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_baked_peel_eaten_with_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_baked_peel_not_eaten_with_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_patty,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_skins_without_topping,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_skins_with_cheese,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_tots_frozen_baked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_tots_frozen_fried,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_tots_school,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_home_fries_from_fresh,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_hash_brown_from_fresh,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_tots_from_fresh_fried_or_baked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_skins_with_cheese_and_bacon,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lefse,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_pancake,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_stewed_potatoes,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_stewed_potatoes_with_tomatoes,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_salad_german_style,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_scalloped_from_fresh,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_mashed_ready_to_heat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_salad_made_with_mayonnaise,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_scalloped_from_dry_mix,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_stewed_potatoes_puerto_rican_style,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_scalloped_ready_to_heat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_potato_salad_made_with_creamy_dressing,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tangerine_juice_100,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_orange_juice_100_freshly_squeezed,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_grapefruit_juice_100_freshly_squeezed,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_grapefruit_juice_100_with_calcium_added,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_orange_juice_100_frozen_reconstituted,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_apple_cider,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_apple_juice_100,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_apple_juice_100_with_calcium_added,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_blueberry_juice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_grape_juice_100,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_prune_juice_100,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_aloe_vera_juice_drink,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_strawberry_juice_100,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_papaya_juice_100,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pineapple_juice_100,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beet_juice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_celery_juice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tomato_juice_cocktail,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mixed_vegetable_juice,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_carrot_juice_100,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soft_drink_cola_diet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soft_drink_root_beer_diet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soft_drink_cream_soda_diet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soft_drink_ginger_ale_diet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soft_drink_pepper_type_diet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soft_drink_chocolate_flavored_diet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_energy_drink_sugar_free,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sports_drink_low_calorie,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_energy_drink_sugar_free_nos,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_energy_drink_sugar_free_vault,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_energy_drink_sugar_free_monster,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_energy_drink_sugar_free_no_fear,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fruit_flavored_drink_diet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_slush_frozen_drink_no_sugar_added,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fruit_flavored_drink_with_high_vitamin_c_diet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fruit_flavored_drink_powdered_reconstituted_diet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soft_drink_cola,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soft_drink_root_beer,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soft_drink_cream_soda,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soft_drink_ginger_ale,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soft_drink_pepper_type,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soft_drink_chocolate_flavored,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pear_nectar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_guava_nectar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mango_nectar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_peach_nectar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_banana_nectar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_papaya_nectar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_apricot_nectar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tamarind_drink,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_shirley_temple,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cantaloupe_nectar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fruit_juice_drink,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_slush_frozen_drink,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_energy_drink_xs,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_energy_drink_nos,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_energy_drink_vault,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_energy_drink_monster,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_energy_drink_no_fear,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_energy_drink_red_bull,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_energy_drink_rockstar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutritional_drink_or_shake_liquid_soy_based,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutritional_drink_or_shake_ready_to_drink_boost,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutritional_drink_or_shake_ready_to_drink_ensure,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutritional_drink_or_shake_ready_to_drink_slim_fast,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutritional_drink_or_shake_ready_to_drink_boost_plus,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutritional_drink_or_shake_ready_to_drink_ensure_plus,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_atole,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_frescavena,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_corn_beverage,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_atole_de_avena,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_licuado_or_batido,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_vegetable_smoothie,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_atole_de_chocolate,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fruit_smoothie_light,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chicory_beverage,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_cuban,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_latte,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_substitute,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_brewed,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_turkish,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_frozen_coffee_drink,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_espresso,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_macchiato,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_cafe_mocha,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_iced_latte,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_cappuccino,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_iced_coffee_brewed,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_pre_lightened,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_frozen_mocha_coffee_drink,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_cafe_con_leche,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_bottled_canned,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_iced_cafe_mocha,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tea_ginger,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tea_bubble,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tea_kombucha,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tea_hot_herbal,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tea_hot_hibiscus,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tea_hot_chamomile,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tea_hot_with_milk,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_iced_tea_lemonade_juice_drink,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tea_hot_leaf_black,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tea_hot_leaf_green,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tea_hot_leaf_oolong,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tea_iced_bottled_black,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_water_tap,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_water_bottled_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_water_tonic,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_water_carbonated_plain,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_water_beverage_fruit_flavored,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_water_carbonated_flavored,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_water_enhanced_diet,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_water_enhanced_regular,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_lard,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_honey_butter,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_butter_tub,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fat_back_cooked,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_butter_stick,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_margarine_tub,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_margarine_stick,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_margarine_light,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_butter_replacement_liquid,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_whipped_topping,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cream_whipped,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sour_cream_light,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sour_cream_regular,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cream_cheese_light,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sour_cream_fat_free,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cream_light,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cream_heavy,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cream_half_and_half,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_creamer_liquid,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_creamer_powder,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_coffee_creamer_soy_liquid,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cream_half_and_half_flavored,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tartar_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sandwich_spread,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_vegan_mayonnaise,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mayonnaise_light,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mayonnaise_regular,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_corn_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_olive_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_almond_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_peanut_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_canola_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sesame_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_walnut_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soybean_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_flaxseed_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_safflower_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sunflower_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cottonseed_oil,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_taco_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_steak_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_salsa_red,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_barbecue_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cocktail_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_miso,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_natto,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_soy_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fish_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_miso_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chutney,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_vinegar,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pimiento,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fry_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_duck_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_horseradish,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_wasabi_paste,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_buffalo_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_kimchi,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sauerkraut,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_olive_tapenade,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_relish_corn,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pickles_dill,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_okra_pickled,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_olives_green,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_olives_black,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_beets_pickled,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spaghetti_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spaghetti_sauce_with_meat,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spaghetti_sauce_with_poultry,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spaghetti_sauce_with_seafood,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_spaghetti_sauce_fat_free,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_layer_dip,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_dip,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_mole_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_seafood_dip,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pesto_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_curry_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_tzatziki_dip,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_peanut_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_eggplant_dip,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_garlic_sauce,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_artichoke_dip,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_cheese_fondue,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_honey,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_molasses,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sugar_brown,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sugar_cinnamon,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sugar_substitute_and_sugar_blend,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sugar_substitute_stevia_powder,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sugar_substitute_stevia_liquid,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sugar_substitute_sucralose_powder,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_sugar_substitute_saccharin_powder,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_jam,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_jelly,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_marmalade,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_corn_syrup,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_dessert_dip,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_guava_paste,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_simple_syrup,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_fruit_butter,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_pancake_syrup,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_chocolate_dip,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutritional_powder_mix_isopure,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutritional_powder_mix_slim_fast,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutritional_powder_mix_muscle_milk,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutritional_powder_mix_light_muscle_milk,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.
+fndds_nutritional_powder_mix_eas_soy_protein_powder,per_100g,100,USDA FoodData Central FNDDS nutrient values are stored on a per-100-gram edible-portion basis.

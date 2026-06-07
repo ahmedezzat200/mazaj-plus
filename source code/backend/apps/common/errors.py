@@ -16,18 +16,3 @@ class OnboardingRequiredError(MazajError):
 
 class SubscriptionRequiredError(MazajError):
     pass
-
-class TierLimitExceededError(MazajError):
-    pass
-
-class SafetyValidationError(MazajError):
-    pass
-
-class IdempotencyConflictError(MazajError):
-    pass
-
-class DatabaseTransactionError(MazajError):
-    pass
-
-class NotFoundError(MazajError):
-    pass

@@ -1,3 +1,4 @@
+import uuid
 from django.db import models
 from django.conf import settings
 from apps.common.enums import Tier, SubscriptionStatus, FeatureKey
@@ -44,3 +45,22 @@ class UsageLimitCounter(models.Model):
             models.Index(fields=['period_start']),
             models.Index(fields=['period_end']),
         ]
+
+class SubscriptionCheckout(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='checkouts')
+    checkout_id = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
+    target_tier = models.CharField(max_length=50, choices=Tier.choices)
+    status = models.CharField(
+        max_length=50,
+        choices=[
+            ('PENDING', 'Pending'),
+            ('COMPLETED', 'Completed'),
+            ('CANCELLED', 'Cancelled')
+        ],
+        default='PENDING'
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+    completed_at = models.DateTimeField(null=True, blank=True)
+
+    def __str__(self):
+        return f"Checkout {self.checkout_id} - {self.target_tier} ({self.status})"

@@ -1,0 +1,1501 @@
+﻿food_key,name,category,calories_kcal,protein_g,carbs_g,fat_g,sugar_g,fiber_g,sodium_mg
+almonds_dry_roasted,"Almonds, Dry Roasted",nuts_seeds,620.0,20.4,16.2,57.8,4.17,11.0,256.0
+american_cheese,"American Cheese, Processed",dairy_eggs,366.0,18.0,5.27,30.6,2.63,,1660.0
+american_cheese_restaurant,American Cheese (Restaurant),dairy_eggs,375.0,17.5,6.35,31.1,3.76,,1600.0
+apple,Apple,fruits,52.0,0.3,13.8,0.2,10.4,2.4,1.0
+apple_fuji,"Apple, Fuji",fruits,65.0,0.15,15.7,0.16,12.6,2.1,1.0
+apple_gala,"Apple, Gala",fruits,61.0,0.13,14.8,0.15,11.3,2.1,0.0
+apple_granny_smith,"Apple, Granny Smith",fruits,59.0,0.27,14.2,0.14,10.5,2.5,0.0
+apple_honeycrisp,"Apple, Honeycrisp",fruits,60.0,0.1,14.7,0.1,11.7,1.7,0.0
+apple_juice,Apple Juice,drinks,46.0,0.1,11.3,0.1,9.6,0.2,4.0
+apple_red_delicious,"Apple, Red Delicious",fruits,62.0,0.19,14.8,0.21,11.1,2.0,0.0
+avocado,Avocado,fruits,160.0,2.0,8.5,14.7,0.7,6.7,7.0
+bacon_cooked,"Bacon, Cooked",sausages_meats,500.0,40.9,2.1,36.5,3.14,,1830.0
+baladi_bread,Baladi Bread,middle_eastern,275.0,9.0,56.0,1.5,1.5,5.0,480.0
+banana,Banana,fruits,89.0,1.1,22.8,0.3,12.2,2.6,1.0
+banana_overripe,"Banana, Overripe",fruits,85.0,0.73,20.1,0.22,,1.7,
+banana_ripe,"Banana, Ripe",fruits,97.0,0.74,23.0,0.29,,1.7,0.0
+basbousa,Basbousa,sweets,330.0,5.0,52.0,12.0,32.0,1.5,180.0
+bean_pupusas,Bean Pupusas (Latino),restaurant_foods,229.0,5.59,31.5,9.01,1.3,5.8,305.0
+beans_black,Black Beans,legumes_beans,132.0,8.9,23.7,0.5,0.3,8.7,1.0
+beans_kidney,Kidney Beans,legumes_beans,127.0,8.7,22.8,0.5,0.3,6.4,1.0
+beef_breakfast_sausage,Beef Breakfast Sausage,sausages_meats,328.0,13.3,3.37,28.7,1.0,,866.0
+beef_eye_round_raw,"Beef Eye of Round Roast, Raw",beef,122.0,23.4,0.0,2.48,,,50.0
+beef_hot_dog,Beef Hot Dog,sausages_meats,314.0,11.7,2.89,28.0,1.26,,872.0
+beef_kebab,Grilled Beef Kebab,meat_poultry,210.0,24.0,2.0,11.0,0.5,0.3,300.0
+beef_steak_grilled,Grilled Beef Steak,meat_poultry,217.0,26.0,0.0,12.0,0.0,0.0,60.0
+beef_tenderloin_roasted,"Beef Tenderloin, Roasted",beef,176.0,27.7,0.0,6.36,,,54.0
+beef_top_loin_steak,"Beef Top Loin Steak, Raw",beef,155.0,22.8,0.0,6.39,,,45.0
+beef_top_round_raw,"Beef Top Round Roast, Raw",beef,123.0,23.7,0.0,2.41,,,55.0
+biryani_chicken,Chicken Biryani,mixed_meals,195.0,9.0,25.0,6.5,1.0,1.0,350.0
+blueberries,Blueberries,fruits,57.0,0.7,14.5,0.3,10.0,2.4,1.0
+boiled_egg,Boiled Egg,dairy_eggs,155.0,13.0,1.1,11.0,1.1,0.0,124.0
+bread_white,White Bread,grains,265.0,9.0,49.0,3.2,5.0,2.7,491.0
+bread_whole_wheat,Whole Wheat Bread,grains,247.0,13.0,41.0,4.2,6.0,7.0,400.0
+broccoli_raw,"Broccoli, Raw",vegetables,32.0,2.57,6.29,0.34,1.4,2.4,36.0
+broccoli_steamed,Steamed Broccoli,vegetables,35.0,2.4,7.2,0.4,1.4,3.3,41.0
+burger_beef,Beef Burger,fast_food,250.0,17.0,21.0,12.0,4.0,1.2,460.0
+cake_chocolate,Chocolate Cake,sweets,371.0,5.0,50.0,17.0,37.0,2.0,315.0
+calamari_fried,Fried Calamari,fish_seafood,175.0,15.0,12.0,8.0,0.5,0.5,380.0
+candy_gummy,Gummy Candy,sweets,340.0,6.0,78.0,0.1,46.0,0.0,60.0
+cantaloupe_raw,"Cantaloupe, Raw",fruits,34.0,0.82,8.16,0.18,7.88,0.8,30.0
+carrots_frozen,"Carrots, Frozen",vegetables,37.0,0.81,7.92,0.47,4.2,3.2,66.0
+carrots_raw,Raw Carrots,vegetables,41.0,0.9,9.6,0.2,4.7,2.8,69.0
+cereal_cornflakes,Cornflakes Cereal,grains,357.0,7.0,84.0,0.4,8.0,3.0,729.0
+cheddar_cheese,Cheddar Cheese,dairy_eggs,408.0,23.3,2.44,34.0,0.33,,654.0
+chicken_breast_cooked,"Chicken Breast, Skinless Boneless",poultry,166.0,32.1,0.0,3.24,,,47.0
+chicken_breast_grilled,Grilled Chicken Breast,meat_poultry,165.0,31.0,0.0,3.6,0.0,0.0,74.0
+chicken_drumstick_cooked,"Chicken Drumstick, Cooked",poultry,156.0,23.9,0.0,5.95,,,117.0
+chicken_fried,Fried Chicken,meat_poultry,246.0,23.0,8.0,14.0,0.2,0.3,450.0
+chicken_nuggets,Chicken Nuggets,fast_food,296.0,15.0,18.0,19.0,0.5,1.0,557.0
+chicken_shawarma,Chicken Shawarma,mixed_meals,215.0,17.0,18.0,9.0,2.0,1.5,480.0
+chicken_with_rice,Chicken with Rice,mixed_meals,180.0,11.0,22.0,5.0,0.5,0.8,220.0
+chickpeas_cooked,Cooked Chickpeas,legumes_beans,164.0,8.9,27.4,2.6,4.8,7.6,7.0
+chocolate_bar,Chocolate Bar,sweets,535.0,7.0,59.0,30.0,52.0,3.4,79.0
+chorizo_pork,"Chorizo, Pork",sausages_meats,346.0,19.3,2.63,28.1,,,983.0
+coconut_oil,Coconut Oil,fats_oils,833.0,0.0,0.84,99.1,,,0.0
+cod_baked,Baked Cod,fish_seafood,105.0,23.0,0.0,0.9,0.0,0.0,89.0
+coffee_black,Black Coffee,drinks,2.0,0.1,0.0,0.0,0.0,0.0,5.0
+coffee_milk_sugar,Coffee with Milk and Sugar,drinks,45.0,1.2,7.0,1.5,6.5,0.0,35.0
+cola_diet,Diet Cola,drinks,1.0,0.0,0.1,0.0,0.0,0.0,15.0
+cola_regular,Cola Regular,drinks,42.0,0.0,10.6,0.0,10.6,0.0,4.0
+cookies_chocolate_chip,Chocolate Chip Cookies,sweets,488.0,5.5,64.0,24.0,35.0,2.3,350.0
+corn_cooked,Cooked Corn,vegetables,96.0,3.4,21.0,1.5,4.5,2.4,1.0
+cottage_cheese_lowfat,"Cottage Cheese, 2% Lowfat",dairy_eggs,84.0,11.0,4.31,2.3,4.1,,321.0
+couscous_cooked,Cooked Couscous,grains,112.0,3.8,23.0,0.2,0.1,1.4,5.0
+cream_cheese,Cream Cheese,dairy_eggs,342.0,6.0,4.0,34.0,3.2,0.0,321.0
+cucumber,Cucumber,vegetables,15.0,0.7,3.6,0.1,1.7,0.5,2.0
+dark_chocolate,Dark Chocolate,sweets,546.0,4.9,61.0,31.0,48.0,7.0,24.0
+dates,Dates,fruits,282.0,2.5,75.0,0.4,63.0,8.0,2.0
+deli_ham,"Deli Ham, Sliced",sausages_meats,106.0,16.7,0.27,3.73,,,1040.0
+diced_tomatoes_canned,"Diced Tomatoes, Canned",vegetables,18.0,0.84,3.32,0.5,2.99,,125.0
+dill_pickles,Dill Pickles,vegetables,12.0,0.48,1.99,0.43,1.28,1.0,808.0
+donut_glazed,Glazed Donut,sweets,417.0,4.5,57.0,19.0,25.0,2.0,450.0
+egg_white_dried,"Egg White, Dried",dairy_eggs,376.0,79.9,6.02,0.65,,,1250.0
+egg_white_raw,"Egg White, Raw",dairy_eggs,48.0,10.1,0.74,0.16,,,144.0
+egg_whole_dried,"Egg, Whole, Dried",dairy_eggs,575.0,48.1,1.87,39.8,,,485.0
+egg_whole_raw,"Egg, Whole, Raw",dairy_eggs,150.0,12.3,0.91,10.3,,,121.0
+egg_yolk_dried,"Egg Yolk, Dried",dairy_eggs,654.0,34.2,1.07,55.5,,,149.0
+egg_yolk_raw,"Egg Yolk, Raw",dairy_eggs,296.0,15.6,0.59,25.1,,,66.0
+energy_drink,Energy Drink,drinks,45.0,0.0,11.0,0.0,11.0,0.0,85.0
+falafel,Falafel,middle_eastern,333.0,13.0,32.0,18.0,2.0,5.0,294.0
+falafel_taameya,Falafel / Taameya,middle_eastern,333.0,13.0,32.0,18.0,2.0,5.0,294.0
+fatta_egyptian,Egyptian Fatta,middle_eastern,225.0,9.0,25.0,10.0,0.8,1.0,400.0
+feta_cheese,Feta Cheese,dairy_eggs,264.0,14.0,4.0,21.0,4.0,0.0,917.0
+figs_dried,"Figs, Dried",fruits,249.0,3.3,63.9,0.92,47.9,9.8,10.0
+fish_baked,Baked Fish,fish_seafood,150.0,25.0,0.0,5.0,0.0,0.0,90.0
+fish_fried,Fried Fish,fish_seafood,232.0,18.0,8.0,14.0,0.5,0.5,350.0
+fish_with_rice,Fish with Rice,mixed_meals,170.0,10.0,23.0,4.5,0.4,0.8,180.0
+flour_ap_bleached,"All-Purpose Flour, Bleached",ingredients,366.0,10.9,77.3,1.48,,,2.0
+flour_ap_unbleached,"All-Purpose Flour, Unbleached",ingredients,358.0,13.1,73.2,1.48,,,4.0
+flour_ap_unenriched,"All-Purpose Flour, Unenriched",ingredients,362.0,12.0,74.6,1.7,,3.0,2.0
+flour_bread_white,"Bread Flour, White",ingredients,363.0,14.3,72.8,1.65,,,3.0
+flour_corn_yellow,"Corn Flour, Yellow",ingredients,364.0,6.2,80.8,1.74,1.04,4.3,0.0
+flour_pastry,Pastry Flour,ingredients,358.0,8.75,77.2,1.64,,,1.0
+flour_rice_brown,Brown Rice Flour,ingredients,365.25,7.19,75.5,3.85,,,1.0
+flour_rice_glutinous,Glutinous Rice Flour,ingredients,358.0,6.69,80.1,1.16,,,6.0
+flour_rice_white,"Rice Flour, White",ingredients,359.0,6.94,79.8,1.3,,0.5,5.0
+flour_soy_defatted,"Soy Flour, Defatted",ingredients,366.0,51.1,32.9,3.33,,,2.0
+flour_soy_full_fat,"Soy Flour, Full-Fat",ingredients,452.0,38.6,27.9,20.7,,,2.0
+flour_whole_wheat,Whole Wheat Flour,ingredients,370.0,15.1,71.2,2.73,,10.6,3.0
+foul_medames,Foul Medames,middle_eastern,110.0,7.5,18.0,1.5,1.0,5.5,330.0
+french_fries,French Fries,fast_food,312.0,3.4,41.0,15.0,0.3,3.8,210.0
+fried_chicken_piece,Fried Chicken Piece,fast_food,260.0,20.0,8.0,17.0,0.2,0.2,480.0
+fried_rice_chinese,"Fried Rice, No Meat (Chinese)",restaurant_foods,174.0,3.84,32.5,3.19,0.62,,361.0
+garlic_raw,"Garlic, Raw",vegetables,143.0,6.62,28.2,0.38,,2.7,
+granola_bar,Granola Bar,snacks,471.0,10.0,64.0,19.0,29.0,5.0,250.0
+granulated_sugar,Granulated Sugar,ingredients,385.0,0.0,99.6,0.32,99.8,,1.0
+grapefruit_juice,Grapefruit Juice,fruits,37.0,0.55,7.59,0.7,7.72,0.2,1.0
+grapes,Grapes,fruits,69.0,0.7,18.1,0.2,15.5,0.9,2.0
+greek_yogurt_plain,"Greek Yogurt, Plain Nonfat",dairy_eggs,61.0,10.3,3.64,0.37,3.27,,36.0
+greek_yogurt_strawberry,"Greek Yogurt, Strawberry Nonfat",dairy_eggs,83.0,8.06,12.2,0.15,11.5,0.6,32.0
+green_beans_canned,"Green Beans, Canned",vegetables,21.0,1.04,4.11,0.39,1.29,,282.0
+green_olives,"Green Olives, Stuffed",fruits,130.0,1.15,4.96,12.9,0.0,4.0,1620.0
+grilled_fish,Grilled Fish,fish_seafood,180.0,26.0,0.0,8.0,0.0,0.0,120.0
+ground_turkey_93_lean,"Ground Turkey, 93% Lean",poultry,220.0,27.1,0.0,11.6,,,90.0
+haddock_raw,"Haddock, Raw",fish_seafood,74.0,16.3,0.0,0.45,,,213.0
+ham_restaurant,"Ham, Sliced (Restaurant)",sausages_meats,121.0,19.6,2.36,3.68,2.2,,1030.0
+hawawshi,Hawawshi,middle_eastern,285.0,13.0,28.0,14.0,2.0,2.0,560.0
+hot_dog,Hot Dog,fast_food,290.0,11.0,4.0,26.0,1.5,0.0,1090.0
+hummus,Hummus,legumes_beans,229.0,7.35,14.9,17.1,0.34,5.4,438.0
+ice_cream_vanilla,Vanilla Ice Cream,sweets,207.0,3.5,24.0,11.0,21.0,0.7,80.0
+italian_pork_sausage,Italian Pork Sausage,sausages_meats,322.0,18.2,2.15,26.2,1.46,,766.0
+kabsa_chicken,Chicken Kabsa,middle_eastern,186.0,10.0,24.0,5.5,1.0,1.0,320.0
+kale_frozen_cooked,"Kale, Frozen Cooked",vegetables,36.0,2.94,5.3,1.21,1.12,,16.0
+kale_raw,"Kale, Raw",vegetables,35.0,2.92,4.42,1.49,0.8,4.1,53.0
+kebab_grilled,Grilled Kebab,mixed_meals,215.0,23.0,3.0,12.0,0.5,0.5,350.0
+ketchup,Ketchup,vegetables,117.0,1.11,26.8,0.55,21.8,,949.0
+kiwi,Kiwi,fruits,61.0,1.1,14.7,0.5,9.0,3.0,3.0
+kiwi_raw,"Kiwi, Raw",fruits,58.0,1.06,14.0,0.44,8.99,3.0,5.0
+kofta_grilled,Grilled Kofta,middle_eastern,240.0,17.0,4.0,18.0,1.0,1.0,430.0
+koshari,Koshari,middle_eastern,160.0,5.0,29.0,3.0,3.0,4.0,250.0
+kunafa,Kunafa,sweets,400.0,7.0,45.0,22.0,28.0,1.0,220.0
+labneh,Labneh,dairy_eggs,150.0,8.0,4.0,11.0,3.0,0.0,80.0
+lamb_chop_grilled,Grilled Lamb Chop,meat_poultry,282.0,25.0,0.0,20.0,0.0,0.0,72.0
+lamb_shank_cooked,"Lamb Shank, Cooked",meat_poultry,250.0,28.0,0.0,15.0,0.0,0.0,80.0
+lamb_with_rice,Lamb with Rice,mixed_meals,190.0,10.0,22.0,7.0,0.8,0.8,250.0
+large_egg_white,Large Egg White,dairy_eggs,55.0,10.7,2.36,0.0,,,
+large_egg_whole,"Large Egg, Whole",dairy_eggs,148.0,12.4,0.96,9.96,0.2,0.0,129.0
+large_egg_yolk,Large Egg Yolk,dairy_eggs,334.0,16.2,1.02,28.8,,,
+lasagna,Lasagna,mixed_meals,163.0,11.0,14.0,7.5,3.0,1.5,460.0
+lemonade,Lemonade,drinks,40.0,0.0,10.0,0.0,9.0,0.0,4.0
+lentil_soup,Lentil Soup,middle_eastern,56.0,3.5,8.0,1.5,1.3,2.8,250.0
+lentils_cooked,Cooked Lentils,legumes_beans,116.0,9.0,20.0,0.4,1.8,7.9,2.0
+lettuce,Lettuce,vegetables,15.0,1.4,2.9,0.2,0.8,1.3,28.0
+macaroni_bechamel,Macaroni Bechamel,middle_eastern,190.0,8.0,22.0,8.0,2.0,1.0,300.0
+mahshi,Mahshi,middle_eastern,145.0,4.0,22.0,5.0,3.0,3.0,350.0
+mandi_chicken,Chicken Mandi,middle_eastern,178.0,10.0,24.0,4.5,0.5,0.8,280.0
+mango,Mango,fruits,60.0,0.8,15.0,0.4,13.7,1.6,1.0
+marinara_sauce,Marinara Pasta Sauce,soups_sauces,45.0,1.41,8.05,1.48,5.5,1.8,419.0
+meatballs,Meatballs,meat_poultry,202.0,14.0,8.0,13.0,1.0,1.0,520.0
+milk_1_percent,"Milk, 1% Lowfat",dairy_eggs,43.0,3.38,5.19,0.95,4.96,,39.0
+milk_2_percent,"Milk, 2% Reduced Fat",dairy_eggs,50.0,3.35,4.91,1.9,4.89,,39.0
+milk_skim,"Milk, Skim (Nonfat)",dairy_eggs,34.0,3.43,4.89,0.08,5.05,,41.0
+milk_whole,"Milk, Whole",dairy_eggs,60.0,3.28,4.67,3.2,4.81,,38.0
+mixed_salad,Mixed Salad,vegetables,25.0,1.5,5.0,0.3,2.5,2.0,25.0
+molokhia,Molokhia,middle_eastern,45.0,3.0,7.0,1.0,1.0,3.0,250.0
+mozzarella_cheese,"Mozzarella Cheese, Part-Skim",dairy_eggs,298.0,23.7,4.44,20.4,1.81,,699.0
+nectarines_raw,"Nectarines, Raw",fruits,39.0,1.06,9.18,0.28,7.89,1.5,13.0
+nuts_mixed,Mixed Nuts,nuts_seeds,607.0,20.0,21.0,54.0,4.0,7.0,6.0
+oatmeal_raisin_cookies,Oatmeal Raisin Cookies,baked_goods,430.0,5.79,69.6,14.3,34.8,3.3,314.0
+oats_cooked,Cooked Oats,grains,71.0,2.5,12.0,1.5,0.3,1.7,4.0
+onion_rings_baked,"Onion Rings, Frozen Baked",vegetables,288.0,4.52,36.3,14.4,4.5,2.4,374.0
+orange,Orange,fruits,47.0,0.9,11.8,0.1,9.4,2.4,0.0
+orange_juice,Orange Juice,drinks,45.0,0.7,10.4,0.2,8.4,0.2,1.0
+oranges_raw,"Oranges, Raw",fruits,47.0,0.91,11.8,0.15,8.57,2.0,9.0
+parmesan_cheese,"Parmesan Cheese, Grated",dairy_eggs,421.0,29.6,12.4,28.0,0.07,,1750.0
+pasta_alfredo,Pasta Alfredo,mixed_meals,208.0,6.0,21.0,11.0,2.0,1.1,420.0
+pasta_cooked,Cooked Pasta,grains,157.0,5.8,30.9,0.9,0.6,1.8,1.0
+peaches_raw,"Peaches, Raw",fruits,42.0,0.91,10.1,0.27,8.39,1.5,13.0
+peanut_butter,"Peanut Butter, Smooth",legumes_beans,597.0,22.5,22.3,51.1,10.5,4.8,429.0
+peanuts,Peanuts,nuts_seeds,567.0,26.0,16.0,49.0,4.0,8.5,18.0
+pear,Pear,fruits,57.0,0.4,15.0,0.1,9.8,3.1,1.0
+pears_raw,"Pears, Raw",fruits,57.0,0.38,15.1,0.16,9.69,3.1,7.0
+peas_cooked,Cooked Peas,vegetables,84.0,5.4,15.6,0.4,5.9,5.5,5.0
+pineapple,Pineapple,fruits,50.0,0.5,13.1,0.1,9.9,1.4,1.0
+pita_bread,Pita Bread,grains,275.0,9.0,56.0,1.2,1.0,2.2,536.0
+pizza_slice,Pizza Slice,fast_food,266.0,11.0,33.0,10.0,3.6,2.3,598.0
+pollock_raw,"Pollock, Raw",fish_seafood,56.0,12.3,0.0,0.41,,,333.0
+popcorn_butter,Butter Popcorn,snacks,535.0,8.0,58.0,31.0,0.5,10.0,884.0
+popcorn_plain,Plain Popcorn,snacks,387.0,13.0,78.0,4.5,0.9,15.0,8.0
+pork_tamale,Pork Tamale (Latino),restaurant_foods,174.0,7.38,15.8,9.04,0.46,2.4,473.0
+porterhouse_steak,"Porterhouse Steak, Raw",beef,145.0,22.7,0.0,5.32,,,43.0
+potato_baked,Baked Potato,vegetables,93.0,2.5,21.0,0.1,1.2,2.2,10.0
+potato_chips,Potato Chips,snacks,536.0,7.0,53.0,35.0,0.5,4.8,525.0
+queso_seco,Queso Seco (Dry White Cheese),dairy_eggs,326.0,24.5,2.07,24.3,0.43,,1810.0
+quinoa_cooked,Cooked Quinoa,grains,120.0,4.4,21.3,1.9,0.9,2.8,7.0
+red_onion_raw,"Red Onion, Raw",vegetables,44.0,0.94,9.93,0.1,5.76,2.2,1.0
+rice_brown_cooked,Cooked Brown Rice,grains,123.0,2.7,25.6,1.0,0.2,1.8,4.0
+rice_pudding,Rice Pudding,sweets,118.0,3.3,21.0,2.0,12.0,0.2,90.0
+rice_white_cooked,Cooked White Rice,grains,130.0,2.7,28.0,0.3,0.1,0.4,1.0
+ricotta_cheese,"Ricotta Cheese, Whole Milk",dairy_eggs,157.0,7.81,6.86,11.0,,,105.0
+roasted_lamb,Roasted Lamb,meat_poultry,294.0,25.0,0.0,21.0,0.0,0.0,70.0
+romaine_lettuce,"Romaine Lettuce, Raw",vegetables,17.0,1.24,3.24,0.26,1.19,1.8,
+salmon_grilled,Grilled Salmon,fish_seafood,206.0,22.0,0.0,12.0,0.0,0.0,59.0
+salsa,Salsa Sauce,soups_sauces,29.0,1.44,6.74,0.19,3.81,1.8,656.0
+sandwich_cheese,Cheese Sandwich,mixed_meals,300.0,12.0,30.0,15.0,4.0,2.0,650.0
+sandwich_turkey,Turkey Sandwich,mixed_meals,180.0,13.0,24.0,4.0,3.0,2.0,600.0
+sardines_canned,Canned Sardines,fish_seafood,208.0,25.0,0.0,11.5,0.0,0.0,505.0
+sausage_beef,Beef Sausage,meat_poultry,301.0,12.0,2.0,27.0,1.0,0.0,900.0
+scrambled_egg,Scrambled Egg,dairy_eggs,148.0,10.0,1.6,11.0,1.4,0.0,145.0
+sea_bass_grilled,Grilled Sea Bass,fish_seafood,124.0,23.6,0.0,2.6,0.0,0.0,70.0
+shawarma_chicken,Chicken Shawarma Wrap,mixed_meals,230.0,16.0,22.0,10.0,2.0,1.8,550.0
+shrimp_cooked,Cooked Shrimp,fish_seafood,99.0,24.0,0.2,0.3,0.0,0.0,111.0
+smoothie_fruit,Fruit Smoothie,drinks,65.0,1.0,15.0,0.5,12.0,1.5,20.0
+soup_chicken,Chicken Soup,mixed_meals,36.0,3.5,3.0,1.2,1.0,0.5,343.0
+spaghetti_tomato_sauce,Spaghetti with Tomato Sauce,mixed_meals,125.0,4.5,24.0,1.5,4.0,2.5,300.0
+sparkling_water,Sparkling Water,drinks,0.0,0.0,0.0,0.0,0.0,0.0,5.0
+spinach,Spinach,vegetables,23.0,2.9,3.6,0.4,0.4,2.2,79.0
+sports_drink,Sports Drink,drinks,26.0,0.0,6.4,0.0,5.8,0.0,45.0
+strawberries,Strawberries,fruits,32.0,0.7,7.7,0.3,4.9,2.0,1.0
+strawberries_raw,"Strawberries, Raw",fruits,31.0,0.64,7.63,0.22,5.34,1.8,10.0
+sunflower_seeds,"Sunflower Seeds, Dry Roasted",nuts_seeds,612.0,21.0,17.1,56.1,3.14,10.3,532.0
+sweet_potato_baked,Baked Sweet Potato,vegetables,90.0,2.0,20.7,0.2,6.5,3.3,36.0
+sweet_sour_pork,Sweet and Sour Pork (Chinese),restaurant_foods,260.0,8.88,25.5,13.6,10.3,1.0,304.0
+swiss_cheese,Swiss Cheese,dairy_eggs,393.0,27.0,1.44,31.0,0.0,,185.0
+tbone_steak_grilled,"T-Bone Steak, Grilled",beef,219.0,27.3,0.0,11.4,,,67.0
+tea_sweetened,Sweetened Tea,drinks,30.0,0.0,7.8,0.0,7.8,0.0,3.0
+tea_unsweetened,Unsweetened Tea,drinks,1.0,0.0,0.0,0.0,0.0,0.0,3.0
+tilapia_grilled,Grilled Tilapia,fish_seafood,128.0,26.0,0.0,2.7,0.0,0.0,56.0
+tofu_firm,Firm Tofu,soy,144.0,15.7,3.9,8.7,0.6,2.3,14.0
+tomato,Tomato,vegetables,18.0,0.9,3.9,0.2,2.6,1.2,5.0
+tomatoes_grape,"Tomatoes, Grape",vegetables,27.0,0.83,5.51,0.63,,2.1,6.0
+tortilla_wrap,Tortilla Wrap,grains,300.0,8.0,50.0,8.0,2.0,3.0,650.0
+tuna_canned,"Tuna, Canned in Water",fish_seafood,90.0,19.0,0.08,0.94,0.0,,219.0
+turkey_breakfast_sausage,Turkey Breakfast Sausage,sausages_meats,169.0,16.7,0.93,10.4,,,599.0
+turkey_slices,Turkey Slices,meat_poultry,120.0,20.0,2.0,3.0,1.0,0.0,900.0
+veggie_burger,Veggie Burger,vegetarian,190.0,11.0,18.0,9.0,2.0,4.0,450.0
+water,Water,drinks,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+watermelon,Watermelon,fruits,30.0,0.6,7.6,0.2,6.2,0.4,1.0
+white_onion_raw,"White Onion, Raw",vegetables,35.0,0.89,7.68,0.13,5.76,1.2,2.0
+yellow_mustard,Yellow Mustard,spices_herbs,61.0,4.25,5.3,3.38,1.42,4.3,1100.0
+yellow_onion_raw,"Yellow Onion, Raw",vegetables,38.0,0.83,8.61,0.05,5.82,1.9,1.0
+yogurt_fruit,Fruit Yogurt,dairy_eggs,95.0,3.5,15.0,2.0,12.0,0.0,45.0
+fndds_goat_milk,Goat milk,dairy_eggs,69,3.56,4.45,4.14,4.45,0,50
+fndds_buttermilk,Buttermilk,dairy_eggs,43,3.46,4.81,1.08,5.36,0,92
+fndds_milk_evaporated_whole,"Milk, evaporated, whole",dairy_eggs,134,6.81,10.04,7.56,10.04,0,106
+fndds_milk_lactose_free_whole,"Milk, lactose free, whole",dairy_eggs,61,3.27,4.63,3.2,4.81,0,38
+fndds_milk_reduced_fat_2,"Milk, reduced fat (2%)",dairy_eggs,50,3.36,4.9,1.9,4.89,0,39
+fndds_milk_evaporated_reduced_fat_2,"Milk, evaporated, reduced fat (2%)",dairy_eggs,92,7.42,11.15,1.96,11.15,0,113
+fndds_milk_lactose_free_reduced_fat_2,"Milk, lactose free, reduced fat (2%)",dairy_eggs,50,3.36,4.9,1.9,4.89,0,39
+fndds_kefir,Kefir,dairy_eggs,52,3.59,7.48,0.96,6.91,0,38
+fndds_milk_low_fat_1,"Milk, low fat (1%)",dairy_eggs,43,3.38,5.18,0.95,4.96,0,39
+fndds_milk_lactose_free_low_fat_1,"Milk, lactose free, low fat (1%)",dairy_eggs,43,3.38,5.18,0.95,4.96,0,39
+fndds_milk_fat_free_skim,"Milk, fat free (skim)",dairy_eggs,34,3.43,4.92,0.08,5.05,0,41
+fndds_milk_dry_reconstituted_nonfat,"Milk, dry, reconstituted, nonfat",dairy_eggs,32,3.2,4.6,0.07,4.6,0,51
+fndds_milk_evaporated_fat_free_skim,"Milk, evaporated, fat free (skim)",dairy_eggs,78,7.55,11.35,0.2,11.35,0,115
+fndds_milk_lactose_free_fat_free_skim,"Milk, lactose free, fat free (skim)",dairy_eggs,34,3.43,4.92,0.08,5.05,0,41
+fndds_strawberry_milk_whole,"Strawberry milk, whole",dairy_eggs,86,3.03,11.79,2.97,11.68,0,38
+fndds_chocolate_milk_whole,"Chocolate milk, whole",dairy_eggs,83,3.17,10.34,3.39,9.54,0.8,60
+fndds_milk_condensed_sweetened,"Milk, condensed, sweetened",dairy_eggs,321,7.91,54.4,8.7,54.4,0,127
+fndds_chocolate_milk_reduced_sugar_whole,"Chocolate milk, reduced sugar, whole",dairy_eggs,73,3.04,8.38,2.92,7.79,0,46
+fndds_milk_malted,"Milk, malted",dairy_eggs,66,3.19,8.64,2.05,7.81,0,60
+fndds_strawberry_milk_reduced_fat_2,"Strawberry milk, reduced fat (2%)",dairy_eggs,71,3.16,10.7,1.8,10.46,0,39
+fndds_chocolate_milk_reduced_fat_2,"Chocolate milk, reduced fat (2%)",dairy_eggs,76,2.99,12.13,1.9,9.55,0.7,66
+fndds_hot_chocolate_cocoa_with_whipped_cream,"Hot chocolate / cocoa, with whipped cream",dairy_eggs,101,2.7,16.25,2.8,14.92,0,58
+fndds_chocolate_milk_reduced_sugar_reduced_fat_2,"Chocolate milk, reduced sugar, reduced fat (2%)",dairy_eggs,63,3.11,8.62,1.78,7.86,0,47
+fndds_strawberry_milk_reduced_sugar,"Strawberry milk, reduced sugar",dairy_eggs,59,3.27,6.72,2.1,6.69,0,39
+fndds_strawberry_milk_low_fat_1,"Strawberry milk, low fat (1%)",dairy_eggs,69,3.13,12.3,0.89,11.82,0,39
+fndds_chocolate_milk_low_fat_1,"Chocolate milk, low fat (1%)",dairy_eggs,64,3.46,10.15,1.11,9.94,0.1,65
+fndds_chocolate_milk_reduced_sugar_low_fat_1,"Chocolate milk, reduced sugar, low fat (1%)",dairy_eggs,57,3.13,8.87,0.95,7.92,0,47
+fndds_strawberry_milk_fat_free_skim,"Strawberry milk, fat free  (skim)",dairy_eggs,61,3.18,12.06,0.09,11.9,0,41
+fndds_chocolate_milk_fat_free_skim,"Chocolate milk, fat free (skim)",dairy_eggs,67,3.39,13.46,0,8.39,0,79
+fndds_hot_chocolate_cocoa_dry_mix_made_with_water,"Hot chocolate / cocoa, dry mix, made with water",dairy_eggs,54,0.9,11.27,0.54,8.82,0.5,71
+fndds_chocolate_milk_reduced_sugar_fat_free_skim,"Chocolate milk, reduced sugar, fat free (skim)",dairy_eggs,49,3.18,8.64,0.19,8,0,48
+fndds_hot_chocolate_cocoa_dry_mix_reduced_sugar_made_with_water,"Hot chocolate / cocoa, dry mix, reduced sugar, made with water",dairy_eggs,31,1.26,5.87,0.24,3.07,0.6,75
+fndds_eggnog,Eggnog,dairy_eggs,88,4.55,8.05,4.19,8.05,0,54
+fndds_milk_shake_with_malt,Milk shake with malt,dairy_eggs,125,3.76,13.64,6.11,12.04,0.2,66
+fndds_chocolate_milk_drink,Chocolate milk drink,dairy_eggs,49,0.64,10.68,0.4,8.68,0.6,91
+fndds_ice_cream_soda_chocolate,"Ice cream soda, chocolate",dairy_eggs,87,1,15.23,2.9,14.48,0.3,30
+fndds_milk_shake_bottled_chocolate,"Milk shake, bottled, chocolate",dairy_eggs,150,3.7,20.36,6.66,13.39,1.6,80
+fndds_milk_shake_home_recipe_chocolate,"Milk shake, home recipe, chocolate",dairy_eggs,120,3.47,13.53,6.14,12.57,0.5,52
+fndds_cheese_ball,Cheese ball,dairy_eggs,441,17.89,4.84,38.88,1.74,1.2,554
+fndds_queso_fresco,Queso Fresco,dairy_eggs,298,18.88,2.96,23.36,2.32,0,626
+fndds_queso_cotija,Queso cotija,dairy_eggs,351,23.84,2.72,27.24,0,0,1625
+fndds_queso_asadero,Queso Asadero,dairy_eggs,297,22.14,2.4,22.1,0,0,734
+fndds_cheese_brie,"Cheese, Brie",dairy_eggs,334,20.75,0.45,27.68,0.45,0,629
+fndds_cheese_feta,"Cheese, Feta",dairy_eggs,273,19.71,5.58,19.08,1.63,0,1034
+fndds_cheese_goat,"Cheese, goat",dairy_eggs,364,21.58,0.12,29.84,0.12,0,415
+fndds_imitation_cheese,Imitation cheese,dairy_eggs,390,25,1,32,1,0,670
+fndds_cheese_brick,"Cheese, Brick",dairy_eggs,371,23.24,2.79,29.68,0.51,0,560
+fndds_cheese_colby,"Cheese, Colby",dairy_eggs,394,23.76,2.57,32.11,0.52,0,604
+fndds_cheese_swiss,"Cheese, Swiss",dairy_eggs,393,27,1.44,31,0,0,185
+fndds_cheese_paneer,"Cheese, paneer",dairy_eggs,299,15.86,22.46,15.52,23.33,0,185
+fndds_cheese_cheddar,"Cheese, Cheddar",dairy_eggs,409,23.3,2.44,34,0.33,0,654
+fndds_cheese_ricotta,"Cheese, Ricotta",dairy_eggs,148,9.6,6,9.46,0.29,0,102
+fndds_puerto_rican_white_cheese,Puerto Rican white cheese,dairy_eggs,298,18.88,2.96,23.36,2.32,0,626
+fndds_cottage_cheese_farmer_s,"Cottage cheese, farmer's",dairy_eggs,148,10.96,4.33,9.73,2.52,0,330
+fndds_cheese_cottage_low_fat,"Cheese, cottage, low fat",dairy_eggs,82,11,4.31,2.3,4.1,0,321
+fndds_cheese_cottage_dry_curd,"Cheese, cottage, dry curd",dairy_eggs,72,10.34,6.66,0.29,1.85,0,372
+fndds_cheese_cottage_with_fruit,"Cheese, cottage, with fruit",dairy_eggs,74,9.41,4.94,1.96,4.61,0.2,273
+fndds_cheese_cottage_with_vegetables,"Cheese, cottage, with vegetables",dairy_eggs,79,9.78,5.63,1.98,3.95,0.7,278
+fndds_yogurt_tube,Yogurt tube,dairy_eggs,81,4.34,13.68,1.03,11.4,0.1,60
+fndds_yogurt_liquid,"Yogurt, liquid",dairy_eggs,74,3.65,12.55,1.07,10.27,0.1,53
+fndds_yogurt_whole_milk_plain,"Yogurt, whole milk, plain",dairy_eggs,78,3.82,5.57,4.48,4.09,0,42
+fndds_yogurt_nonfat_milk_plain,"Yogurt, nonfat milk, plain",dairy_eggs,50,4.23,8.08,0.09,7.68,0,51
+fndds_yogurt_parfait_with_fruit,"Yogurt parfait, with fruit",dairy_eggs,104,5.25,16.08,2.18,10.36,1.3,44
+fndds_yogurt_low_fat_milk_plain,"Yogurt, low fat milk, plain",dairy_eggs,63,5.25,7.04,1.55,7.04,0,70
+fndds_yogurt_greek_with_oats,"Yogurt, Greek, with oats",dairy_eggs,149,9.22,20.02,3.67,10.74,1.5,58
+fndds_yogurt_greek_whole_milk_plain,"Yogurt, Greek, whole milk, plain",dairy_eggs,94,8.78,4.75,4.39,3.25,0,34
+fndds_yogurt_greek_nonfat_milk_plain,"Yogurt, Greek, nonfat milk, plain",dairy_eggs,59,10.3,3.64,0.37,3.27,0,36
+fndds_yogurt_greek_low_fat_milk_plain,"Yogurt, Greek, low fat milk, plain",dairy_eggs,67,10.2,3.6,1.36,3.24,0,36
+fndds_yogurt_greek_whole_milk_fruit,"Yogurt, Greek, whole milk, fruit",dairy_eggs,114,7.85,11.8,3.91,8.23,0.1,34
+fndds_oat_milk,Oat milk,dairy_eggs,45,0.66,5.37,2.33,2.04,0.5,43
+fndds_rice_milk,Rice milk,dairy_eggs,47,0.28,9.17,0.97,5.28,0.3,39
+fndds_coconut_milk,Coconut milk,dairy_eggs,31,0.21,2.92,2.08,2.5,0,19
+fndds_soy_milk_sweetened,"Soy milk, sweetened",dairy_eggs,53,3.41,5.22,2.05,4.53,0,33
+fndds_soy_milk_chocolate,"Soy milk, chocolate",dairy_eggs,64,3.35,8.32,2.03,7.49,0.1,32
+fndds_soy_milk_unsweetened,"Soy milk, unsweetened",dairy_eggs,38,3.55,1.29,2.12,0.56,0,34
+fndds_almond_milk_sweetened,"Almond milk, sweetened",dairy_eggs,30,0.53,4.31,1.18,3.99,0,58
+fndds_yogurt_soy,"Yogurt, soy",dairy_eggs,90,4.83,12.27,2.63,8.04,0.9,30
+fndds_yogurt_almond_milk,"Yogurt, almond milk",dairy_eggs,128,3.03,12.98,7.03,7.8,1.5,49
+fndds_yogurt_coconut_milk,"Yogurt, coconut milk",dairy_eggs,108,2.37,12.91,5.61,8.88,1.2,41
+fndds_veal_chop,"Veal, chop",beef,158,29.51,0.07,4.4,0,0,391
+fndds_beef_roast,"Beef, roast",beef,206,29.08,0,9.72,0,0,372
+fndds_beef_oxtails,"Beef, oxtails",beef,257,25.9,0,16.46,0,0,357
+fndds_beef_brisket,"Beef, brisket",beef,231,29.41,0,12.04,0,0,377
+fndds_beef_shortribs,"Beef, shortribs",beef,253,18.2,12.13,14.1,9.89,0.3,650
+fndds_beef_pot_roast,"Beef, pot roast",beef,251,28.39,0,15.35,0,0,370
+fndds_beef_stew_meat,"Beef, stew meat",beef,251,28.39,0,15.35,0,0,370
+fndds_beef_neck_bones,"Beef, neck bones",beef,257,25.9,0,16.46,0,0,357
+fndds_beef_sandwich_steak,"Beef, sandwich steak",beef,326,18.26,0,27.59,0,0,359
+fndds_beef_ground,"Beef, ground",beef,261,25.55,0,16.82,0,0,381
+fndds_veal_ground,"Veal, ground",beef,213,25.62,1.5,11.69,0,0,452
+fndds_beef_ground_raw,"Beef, ground, raw",beef,213,18.44,0,14.88,0,0,373
+fndds_beef_ground_patty,"Beef, ground, patty",beef,272,25.45,0,18.18,0,0,383
+fndds_pork_ribs,"Pork, ribs",meat_poultry,254,16.22,12.13,15.12,9.89,0.3,678
+fndds_pork_ears,"Pork, ears",meat_poultry,236,26.15,0,13.78,0,0,364
+fndds_pork_roast,"Pork, roast",meat_poultry,181,26.63,0,7.49,0,0,353
+fndds_pork_bones,"Pork, bones",meat_poultry,236,26.15,0,13.78,0,0,364
+fndds_pork_belly,"Pork, belly",meat_poultry,404,26.58,0,32.24,0,0,448
+fndds_pork_skin_rinds,Pork skin rinds,meat_poultry,544,61.3,0,31.3,0,0,1818
+fndds_pork_ground,"Pork, ground",meat_poultry,299,26.92,0,21.22,0,0,395
+fndds_pork_carnitas,"Pork, carnitas",meat_poultry,271,24.57,0,18.33,0,0,440
+fndds_goat,Goat,meat_poultry,142,26.88,0,3.01,0,0,392
+fndds_bear,Bear,meat_poultry,257,32.16,0,13.28,0,0,378
+fndds_moose,Moose,meat_poultry,133,29.04,0,0.96,0,0,376
+fndds_bison,Bison,meat_poultry,178,25.25,0,8.55,0,0,383
+fndds_rabbit,Rabbit,meat_poultry,204,30.14,0,8.34,0,0,344
+fndds_beaver,Beaver,meat_poultry,210,34.57,0,6.9,0,0,366
+fndds_caribou,Caribou,meat_poultry,166,29.53,0,4.38,0,0,367
+fndds_heart,Heart,meat_poultry,164,28.25,0.15,4.69,0,0,366
+fndds_tripe,Tripe,meat_poultry,89,12.6,0,3.85,0,0,425
+fndds_kidney,Kidney,meat_poultry,157,27.05,0,4.61,0,0,400
+fndds_brains,Brains,meat_poultry,150,11.58,1.47,10.45,0,0,414
+fndds_tongue,Tongue,meat_poultry,282,19.14,0,22.12,0,0,372
+fndds_gizzard,Gizzard,meat_poultry,153,30.15,0,2.66,0,0,363
+fndds_chicken_skin,Chicken skin,poultry,450,20.19,0,40.34,0,0,387
+fndds_chicken_back,"Chicken, back",poultry,298,25.73,0,20.8,0,0,409
+fndds_chicken_tail,"Chicken, tail",poultry,454,20.36,0,40.68,0,0,65
+fndds_chicken_ground,"Chicken, ground",poultry,201,27.14,0,10.31,0,0,400
+fndds_chicken_wing_stewed,"Chicken wing, stewed",poultry,247,22.6,0,16.69,0,0,374
+fndds_chicken_wing_sauteed,"Chicken wing, sauteed",poultry,265,23.13,0,18.39,0,0,402
+fndds_chicken_wing_rotisserie,"Chicken wing, rotisserie",poultry,257,23.42,0.6,18.04,0.6,0,579
+fndds_chicken_wing_baked_coated,"Chicken wing, baked, coated",poultry,260,21.42,3.98,16.87,0.07,0.2,417
+fndds_chicken_feet,Chicken feet,poultry,215,19.4,0.2,14.6,0,0,67
+fndds_chicken_wing_grilled_with_sauce,"Chicken wing, grilled with sauce",poultry,250,19.03,7.28,15.49,5.94,0.2,568
+fndds_chicken_chicken_roll_roasted,"Chicken, chicken roll, roasted",poultry,164,26.68,0,6.33,0,0,499
+fndds_chicken_canned_meat_only,"Chicken, canned, meat only",poultry,185,25.3,0.9,8.1,0,0,482
+fndds_chicken_wing_grilled_without_sauce,"Chicken wing, grilled without sauce",poultry,265,23.13,0,18.39,0,0,402
+fndds_chicken_wings_plain_from_precooked,"Chicken ""wings"", plain, from precooked",poultry,294,18.62,7.15,20.59,0.12,0.3,461
+fndds_chicken_neck_or_ribs,"Chicken, neck or ribs",poultry,245,19.45,0,17.95,0,0,374
+fndds_chicken_thigh_stewed_skin_eaten,"Chicken thigh, stewed, skin eaten",poultry,227,22.39,0,15.31,0,0,383
+fndds_chicken_breast_stewed_skin_eaten,"Chicken breast, stewed, skin eaten",poultry,181,24.7,0,8.28,0,0,316
+fndds_chicken_thigh_sauteed_skin_eaten,"Chicken thigh, sauteed, skin eaten",poultry,243,22.61,0,16.29,0,0,406
+fndds_chicken_breast_sauteed_skin_eaten,"Chicken breast, sauteed, skin eaten",poultry,206,25.72,0,10.62,0,0,329
+fndds_chicken_wing_fried_coated_from_raw,"Chicken wing, fried, coated, from raw",poultry,289,19.39,5.96,20.24,0.1,0.2,419
+fndds_chicken_fillet_grilled,"Chicken fillet, grilled",poultry,151,22.31,2.36,5.81,0,0,450
+fndds_chicken_patty_breaded,"Chicken patty, breaded",poultry,287,14.85,12.84,19.58,0,0.3,532
+fndds_chicken_fillet_breaded,"Chicken fillet, breaded",poultry,240,14.62,14.86,13.58,0.57,1.7,527
+fndds_chicken_nuggets_from_frozen,"Chicken nuggets, from frozen",poultry,298,13.36,17.88,19.23,0.8,1.8,600
+fndds_chicken_nuggets_from_other_sources,"Chicken nuggets, from other sources",poultry,304,15.15,15.81,20.02,0.3,1.2,596
+fndds_chicken_nuggets_from_fast_food,"Chicken nuggets, from fast food",poultry,307,15.92,14.93,20.36,0.08,0.9,594
+fndds_ostrich,Ostrich,poultry,174,25.93,0,7.01,0,0,402
+fndds_quail_cooked,"Quail, cooked",poultry,226,25,0,14.04,0,0,214
+fndds_dove_fried,"Dove, fried",poultry,223,23.06,1.46,13.84,0.11,0,197
+fndds_pheasant_cooked,"Pheasant, cooked",poultry,238,32.26,0,12.05,0,0,205
+fndds_turkey_neck,"Turkey, neck",poultry,161,22.29,0,7.3,0,0,566
+fndds_turkey_tail,"Turkey, tail",poultry,294,22.25,0,22.8,0,0,485
+fndds_turkey_back,"Turkey, back",poultry,203,25.58,0,11.26,0,0,557
+fndds_duck_peking,"Duck, Peking",poultry,154,5.32,6.47,11.76,4.41,0.3,287
+fndds_turkey_canned,"Turkey, canned",poultry,185,25.3,0.9,8.1,0,0,482
+fndds_turkey_ground,"Turkey, ground",poultry,211,26.87,0,11.5,0,0,412
+fndds_turkey_nuggets,"Turkey, nuggets",poultry,236,22.19,17.14,8.66,1.48,1.1,334
+fndds_caviar,Caviar,fish_seafood,264,24.6,4,17.9,0,0,1500
+fndds_fish_raw,"Fish, raw",fish_seafood,94,17.22,0,2.34,0,0,83
+fndds_fish_eel,"Fish, eel",fish_seafood,273,20.61,7.79,17.07,0.14,0.3,317
+fndds_fish_carp,"Fish, carp",fish_seafood,213,19.97,7.79,10.72,0.14,0.3,314
+fndds_fish_pike,"Fish, pike",fish_seafood,172,21.47,7.79,5.58,0.14,0.3,304
+fndds_fish_stick,"Fish, stick",fish_seafood,277,11.01,21.66,16.23,1.65,1.5,402
+fndds_fish_shark,"Fish, shark",fish_seafood,216,23.27,7.79,9.58,0.14,0.3,346
+fndds_fish_canned,"Fish, canned",fish_seafood,156,23.19,0,6.3,0,0,379
+fndds_fish_smoked,"Fish, smoked",fish_seafood,116,25.23,0,0.96,0,0,763
+fndds_fish_mullet,"Fish, mullet",fish_seafood,202,21.56,7.79,8.82,0.14,0.3,331
+fndds_fish_anchovy,"Fish, anchovy",fish_seafood,210,28.89,0,9.71,0,0,3668
+fndds_fish_croaker,"Fish, croaker",fish_seafood,189,19.92,7.79,8.17,0.14,0.3,322
+fndds_fish_halibut,"Fish, halibut",fish_seafood,175,20.73,7.79,6.24,0.14,0.3,334
+fndds_fish_herring,"Fish, herring",fish_seafood,245,20.1,7.79,14.32,0.14,0.3,357
+fndds_fish_pickled,"Fish, pickled",fish_seafood,262,14.19,9.64,18,7.71,0,870
+fndds_fish_snapper,"Fish, snapper",fish_seafood,185,22.78,7.79,6.26,0.14,0.3,330
+fndds_fish_tuna_raw,"Fish, tuna, raw",fish_seafood,109,24.4,0,0.49,0,0,45
+fndds_crab,Crab,fish_seafood,83,17.88,0,0.74,0,0,395
+fndds_turtle,Turtle,fish_seafood,157,24.59,0,5.8,0,0,285
+fndds_octopus,Octopus,fish_seafood,226,13.25,13.39,12.96,0.2,0.5,518
+fndds_abalone,Abalone,fish_seafood,177,21.24,7.46,6.12,0,0,574
+fndds_lobster,Lobster,fish_seafood,97,20.91,0,0.95,0,0,535
+fndds_mussels,Mussels,fish_seafood,109,15.06,4.67,2.84,0,0,362
+fndds_escargot,Escargot,fish_seafood,158,19.99,2.48,6.91,0,0,287
+fndds_frog_legs,Frog legs,fish_seafood,220,14.38,11.72,12.4,0.2,0.5,387
+fndds_clams_raw,"Clams, raw",fish_seafood,86,14.67,3.57,0.96,0,0,56
+fndds_oysters_raw,"Oysters, raw",fish_seafood,51,5.71,2.72,1.71,0.62,0,85
+fndds_cheese_souffle,Cheese souffle,dairy_eggs,207,9.43,6.38,16.01,2.44,0.1,314
+fndds_duck_egg_cooked,"Duck egg, cooked",dairy_eggs,224,11.96,1.36,18.55,0.88,0,264
+fndds_egg_creamed,"Egg, creamed",dairy_eggs,148,7.79,5.52,10.35,3.02,0.1,363
+fndds_egg_deviled,"Egg, deviled",dairy_eggs,198,11.52,1.07,15.9,1.07,0,430
+fndds_huevos_rancheros,Huevos rancheros,dairy_eggs,121,6.68,8.85,6.65,2.26,1.7,418
+fndds_goose_egg_cooked,"Goose egg, cooked",dairy_eggs,224,12.94,1.27,18.09,0.89,0,256
+fndds_egg_benedict,"Egg, Benedict",dairy_eggs,288,13.81,8.48,22.1,1.17,0.6,468
+fndds_quail_egg_canned,"Quail egg, canned",dairy_eggs,158,13.01,0.41,11.06,0.4,0,256
+fndds_egg_yolk_only_raw,"Egg, yolk only, raw",dairy_eggs,328,16.2,1.02,28.8,0.56,0,48
+fndds_egg_white_only_raw,"Egg, white only, raw",dairy_eggs,52,10.7,2.36,0,0.71,0,166
+fndds_egg_whole_pickled,"Egg, whole, pickled",dairy_eggs,154,12.49,1.11,10.54,1.11,0,392
+fndds_egg_whole_boiled_or_poached,"Egg, whole, boiled or poached",dairy_eggs,143,12.4,0.96,9.96,0.2,0,129
+fndds_egg_whole_fried_with_oil,"Egg, whole, fried with oil",dairy_eggs,192,11.56,0.9,15.81,0.19,0,228
+fndds_egg_whole_baked_fat_added,"Egg, whole, baked, fat added",dairy_eggs,185,11.58,0.91,15,0.2,0,248
+fndds_egg_salad_made_with_mayonnaise,"Egg salad, made with mayonnaise",dairy_eggs,257,10.26,1.01,23.14,1.01,0,378
+fndds_egg_white_cooked_fat_added,"Egg, white, cooked, fat added",dairy_eggs,100,9.99,2.21,5.72,0.67,0,282
+fndds_egg_whole_fried_with_butter,"Egg, whole, fried with butter",dairy_eggs,182,11.61,0.9,14.64,0.22,0,263
+fndds_egg_whole_fried_no_added_fat,"Egg, whole, fried no added fat",dairy_eggs,143,12.36,0.96,9.93,0.2,0,244
+fndds_egg_whole_baked_no_added_fat,"Egg, whole, baked, no added fat",dairy_eggs,143,12.36,0.96,9.93,0.2,0,244
+fndds_spam,Spam,sausages_meats,315,13.4,4.6,26.6,0,0,1411
+fndds_bologna,Bologna,sausages_meats,281,10.34,6.31,23.77,1.97,0,1100
+fndds_beef_jerky,Beef jerky,sausages_meats,410,33.2,11,25.6,9,1.8,1785
+fndds_pork_jerky,Pork jerky,sausages_meats,412,35,9.73,24.73,9.75,0,1810
+fndds_mortadella,Mortadella,sausages_meats,311,16.37,3.05,25.39,0,0,1246
+fndds_liverwurst,Liverwurst,sausages_meats,327,14.5,3.1,28.5,0,0,977
+fndds_head_cheese,Head cheese,sausages_meats,157,13.83,0,10.9,0,0,941
+fndds_pork_roll,"Pork, roll",sausages_meats,329,13.07,4.49,28.39,0,0,1377
+fndds_ham_canned,"Ham, canned",sausages_meats,167,20.94,0.49,8.43,0,0,1068
+fndds_ham_ground,"Ham, ground",sausages_meats,167,20.94,0.49,8.43,0,0,1068
+fndds_venison_sausage,Venison sausage,sausages_meats,312,20.23,0,25.08,0,0,829
+fndds_bacon_bits,Bacon bits,sausages_meats,476,32,28.6,25.9,0,10.2,1770
+fndds_turkey_bacon_cooked,"Turkey bacon, cooked",sausages_meats,368,29.5,4.24,25.87,4.24,0,2021
+fndds_beef_bacon_cooked,"Beef, bacon, cooked",sausages_meats,449,31.3,1.4,34.4,0,0,1500
+fndds_bacon_or_side_pork_fresh_cooked,"Bacon or side pork, fresh, cooked",sausages_meats,468,33.92,1.7,35.09,0,0,1684
+fndds_pork_bacon_smoked_or_cured_cooked,"Pork bacon, smoked or cured, cooked",sausages_meats,468,33.92,1.7,35.09,0,0,1684
+fndds_hot_dog_beef,"Hot dog, beef",sausages_meats,310,11.7,2.89,28,1.26,0,828
+fndds_hot_dog_turkey,"Hot dog, turkey",sausages_meats,223,12.23,3.81,17.29,1.21,0,865
+fndds_hot_dog_reduced_fat,"Hot dog, reduced fat",sausages_meats,216,13.75,5.1,15.66,0,0,615
+fndds_hot_dog_meat_and_poultry,"Hot dog, meat and poultry",sausages_meats,277,9.72,5.02,24.18,2.75,0,828
+fndds_chorizo,Chorizo,sausages_meats,341,19.3,2.63,28.1,0,0,983
+fndds_bratwurst,Bratwurst,sausages_meats,333,13.72,2.85,29.18,0,0,846
+fndds_thuringer,Thuringer,sausages_meats,362,17.45,3.33,30.43,0.85,0,1300
+fndds_knockwurst,Knockwurst,sausages_meats,307,11.1,3.2,27.7,0,0,930
+fndds_pork_sausage,Pork sausage,sausages_meats,325,18.53,1.42,27.25,1.09,0,814
+fndds_blood_sausage,Blood sausage,sausages_meats,379,14.6,1.29,34.5,1.29,0,680
+fndds_polish_sausage,Polish sausage,sausages_meats,337,12.45,5.03,29.68,2.39,0,1062
+fndds_dal,Dal,legumes_beans,145,8.6,19.17,4.31,1.71,7.5,309
+fndds_baked_beans,Baked beans,legumes_beans,105,4.52,21.57,0.89,8.23,4.4,391
+fndds_soy_nuts,Soy nuts,legumes_beans,469,38.55,30.22,25.4,4.2,17.7,163
+fndds_wasabi_peas,Wasabi peas,legumes_beans,432,14.11,62.2,14.11,14.11,3.8,300
+fndds_refried_beans,Refried beans,legumes_beans,90,4.98,13.55,2.01,0.54,3.7,370
+fndds_pork_and_beans,Pork and beans,legumes_beans,105,4.52,21.57,0.89,8.23,4.4,391
+fndds_edamame_cooked,"Edamame, cooked",legumes_beans,140,11.54,8.63,7.58,2.12,5,127
+fndds_soybeans_cooked,"Soybeans, cooked",legumes_beans,218,16.92,7.77,14.84,2.79,5.6,217
+fndds_beans_and_franks,Beans and franks,legumes_beans,138,6.74,17.29,5.22,6.17,3.3,438
+fndds_fava_beans_cooked,"Fava beans, cooked",legumes_beans,161,7.06,18.26,6.88,1.69,5,220
+fndds_pink_beans_cooked,"Pink beans, cooked",legumes_beans,197,8.42,25.94,6.96,0.34,4.9,218
+fndds_mung_beans_cooked,"Mung beans, cooked",legumes_beans,156,6.52,17.8,6.86,1.86,7.1,218
+fndds_black_beans_with_meat,Black beans with meat,legumes_beans,177,10.61,19.06,6.81,0.36,7,275
+fndds_pinto_beans_with_meat,Pinto beans with meat,legumes_beans,186,10.73,21.07,6.9,0.38,7.2,275
+fndds_tahini,Tahini,nuts_seeds,697,19.71,14.18,62.4,0.49,8.4,64
+fndds_chestnuts,Chestnuts,nuts_seeds,245,3.17,52.96,2.2,10.6,5.1,2
+fndds_hazelnuts,Hazelnuts,nuts_seeds,628,14.95,16.7,60.75,4.34,9.7,0
+fndds_pine_nuts,Pine nuts,nuts_seeds,673,13.69,13.08,68.37,3.59,3.7,2
+fndds_flax_seeds,Flax seeds,nuts_seeds,545,18.04,34.36,37.28,1.55,23.1,37
+fndds_chia_seeds,Chia seeds,nuts_seeds,486,16.54,42.12,30.74,1.55,34.4,16
+fndds_brazil_nuts,Brazil nuts,nuts_seeds,659,14.32,11.74,67.1,2.33,7.5,3
+fndds_mixed_seeds,Mixed seeds,nuts_seeds,580,21.96,21.73,49.61,2.37,10,7
+fndds_almond_paste,Almond paste,nuts_seeds,458,9,47.81,27.74,36.25,4.8,9
+fndds_sesame_seeds,Sesame seeds,nuts_seeds,631,20.45,11.73,61.21,0.48,11.6,47
+fndds_almond_butter,Almond butter,nuts_seeds,641,20.67,21.11,52.72,4.4,9.6,232
+fndds_cashew_butter,Cashew butter,nuts_seeds,609,12.12,30.3,53.03,9.09,3,295
+fndds_coconut_fresh,"Coconut, fresh",nuts_seeds,354,3.33,15.23,33.49,6.23,9,20
+fndds_macadamia_nuts,Macadamia nuts,nuts_seeds,716,7.79,12.83,76.08,4.14,8,353
+fndds_soybean_curd,Soybean curd,soy,61,7.17,1.18,3.69,0.7,0.2,8
+fndds_soy_nut_butter,Soy nut butter,soy,613,23.02,23,50.01,7.47,10.6,290
+fndds_soybean_curd_cheese,Soybean curd cheese,soy,151,12.5,6.9,8.1,1.6,0,20
+fndds_meatball_meatless,"Meatball, meatless",soy,197,21,8,9,1.25,4.6,550
+fndds_vegetarian_fillet,"Vegetarian, fillet",soy,290,23,9,18,0.8,6.1,490
+fndds_hot_dog_vegetarian,"Hot dog, vegetarian",soy,233,19.61,7.7,13.73,0,3.9,471
+fndds_bacon_strip_meatless,"Bacon strip, meatless",soy,309,11.69,5.31,29.52,0,2.6,1465
+fndds_pork_hash,Pork hash,mixed_meals,186,12.94,1.96,13.66,0.56,0.5,486
+fndds_beef_curry,Beef curry,mixed_meals,113,7.57,6.53,6.57,2.56,1.4,359
+fndds_beef_salad,Beef salad,mixed_meals,261,17.85,2.9,19.32,2.1,0.4,338
+fndds_swiss_steak,Swiss steak,mixed_meals,115,15.48,3.67,4.42,1.19,0.9,250
+fndds_veal_marsala,Veal Marsala,mixed_meals,175,17.82,6.74,8.54,0.51,0.5,147
+fndds_pepper_steak,Pepper steak,mixed_meals,145,11.88,4.34,9.12,1.67,0.7,244
+fndds_beef_burgundy,Beef burgundy,mixed_meals,148,18.48,4.19,6,1.45,0.8,369
+fndds_steak_tartare,Steak tartare,mixed_meals,216,17.45,0.34,15.6,0.08,0.2,370
+fndds_sausage_gravy,Sausage gravy,mixed_meals,180,6.78,7.65,13.61,3.92,0.1,421
+fndds_ham_croquette,Ham croquette,mixed_meals,273,17.97,2.6,20.74,0.49,0.2,1176
+fndds_stew_pork,"Stew, pork",mixed_meals,109,8.35,6.29,5.42,1.57,1.3,304
+fndds_stew_beef,"Stew, beef",mixed_meals,107,8.76,6.29,5.07,1.57,1.3,307
+fndds_stew_lamb,"Stew, lamb",mixed_meals,117,8.19,6.29,6.39,1.57,1.3,308
+fndds_ham_stroganoff,Ham stroganoff,mixed_meals,131,7.62,5.19,8.85,1.9,0.7,703
+fndds_shepherd_s_pie,Shepherd's pie,mixed_meals,123,7.64,8.72,6.3,1.88,1.5,264
+fndds_chili_with_meat,Chili with meat,mixed_meals,139,13.32,2.41,8.22,1.37,0.5,357
+fndds_beef_with_gravy,Beef with gravy,mixed_meals,156,21.56,1.58,7.05,0.09,0,360
+fndds_beef_stroganoff,Beef stroganoff,mixed_meals,150,10.06,6.21,9.33,1.36,0.7,458
+fndds_veal_scallopini,Veal scallopini,mixed_meals,241,18.71,1.47,17.47,0.57,0.4,372
+fndds_veal_parmigiana,Veal parmigiana,mixed_meals,204,15.33,8.33,11.92,1.68,0.8,436
+fndds_chicken_kiev,Chicken kiev,mixed_meals,280,21.31,5.45,19.21,0.06,0.1,644
+fndds_chicken_curry,Chicken curry,mixed_meals,107,6.48,6.54,6.48,2.56,1.4,376
+fndds_chili_white,"Chili, white",mixed_meals,95,9.92,9.68,1.91,0.97,2.4,324
+fndds_barbecue_chicken,Barbecue chicken,mixed_meals,167,19,12.23,4.64,9.97,0.3,550
+fndds_stew_chicken,"Stew, chicken",mixed_meals,84,9.24,6.29,2.34,1.57,1.3,309
+fndds_turkey_with_gravy,Turkey with gravy,mixed_meals,125,20.46,1.58,3.46,0.09,0,356
+fndds_chicken_cornbread,Chicken cornbread,mixed_meals,167,13.78,9.38,8.21,0.24,0.4,458
+fndds_chili_with_chicken,Chili with chicken,mixed_meals,100,14.11,2.41,3.71,1.37,0.5,359
+fndds_chicken_with_gravy,Chicken with gravy,mixed_meals,129,18.88,1.58,5.21,0.09,0,526
+fndds_pot_pie_chicken,"Pot pie, chicken",mixed_meals,255,9.24,23.95,13.54,3.33,2,375
+fndds_adobo_with_rice,"Adobo, with rice",mixed_meals,181,17.69,8.86,7.94,0.03,0.2,522
+fndds_chicken_or_turkey_hash,Chicken or turkey hash,mixed_meals,110,9.57,8.27,4.1,0.94,1.3,259
+fndds_adobo_with_noodles,"Adobo, with noodles",mixed_meals,172,16.89,8.14,7.66,0.03,0.4,510
+fndds_chicken_curry_with_rice,Chicken curry with rice,mixed_meals,116,4.96,15.12,4,1.56,1,324
+fndds_chicken_with_mole_sauce,Chicken with mole sauce,mixed_meals,137,18.97,3.22,5.58,2.12,0.3,542
+fndds_chicken_or_turkey_divan,Chicken or turkey divan,mixed_meals,140,15.51,4.01,7.26,0.95,1.3,295
+fndds_chicken_or_turkey_souffle,Chicken or turkey souffle,mixed_meals,171,11.72,5.59,11.33,2.23,0.1,380
+fndds_chicken_or_turkey_fricassee,Chicken or turkey fricassee,mixed_meals,121,10.68,3.54,7.16,0.26,0.1,418
+fndds_chicken_or_turkey_cacciatore,Chicken or turkey cacciatore,mixed_meals,174,13.19,6.92,10.62,1.6,1.1,664
+fndds_chili_with_chicken_and_beans,Chili with chicken and beans,mixed_meals,99,10.2,10.25,2.08,1.48,3,341
+fndds_ceviche,Ceviche,mixed_meals,63,10.53,3.58,0.76,1.34,0.5,149
+fndds_lau_lau,Lau lau,mixed_meals,140,15.25,0,8.32,0,0,231
+fndds_fish_curry,Fish curry,mixed_meals,93,4.94,6.65,5.42,2.56,1.4,351
+fndds_crab_salad,Crab salad,mixed_meals,188,9.4,1.27,15.89,0.57,0.4,462
+fndds_lomi_salmon,Lomi salmon,mixed_meals,60,7.55,3.31,1.86,1.82,1,145
+fndds_gefilte_fish,Gefilte fish,mixed_meals,82,10.39,8.74,0.41,0.5,0.4,453
+fndds_clams_casino,Clams Casino,mixed_meals,162,11.8,10.3,7.9,1.8,1,454
+fndds_shrimp_toast,Shrimp toast,mixed_meals,222,8.46,12.01,15.42,1.4,0.8,558
+fndds_salmon_salad,Salmon salad,mixed_meals,213,10.82,2.73,17.36,1.98,0.4,507
+fndds_shrimp_salad,Shrimp salad,mixed_meals,196,10.68,1.27,16.2,0.57,0.4,703
+fndds_shrimp_gumbo,Shrimp gumbo,mixed_meals,61,6.52,4.63,1.89,1.78,0.9,377
+fndds_lobster_salad,Lobster salad,mixed_meals,187,10.29,1.22,15.4,0.55,0.4,508
+fndds_seafood_salad,Seafood salad,mixed_meals,190,10.12,1.25,15.82,0.56,0.4,585
+fndds_lobster_gumbo,Lobster gumbo,mixed_meals,59,6.19,4.63,1.78,1.78,0.9,288
+fndds_stew_fish,"Stew, fish",mixed_meals,46,7.63,2.75,0.42,0.63,0.5,273
+fndds_crab_cake,"Crab, cake",mixed_meals,214,14.4,4.48,14.97,0.66,0.3,430
+fndds_seafood_souffle,Seafood souffle,mixed_meals,153,9.94,5.56,9.98,2.21,0.1,425
+fndds_bean_cake,Bean cake,legumes_beans,414,5.8,49.88,21.41,20.37,3,186
+fndds_lentil_curry,Lentil curry,legumes_beans,111,3.68,12.33,5.65,3.21,3.4,383
+fndds_black_bean_salad,Black bean salad,legumes_beans,94,3.08,12.61,3.85,3.53,3.4,350
+fndds_pot_pie_no_meat,"Pot pie, no meat",legumes_beans,242,5.44,27.96,12.15,3.69,3.5,360
+fndds_beans_and_white_rice,Beans and white rice,legumes_beans,164,6.5,25.19,4.21,0.21,3.7,231
+fndds_beans_and_brown_rice,Beans and brown rice,legumes_beans,162,6.4,24.29,4.54,0.28,3.9,213
+fndds_chili_vegetarian,"Chili, vegetarian",legumes_beans,119,6.28,18.89,2.42,1.57,6,316
+fndds_vegetarian_stroganoff,Vegetarian stroganoff,legumes_beans,167,7.69,11.78,10.03,1.79,2.6,460
+fndds_channa_saag,Channa Saag,mixed_meals,89,4.1,8.79,4.33,1.81,3,270
+fndds_ratatouille,Ratatouille,mixed_meals,67,1.09,5.77,4.73,3.39,1.9,151
+fndds_palak_paneer,Palak Paneer,mixed_meals,101,5.42,4.28,7.02,1.89,0.9,242
+fndds_vegetarian_stew,Vegetarian stew,mixed_meals,33,0.67,3.12,2.15,1.61,1.1,144
+fndds_spinach_souffle,Spinach souffle,mixed_meals,128,5.72,7.13,8.64,2.48,1.1,160
+fndds_vegetable_curry,Vegetable curry,mixed_meals,86,1.6,8.81,5.27,3.18,1.8,388
+fndds_stew_vegetable,"Stew, vegetable",mixed_meals,47,1.41,10.07,0.24,2.51,2.1,296
+fndds_green_bean_casserole,Green bean casserole,mixed_meals,56,1.96,7.05,2.21,2.03,1.9,316
+fndds_mushrooms_stuffed,"Mushrooms, stuffed",mixed_meals,288,10.7,27.72,15,4,3,638
+fndds_tomatoes_scalloped,"Tomatoes, scalloped",mixed_meals,110,2.7,14.1,4.97,3.74,1.9,216
+fndds_idli,Idli,mixed_meals,128,6.36,24.98,0.35,1.85,5.8,252
+fndds_rice_pilaf,Rice pilaf,mixed_meals,137,3.29,24.08,3.03,0.48,0.4,414
+fndds_dirty_rice,Dirty rice,mixed_meals,112,5.12,17.25,2.25,0.87,0.6,316
+fndds_rice_dressing,Rice dressing,mixed_meals,110,1.98,17.61,3.29,0.71,0.6,600
+fndds_rice_croquette,Rice croquette,mixed_meals,154,3.35,20.08,6.58,0.62,0.9,416
+fndds_biryani_with_meat,Biryani with meat,mixed_meals,145,8.5,12.19,6.79,1.69,1,98
+fndds_rice_with_raisins,Rice with raisins,mixed_meals,162,2.65,32.13,2.58,6.49,0.8,447
+fndds_paella_with_seafood,Paella with seafood,mixed_meals,143,8.03,16.44,4.76,0.92,0.7,609
+fndds_bibimbap_korean,"Bibimbap, Korean",mixed_meals,76,5.5,8.11,2.44,1.52,1.1,435
+fndds_congee_with_egg,"Congee, with egg",mixed_meals,60,3.12,6.91,2.06,0.05,0.1,213
+fndds_biryani_with_chicken,Biryani with chicken,mixed_meals,104,7.15,13.55,2.38,1.88,1.1,161
+fndds_flavored_rice_mixture,Flavored rice mixture,mixed_meals,127,1.87,19.83,4.26,0.56,0.4,296
+fndds_biryani_with_vegetables,Biryani with vegetables,mixed_meals,109,1.93,17.91,3.2,1.18,1.2,177
+fndds_congee_with_vegetables,"Congee, with vegetables",mixed_meals,38,1.12,7.88,0.12,0.37,0.4,235
+fndds_spanish_rice_fat_added,"Spanish rice, fat added",mixed_meals,115,2.87,19.65,2.6,1.55,1.1,310
+fndds_jambalaya_with_meat_and_rice,Jambalaya with meat and rice,mixed_meals,161,13.76,8.65,7.97,0.94,0.7,379
+fndds_cake_made_with_glutinous_rice,Cake made with glutinous rice,mixed_meals,279,2.49,53.57,6.51,31.12,0.7,36
+fndds_flavored_pasta,Flavored pasta,mixed_meals,87,2.47,14.45,2.21,0.99,0.4,174
+fndds_noodle_pudding,Noodle pudding,mixed_meals,209,5.94,31.02,7.4,11.08,1.6,68
+fndds_lasagna_with_meat,Lasagna with meat,mixed_meals,139,7.45,16.17,4.97,3.33,1.6,390
+fndds_gnocchi_cheese,"Gnocchi, cheese",mixed_meals,178,8.51,9.38,11.96,0.14,0.2,263
+fndds_gnocchi_potato,"Gnocchi, potato",mixed_meals,135,2.44,17.2,6.33,0.99,1,279
+fndds_lasagna_meatless,"Lasagna, meatless",mixed_meals,130,6.54,13.84,5.33,4.23,1.7,284
+fndds_lasagna_with_meat_canned,"Lasagna with meat, canned",mixed_meals,97,3.24,13.26,3.41,1.97,1.5,283
+fndds_lasagna_with_meat_frozen,"Lasagna with meat, frozen",mixed_meals,124,6.63,14.39,4.42,2.96,1.4,347
+fndds_lasagna_with_meat_and_spinach,Lasagna with meat and spinach,mixed_meals,207,13.33,13.76,10.79,2.16,1.1,412
+fndds_lasagna_with_chicken_or_turkey,Lasagna with chicken or turkey,mixed_meals,205,13.74,14.01,10.37,2.2,1,387
+fndds_macaroni_or_pasta_salad_with_egg,Macaroni or pasta salad with egg,mixed_meals,215,5.18,22.54,11.44,1.79,1.3,197
+fndds_macaroni_or_pasta_salad_with_tuna,Macaroni or pasta salad with tuna,mixed_meals,200,6.69,20.88,9.9,1.57,1.2,206
+fndds_macaroni_or_pasta_salad_with_meat,Macaroni or pasta salad with meat,mixed_meals,211,7.65,20.82,10.59,1.56,1.2,378
+fndds_lasagna_with_meat_home_recipe,"Lasagna with meat, home recipe",mixed_meals,206,13.63,13.1,10.92,1.47,1.1,416
+fndds_macaroni_or_pasta_salad_with_shrimp,Macaroni or pasta salad with shrimp,mixed_meals,203,6.86,20.94,9.99,1.57,1.2,304
+fndds_macaroni_or_pasta_salad_with_cheese,Macaroni or pasta salad with cheese,mixed_meals,246,6.89,21.78,14.43,1.66,1.3,262
+fndds_macaroni_or_pasta_salad_with_chicken,Macaroni or pasta salad with chicken,mixed_meals,213,7.82,20.94,10.75,1.57,1.2,225
+fndds_ravioli_meat_filled_no_sauce,"Ravioli, meat-filled, no sauce",mixed_meals,190,12.59,17.7,7.42,0.2,0.6,770
+fndds_macaroni_or_pasta_salad_with_crab_meat,Macaroni or pasta salad with crab meat,mixed_meals,201,6.48,20.94,9.9,1.57,1.2,233
+fndds_pasta_with_cream_sauce_home_recipe,"Pasta with cream sauce, home recipe",mixed_meals,154,4.03,16.85,7.7,0.72,0.9,266
+fndds_macaroni_or_noodles_with_cheese,Macaroni or noodles with cheese,mixed_meals,223,8.68,23.08,10.5,2.44,1.2,358
+fndds_macaroni_or_noodles_with_cheese_and_egg,Macaroni or noodles with cheese and egg,mixed_meals,185,5.91,19,9.52,2.96,0.8,176
+fndds_macaroni_or_noodles_with_cheese_and_tuna,Macaroni or noodles with cheese and tuna,mixed_meals,164,7.59,18.23,6.79,2.83,0.8,176
+fndds_macaroni_or_noodles_with_cheese_and_meat,Macaroni or noodles with cheese and meat,mixed_meals,210,11.79,15.14,11.16,2.36,0.7,238
+fndds_macaroni_or_noodles_with_cheese_and_tomato,Macaroni or noodles with cheese and tomato,mixed_meals,148,3.94,18.72,6.53,3.35,1.1,131
+fndds_macaroni_or_noodles_with_cheese_canned,"Macaroni or noodles with cheese, canned",mixed_meals,82,3.38,11.52,2.46,0.5,0.5,302
+fndds_macaroni_or_noodles_with_cheese_whole_grain,"Macaroni or noodles with cheese, whole grain",mixed_meals,219,8.77,22.7,10.88,2.53,2.2,360
+fndds_vada,Vada,mixed_meals,266,12.75,33.25,9.73,1.31,5.8,315
+fndds_knish,Knish,mixed_meals,345,10.51,31.92,19.73,0.98,1.1,445
+fndds_samosa,Samosa,mixed_meals,310,5.14,33.16,17.47,1.28,1.8,388
+fndds_pierogi,Pierogi,mixed_meals,195,5.26,29.64,6.14,1.75,0.9,474
+fndds_tabbouleh,Tabbouleh,mixed_meals,127,1.64,9.65,9.66,1.34,1.8,495
+fndds_spanakopita,Spanakopita,mixed_meals,212,8.27,10.35,15.15,0.64,1,392
+fndds_bread_stuffing,Bread stuffing,mixed_meals,177,3.14,21.71,8.51,2.35,0.9,471
+fndds_empanada_beef,"Empanada, beef",mixed_meals,333,12.09,27.45,19.2,2.1,1.6,459
+fndds_cornbread_stuffing,Cornbread stuffing,mixed_meals,179,2.9,21.9,8.8,0,2.9,526
+fndds_crepe_with_meat,"Crepe, with meat",mixed_meals,173,12.86,7.73,10.06,1.61,0.3,384
+fndds_pad_thai_with_meat,Pad Thai with meat,mixed_meals,160,8.18,14.73,7.92,4.17,1.2,337
+fndds_lo_mein_meatless,"Lo mein, meatless",mixed_meals,121,4.77,20.16,2.35,2.63,1.3,430
+fndds_pad_thai_with_chicken,Pad Thai with chicken,mixed_meals,154,8.13,14.36,7.5,4.06,1.2,384
+fndds_pad_thai_with_seafood,Pad Thai with seafood,mixed_meals,147,6.84,15.05,6.82,4.2,1.2,349
+fndds_lo_mein_with_pork,"Lo mein, with pork",mixed_meals,138,9.48,16.18,3.79,2.11,1,357
+fndds_lo_mein_with_beef,"Lo mein, with beef",mixed_meals,129,9.73,16.18,2.77,2.11,1,358
+fndds_pad_thai_meatless,"Pad Thai, meatless",mixed_meals,165,5.79,16.34,9.2,4.65,1.8,344
+fndds_lo_mein_with_shrimp,"Lo mein, with shrimp",mixed_meals,121,8.56,16.24,2.21,2.08,1,363
+fndds_lo_mein_with_chicken,"Lo mein, with chicken",mixed_meals,130,9.15,16.15,3.15,2.11,1,413
+fndds_rice_fried_meatless,"Rice, fried, meatless",mixed_meals,174,3.84,32.5,3.19,0.62,1.1,361
+fndds_hunan_beef,Hunan beef,mixed_meals,105,7.08,7.29,5.3,2.41,1.5,409
+fndds_szechuan_beef,Szechuan beef,mixed_meals,105,7.08,7.29,5.3,2.41,1.5,409
+fndds_kung_pao_beef,Kung Pao beef,mixed_meals,216,17.93,4.55,14.44,1.43,1,175
+fndds_kung_pao_pork,Kung Pao pork,mixed_meals,219,16.89,4.55,14.76,1.43,1,183
+fndds_steak_teriyaki,Steak teriyaki,mixed_meals,198,28.86,1.94,8.25,1.76,0,517
+fndds_orange_chicken,Orange chicken,mixed_meals,262,14.46,22.46,12.68,13.6,0.8,553
+fndds_sesame_chicken,Sesame chicken,mixed_meals,293,14.33,26.88,14.25,15.98,0.7,482
+fndds_almond_chicken,Almond chicken,mixed_meals,195,15.66,4.46,13.16,1.42,1.2,330
+fndds_shrimp_teriyaki,Shrimp teriyaki,mixed_meals,120,21.62,3.34,1.56,1.76,0,581
+fndds_moo_goo_gai_pan,Moo Goo Gai Pan,mixed_meals,69,7.11,4.87,2.44,2.01,1.4,106
+fndds_kung_pao_shrimp,Kung Pao shrimp,mixed_meals,173,13.94,5.32,10.74,1.43,1,210
+fndds_kung_pao_chicken,Kung pao chicken,mixed_meals,129,9.76,6.87,6.98,3.03,1.5,402
+fndds_beef_and_broccoli,Beef and broccoli,mixed_meals,160,10.43,5.09,10.63,1.23,1.3,440
+fndds_pork_egg_foo_yung,Pork egg foo yung,mixed_meals,149,13.29,4.78,8.25,3.06,0.3,325
+fndds_bao_bun,Bao bun,mixed_meals,273,11.17,39.78,7.58,5.86,1.2,354
+fndds_sushi_roll_tuna,Sushi roll tuna,mixed_meals,97,7.4,15.3,0.26,0.92,0.7,342
+fndds_sushi_roll_eel,"Sushi roll, eel",mixed_meals,116,5.95,15.3,2.98,0.92,0.7,343
+fndds_bao_bun_no_meat,"Bao bun, no meat",mixed_meals,268,6.73,54.27,2.94,22.28,3.4,268
+fndds_egg_roll_meatless,"Egg roll, meatless",mixed_meals,270,5.62,30.02,14.14,5.63,2.3,463
+fndds_sushi_roll_salmon,"Sushi roll, salmon",mixed_meals,103,6.88,15.3,1.28,0.92,0.7,350
+fndds_sushi_roll_shrimp,"Sushi roll, shrimp",mixed_meals,100,7.01,15.67,0.55,0.92,0.7,358
+fndds_sushi_roll_avocado,"Sushi roll, avocado",mixed_meals,93,1.8,17.65,1.47,1.21,1.4,361
+fndds_taco_fish,"Taco, fish",mixed_meals,275,11.62,22.99,15.29,0.43,2.5,447
+fndds_taco_cheese_only,"Taco, cheese only",mixed_meals,275,12.19,27.75,13.45,0.86,3.8,311
+fndds_burrito_cheese_only,"Burrito, cheese only",mixed_meals,328,13.69,30.59,16.53,2.56,2.1,704
+fndds_taco_meat_no_cheese,"Taco, meat, no cheese",mixed_meals,243,15.15,15.94,13.18,0.31,2.2,359
+fndds_burrito_beef_cheese,"Burrito, beef, cheese",mixed_meals,267,13.28,28.33,10.68,2.16,2,454
+fndds_burrito_pork_cheese,"Burrito, pork, cheese",mixed_meals,268,12.89,28.33,11.02,2.16,2,451
+fndds_taco_or_tostada_salad_with_meat,Taco or tostada salad with meat,mixed_meals,179,7.45,16.49,9.32,1.8,2.9,319
+fndds_burrito_chicken_cheese,"Burrito, chicken, cheese",mixed_meals,244,13.74,28.33,8.06,2.16,2,456
+fndds_burrito_meat_no_cheese,"Burrito, meat, no cheese",mixed_meals,262,12.85,29.63,9.75,2.23,2.1,442
+fndds_taco_or_tostada_salad_with_chicken,Taco or tostada salad with chicken,mixed_meals,167,7.83,16.29,8.02,1.78,2.8,315
+fndds_taco_with_beans_no_cheese,"Taco, with beans, no cheese",mixed_meals,167,5,24.01,6.18,0.64,4.5,405
+fndds_burrito_with_beans_cheese,"Burrito, with beans, cheese",mixed_meals,196,8.1,29.49,5.16,1.69,4.9,449
+fndds_nachos_chicken,"Nachos, chicken",mixed_meals,242,11.2,19.87,13.33,0.32,1.4,430
+fndds_nachos_with_beans,"Nachos, with beans",mixed_meals,210,4.62,23.28,11.37,0.48,2.5,434
+fndds_nachos_cheese_only,"Nachos, cheese only",mixed_meals,266,4.46,27.83,15.74,0.45,2,547
+fndds_nachos_beef_or_pork,"Nachos, beef or pork",mixed_meals,265,10.73,19.87,15.96,0.32,1.4,429
+fndds_frito_pie,Frito pie,mixed_meals,328,9.96,26.32,20.98,0.86,2.9,572
+fndds_chilaquiles,Chilaquiles,mixed_meals,195,10.63,14.9,10.67,1.12,2.1,366
+fndds_mexican_pizza,Mexican pizza,mixed_meals,249,15.47,15.3,13.94,0.34,2.1,375
+fndds_tamale_beef,"Tamale, beef",mixed_meals,174,7.38,15.8,9.04,0.46,2.4,473
+fndds_tamale_pork,"Tamale, pork",mixed_meals,174,7.38,15.8,9.04,0.46,2.4,473
+fndds_pupusa_meat,"Pupusa, meat",mixed_meals,232,11.51,23.02,10.43,1.45,2.6,426
+fndds_gordita_meat,"Gordita, meat",mixed_meals,296,16.99,13.12,19.36,0.32,1,330
+fndds_fajita_shrimp,"Fajita, shrimp",mixed_meals,189,8.33,18.35,8.92,2.44,1.5,456
+fndds_enchilada_beef,"Enchilada, beef",mixed_meals,191,9.76,14.64,10.54,0.79,2.3,458
+fndds_enchilada_pork,"Enchilada, pork",mixed_meals,192,9.54,14.64,10.74,0.79,2.3,456
+fndds_tamale_chicken,"Tamale, chicken",mixed_meals,174,7.38,15.8,9.04,0.46,2.4,473
+fndds_tamale_no_meat,"Tamale, no meat",mixed_meals,186,3.48,26.68,7.21,7.42,3.2,277
+fndds_pizza_rolls,Pizza rolls,fast_food,345,9.19,53.39,10.5,3.94,1.3,631
+fndds_topping_from_meat_pizza,Topping from meat pizza,fast_food,321,19.19,5.65,24.52,3.2,0.7,934
+fndds_topping_from_cheese_pizza,Topping from cheese pizza,fast_food,230,16.86,7.62,14.67,4.38,1,713
+fndds_topping_from_vegetable_pizza,Topping from vegetable pizza,fast_food,247,15.59,12.18,15.61,5.75,1.9,805
+fndds_calzone_with_meat_and_cheese,"Calzone, with meat and cheese",fast_food,343,14.84,31.31,17.69,0.59,1.4,434
+fndds_pizza_cheese_stuffed_crust,"Pizza, cheese, stuffed crust",fast_food,274,12.23,30,11.63,2.9,1.7,615
+fndds_pizza_no_cheese_thin_crust,"Pizza, no cheese, thin crust",fast_food,276,7.46,31,13.69,5.03,1.8,551
+fndds_pizza_no_cheese_thick_crust,"Pizza, no cheese, thick crust",fast_food,293,7.58,38.28,12.26,5.47,1.9,514
+fndds_pizza_with_extra_meat_thin_crust,"Pizza with extra meat, thin crust",fast_food,277,14.72,24.25,13.36,2.68,1.7,582
+fndds_topping_from_meat_and_vegetable_pizza,Topping from meat and vegetable pizza,fast_food,299,17.55,7.66,22.03,4.09,1,837
+fndds_calzone_with_cheese_meatless,"Calzone, with cheese, meatless",fast_food,389,17.59,29.49,22.51,0.36,1.3,672
+fndds_pizza_with_extra_meat_thick_crust,"Pizza with extra meat, thick crust",fast_food,278,13.33,26.64,13.02,2.74,1.8,571
+fndds_pizza_extra_cheese_thin_crust,"Pizza, extra cheese, thin crust",fast_food,268,12.08,31.71,10.29,3.48,2.2,549
+fndds_white_pizza_cheese_thin_crust,"White pizza, cheese, thin crust",fast_food,285,12.4,27.58,13.66,2.97,1.1,521
+fndds_pizza_with_pepperoni_stuffed_crust,"Pizza with pepperoni, stuffed crust",fast_food,296,12.92,27.19,15.01,2.62,1.5,709
+fndds_pizza_with_extra_meat_medium_crust,"Pizza with extra meat, medium crust",fast_food,274,13.85,26.62,12.4,2.92,1.8,571
+fndds_hamburger_slider,Hamburger slider,fast_food,288,17.76,19.71,14.72,2.86,0.7,349
+fndds_cheeseburger_slider,Cheeseburger slider,fast_food,297,18.09,17.9,16.41,2.85,0.6,431
+fndds_big_mac_mcdonalds,Big Mac (McDonalds),fast_food,261,11.94,21.53,14.1,3.26,1.4,485
+fndds_mcdouble_mcdonalds,McDouble (McDonalds),fast_food,282,16.24,17.97,16.18,4.16,0.9,617
+fndds_hamburger_mcdonalds,Hamburger (McDonalds),fast_food,263,13.3,29.57,10.18,5.95,1.8,487
+fndds_whopper_burger_king,Whopper (Burger King),fast_food,226,11.34,17.33,12.37,4,1.5,342
+fndds_hamburger_burger_king,Hamburger (Burger King),fast_food,254,13.63,25.98,10.24,4.66,1.1,400
+fndds_cheeseburger_mcdonalds,Cheeseburger (McDonalds),fast_food,270,13.49,25.46,12.9,5.24,1.9,628
+fndds_whopper_jr_burger_king,Whopper Jr (Burger King),fast_food,216,10.73,21.14,9.58,4.28,1,315
+fndds_cheeseburger_burger_king,Cheeseburger (Burger King),fast_food,265,14.02,23.66,12.32,4.66,1,527
+fndds_quarter_pounder_mcdonalds,Quarter Pounder (McDonalds),fast_food,256,15.68,22.14,11.6,3.67,1.1,374
+fndds_double_cheeseburger_mcdonalds,Double cheeseburger (McDonalds),fast_food,282,16.24,17.97,16.18,4.16,0.9,617
+fndds_whopper_with_cheese_burger_king,Whopper with cheese (Burger King),fast_food,268,13.69,17.73,15.8,4.5,1.1,473
+fndds_double_cheeseburger_burger_king,Double cheeseburger (Burger King),fast_food,278,16.3,16.92,15.73,3.62,0.7,502
+fndds_corn_dog,Corn dog,fast_food,250,8.57,26.96,12.02,7.54,1,668
+fndds_pig_in_a_blanket,Pig in a blanket,fast_food,310,11.42,19.22,20.85,2.68,0.7,708
+fndds_italian_sausage_sandwich_on_white,Italian sausage sandwich on white,fast_food,300,14.45,23.47,16.29,4.05,0.8,645
+fndds_chili_hot_dog_sandwich_on_white_bun,"Chili hot dog sandwich, on white bun",fast_food,223,9.94,18.75,11.98,2.96,1.7,556
+fndds_chili_hot_dog_sandwich_on_wheat_bun,"Chili hot dog sandwich, on wheat bun",fast_food,219,10.39,17.48,11.99,2.39,2.7,541
+fndds_chili_hot_dog_sandwich_on_white_bread,"Chili hot dog sandwich, on white bread",fast_food,215,9.89,15.45,12.71,2.14,1.8,553
+fndds_chili_hot_dog_sandwich_on_wheat_bread,"Chili hot dog sandwich, on wheat bread",fast_food,215,10.29,14.7,12.79,2.11,2.4,551
+fndds_hot_dog_sandwich_beef_on_white_bun,"Hot dog sandwich, beef, on white bun",fast_food,296,10.85,23.73,17.37,3.92,0.8,681
+fndds_hot_dog_sandwich_beef_on_wheat_bun,"Hot dog sandwich, beef, on wheat bun",fast_food,290,11.57,21.65,17.4,3,2.4,657
+fndds_chicken_salad_sandwich_wrap,Chicken salad sandwich wrap,fast_food,269,12.89,16.99,16.56,2.65,1.3,603
+fndds_chicken_salad_sandwich_on_white,Chicken salad sandwich on white,fast_food,246,12.42,18.32,13.7,3.18,1,473
+fndds_chicken_salad_sandwich_on_wheat,Chicken salad sandwich on wheat,fast_food,245,13.08,17.06,13.83,3.13,2.1,469
+fndds_chicken_fillet_sandwich_grilled_on_white_bun,"Chicken fillet sandwich, grilled, on white bun",fast_food,216,21.82,19.69,4.84,2.86,0.7,408
+fndds_chicken_fillet_sandwich_grilled_on_wheat_bun,"Chicken fillet sandwich, grilled, on wheat bun",fast_food,210,22.46,17.84,4.87,2.04,2.1,387
+fndds_chicken_fillet_biscuit_from_fast_food,"Chicken fillet biscuit, from fast food",fast_food,320,10.78,26.41,19.09,1.98,2,775
+fndds_chicken_fillet_sandwich_fried_on_white_bun,"Chicken fillet sandwich, fried, on white bun",fast_food,269,12.45,28.11,11.67,3.14,1.7,503
+fndds_egg_burrito,Egg burrito,fast_food,249,10.91,20.06,13.71,1.75,1.4,470
+fndds_taquito_egg,"Taquito, egg",fast_food,281,9.9,29.25,13.56,2.29,2,555
+fndds_egg_white_sandwich,Egg white sandwich,fast_food,166,9.41,24.1,3.62,2.16,1.8,357
+fndds_biscuit_with_gravy,Biscuit with gravy,fast_food,224,6.2,16.98,14.68,3.88,0.8,451
+fndds_quesadilla_egg,"Quesadilla, egg",fast_food,249,10.91,20.06,13.71,1.75,1.4,470
+fndds_ham_biscuit_sandwich,Ham biscuit sandwich,fast_food,322,11.56,28.24,18.1,3.26,1.6,1023
+fndds_egg_sandwich_on_bagel,Egg sandwich on bagel,fast_food,251,11.97,31.81,8.43,5.36,0.9,437
+fndds_bacon_biscuit_sandwich,Bacon biscuit sandwich,fast_food,382,13.71,29.26,23.2,3.09,1.6,1090
+fndds_egg_sandwich_on_biscuit,Egg sandwich on biscuit,fast_food,298,10.69,21.6,18.81,2.34,1.2,708
+fndds_sausage_biscuit_sandwich,Sausage biscuit sandwich,fast_food,372,10.66,27.21,24.47,2.77,1.6,870
+fndds_breakfast_pizza_with_egg,Breakfast pizza with egg,fast_food,292,14.02,25.63,14.5,2.86,1.1,594
+fndds_egg_burrito_with_ham,"Egg burrito, with ham",fast_food,242,11.29,19.09,13.22,1.74,1.3,508
+fndds_cheese_sandwich_cheddar_cheese_on_white_bread,"Cheese sandwich, cheddar cheese, on white bread",fast_food,325,15.14,29.95,16.11,3.28,1.4,534
+fndds_cheese_sandwich_cheddar_cheese_on_wheat_bread,"Cheese sandwich, cheddar cheese, on wheat bread",fast_food,323,16.3,27.72,16.34,3.2,3.2,528
+fndds_cheese_sandwich_american_cheese_on_white_bread,"Cheese sandwich, American cheese, on white bread",fast_food,297,12.46,31.89,13.29,5.08,1.4,853
+fndds_cheese_sandwich_american_cheese_on_wheat_bread,"Cheese sandwich, American cheese, on wheat bread",fast_food,295,13.62,29.67,13.52,5,3.2,848
+fndds_grilled_cheese_sandwich_cheddar_cheese_on_white_bread,"Grilled cheese sandwich, cheddar cheese, on white bread",fast_food,368,13.38,26.38,23.26,2.92,1.2,541
+fndds_grilled_cheese_sandwich_cheddar_cheese_on_wheat_bread,"Grilled cheese sandwich, cheddar cheese, on wheat bread",fast_food,366,14.4,24.42,23.46,2.85,2.8,536
+fndds_nutella_sandwich_on_white_bread,Nutella sandwich on white bread,fast_food,362,8.03,53.78,12.68,22.28,3.4,308
+fndds_nutella_sandwich_on_wheat_bread,Nutella sandwich on wheat bread,fast_food,359,9.32,51.31,12.93,22.19,5.4,301
+fndds_jelly_sandwich_on_white_bread,"Jelly sandwich, on white bread",fast_food,267,5.72,57.5,2.16,23.69,1.8,282
+fndds_jelly_sandwich_on_wheat_bread,"Jelly sandwich, on wheat bread",fast_food,265,6.9,55.23,2.39,23.61,3.6,276
+fndds_almond_butter_sandwich_on_white_bread,"Almond butter sandwich, on white bread",fast_food,397,13.34,39.43,20.68,5.01,4.9,374
+fndds_almond_butter_sandwich_on_wheat_bread,"Almond butter sandwich, on wheat bread",fast_food,395,14.62,36.97,20.93,4.93,6.9,368
+fndds_almond_butter_and_jelly_sandwich_on_white_bread,"Almond butter and jelly sandwich, on white bread",fast_food,374,10.98,44.88,16.99,13.26,4.2,313
+fndds_sardine_sandwich,Sardine sandwich,fast_food,234,17.87,21.87,7.96,2.37,1,371
+fndds_crab_cake_sandwich,Crab cake sandwich,fast_food,231,12.74,19.39,11.18,2.22,1,436
+fndds_fish_wrap_sandwich,Fish wrap sandwich,fast_food,262,14.73,22.61,12.44,1.79,1.4,562
+fndds_salmon_cake_sandwich,Salmon cake sandwich,fast_food,279,13.86,19.37,15.93,2.22,1,419
+fndds_fish_sandwich_grilled,"Fish sandwich, grilled",fast_food,180,16.06,21.21,3.29,3.08,0.8,379
+fndds_fried_seafood_sandwich,Fried seafood sandwich,fast_food,234,11.32,24.67,9.82,1.91,1.1,439
+fndds_seafood_salad_sandwich,Seafood salad sandwich,fast_food,216,9.89,17.24,11.75,2.15,1,540
+fndds_spam_sandwich,Spam sandwich,fast_food,266,10.03,27.64,12.83,5.13,1.1,913
+fndds_reuben_sandwich,Reuben sandwich,fast_food,282,10.01,16.42,19.43,3.48,2.2,688
+fndds_ham_sandwich_wrap,Ham sandwich wrap,fast_food,230,13.54,22.51,9.38,2.05,1.5,825
+fndds_french_dip_sandwich,French dip sandwich,fast_food,184,13.23,24.47,3.47,2.76,1.1,631
+fndds_turkey_sandwich_wrap,Turkey sandwich wrap,fast_food,232,12.77,23.3,9.4,2.42,1.5,792
+fndds_ham_sandwich_on_white,Ham sandwich on white,fast_food,187,12.94,25.58,3.66,2.76,1.2,662
+fndds_ham_sandwich_on_wheat,Ham sandwich on wheat,fast_food,185,13.96,23.62,3.86,2.69,2.8,657
+fndds_club_sandwich_on_white,Club sandwich on white,fast_food,222,15.08,23.09,7.48,2.62,1,769
+fndds_club_sandwich_on_wheat,Club sandwich on wheat,fast_food,220,15.98,21.38,7.65,2.56,2.4,765
+fndds_turkey_sandwich_on_white,Turkey sandwich on white,fast_food,189,12.03,26.51,3.68,3.2,1.2,624
+fndds_turkey_sandwich_on_wheat,Turkey sandwich on wheat,fast_food,187,13.05,24.56,3.88,3.13,2.8,619
+fndds_salami_sandwich_on_white,Salami sandwich on white,fast_food,321,15.05,25.8,17.14,2.89,1.2,1080
+fndds_salami_sandwich_on_wheat,Salami sandwich on wheat,fast_food,319,16.07,23.84,17.34,2.82,2.8,1075
+fndds_bologna_sandwich_on_white,Bologna sandwich on white,fast_food,274,9.87,28.49,13.33,3.71,1.2,764
+fndds_gyro_sandwich,Gyro sandwich,fast_food,184,11.24,18.78,6.76,1.74,1,323
+fndds_pork_sandwich,Pork sandwich,fast_food,226,17.73,25.45,5.47,2.76,1.2,403
+fndds_cuban_sandwich,Cuban sandwich,fast_food,228,15.86,16.3,10.69,2.46,0.8,553
+fndds_meatloaf_sandwich,Meatloaf sandwich,fast_food,217,11.75,28.73,6.15,5.9,1.3,494
+fndds_barbecue_rib_sandwich,Barbecue rib sandwich,fast_food,223,13.66,26.5,6.47,9.05,0.9,466
+fndds_meatball_sandwich_or_sub,Meatball sandwich or sub,fast_food,207,11.3,21.31,8.23,4.65,1.2,511
+fndds_pork_sandwich_with_cheese,"Pork sandwich, with cheese",fast_food,246,18.14,22.32,8.99,2.77,1,496
+fndds_bruschetta,Bruschetta,fast_food,171,4.29,21.32,7.61,3.34,1.5,264
+fndds_falafel_sandwich,Falafel sandwich,fast_food,265,6.22,27.04,14.76,2.98,2.5,359
+fndds_vegetable_sandwich_wrap,Vegetable sandwich wrap,fast_food,160,5.42,19.71,6.55,3.33,1.8,528
+fndds_tomato_sandwich_on_white,Tomato sandwich on white,fast_food,201,8.46,26.54,6.8,3.99,1.5,494
+fndds_tomato_sandwich_on_wheat,Tomato sandwich on wheat,fast_food,199,9.44,24.67,6.99,3.92,3.1,489
+fndds_soup_bean,"Soup, bean",soups_sauces,67,3.76,11.62,0.76,1.14,4,244
+fndds_soup_rice,"Soup, rice",soups_sauces,51,3.54,6.78,1.15,0.76,0.5,247
+fndds_soup_beef,"Soup, beef",soups_sauces,47,3.28,4.04,2.05,1.1,0.8,249
+fndds_soup_broth,"Soup, broth",soups_sauces,6,0.89,0.24,0.22,0.22,0,372
+fndds_soup_fruit,"Soup, fruit",soups_sauces,30,0.54,7.04,0.12,5.83,0.8,8
+fndds_soup_pozole,"Soup, pozole",soups_sauces,43,3.38,4.59,1.23,0.98,0.9,248
+fndds_soup_lentil,"Soup, lentil",soups_sauces,60,3.82,10.2,0.69,1.72,3.7,244
+fndds_soup_barley,"Soup, barley",soups_sauces,58,3.34,6.66,2.07,0.8,1.1,247
+fndds_soup_tomato,"Soup, tomato",soups_sauces,19,0.65,3.64,0.41,2.01,0.9,244
+fndds_soup_borscht,"Soup, borscht",soups_sauces,20,0.52,3.9,0.37,2.24,0.8,245
+fndds_soup_meatball,"Soup, meatball",soups_sauces,52,2.65,5.53,2.17,1.45,0.9,285
+fndds_soup_bisque,"Soup, bisque",soups_sauces,75,2.28,5.9,4.81,1.9,0.9,239
+fndds_soup_peanut,"Soup, peanut",soups_sauces,88,3.24,8.36,5.29,2.61,1.7,246
+fndds_soup_potato,"Soup, potato",soups_sauces,90,1.51,10.53,4.71,1.01,1.2,240
+fndds_soup_pumpkin,"Soup, pumpkin",soups_sauces,72,1.1,6.86,4.7,2.07,1.5,241
+fndds_soup_pepperpot,"Soup, pepperpot",soups_sauces,91,3.06,6.79,5.75,1.46,0.9,251
+fndds_soup_french_onion,"Soup, French onion",soups_sauces,108,5.45,11.84,4.47,2.49,1.1,378
+fndds_soup_wonton,"Soup, wonton",soups_sauces,33,2.39,2.95,1.31,0.74,0.3,370
+fndds_soup_seaweed,"Soup, seaweed",soups_sauces,37,3.73,1.52,1.87,0.47,0.2,324
+fndds_soup_egg_drop,"Soup, egg drop",soups_sauces,27,1.16,4.29,0.61,0.09,0.4,370
+fndds_ramen_bowl_with_beef,Ramen bowl with beef,soups_sauces,137,6.81,15.4,5.19,0.44,1,353
+fndds_ramen_bowl_with_fish,Ramen bowl with fish,soups_sauces,112,5.78,15.4,2.87,0.44,1,359
+fndds_soup_hot_and_sour,"Soup, hot and sour",soups_sauces,39,2.58,4.35,1.21,0.42,0.5,376
+fndds_congee,Congee,grains,39,0.8,8.4,0.08,0.02,0.1,234
+fndds_rice_cooked_with_milk,"Rice, cooked, with milk",grains,144,5.13,25.01,2.31,4.91,0.3,357
+fndds_rice_sweet_cooked_with_honey,"Rice, sweet, cooked with honey",grains,139,2.52,31.12,0.26,4.89,0.4,344
+fndds_yellow_rice_cooked_fat_added,"Yellow rice, cooked, fat added",grains,103,1.76,18.7,2.43,0.44,0.4,351
+fndds_yellow_rice_cooked_no_added_fat,"Yellow rice, cooked, no added fat",grains,88,1.8,19.1,0.45,0.45,0.5,340
+fndds_rice_white_cooked_glutinous,"Rice, white, cooked, glutinous",grains,96,2.01,20.97,0.19,0.05,1,227
+fndds_rice_white_cooked_no_added_fat,"Rice, white, cooked, no added fat",grains,129,2.67,27.99,0.28,0.05,0.4,245
+fndds_rice_brown_cooked_no_added_fat,"Rice, brown, cooked, no added fat",grains,123,2.43,25.76,1.11,0.22,1,201
+fndds_barley,Barley,grains,139,2.2,27.23,2.74,0.28,3.7,199
+fndds_millet,Millet,grains,118,3.5,23.57,1,0.13,1.3,168
+fndds_noodles_cooked,"Noodles, cooked",grains,137,4.51,25.01,2.06,0.4,1.2,236
+fndds_buckwheat_groats,Buckwheat groats,grains,118,3.24,18.99,3.97,0.87,2.6,170
+fndds_rice_noodles_cooked,"Rice noodles, cooked",grains,107,1.78,23.87,0.2,0.03,1,250
+fndds_quinoa_fat_added,"Quinoa, fat added",grains,146,4.2,20.22,5.42,0.84,2.7,184
+fndds_bulgur_fat_added,"Bulgur, fat added",grains,121,2.9,17.31,5.07,0.12,4.2,243
+fndds_bread_rye,"Bread, rye",baked_goods,259,8.5,48.3,3.3,3.85,5.8,570
+fndds_bread_soy,"Bread, soy",baked_goods,267,16.4,41.95,3.84,6.01,4.4,589
+fndds_bread_naan,"Bread, naan",baked_goods,311,11.09,50.23,7.28,3.7,5.2,508
+fndds_bread_pita,"Bread, pita",baked_goods,275,9.1,55.7,1.2,1.3,2.2,536
+fndds_bread_puri,"Bread, puri",baked_goods,409,6.84,39.23,24.94,0.18,3.5,170
+fndds_bread_rice,"Bread, rice",baked_goods,248,4.31,45.78,5.24,3.53,4.3,447
+fndds_bread_cuban,"Bread, Cuban",baked_goods,272,10.75,51.88,2.42,4.62,2.2,602
+fndds_bread_onion,"Bread, onion",baked_goods,238,8.81,44.32,2.95,3.33,1.7,482
+fndds_bread_black,"Bread, black",baked_goods,250,8.7,47.5,3.1,0.53,6.5,596
+fndds_bread_cheese,"Bread, cheese",baked_goods,408,10.42,44.83,20.83,2.08,2.1,750
+fndds_bread_potato,"Bread, potato",baked_goods,266,12.5,47.07,3.13,9.38,6.3,375
+fndds_bread_raisin,"Bread, raisin",baked_goods,270,8.82,52.21,3.26,11.32,2.5,408
+fndds_bread_barley,"Bread, barley",baked_goods,274,10.67,47.54,4.53,5.73,4,450
+fndds_bread_paratha,"Bread, paratha",baked_goods,326,6.36,45.35,13.2,4.15,9.6,452
+fndds_bread_oatmeal,"Bread, oatmeal",baked_goods,269,8.4,48.5,4.4,8.14,4,447
+fndds_bread_cinnamon,"Bread, cinnamon",baked_goods,253,7.05,44.38,5.29,14.11,3.5,388
+fndds_bread_oat_bran,"Bread, oat bran",baked_goods,299,9.33,53.89,4.89,9.04,4.4,497
+fndds_bread_vegetable,"Bread, vegetable",baked_goods,259,9.67,47.98,3.26,3.54,1.8,532
+fndds_roll_rye,"Roll, rye",baked_goods,259,8.5,48.3,3.3,3.85,5.8,570
+fndds_roll_diet,"Roll, diet",baked_goods,272,10.75,51.88,2.42,4.62,2.2,602
+fndds_roll_cheese,"Roll, cheese",baked_goods,315,11.48,49.56,7.85,5.29,1.9,476
+fndds_roll_garlic,"Roll, garlic",baked_goods,309,10.84,51.92,6.44,5.53,2,465
+fndds_roll_oatmeal,"Roll, oatmeal",baked_goods,269,8.4,48.5,4.4,8.14,4,447
+fndds_roll_egg_bread,"Roll, egg bread",baked_goods,287,9.5,47.8,6,1.78,2.3,380
+fndds_roll_sour_dough,"Roll, sour dough",baked_goods,272,10.75,51.88,2.42,4.62,2.2,602
+fndds_roll_multigrain,"Roll, multigrain",baked_goods,263,9.6,44.6,6,6.25,3.8,458
+fndds_roll_whole_wheat,"Roll, whole wheat",baked_goods,273,8.6,46,6.3,1.63,3.8,524
+fndds_roll_gluten_free,"Roll, gluten free",baked_goods,239,3.34,50.47,2.65,6.87,5.1,593
+fndds_bagel,Bagel,baked_goods,264,10.56,52.38,1.32,8.43,1.6,422
+fndds_bagel_wheat,"Bagel, wheat",baked_goods,250,10.2,48.89,1.53,6.12,4.1,439
+fndds_muffin_english,"Muffin, English",baked_goods,227,8.87,44.17,1.69,3.53,3.5,425
+fndds_bagel_oat_bran,"Bagel, oat bran",baked_goods,250,10.2,48.89,1.53,6.12,4.1,439
+fndds_bagel_wheat_bran,"Bagel, wheat bran",baked_goods,250,10.2,48.89,1.53,6.12,4.1,439
+fndds_bagel_multigrain,"Bagel, multigrain",baked_goods,250,10.2,48.89,1.53,6.12,4.1,439
+fndds_bagel_whole_wheat,"Bagel, whole wheat",baked_goods,250,10.2,48.89,1.53,6.12,4.1,439
+fndds_bagel_with_raisins,"Bagel, with raisins",baked_goods,268,9.83,55.07,1.21,14.1,1.9,382
+fndds_bagel_pumpernickel,"Bagel, pumpernickel",baked_goods,250,10.2,48.89,1.53,6.12,4.1,439
+fndds_tortilla_corn,"Tortilla, corn",baked_goods,218,5.7,44.64,2.85,0.88,6.3,45
+fndds_tortilla_flour,"Tortilla, flour",baked_goods,306,8.2,49.38,7.99,3.71,3.5,700
+fndds_taco_shell_corn,"Taco shell, corn",baked_goods,476,6.41,63.49,21.79,1.5,6.7,324
+fndds_taco_shell_flour,"Taco shell, flour",baked_goods,511,8.83,53.2,29.07,4,3.8,755
+fndds_scone,Scone,baked_goods,382,6.67,48.07,18.35,13.4,1.2,446
+fndds_popover,Popover,baked_goods,268,11.05,35.28,9.2,4.04,1.1,284
+fndds_hush_puppy,Hush puppy,baked_goods,296,6.16,40.21,13.25,3.8,2.9,813
+fndds_johnnycake,Johnnycake,baked_goods,277,7.98,43.82,7.46,9.1,1.8,871
+fndds_spoonbread,Spoonbread,baked_goods,166,6.68,18.55,7.06,4.84,0.7,382
+fndds_muffin_plain,"Muffin, plain",baked_goods,374,5.93,52.02,16.21,27.48,0.8,358
+fndds_bread_nut,"Bread, nut",baked_goods,403,6.59,49.66,20.1,26.01,1.2,336
+fndds_corn_pone_baked,"Corn pone, baked",baked_goods,214,3.5,39.68,4.31,0.79,1.9,437
+fndds_bread_fruit,"Bread, fruit",baked_goods,374,6.01,47.34,18.1,25.24,1.2,302
+fndds_arepa_dominicana,Arepa Dominicana,baked_goods,267,5.66,30.47,14,3.25,2.4,399
+fndds_muffin_fruit,"Muffin, fruit",baked_goods,375,4.49,53,16.07,31.47,1.1,336
+fndds_muffin_wheat,"Muffin, wheat",baked_goods,372,6.92,45.7,18.03,19.9,1.8,389
+fndds_dosa_plain,"Dosa, plain",baked_goods,210,5.7,37.04,4.05,0.3,1.8,309
+fndds_crepe_plain,"Crepe, plain",baked_goods,224,8.85,22.02,11.29,4.48,0.6,278
+fndds_waffle_plain,"Waffle, plain",baked_goods,373,8.7,41.5,18.82,8.28,2.5,597
+fndds_pancakes_plain,"Pancakes, plain",baked_goods,282,7.41,35.32,12.07,7.05,2.1,508
+fndds_chinese_pancake,Chinese pancake,baked_goods,207,4.05,45.38,0.38,0.07,0.7,5
+fndds_waffle_fruit,"Waffle, fruit",baked_goods,307,6.94,36.25,14.92,9.11,2.8,467
+fndds_pancakes_fruit,"Pancakes, fruit",baked_goods,232,5.86,30.63,9.54,7.7,2.4,395
+fndds_french_toast_plain,"French toast, plain",baked_goods,273,10.36,32.34,11.38,10.08,1.2,302
+fndds_french_toast_sticks,French toast sticks,baked_goods,278,7.52,40.62,9.18,12.86,1.3,535
+fndds_waffle_cinnamon,"Waffle, cinnamon",baked_goods,373,8.7,41.67,18.78,8.27,2.7,596
+fndds_pancakes_pumpkin,"Pancakes, pumpkin",baked_goods,241,6.37,30.95,10.08,6.51,2.3,423
+fndds_waffle_chocolate,"Waffle, chocolate",baked_goods,437,9.07,48.64,22.7,19.04,2.9,517
+fndds_cereal_crunch,"Cereal, crunch",snacks,398,4.31,82.08,5.53,42.75,2.7,701
+fndds_cereal_granola,"Cereal, granola",snacks,420,9.82,67.35,13.01,22.24,7.4,161
+fndds_cereal_fruit_rings,"Cereal, fruit rings",snacks,383,5.14,82.24,3.23,31.64,5.4,504
+fndds_cereal_fruit_crispy,"Cereal, fruit crispy",snacks,384,4.28,82.9,3.89,33.83,0.3,542
+fndds_cereal_cinnamon_toast,"Cereal, cinnamon toast",snacks,414,5.88,75.23,9.92,29.78,5.1,539
+fndds_cereal_flavored_puffs,"Cereal, flavored puffs",snacks,380,5.66,83.81,2.16,37.12,2.2,424
+fndds_cereal_chocolate_puffs,"Cereal, chocolate puffs",snacks,388,5.39,81.02,4.98,34.43,5,425
+fndds_cereal_other_honey,"Cereal, other, honey",snacks,388,8.02,76.12,5.71,26.51,6.1,504
+fndds_cereal_plain_puffs,"Cereal, plain puffs",snacks,357,9.5,77.2,1.66,0.22,8.7,4
+fndds_cereal_o_s_plain,"Cereal, O's, plain",snacks,374,12.42,67.92,6.17,4.9,10.5,506
+fndds_cereal_corn_puffs,"Cereal, corn puffs",snacks,371,7.74,77.82,2.57,12.24,7.3,525
+fndds_cereal_multigrain,"Cereal, multigrain",snacks,373,11.64,73.96,3.59,20.14,14.6,233
+fndds_cereal_k_s_plain,"Cereal, K's, plain",snacks,356,19.04,68.01,1.58,13.01,3.2,680
+fndds_cereal_oat_bunches,"Cereal, oat bunches",snacks,392,7.43,76.25,6.06,20.66,4.6,428
+fndds_cereal_oat_squares,"Cereal, oat squares",snacks,379,10.4,73.27,5.22,20.52,8,388
+fndds_oatmeal_multigrain,"Oatmeal, multigrain",grains,56,2.12,12.19,0.46,0.41,2,70
+fndds_oatmeal_reduced_sugar,"Oatmeal, reduced sugar",grains,85,2.35,16.62,1.28,4.05,1.9,90
+fndds_oatmeal_fast_food_plain,"Oatmeal, fast food, plain",grains,80,2.6,11.9,2.54,0.69,1.7,93
+fndds_oatmeal_fast_food_flavored,"Oatmeal, fast food, flavored",grains,110,2.4,20.34,2.33,9.95,1.6,163
+fndds_oatmeal_instant_maple_flavored_fat_added,"Oatmeal, instant, maple flavored, fat added",grains,119,2.38,19.64,3.45,7.76,1.8,150
+fndds_oatmeal_instant_fruit_flavored_fat_added,"Oatmeal, instant, fruit flavored, fat added",grains,117,2.29,19.51,3.4,8.08,1.9,145
+fndds_oatmeal_instant_maple_flavored_no_added_fat,"Oatmeal, instant, maple flavored, no added fat",grains,102,2.44,20.23,1.25,7.99,1.9,136
+fndds_oatmeal_instant_fruit_flavored_no_added_fat,"Oatmeal, instant, fruit flavored, no added fat",grains,100,2.34,20.09,1.19,8.32,1.9,131
+fndds_upma,Upma,grains,87,1.98,13.81,2.64,1.61,1.3,98
+fndds_cream_of_rice,Cream of rice,grains,69,1.17,15.28,0.09,0.06,0.1,69
+fndds_hominy_cooked,"Hominy, cooked",grains,88,1.45,13.8,2.91,1.47,2.4,501
+fndds_masa_harina_cooked,"Masa harina, cooked",grains,97,2.26,20.5,0.99,0.43,1.7,283
+fndds_oat_bran_cereal_cooked,"Oat bran cereal, cooked",grains,46,3.21,12.28,1.3,0.27,2.9,69
+fndds_whole_wheat_cereal_cooked,"Whole wheat cereal, cooked",grains,47,1.55,10.39,0.28,0.06,1.3,71
+fndds_cornmeal_mush_fat_added,"Cornmeal mush, fat added",grains,71,1.11,12.25,1.84,0.26,0.6,82
+fndds_potato_chips_plain,"Potato chips, plain",snacks,532,6.39,53.83,33.98,0.33,3.1,527
+fndds_potato_sticks_plain,"Potato sticks, plain",snacks,522,6.7,53.3,34.4,0.22,3.4,633
+fndds_potato_chips_baked_plain,"Potato chips, baked, plain",snacks,469,5,71.4,18.2,5.01,4.8,536
+fndds_potato_chips_unsalted,"Potato chips, unsalted",snacks,537,6.25,59.66,30.3,0.19,5.4,7
+fndds_potato_sticks_flavored,"Potato sticks, flavored",snacks,517,6.63,52.77,34.06,0.22,3.4,1010
+fndds_potato_chips_reduced_fat,"Potato chips, reduced fat",snacks,482,7.03,67.13,20.59,0.22,6,391
+fndds_potato_sticks_fry_shaped,"Potato sticks, fry shaped",snacks,517,6.63,52.77,34.06,0.22,3.4,1010
+fndds_potato_chips_popped_plain,"Potato chips, popped, plain",snacks,469,5,71.4,18.2,5.01,4.8,536
+fndds_potato_chips_other_flavored,"Potato chips, other flavored",snacks,487,6.51,55.92,31.06,5.47,3.8,545
+fndds_soy_chips,Soy chips,snacks,385,26.5,53.15,7.35,1.8,3.5,842
+fndds_corn_nuts,Corn nuts,snacks,446,8.5,71.86,15.64,0.61,6.9,564
+fndds_bean_chips,Bean chips,snacks,448,14.6,53.12,21.58,1.08,9.7,410
+fndds_taro_chips,Taro chips,snacks,498,2.3,68.1,24.9,3.82,7.2,342
+fndds_shrimp_chips,Shrimp chips,snacks,426,7.14,59.09,17.86,21.43,5.6,571
+fndds_cracker_chips,Cracker chips,snacks,491,7.95,67.26,21.11,7.2,8.8,423
+fndds_plantain_chips,Plantain chips,snacks,531,2.28,63.84,29.59,0.92,3.5,202
+fndds_chips_rice,"Chips, rice",snacks,384,8.2,81.5,2.8,0.6,4.2,326
+fndds_vegetable_chips,Vegetable chips,snacks,495,4.72,59.2,26.56,6.9,7.8,329
+fndds_corn_chips_plain,"Corn chips, plain",snacks,535,6.12,56.82,33.1,0.27,4,817
+fndds_popcorn_caramel_coated,"Popcorn, caramel coated",snacks,428,3.77,78.47,12.7,52.77,5.2,512
+fndds_popcorn_microwave_plain,"Popcorn, microwave, plain",snacks,518,9.13,54.99,30.57,0.61,10.2,764
+fndds_popcorn_chocolate_coated,"Popcorn, chocolate coated",snacks,407,5.34,76.37,12.79,47.66,8.3,493
+fndds_popcorn_ready_to_eat_plain,"Popcorn, ready-to-eat, plain",snacks,482,10.19,61.24,23.26,0.68,11.4,616
+fndds_popcorn_microwave_kettle,"Popcorn, microwave, kettle",snacks,504,9.35,58.01,27.5,2.2,10.5,601
+fndds_popcorn_ready_to_eat_kettle,"Popcorn, ready-to-eat, kettle",snacks,531,5.48,61.01,30.22,28.52,6.1,495
+fndds_popcorn_microwave_low_sodium,"Popcorn, microwave, low sodium",snacks,496,8.93,57.64,27.88,0.54,9.9,310
+fndds_popcorn_microwave_plain_light,"Popcorn, microwave, plain, light",snacks,409,11.92,71.68,10.07,0.8,13.4,766
+fndds_snack_mix,Snack mix,snacks,504,6.87,63.11,25.79,1.9,3.1,729
+fndds_pretzel_chips_hard_plain,"Pretzel chips, hard, plain",snacks,375,9.8,78.43,2.86,2.16,3.3,2037
+fndds_snack_mix_plain_chex_mix,"Snack mix, plain (Chex Mix)",snacks,417,8.74,72.2,10.34,7.98,4.6,707
+fndds_pretzels_hard_flavored,"Pretzels, hard, flavored",snacks,388,9.92,79.44,3.88,2.18,3.4,1183
+fndds_pretzels_hard_multigrain,"Pretzels, hard, multigrain",snacks,381,10.15,80.08,2.96,2.17,4.2,1098
+fndds_pretzels_soft_multigrain,"Pretzels, soft, multigrain",snacks,337,8.49,70.26,3.13,0.26,3.6,495
+fndds_pretzels_soft_gluten_free,"Pretzels, soft, gluten free",snacks,297,4.03,57.27,5.74,3.77,4,839
+fndds_pretzels_hard_plain_salted,"Pretzels, hard, plain, salted",snacks,384,10.04,80.39,2.93,2.21,3.4,1120
+fndds_pretzel_chips_hard_flavored,"Pretzel chips, hard, flavored",snacks,370,9.68,77.52,2.82,2.13,3.3,2461
+fndds_pretzels_hard_yogurt_coated,"Pretzels, hard, yogurt coated",snacks,438,5.94,76.56,12.17,45.42,1.1,441
+fndds_pretzels_hard_cheese_filled,"Pretzels, hard, cheese filled",snacks,463,9.85,66.5,16.92,17.6,3.6,1117
+fndds_croutons,Croutons,snacks,465,10.8,63.5,18.3,4.41,5,1333
+fndds_rice_cake,Rice cake,snacks,392,7.1,81.1,4.3,0.88,4.2,71
+fndds_rice_paper,Rice paper,snacks,323,5.91,72.26,1.11,0.27,0.5,314
+fndds_pita_chips,Pita chips,snacks,457,11.79,68.26,15.2,4.76,3.8,854
+fndds_melba_toast,Melba toast,snacks,390,12.1,76.6,3.2,0.94,6.3,598
+fndds_bagel_chips,Bagel chips,snacks,451,12.34,66.36,15.14,6.02,4.1,233
+fndds_popcorn_cake,Popcorn cake,snacks,384,9.7,80.1,3.1,0.72,2.9,288
+fndds_zwieback_toast,Zwieback toast,snacks,426,10.1,74.2,9.7,12.5,2.5,227
+fndds_crackers_milk,"Crackers, milk",snacks,446,7.6,71.73,13.77,10.32,3.4,687
+fndds_crackers_rice,"Crackers, rice",snacks,416,10,82.64,5,0,0,233
+fndds_crackers_matzo,"Crackers, matzo",snacks,395,10,83.7,1.4,0.29,3,0
+fndds_crackers_water,"Crackers, water",snacks,384,7.14,72.81,7.14,0,7.1,571
+fndds_crackers_wheat,"Crackers, wheat",snacks,441,8.94,70.14,15.26,8.34,8.6,750
+fndds_crackers_oyster,"Crackers, oyster",snacks,418,9.46,74.05,8.64,1.29,2.8,941
+fndds_crackers_saltine,"Crackers, saltine",snacks,418,9.46,74.05,8.64,1.29,2.8,941
+fndds_crackers_saltine_multigrain,"Crackers, saltine, multigrain",snacks,398,7.14,68.25,10.71,0,6.7,1214
+fndds_crackers_saltine_reduced_fat,"Crackers, saltine, reduced fat",snacks,393,10.5,82.3,1.6,0.38,2.7,849
+fndds_milk_n_cereal_bar,Milk 'n Cereal bar,snacks,413,6.47,72.05,10.98,45.97,0.4,319
+fndds_snack_bar_oatmeal,"Snack bar, oatmeal",snacks,389,6.67,75.47,6.67,31.54,4.6,367
+fndds_cereal_or_granola_bar_nonfat,"Cereal or granola bar, nonfat",snacks,342,5.9,77.6,0.9,45.24,7.4,16
+fndds_cereal_or_granola_bar_fruit_and_nut,"Cereal or granola bar, fruit and nut",snacks,502,13.89,43.74,32.28,22.56,5.8,45
+fndds_cereal_or_granola_bar_with_rice_cereal,"Cereal or granola bar, with rice cereal",snacks,417,3.4,80.5,9,19.36,0,351
+fndds_cereal_or_granola_bar_quaker_granola_bites,Cereal or granola bar (Quaker Granola Bites),snacks,451,7.17,66.27,17.5,30,5.7,167
+fndds_breakfast_bar_date_with_yogurt_coating,"Breakfast bar, date, with yogurt coating",snacks,348,3.7,70.9,7.3,46.36,4.6,350
+fndds_cereal_or_granola_bar_kind_fruit_and_nut_bar,Cereal or granola bar (KIND Fruit and Nut Bar),snacks,502,13.89,43.74,32.28,22.56,5.8,45
+fndds_cereal_or_granola_bar_kellogg_s_special_k_bar,Cereal or granola bar (Kellogg's Special K bar),snacks,409,9.09,72.73,9.09,31.8,1.8,428
+fndds_nutrition_bar_clif_bar,Nutrition bar (Clif Bar),snacks,346,14.71,65.44,5.88,31.62,7.4,195
+fndds_nutrition_bar_powerbar,Nutrition bar (PowerBar),snacks,363,14.15,69.63,3.11,30.07,5.7,308
+fndds_nutrition_bar_tiger_s_milk,Nutrition bar (Tiger's Milk),snacks,387,16.8,56.46,14.29,36.4,2.3,168
+fndds_cereal_or_granola_bar_kashi_chewy,Cereal or granola bar (Kashi Chewy),snacks,390,16.67,63.42,7.69,42.31,7.7,321
+fndds_nutrition_bar_balance_original_bar,Nutrition bar (Balance Original Bar),snacks,415,28,48.73,12,34.89,3.1,253
+fndds_cereal_or_granola_bar_kashi_crunchy,Cereal or granola bar (Kashi Crunchy),snacks,429,18.57,53.26,15.71,17.14,11.4,293
+fndds_baklava,Baklava,sweets,440,6.58,37.55,29.34,12.8,2.5,311
+fndds_tiramisu,Tiramisu,sweets,353,5.65,29.44,23.86,18.7,0.6,173
+fndds_pie_shell,Pie shell,sweets,508,6.5,56.24,28.59,4.23,3.3,467
+fndds_dessert_pizza,Dessert pizza,sweets,204,1.84,32.38,7.53,15.75,1.7,130
+fndds_pie_apple,"Pie, apple",sweets,296,2.7,37.55,15.28,15.92,1.8,217
+fndds_pie_berry,"Pie, berry",sweets,306,3.16,39.53,15.43,16.49,3.6,217
+fndds_pie_lemon,"Pie, lemon",sweets,280,2.41,31.48,16.16,18.42,0.7,169
+fndds_pie_peach,"Pie, peach",sweets,296,2.83,37.11,15.28,15.69,1.9,219
+fndds_pie_pecan,"Pie, pecan",sweets,449,6.02,49.46,25.25,31.01,1.9,299
+fndds_ice_cream_cake,Ice cream cake,sweets,283,2.95,39.28,12.67,31.24,0.5,196
+fndds_pie_strawberry,"Pie, strawberry",sweets,289,2.88,44.22,11.6,22.59,2.2,189
+fndds_cake_cream,"Cake, cream",sweets,286,3.84,30.02,17.03,16.46,0.4,234
+fndds_cake_pound,"Cake, pound",sweets,353,5,53.64,13.96,33.36,0.6,377
+fndds_cake_torte,"Cake, torte",sweets,241,3.28,33.86,10.36,19.08,0.9,273
+fndds_pie_cherry,"Pie, cherry",sweets,311,2.95,40.93,15.3,19.53,1.9,217
+fndds_cake_sponge,"Cake, sponge",sweets,290,5.4,61,2.7,36.66,0.5,623
+fndds_pocky,Pocky,sweets,447,10,51.08,22.5,25,5,213
+fndds_marie_biscuit,Marie biscuit,sweets,406,7.05,70.54,10.58,21.16,3.5,370
+fndds_anisette_toast,Anisette toast,sweets,373,7.63,66.99,8.38,28.44,1.4,262
+fndds_graham_crackers,Graham crackers,sweets,430,6.69,77.66,10.6,24.85,3.4,516
+fndds_cookie_almond,"Cookie, almond",sweets,514,5.37,63.78,26.22,21.65,1.3,353
+fndds_cookie_raisin,"Cookie, raisin",sweets,401,4.1,68,13.6,47.56,1.2,418
+fndds_cookie_animal,"Cookie, animal",sweets,446,6.9,74.1,13.8,23.3,1.1,335
+fndds_cookie_coconut,"Cookie, coconut",sweets,460,3.02,61.22,22.55,45.16,5.1,241
+fndds_cookie_fig_bar,"Cookie, fig bar",sweets,348,3.7,70.9,7.3,46.36,4.6,350
+fndds_cookie_fortune,"Cookie, fortune",sweets,378,4.2,84,2.7,45.42,1.6,31
+fndds_cookie_granola,"Cookie, granola",sweets,464,9.8,66.7,17.6,27.52,3.1,251
+fndds_cookie_oatmeal,"Cookie, oatmeal",sweets,450,6.2,68.7,18.1,24.66,2.8,520
+fndds_cookie_pumpkin,"Cookie, pumpkin",sweets,450,6.2,68.7,18.1,24.66,2.8,520
+fndds_crackers_cuban,"Crackers, Cuban",sweets,430,5.6,73.8,12.8,17.6,1,459
+fndds_cookie_biscotti,"Cookie, biscotti",sweets,373,7.63,66.99,8.38,28.44,1.4,262
+fndds_cookie_macaroon,"Cookie, macaroon",sweets,460,3.02,61.22,22.55,45.16,5.1,241
+fndds_cookie_meringue,"Cookie, meringue",sweets,350,5.66,81.3,0.26,80.58,0,244
+fndds_brioche,Brioche,sweets,427,8.96,36.31,27.46,3.12,1.5,437
+fndds_churros,Churros,sweets,419,6.05,48.87,22.21,23.38,2.6,309
+fndds_beignet,Beignet,sweets,417,5.46,53.69,20.18,31.09,1.9,281
+fndds_croissant,Croissant,sweets,406,8.2,45.8,21,11.26,2.6,300
+fndds_pannetone,Pannetone,sweets,325,9.76,53.75,8.39,17.79,2.3,325
+fndds_fritter_plain,"Fritter, plain",sweets,378,6.56,27.46,26.93,2.06,0.9,340
+fndds_doughnut_holes,Doughnut holes,sweets,426,5.52,49.52,22.86,23.51,1.8,378
+fndds_breakfast_tart,Breakfast tart,sweets,385,4.01,71.83,9.02,31,1.8,311
+fndds_pastry_puff,"Pastry, puff",sweets,558,7.4,45.7,38.5,0.75,1.5,253
+fndds_tamale_sweet,"Tamale, sweet",sweets,259,2.22,35.61,12.57,15.44,2.3,265
+fndds_fritter_fruit,"Fritter, fruit",sweets,403,6.3,37.29,25.59,12.44,1.2,321
+fndds_doughnut_jelly,"Doughnut, jelly",sweets,390,4.94,52.33,18.16,28.44,1.9,259
+fndds_cheese_pastry_puffs,Cheese pastry puffs,sweets,265,9.3,13.4,19.54,0.2,0.4,554
+fndds_croissant_fruit,"Croissant, fruit",sweets,396,7.75,47.04,19.72,14.1,3,287
+fndds_chocolate_candy,Chocolate candy,sweets,535,7.65,59.4,29.66,51.5,3.4,79
+fndds_chocolate_chips,Chocolate chips,sweets,480,4.2,63.9,30,54.5,5.9,11
+fndds_dark_chocolate_candy,Dark chocolate candy,sweets,550,5.09,59.97,32.2,46.14,7.2,23
+fndds_chocolate_candy_with_nuts,Chocolate candy with nuts,sweets,545,10.99,51.77,33.66,42.18,4.4,64
+fndds_chocolate_candy_fudge,"Chocolate candy, fudge",sweets,396,1.72,79.42,7.93,76.44,0.8,46
+fndds_chocolate_candy_with_cereal,Chocolate candy with cereal,sweets,511,7.64,59.67,29.37,51.06,3.3,86
+fndds_dark_chocolate_candy_with_nuts,Dark chocolate candy with nuts,sweets,560,8.26,52.18,36.27,37.88,7.9,19
+fndds_chocolate_candy_sugar_free,"Chocolate candy, sugar free",sweets,590,12.39,37.68,43.27,14.63,3.5,111
+fndds_cough_drops,Cough drops,sweets,394,0,98.3,0.1,31.45,0,19
+fndds_chewing_gum,Chewing gum,sweets,360,0,96.7,0.3,66.08,2.4,1
+fndds_candy_mint,"Candy, mint",sweets,394,0,98.3,0.1,31.45,0,19
+fndds_candy_hard,"Candy, hard",sweets,394,0,98,0.2,62.9,0,38
+fndds_candy_taffy,"Candy, taffy",sweets,390,0.2,87.88,4.12,73.51,0,6
+fndds_candy_cotton,"Candy, cotton",sweets,401,0,99.6,0.32,99.8,0,1
+fndds_candy_caramel,"Candy, caramel",sweets,384,3.1,82.36,5.7,60.91,0,144
+fndds_candy_licorice,"Candy, licorice",sweets,396,0,98.9,0,58.97,0.1,44
+fndds_creamsicle,Creamsicle,sweets,165,1.54,32.75,3.08,18.46,0,46
+fndds_fudgesicle,Fudgesicle,sweets,163,2.56,29.99,3.67,17.47,1,104
+fndds_banana_split,Banana split,sweets,199,2.42,32.59,6.88,24.17,1,97
+fndds_gelato_vanilla,"Gelato, vanilla",sweets,249,3.5,22.29,16.2,20.65,0,61
+fndds_ice_cream_candy_bar,Ice cream candy bar,sweets,323,4.4,30.9,20.2,30,0.6,92
+fndds_ice_cream_fried,"Ice cream, fried",sweets,282,3.94,32.77,15.16,20.9,1.2,159
+fndds_gelato_chocolate,"Gelato, chocolate",sweets,251,4.72,19.78,16.98,17.35,0.9,57
+fndds_fudgesicle_light,"Fudgesicle, light",sweets,124,3.67,23.11,1.87,5.1,1.5,96
+fndds_frozen_yogurt_sandwich,Frozen yogurt sandwich,sweets,204,3.9,34.38,6.25,24.3,0.8,192
+fndds_ice_cream_chocolate,"Ice cream, chocolate",sweets,216,3.8,28.2,11,25.36,1.2,76
+fndds_sherbet_all_flavors,"Sherbet, all flavors",sweets,144,1.1,30.4,2,24.32,1.3,46
+fndds_ice_cream_cookie_sandwich,Ice cream cookie sandwich,sweets,317,4.61,43.35,14.11,26.45,1.7,232
+fndds_frozen_yogurt_vanilla,"Frozen yogurt, vanilla",sweets,127,3,21.6,3.6,19.92,0,63
+fndds_flan,Flan,sweets,178,5.23,28.24,4.94,28.1,0,163
+fndds_mousse,Mousse,sweets,212,4.2,16.23,15.12,15.1,0.6,34
+fndds_trifle,Trifle,sweets,169,3.52,23.24,7.15,15.76,0.4,180
+fndds_haupia,Haupia,sweets,274,1.98,23.52,20.45,14.72,2,83
+fndds_custard,Custard,sweets,97,5.08,10.97,3.64,10.89,0,84
+fndds_meringues,Meringues,sweets,324,7.17,75.34,0.04,73.06,0,113
+fndds_creme_brulee,Creme brulee,sweets,113,4.06,17.85,2.83,17.86,0,74
+fndds_lime_souffle,Lime souffle,sweets,328,8.82,39.83,15.02,37.32,0.8,79
+fndds_yokan,Yokan,sweets,133,2.4,30.63,0.24,24.72,2,119
+fndds_sorbet,Sorbet,sweets,110,0.79,27.12,0.05,25.78,0.5,13
+fndds_popsicle,Popsicle,sweets,79,0,19.23,0.24,13.66,0,7
+fndds_snow_cone,Snow cone,sweets,128,0.4,32.6,0,32.6,0,22
+fndds_italian_ice,Italian Ice,sweets,128,0.4,32.6,0,32.6,0,22
+fndds_freezer_pop,Freezer pop,sweets,79,0,19.23,0.24,13.66,0,7
+fndds_gelatin_dessert,Gelatin dessert,sweets,60,1.22,14.19,0,13.49,0,75
+fndds_apple_raw,"Apple, raw",fruits,61,0.17,14.8,0.15,12.08,2.1,0
+fndds_apple_baked,"Apple, baked",fruits,113,0.32,22.7,3.08,19.01,2.5,4
+fndds_apple_pie_filling,Apple pie filling,fruits,100,0.1,26.1,0.1,13.8,1,47
+fndds_apple_candied,"Apple, candied",fruits,134,1.34,29.61,2.15,24.17,1.8,62
+fndds_banana_raw,"Banana, raw",fruits,97,0.74,22.71,0.28,15.8,1.7,0
+fndds_banana_baked,"Banana, baked",fruits,161,0.82,32.43,3.21,24.74,1.8,3
+fndds_grapes_raw,"Grapes, raw",fruits,83,0.9,19.4,0.2,16.74,0.9,5
+fndds_peach_raw,"Peach, raw",fruits,46,0.91,10.1,0.27,8.39,1.5,13
+fndds_nectarine_raw,"Nectarine, raw",fruits,43,1.06,9.18,0.28,7.89,1.5,13
+fndds_peach_frozen,"Peach, frozen",fruits,46,0.91,10.1,0.27,8.39,1.5,13
+fndds_peach_canned_in_syrup,"Peach, canned, in syrup",fruits,54,0.4,13.59,0.08,12.41,1.2,3
+fndds_strawberries_canned,"Strawberries, canned",fruits,92,0.56,23.53,0.26,21.83,1.7,4
+fndds_strawberries_frozen,"Strawberries, frozen",fruits,35,0.43,9.13,0.11,4.56,2.1,2
+fndds_cranberry_sauce,Cranberry sauce,fruits,159,0.9,40.4,0.15,31.75,1.1,5
+fndds_blueberries_raw,"Blueberries, raw",fruits,64,0.7,14.57,0.31,9.36,2.4,0
+fndds_cranberries_raw,"Cranberries, raw",fruits,46,0.46,11.97,0.13,4.27,3.6,2
+fndds_raspberries_raw,"Raspberries, raw",fruits,57,1.01,12.9,0.19,2.68,6.5,0
+fndds_blackberries_raw,"Blackberries, raw",fruits,43,1.39,9.61,0.49,4.88,5.3,1
+fndds_lime_raw,"Lime, raw",fruits,30,0.7,10.54,0.2,1.69,2.8,2
+fndds_lemon_raw,"Lemon, raw",fruits,29,1.1,9.32,0.3,2.5,2.8,2
+fndds_orange_raw,"Orange, raw",fruits,50,0.92,11.78,0.14,8.96,2.2,4
+fndds_kumquat_raw,"Kumquat, raw",fruits,71,1.88,15.9,0.86,9.36,6.5,10
+fndds_tangerine_raw,"Tangerine, raw",fruits,53,0.81,13.34,0.31,10.58,1.8,2
+fndds_watermelon_raw,"Watermelon, raw",fruits,30,0.61,7.55,0.15,6.2,0.4,1
+fndds_melon_frozen,"Melon, frozen",fruits,35,0.66,8.27,0.16,7.4,0.7,16
+fndds_honeydew_melon_raw,"Honeydew melon, raw",fruits,36,0.54,9.09,0.14,8.12,0.8,18
+fndds_date,Date,fruits,282,2.45,75.03,0.39,63.35,8,2
+fndds_raisins,Raisins,fruits,299,3.3,79.32,0.25,65.18,4.5,26
+fndds_banana_chips,Banana chips,fruits,519,2.3,58.4,33.6,35.34,7.7,6
+fndds_fig_dried,"Fig, dried",fruits,277,3.3,63.9,0.92,47.9,9.8,10
+fndds_pear_dried,"Pear, dried",fruits,262,1.87,69.7,0.63,62.2,7.5,6
+fndds_apple_dried,"Apple, dried",fruits,243,0.93,65.89,0.32,57.19,8.7,87
+fndds_mango_dried,"Mango, dried",fruits,319,2.45,78.58,1.18,66.27,2.4,162
+fndds_lychee,Lychee,fruits,66,0.83,16.53,0.44,15.23,1.3,1
+fndds_rhubarb,Rhubarb,fruits,73,0.81,17.45,0.22,14.4,1.6,4
+fndds_fig_raw,"Fig, raw",fruits,74,0.75,19.18,0.3,16.26,2.9,1
+fndds_tamarind,Tamarind,fruits,239,2.8,62.5,0.6,38.8,5.1,28
+fndds_ambrosia,Ambrosia,fruits,75,0.81,16.45,0.98,12.81,2,1
+fndds_plum_raw,"Plum, raw",fruits,46,0.7,11.42,0.28,9.92,1.4,0
+fndds_guava_raw,"Guava, raw",fruits,68,2.55,14.32,0.95,8.92,5.4,2
+fndds_apricot_raw,"Apricot, raw",fruits,48,1.4,11.12,0.39,9.24,2,1
+fndds_dragon_fruit,Dragon fruit,fruits,68,0.68,16.24,0.21,12,1.8,1
+fndds_cherries_raw,"Cherries, raw",fruits,71,1.04,16.16,0.19,13.87,2.1,0
+fndds_starfruit_raw,"Starfruit, raw",fruits,31,1.04,6.73,0.33,3.98,2.8,2
+fndds_pear_raw,"Pear, raw",fruits,59,0.37,15.18,0.15,9.73,3.1,3
+fndds_pear_asian_raw,"Pear, Asian, raw",fruits,42,0.5,10.65,0.23,7.05,3.6,0
+fndds_pear_canned_in_syrup,"Pear, canned, in syrup",fruits,59,0.18,15.15,0.05,13.6,1.5,2
+fndds_pear_canned_juice_pack,"Pear, canned, juice pack",fruits,45,0.23,11.79,0.07,10.03,1.5,5
+fndds_pineapple_raw,"Pineapple, raw",fruits,60,0.46,14.09,0.21,11.42,0.9,0
+fndds_pineapple_frozen,"Pineapple, frozen",fruits,60,0.46,14.09,0.21,11.42,0.9,0
+fndds_pineapple_canned_in_syrup,"Pineapple, canned, in syrup",fruits,62,0.4,15.6,0.11,14.88,0.7,1
+fndds_pineapple_canned_juice_pack,"Pineapple, canned, juice pack",fruits,48,0.44,12.22,0.12,11.26,0.8,4
+fndds_mango_raw,"Mango, raw",fruits,60,0.82,14.98,0.38,13.66,1.6,1
+fndds_papaya_raw,"Papaya, raw",fruits,43,0.47,10.82,0.26,7.82,1.7,8
+fndds_mango_canned,"Mango, canned",fruits,65,0.62,16.22,0.3,15.24,1.2,1
+fndds_mango_frozen,"Mango, frozen",fruits,60,0.82,14.98,0.38,13.66,1.6,1
+fndds_tomatoes_raw,"Tomatoes, raw",vegetables,20,0.82,4.04,0.31,2.63,1.2,4
+fndds_sun_dried_tomatoes,Sun-dried tomatoes,vegetables,258,14.11,55.76,2.97,37.59,12.3,107
+fndds_tomatoes_fresh_cooked,"Tomatoes, fresh, cooked",vegetables,50,1.08,4.71,3.42,3.19,1.5,157
+fndds_tomatoes_canned_cooked,"Tomatoes, canned, cooked",vegetables,43,0.82,3.23,3.04,2.91,1.8,130
+fndds_carrots_glazed_cooked,"Carrots, glazed, cooked",vegetables,97,0.9,17.32,2.78,12.14,2.9,214
+fndds_carrots_fresh_cooked_with_oil,"Carrots, fresh, cooked with oil",vegetables,76,0.95,10.36,3.38,4.78,3.1,205
+fndds_carrots_frozen_cooked_with_oil,"Carrots, frozen, cooked with oil",vegetables,64,0.78,7.67,3.36,4.07,3.1,176
+fndds_carrots_canned_cooked_with_oil,"Carrots, canned, cooked with oil",vegetables,50,0.62,5.38,3.1,2.41,1.5,235
+fndds_carrots_fresh_cooked_no_added_fat,"Carrots, fresh, cooked, no added fat",vegetables,50,0.98,10.67,0.36,4.92,3.2,211
+fndds_carrots_frozen_cooked_no_added_fat,"Carrots, frozen, cooked, no added fat",vegetables,39,0.81,7.9,0.47,4.19,3.2,182
+fndds_pumpkin_cooked,"Pumpkin, cooked",vegetables,52,1.05,6.77,2.84,2.88,0.5,131
+fndds_winter_squash_raw,"Winter squash, raw",vegetables,26,1,6.5,0.1,2.76,0.5,1
+fndds_peppers_red_cooked,"Peppers, red, cooked",vegetables,55,0.92,6.71,2.78,4.24,1.2,126
+fndds_spaghetti_squash_cooked,"Spaghetti squash, cooked",vegetables,49,0.65,6.26,2.8,2.45,1.4,138
+fndds_sweet_potato_candied,"Sweet potato, candied",vegetables,187,1.18,37.69,3.48,29.38,2.2,121
+fndds_pumpkin_canned_cooked,"Pumpkin, canned, cooked",vegetables,56,1.08,7.86,2.82,3.21,2.8,13
+fndds_peppers_sweet_red_raw,"Peppers, sweet, red, raw",vegetables,31,0.9,6.65,0.13,4.2,1.2,0
+fndds_broccoli_raab_raw,"Broccoli raab, raw",vegetables,22,3.17,2.85,0.49,0.38,2.7,33
+fndds_broccoli_raab_cooked,"Broccoli raab, cooked",vegetables,46,3.2,2.88,3.15,0.39,2.7,159
+fndds_broccoli_chinese_raw,"Broccoli, chinese, raw",vegetables,26,1.2,4.67,0.76,0.88,2.6,7
+fndds_broccoli_chinese_cooked,"Broccoli, Chinese, cooked",vegetables,50,1.22,4.72,3.42,0.89,2.6,133
+fndds_broccoli_fresh_cooked_with_oil,"Broccoli, fresh, cooked with oil",vegetables,67,2.59,6.32,3.37,1.41,2.4,153
+fndds_spinach_raw,"Spinach, raw",vegetables,27,2.85,2.41,0.62,0.42,1.6,111
+fndds_spinach_creamed,"Spinach, creamed",vegetables,90,2.39,6.11,6.09,0.76,1.2,450
+fndds_spinach_fresh_cooked_with_oil,"Spinach, fresh, cooked with oil",vegetables,63,3.31,3.01,4.1,0.48,1.8,254
+fndds_spinach_frozen_cooked_with_oil,"Spinach, frozen, cooked with oil",vegetables,59,3.88,4.65,3.75,0.49,3.6,206
+fndds_spinach_canned_cooked_with_oil,"Spinach, canned, cooked with oil",vegetables,49,2.73,3.3,3.4,0.39,2.3,313
+fndds_lettuce_raw,"Lettuce, raw",vegetables,20,0.92,3.69,0.1,1.1,1.3,23
+fndds_radicchio_raw,"Radicchio, raw",vegetables,23,1.43,4.48,0.25,0.6,0.9,22
+fndds_lettuce_cooked,"Lettuce, cooked",vegetables,49,1.06,4.21,3.11,1.26,1.5,169
+fndds_mixed_salad_greens_raw,"Mixed salad greens, raw",vegetables,21,1.31,3.43,0.21,0.97,1.4,41
+fndds_lettuce_boston_raw,"Lettuce, Boston, raw",vegetables,18,0.88,3.26,0.11,0.48,0.9,25
+fndds_lettuce_arugula_raw,"Lettuce, arugula, raw",vegetables,25,2.58,3.65,0.66,2.05,1.6,27
+fndds_chard_raw,"Chard, raw",vegetables,19,1.8,3.74,0.2,1.1,1.6,213
+fndds_cress_raw,"Cress, raw",vegetables,32,2.6,5.5,0.7,4.4,1.1,14
+fndds_chard_cooked,"Chard, cooked",vegetables,44,1.88,3.9,2.95,1.15,1.7,352
+fndds_collards_raw,"Collards, raw",vegetables,32,3.02,5.42,0.61,0.46,4,17
+fndds_cress_cooked,"Cress, cooked",vegetables,58,2.72,5.73,3.47,4.58,1.1,145
+fndds_watercress_raw,"Watercress, raw",vegetables,11,2.3,1.29,0.1,0.2,0.5,41
+fndds_beet_greens_raw,"Beet greens, raw",vegetables,22,2.2,4.33,0.13,0.5,3.7,226
+fndds_escarole_cooked,"Escarole, cooked",vegetables,37,1.12,2.98,2.72,0.23,2.7,139
+fndds_watercress_cooked,"Watercress, cooked",vegetables,36,2.4,1.35,2.84,0.21,0.5,173
+fndds_beet_greens_cooked,"Beet greens, cooked",vegetables,48,2.3,4.51,2.87,0.53,3.9,365
+fndds_mustard_greens_raw,"Mustard greens, raw",vegetables,27,2.86,4.67,0.42,1.32,3.2,20
+fndds_green_beans_raw,"Green beans, raw",vegetables,40,1.97,7.41,0.28,2.33,3,0
+fndds_yellow_string_beans_cooked,"Yellow string beans, cooked",vegetables,50,1.45,6.25,2.71,1.82,2.9,130
+fndds_green_beans_fresh_cooked_with_oil,"Green beans, fresh, cooked with oil",vegetables,68,1.99,7.47,3.31,2.35,3,117
+fndds_green_beans_frozen_cooked_with_oil,"Green beans, frozen, cooked with oil",vegetables,53,1.44,6.24,3.07,1.82,2.9,113
+fndds_green_beans_canned_cooked_with_oil,"Green beans, canned, cooked with oil",vegetables,50,1.01,3.99,3.29,1.25,1.8,274
+fndds_green_beans_fresh_cooked_no_added_fat,"Green beans, fresh, cooked, no added fat",vegetables,42,2.05,7.7,0.29,2.42,3.1,121
+fndds_cabbage_red_raw,"Cabbage, red, raw",vegetables,34,1.24,6.79,0.21,3.83,2.1,12
+fndds_cabbage_green_raw,"Cabbage, green, raw",vegetables,31,0.96,6.38,0.23,3.2,2.5,16
+fndds_cabbage_red_cooked,"Cabbage, red, cooked",vegetables,58,1.26,6.85,2.86,3.87,2.1,138
+fndds_cabbage_chinese_raw,"Cabbage, Chinese, raw",vegetables,13,1.5,2.18,0.2,1.18,1,65
+fndds_cabbage_savoy_cooked,"Cabbage, savoy, cooked",vegetables,51,2.02,6.16,2.75,2.29,3.1,154
+fndds_leeks,Leeks,vegetables,88,1.57,14.74,3.05,4.07,1.9,151
+fndds_onions_raw,"Onions, raw",vegetables,38,0.86,8.46,0.08,5.8,1.7,1
+fndds_onions_green_raw,"Onions, green, raw",vegetables,32,1.83,7.34,0.19,2.33,2.6,16
+fndds_onions_pearl_cooked,"Onions, pearl, cooked",vegetables,50,0.7,6.49,2.59,2.81,1.4,129
+fndds_corn_raw,"Corn, raw",vegetables,86,3.27,18.7,1.35,6.26,2,15
+fndds_corn_creamed,"Corn, creamed",vegetables,72,1.74,18.13,0.42,3.23,1.2,261
+fndds_corn_fresh_cooked_with_oil,"Corn, fresh, cooked with oil",vegetables,109,3.17,18.1,4.21,6.06,1.9,127
+fndds_corn_frozen_cooked_with_oil,"Corn, frozen, cooked with oil",vegetables,105,2.47,18.68,3.55,2.97,2.3,113
+fndds_corn_canned_cooked_with_oil,"Corn, canned, cooked with oil",vegetables,91,2.22,13.92,4.1,4.31,1.9,199
+fndds_corn_fresh_cooked_no_added_fat,"Corn, fresh, cooked, no added fat",vegetables,86,3.26,18.64,1.35,6.24,2,131
+fndds_fufu,Fufu,vegetables,166,1.5,33.59,2.99,1.1,3.1,143
+fndds_taro_cooked,"Taro, cooked",vegetables,141,1.57,27.55,2.95,0.42,4.3,142
+fndds_plantain_raw,"Plantain, raw",vegetables,122,1.3,31.89,0.35,17.51,1.7,4
+fndds_water_chesnut,Water Chesnut,vegetables,78,1.38,19.22,0.09,3.84,3.9,12
+fndds_cassava_cooked,"Cassava, cooked",vegetables,191,1.42,39.62,3.03,1.78,1.9,145
+fndds_green_peas_raw,"Green peas, raw",vegetables,81,5.42,14.45,0.4,5.67,5.7,5
+fndds_breadfruit_cooked,"Breadfruit, cooked",vegetables,123,1.04,26.26,2.77,10.65,4.7,123
+fndds_plantain_cooked_with_oil,"Plantain, cooked with oil",vegetables,144,1.26,30.87,3.24,16.95,1.6,116
+fndds_lima_beans_from_canned,"Lima beans, from canned",vegetables,122,5.86,18.62,2.86,1.3,5.1,373
+fndds_blackeyed_peas_from_canned,"Blackeyed peas, from canned",vegetables,150,8.19,22.9,3.17,4.3,6.2,312
+fndds_radish,Radish,vegetables,16,0.68,3.4,0.1,1.86,1.6,39
+fndds_artichoke,Artichoke,vegetables,53,2.89,11.95,0.34,0.99,5.7,60
+fndds_beets_raw,"Beets, raw",vegetables,43,1.61,9.56,0.17,6.76,2.8,78
+fndds_cactus_raw,"Cactus, raw",vegetables,16,1.32,3.33,0.09,1.15,2.2,21
+fndds_celery_raw,"Celery, raw",vegetables,17,0.49,3.32,0.16,1.34,1.6,97
+fndds_jicama_raw,"Jicama, raw",vegetables,38,0.72,8.82,0.09,1.8,4.9,4
+fndds_turnip_raw,"Turnip, raw",vegetables,28,0.9,6.43,0.1,3.8,1.8,67
+fndds_avocado_raw,"Avocado, raw",vegetables,160,2,8.53,14.66,0.66,6.7,7
+fndds_seaweed_raw,"Seaweed, raw",vegetables,41,3.51,7.94,0.49,0.58,0.7,384
+fndds_cucumber_raw,"Cucumber, raw",vegetables,16,0.62,2.95,0.18,1.67,0.5,2
+fndds_eggplant_raw,"Eggplant, raw",vegetables,25,0.98,5.88,0.18,3.53,3,2
+fndds_kohlrabi_raw,"Kohlrabi, raw",vegetables,27,1.7,6.2,0.1,2.6,3.6,20
+fndds_rutabaga_raw,"Rutabaga, raw",vegetables,37,1.08,8.62,0.16,4.46,2.3,12
+fndds_snowpeas_raw,"Snowpeas, raw",vegetables,42,2.8,7.55,0.2,4,2.6,4
+fndds_asparagus_raw,"Asparagus, raw",vegetables,20,2.2,3.88,0.12,1.88,2.1,2
+fndds_mushrooms_raw,"Mushrooms, raw",vegetables,31,2.9,4.13,0.35,1.98,1.7,6
+fndds_celery_cooked,"Celery, cooked",vegetables,42,0.52,3.46,2.9,1.4,1.7,231
+fndds_turnip_cooked,"Turnip, cooked",vegetables,54,0.95,6.7,2.84,3.96,1.9,200
+fndds_burdock_cooked,"Burdock, cooked",vegetables,100,1.6,18.06,2.89,3.02,3.4,135
+fndds_pakora,Pakora,vegetables,125,4.92,16.24,4.77,2.97,3.2,380
+fndds_yuca_fries,Yuca fries,vegetables,269,1.24,34.72,13.94,1.55,1.6,154
+fndds_fried_okra,Fried okra,vegetables,219,3.88,22.37,12.84,1.42,1.6,316
+fndds_fried_broccoli,Fried broccoli,vegetables,223,4.28,22.41,12.88,0.88,1.7,329
+fndds_fried_eggplant,Fried eggplant,vegetables,218,3.66,22.33,12.82,1.77,2,315
+fndds_fried_mushrooms,Fried mushrooms,vegetables,222,4.63,21.9,12.91,1.27,1.6,317
+fndds_sweet_potato_tots,Sweet potato tots,vegetables,191,2.26,37.3,9.35,13.52,6,315
+fndds_fried_green_beans,Fried green beans,vegetables,223,4.04,22.86,12.86,1.25,2,314
+fndds_coleslaw,Coleslaw,vegetables,117,0.94,10.45,7.98,7.44,1.9,280
+fndds_pea_salad,Pea salad,vegetables,180,2.98,10.64,14.02,4.9,2.7,253
+fndds_broccoli_slaw_salad,Broccoli slaw salad,vegetables,123,1.97,10.41,8.11,6.32,1.9,295
+fndds_pea_salad_with_cheese,Pea salad with cheese,vegetables,203,5,9.82,16.01,4.44,2.4,293
+fndds_carrots_raw_salad,"Carrots, raw, salad",vegetables,212,1.25,17.62,15.74,12.04,2.6,189
+fndds_coleslaw_with_fruit,"Coleslaw, with fruit",vegetables,113,0.91,13.65,6.34,10.15,2.1,222
+fndds_cucumber_and_vegetable_namasu,Cucumber and vegetable namasu,vegetables,56,0.47,12.22,0.18,10.78,0.6,120
+fndds_onions_for_use_on_a_sandwich,"Onions, for use on a sandwich",vegetables,38,0.86,8.46,0.08,5.8,1.7,1
+fndds_pepper_for_use_on_a_sandwich,"Pepper, for use on a sandwich",vegetables,27,0.81,5.72,0.12,3.3,1,0
+fndds_avocado_for_use_on_a_sandwich,"Avocado, for use on a sandwich",vegetables,160,2,8.53,14.66,0.66,6.7,7
+fndds_lettuce_for_use_on_a_sandwich,"Lettuce, for use on a sandwich",vegetables,20,0.92,3.69,0.1,1.1,1.3,23
+fndds_spinach_for_use_on_a_sandwich,"Spinach, for use on a sandwich",vegetables,27,2.85,2.41,0.62,0.42,1.6,111
+fndds_potato_baked_peel_eaten,"Potato, baked, peel eaten",vegetables,93,2.49,21.05,0.13,1.18,2.2,186
+fndds_potato_baked_peel_not_eaten,"Potato, baked, peel not eaten",vegetables,93,1.95,21.45,0.1,1.69,1.5,181
+fndds_potato_boiled_ready_to_heat,"Potato, boiled, ready-to-heat",vegetables,126,1.87,20.45,4.25,1.62,1.4,166
+fndds_potato_roasted_ready_to_heat,"Potato, roasted, ready-to-heat",vegetables,126,1.87,20.45,4.25,1.62,1.4,166
+fndds_potato_canned_no_added_fat,"Potato, canned, no added fat",vegetables,60,1.39,13.55,0.2,0.59,2.4,159
+fndds_potato_baked_peel_eaten_with_meat,"Potato, baked, peel eaten, with meat",vegetables,160,4.74,17.09,8.28,1.24,1.7,257
+fndds_potato_baked_peel_eaten_with_chili,"Potato, baked, peel eaten, with chili",vegetables,143,4.85,17.33,6.23,1.13,2.1,259
+fndds_potato_baked_peel_eaten_with_butter,"Potato, baked, peel eaten, with butter",vegetables,125,2.41,20.01,4.22,1.14,2.1,203
+fndds_potato_baked_peel_eaten_with_cheese,"Potato, baked, peel eaten, with cheese",vegetables,153,4.09,17.43,7.69,1.27,1.7,225
+fndds_potato_baked_peel_not_eaten_with_meat,"Potato, baked, peel not eaten, with meat",vegetables,160,4.32,17.4,8.26,1.65,1.2,253
+fndds_potato_patty,Potato patty,vegetables,171,3.89,13.49,11.32,1.48,1.5,219
+fndds_potato_skins_without_topping,Potato skins without topping,vegetables,151,2.12,19.53,7.45,1.25,1.8,363
+fndds_potato_skins_with_cheese,"Potato skins, with cheese",vegetables,199,6.07,16.34,12.4,1.08,1.5,417
+fndds_potato_tots_frozen_baked,"Potato tots, frozen, baked",vegetables,187,2.03,26.1,9.17,0.3,2.4,451
+fndds_potato_tots_frozen_fried,"Potato tots, frozen, fried",vegetables,237,1.9,24.4,15.46,0.28,2.3,421
+fndds_potato_tots_school,"Potato tots, school",vegetables,166,2.02,19.34,9.16,1.3,1.7,147
+fndds_potato_home_fries_from_fresh,"Potato, home fries, from fresh",vegetables,185,1.96,18.76,11.52,1.26,1.6,279
+fndds_potato_hash_brown_from_fresh,"Potato, hash brown, from fresh",vegetables,190,1.94,18.57,12.27,1.25,1.6,343
+fndds_potato_tots_from_fresh_fried_or_baked,"Potato tots, from fresh, fried or baked",vegetables,237,1.9,24.4,15.46,0.28,2.3,421
+fndds_potato_skins_with_cheese_and_bacon,"Potato skins, with cheese and bacon",vegetables,215,7.64,15.52,13.68,1.02,1.4,488
+fndds_lefse,Lefse,vegetables,218,4.37,36.39,6.34,2.31,2,172
+fndds_potato_pancake,Potato pancake,vegetables,196,4.47,20.64,10.8,1.11,2.2,402
+fndds_stewed_potatoes,Stewed potatoes,vegetables,103,1.99,16.26,3.39,0.96,2.1,147
+fndds_stewed_potatoes_with_tomatoes,Stewed potatoes with tomatoes,vegetables,87,1.71,12.89,3.29,1.68,1.9,146
+fndds_potato_salad_german_style,"Potato salad, German style",vegetables,108,2.92,17.17,3.22,1.46,1.9,181
+fndds_potato_scalloped_from_fresh,"Potato, scalloped, from fresh",vegetables,168,7.13,13.51,9.63,2.13,0.8,322
+fndds_potato_mashed_ready_to_heat,"Potato, mashed, ready-to-heat",vegetables,106,1.97,13.29,5.01,1.76,1.9,298
+fndds_potato_salad_made_with_mayonnaise,"Potato salad, made with mayonnaise",vegetables,168,1.51,15.81,11.14,1.29,1.5,179
+fndds_potato_scalloped_from_dry_mix,"Potato, scalloped, from dry mix",vegetables,169,6.91,13.54,9.79,2.21,0.8,414
+fndds_stewed_potatoes_puerto_rican_style,"Stewed potatoes, Puerto Rican style",vegetables,115,2.09,18.75,3.71,1.24,1.8,299
+fndds_potato_scalloped_ready_to_heat,"Potato, scalloped, ready-to-heat",vegetables,178,6.8,13.31,10.98,2.18,0.7,400
+fndds_potato_salad_made_with_creamy_dressing,"Potato salad, made with creamy dressing",vegetables,140,1.59,16.8,7.53,1.6,1.5,197
+fndds_tangerine_juice_100,"Tangerine juice, 100%",drinks,43,0.5,10.1,0.2,9.9,0.2,1
+fndds_orange_juice_100_freshly_squeezed,"Orange juice, 100%,  freshly squeezed",drinks,47,0.81,10.01,0.36,8.08,0.3,0
+fndds_grapefruit_juice_100_freshly_squeezed,"Grapefruit juice, 100%, freshly squeezed",drinks,39,0.5,9.2,0.1,9.1,0.1,1
+fndds_grapefruit_juice_100_with_calcium_added,"Grapefruit juice, 100%, with calcium added",drinks,39,0.51,7.74,0.68,7.96,0.3,2
+fndds_orange_juice_100_frozen_reconstituted,"Orange juice, 100%, frozen, reconstituted",drinks,42,0.68,10.04,0.07,8.47,0.3,5
+fndds_apple_cider,Apple cider,drinks,46,0.1,11.3,0.13,9.62,0.2,4
+fndds_apple_juice_100,"Apple juice, 100%",drinks,48,0.09,11.34,0.25,10.13,0.2,5
+fndds_apple_juice_100_with_calcium_added,"Apple juice, 100%, with calcium added",drinks,48,0.12,11.49,0.17,9.47,0.3,5
+fndds_blueberry_juice,Blueberry juice,drinks,42,0.46,9.47,0.2,6.08,1.6,1
+fndds_grape_juice_100,"Grape juice, 100%",drinks,66,0.18,15.73,0.28,14.24,0.2,6
+fndds_prune_juice_100,"Prune juice, 100%",drinks,71,0.61,17.45,0.03,16.45,1,4
+fndds_aloe_vera_juice_drink,Aloe vera juice drink,drinks,15,0,3.75,0,3.75,0,8
+fndds_strawberry_juice_100,"Strawberry juice, 100%",drinks,23,0.42,5.17,0.14,3.16,1.2,1
+fndds_papaya_juice_100,"Papaya juice, 100%",drinks,57,0.17,14.51,0.15,13.91,0.6,5
+fndds_pineapple_juice_100,"Pineapple juice, 100%",drinks,53,0.36,12.87,0.12,9.98,0.2,2
+fndds_beet_juice,Beet juice,drinks,25,0.72,5.91,0.06,4.84,1.1,19
+fndds_celery_juice,Celery juice,drinks,17,0.49,3.32,0.16,1.34,1.6,97
+fndds_tomato_juice_cocktail,Tomato juice cocktail,drinks,22,0.93,3.87,0.31,2.84,0.5,169
+fndds_mixed_vegetable_juice,Mixed vegetable juice,drinks,28,0.72,6.3,0.16,2.62,1.2,82
+fndds_carrot_juice_100,"Carrot juice, 100%",drinks,40,0.95,9.28,0.15,3.91,0.8,66
+fndds_soft_drink_cola_diet,"Soft drink, cola, diet",drinks,2,0.11,0.29,0.03,0,0,8
+fndds_soft_drink_root_beer_diet,"Soft drink, root beer, diet",drinks,0,0.1,0,0,0,0,6
+fndds_soft_drink_cream_soda_diet,"Soft drink, cream soda, diet",drinks,0,0.1,0,0,0,0,6
+fndds_soft_drink_ginger_ale_diet,"Soft drink, ginger ale, diet",drinks,0,0.1,0,0,0,0,6
+fndds_soft_drink_pepper_type_diet,"Soft drink, pepper type, diet",drinks,2,0.11,0.29,0.03,0,0,8
+fndds_soft_drink_chocolate_flavored_diet,"Soft drink, chocolate flavored, diet",drinks,2,0.11,0.29,0.03,0,0,8
+fndds_energy_drink_sugar_free,"Energy drink, sugar free",drinks,4,0.25,0.7,0.08,0,0,68
+fndds_sports_drink_low_calorie,"Sports drink, low calorie",drinks,8,0.05,1.94,0.01,1.3,0,45
+fndds_energy_drink_sugar_free_nos,"Energy drink, sugar-free (NOS)",drinks,4,0,1.03,0,0,0,85
+fndds_energy_drink_sugar_free_vault,"Energy drink, sugar free (Vault)",drinks,1,0.25,0.7,0.08,0,0,14
+fndds_energy_drink_sugar_free_monster,"Energy drink, sugar free (Monster)",drinks,5,0,1.38,0,1.38,0,75
+fndds_energy_drink_sugar_free_no_fear,"Energy drink, sugar free (No Fear)",drinks,4,0.42,0.42,0,0,0,42
+fndds_fruit_flavored_drink_diet,"Fruit flavored drink, diet",drinks,4,0.01,1.45,0,0,0,11
+fndds_slush_frozen_drink_no_sugar_added,"Slush frozen drink, no sugar added",drinks,11,0,3.11,0.01,3.11,0,5
+fndds_fruit_flavored_drink_with_high_vitamin_c_diet,"Fruit flavored drink, with high vitamin C, diet",drinks,2,0,0.87,0,0,0,8
+fndds_fruit_flavored_drink_powdered_reconstituted_diet,"Fruit flavored drink, powdered, reconstituted, diet",drinks,2,0,0.73,0,0,0,7
+fndds_soft_drink_cola,"Soft drink, cola",drinks,42,0,10.36,0.25,9.94,0,3
+fndds_soft_drink_root_beer,"Soft drink, root beer",drinks,41,0,10.6,0,10.6,0,13
+fndds_soft_drink_cream_soda,"Soft drink, cream soda",drinks,51,0,13.3,0,13.3,0,12
+fndds_soft_drink_ginger_ale,"Soft drink, ginger ale",drinks,34,0,8.76,0,8.9,0,7
+fndds_soft_drink_pepper_type,"Soft drink, pepper type",drinks,42,0,10.36,0.25,9.94,0,3
+fndds_soft_drink_chocolate_flavored,"Soft drink, chocolate flavored",drinks,42,0,10.7,0,10.7,0,4
+fndds_pear_nectar,Pear nectar,drinks,60,0.11,15.76,0.01,15.16,0.6,4
+fndds_guava_nectar,Guava nectar,drinks,48,0.3,13.3,0.07,10.15,1.2,6
+fndds_mango_nectar,Mango nectar,drinks,51,0.11,13.12,0.06,12.45,0.3,5
+fndds_peach_nectar,Peach nectar,drinks,49,0.1,11.61,0.57,12.08,0.1,11
+fndds_banana_nectar,Banana nectar,drinks,74,0.26,18.01,0.13,15.51,0.6,2
+fndds_papaya_nectar,Papaya nectar,drinks,57,0.17,14.51,0.15,13.91,0.6,5
+fndds_apricot_nectar,Apricot nectar,drinks,56,0.17,13.63,0.45,12.79,0.1,8
+fndds_tamarind_drink,Tamarind drink,drinks,109,0.64,27.67,0.18,22.28,1.2,9
+fndds_shirley_temple,Shirley Temple,drinks,56,0,14.17,0,12.55,0.1,9
+fndds_cantaloupe_nectar,Cantaloupe nectar,drinks,65,0.33,15.64,0.11,15.55,0.3,13
+fndds_fruit_juice_drink,Fruit juice drink,drinks,10,0,2.5,0,2.5,0,13
+fndds_slush_frozen_drink,Slush frozen drink,drinks,28,0,7.68,0.02,7.68,0,10
+fndds_energy_drink_xs,Energy drink (XS),drinks,5,0.25,0.7,0.08,0,0,83
+fndds_energy_drink_nos,Energy drink (NOS),drinks,44,0,11.25,0,11.25,0,85
+fndds_energy_drink_vault,Energy drink (Vault),drinks,49,0,12.99,0,12.99,0,12
+fndds_energy_drink_monster,Energy drink (Monster),drinks,47,0.47,11.28,0,10.93,0,77
+fndds_energy_drink_no_fear,Energy drink (No Fear),drinks,62,0.42,15,0,13.75,0,48
+fndds_energy_drink_red_bull,Energy drink (Red Bull),drinks,43,0.46,10.23,0,10.22,0,39
+fndds_energy_drink_rockstar,Energy drink (Rockstar),drinks,58,0.34,12.7,0.22,12.26,0,16
+fndds_nutritional_drink_or_shake_liquid_soy_based,"Nutritional drink or shake, liquid, soy-based",drinks,138,5.38,17.29,5.38,8.46,1.2,77
+fndds_nutritional_drink_or_shake_ready_to_drink_boost,"Nutritional drink or shake, ready-to-drink (Boost)",drinks,101,4.22,17.3,1.69,8.44,1.3,63
+fndds_nutritional_drink_or_shake_ready_to_drink_ensure,"Nutritional drink or shake, ready-to-drink (Ensure)",drinks,105,3.8,16.88,2.53,9.7,0,84
+fndds_nutritional_drink_or_shake_ready_to_drink_slim_fast,"Nutritional drink or shake, ready-to-drink (Slim Fast)",drinks,57,3.32,7.74,1.93,5.95,1.6,68
+fndds_nutritional_drink_or_shake_ready_to_drink_boost_plus,"Nutritional drink or shake, ready-to-drink (Boost Plus)",drinks,138,5.38,17.29,5.38,8.46,1.2,77
+fndds_nutritional_drink_or_shake_ready_to_drink_ensure_plus,"Nutritional drink or shake, ready-to-drink (Ensure Plus)",drinks,141,5.16,19.88,4.52,8.33,0,95
+fndds_atole,Atole,drinks,86,1.69,16.28,1.54,13.87,0.2,18
+fndds_frescavena,Frescavena,drinks,45,0.25,10.59,0.15,9.36,0.2,4
+fndds_corn_beverage,Corn beverage,drinks,44,0.84,9.4,0.21,0.19,0.5,135
+fndds_atole_de_avena,Atole de avena,drinks,83,1.74,15.46,1.58,13.98,0.2,18
+fndds_licuado_or_batido,Licuado or Batido,drinks,75,2.33,13.15,1.45,11.48,0.6,25
+fndds_vegetable_smoothie,Vegetable smoothie,drinks,89,2.75,5.84,6.63,2.57,2.8,38
+fndds_atole_de_chocolate,Atole de chocolate,drinks,103,1.8,20.3,1.78,17.24,0.6,30
+fndds_fruit_smoothie_light,"Fruit smoothie, light",drinks,53,2.61,9.71,0.61,7.47,1,31
+fndds_chicory_beverage,Chicory beverage,drinks,7,0.22,1.42,0,0,0,4
+fndds_coffee_cuban,"Coffee, Cuban",drinks,34,0.11,7.84,0.19,6.28,0,13
+fndds_coffee_latte,"Coffee, Latte",drinks,43,2.81,4.35,1.61,4.06,0,35
+fndds_coffee_substitute,Coffee substitute,drinks,6,0.1,1.3,0.04,0.08,0.4,5
+fndds_coffee_brewed,"Coffee, brewed",drinks,1,0.12,0,0.02,0,0,2
+fndds_coffee_turkish,"Coffee, Turkish",drinks,27,0.11,6.47,0.04,6.48,0,2
+fndds_frozen_coffee_drink,Frozen coffee drink,drinks,68,1.56,13.4,0.93,13.16,0,21
+fndds_coffee_espresso,"Coffee, espresso",drinks,9,0.12,1.67,0.18,0,0,14
+fndds_coffee_macchiato,"Coffee, macchiato",drinks,23,1.18,2.71,0.83,1.61,0,22
+fndds_coffee_cafe_mocha,"Coffee, Cafe Mocha",drinks,64,2.56,10.22,1.47,9.3,0,46
+fndds_coffee_iced_latte,"Coffee, Iced Latte",drinks,27,1.75,2.81,1.01,2.51,0,23
+fndds_coffee_cappuccino,"Coffee, Cappuccino",drinks,27,1.71,2.75,0.99,2.46,0,23
+fndds_iced_coffee_brewed,"Iced Coffee, brewed",drinks,1,0.09,0,0.02,0,0,2
+fndds_coffee_pre_lightened,"Coffee, pre-lightened",drinks,14,0.15,1.88,0.71,0.17,0,7
+fndds_frozen_mocha_coffee_drink,Frozen mocha coffee drink,drinks,66,1.51,13.07,0.88,12.17,0,34
+fndds_coffee_cafe_con_leche,"Coffee, cafe con leche",drinks,40,1.67,5.63,1.13,4.83,0,26
+fndds_coffee_bottled_canned,"Coffee, bottled/canned",drinks,71,1.98,12.6,1.38,10.67,0,26
+fndds_coffee_iced_cafe_mocha,"Coffee, Iced Cafe Mocha",drinks,50,1.58,8.95,0.91,7.99,0,35
+fndds_tea_ginger,"Tea, ginger",drinks,1,0.02,0.18,0.01,0.02,0,4
+fndds_tea_bubble,"Tea, bubble",drinks,55,0.39,10.35,1.39,3.5,0.1,9
+fndds_tea_kombucha,"Tea, kombucha",drinks,16,0.1,3.98,0.01,3.99,0,2
+fndds_tea_hot_herbal,"Tea, hot, herbal",drinks,1,0,0.2,0,0,0,1
+fndds_tea_hot_hibiscus,"Tea, hot, hibiscus",drinks,0,0,0,0,0,0,4
+fndds_tea_hot_chamomile,"Tea, hot, chamomile",drinks,1,0,0.2,0,0,0,1
+fndds_tea_hot_with_milk,"Tea, hot, with milk",drinks,51,1.58,8.95,1.05,8.72,0.1,20
+fndds_iced_tea_lemonade_juice_drink,Iced Tea / Lemonade juice drink,drinks,34,0.2,9.15,0.05,7.2,0.3,12
+fndds_tea_hot_leaf_black,"Tea, hot, leaf, black",drinks,1,0,0.3,0,0,0,3
+fndds_tea_hot_leaf_green,"Tea, hot, leaf, green",drinks,1,0.22,0,0,0,0,1
+fndds_tea_hot_leaf_oolong,"Tea, hot, leaf, oolong",drinks,1,0,0.15,0,0,0,3
+fndds_tea_iced_bottled_black,"Tea, iced, bottled, black",drinks,45,0,10.8,0.22,9.49,0,3
+fndds_water_tap,"Water, tap",drinks,0,0,0,0,0,0,4
+fndds_water_bottled_plain,"Water, bottled, plain",drinks,0,0,0,0,0,0,2
+fndds_water_tonic,"Water, tonic",drinks,34,0,8.8,0,8.8,0,12
+fndds_water_carbonated_plain,"Water, carbonated, plain",drinks,0,0,0,0,0,0,21
+fndds_water_beverage_fruit_flavored,"Water beverage, fruit flavored",drinks,18,0,4.5,0,4.5,0,8
+fndds_water_carbonated_flavored,"Water, carbonated, flavored",drinks,0,0.1,0,0,0,0,6
+fndds_water_enhanced_diet,"Water, enhanced, diet",drinks,0,0,0,0,0,0,0
+fndds_water_enhanced_regular,"Water, enhanced, regular",drinks,22,0,5.49,0,5.49,0,0
+fndds_lard,Lard,fats_oils,902,0,0,100,0,0,0
+fndds_honey_butter,Honey butter,fats_oils,485,0.53,48.5,33.85,48.54,0.1,218
+fndds_butter_tub,"Butter, tub",fats_oils,731,0.49,0,78.3,0.06,0,583
+fndds_fat_back_cooked,"Fat back, cooked",fats_oils,750,2.68,0,81.93,0,0,2039
+fndds_butter_stick,"Butter, stick",fats_oils,743,0.85,0.06,82.2,0.58,0,524
+fndds_margarine_tub,"Margarine, tub",fats_oils,533,0.17,0.86,59.81,0,0,674
+fndds_margarine_stick,"Margarine, stick",fats_oils,717,0.16,0.7,80.71,0,0,751
+fndds_margarine_light,"Margarine, light",fats_oils,346,0.33,1.22,37.91,0,0,586
+fndds_butter_replacement_liquid,"Butter replacement, liquid",fats_oils,533,0.17,0.86,59.81,0,0,615
+fndds_whipped_topping,Whipped topping,fats_oils,318,1.25,23.05,25.31,23.05,0,25
+fndds_cream_whipped,"Cream, whipped",fats_oils,346,1.9,9.49,33.45,8.55,0,20
+fndds_sour_cream_light,"Sour cream, light",fats_oils,136,3.5,7.1,10.6,0.22,0,83
+fndds_sour_cream_regular,"Sour cream, regular",fats_oils,196,3.07,5.56,17.99,3.41,0,50
+fndds_cream_cheese_light,"Cream cheese, light",fats_oils,264,9.09,5.59,22.66,4.33,0,479
+fndds_sour_cream_fat_free,"Sour cream, fat free",fats_oils,74,3.1,15.6,0,0.39,0,141
+fndds_cream_light,"Cream, light",fats_oils,195,2.96,3.66,19.1,3.67,0,72
+fndds_cream_heavy,"Cream, heavy",fats_oils,343,2.02,3.8,35.56,2.92,0,21
+fndds_cream_half_and_half,"Cream, half and half",fats_oils,131,3.13,4.3,11.5,4.13,0,61
+fndds_coffee_creamer_liquid,"Coffee creamer, liquid",fats_oils,136,1,11.38,9.97,11.38,0,67
+fndds_coffee_creamer_powder,"Coffee creamer, powder",fats_oils,529,2.48,59.29,32.92,7.77,0,124
+fndds_coffee_creamer_soy_liquid,"Coffee creamer, soy, liquid",fats_oils,136,1,11.38,9.97,11.38,0,67
+fndds_cream_half_and_half_flavored,"Cream, half and half, flavored",fats_oils,130,3.07,4.5,11.28,4.33,0,60
+fndds_tartar_sauce,Tartar sauce,fats_oils,211,1,13.3,16.7,4.25,0.5,667
+fndds_sandwich_spread,Sandwich spread,fats_oils,389,0.9,22.4,34,15.18,0.4,1000
+fndds_vegan_mayonnaise,Vegan mayonnaise,fats_oils,232,0.3,16,19.2,6,0,497
+fndds_mayonnaise_light,"Mayonnaise, light",fats_oils,238,0.37,9.23,22.22,3.56,0,827
+fndds_mayonnaise_regular,"Mayonnaise, regular",fats_oils,680,0.96,0.57,74.85,0.57,0,635
+fndds_corn_oil,Corn oil,fats_oils,900,0,0,100,0,0,0
+fndds_olive_oil,Olive oil,fats_oils,900,0,0,100,0,0,2
+fndds_almond_oil,Almond oil,fats_oils,884,0,0,100,0,0,0
+fndds_peanut_oil,Peanut oil,fats_oils,900,0,0,100,0,0,0
+fndds_canola_oil,Canola oil,fats_oils,900,0,0,100,0,0,0
+fndds_sesame_oil,Sesame oil,fats_oils,884,0,0,100,0,0,0
+fndds_walnut_oil,Walnut oil,fats_oils,884,0,0,100,0,0,0
+fndds_soybean_oil,Soybean oil,fats_oils,900,0,0,100,0,0,0
+fndds_flaxseed_oil,Flaxseed oil,fats_oils,884,0.11,0,99.98,0,0,0
+fndds_safflower_oil,Safflower oil,fats_oils,900,0,0,100,0,0,0
+fndds_sunflower_oil,Sunflower oil,fats_oils,900,0,0,100,0,0,0
+fndds_cottonseed_oil,Cottonseed oil,fats_oils,884,0,0,100,0,0,0
+fndds_taco_sauce,Taco sauce,spices_herbs,11,1.16,0.72,0.68,0.12,0.5,570
+fndds_steak_sauce,Steak sauce,spices_herbs,95,1.25,22.04,0.23,9.82,1.5,1647
+fndds_salsa_red,"Salsa, red",spices_herbs,34,1.44,6.74,0.19,3.81,1.8,656
+fndds_barbecue_sauce,Barbecue sauce,spices_herbs,172,0.82,40.77,0.63,33.24,0.9,1027
+fndds_cocktail_sauce,Cocktail sauce,spices_herbs,128,1.36,28.22,1.05,11.83,1.8,1262
+fndds_miso,Miso,spices_herbs,198,12.79,25.37,6.01,6.2,5.4,3728
+fndds_natto,Natto,spices_herbs,211,19.4,12.68,11,4.89,5.4,7
+fndds_soy_sauce,Soy sauce,spices_herbs,53,8.14,4.93,0.57,0.4,0.8,5493
+fndds_fish_sauce,Fish sauce,spices_herbs,35,5.06,3.64,0.01,3.64,0,7851
+fndds_miso_sauce,Miso sauce,spices_herbs,429,3.43,13.99,41,12.79,1.2,1086
+fndds_chutney,Chutney,spices_herbs,246,0.33,60.6,0.06,42.68,1,802
+fndds_vinegar,Vinegar,spices_herbs,21,0,0.93,0,0.4,0,5
+fndds_pimiento,Pimiento,spices_herbs,28,1.35,6.24,0.37,3.32,2.3,17
+fndds_fry_sauce,Fry sauce,spices_herbs,535,0.98,7.28,56.16,5.74,0.1,481
+fndds_duck_sauce,Duck sauce,spices_herbs,245,0.36,60.66,0.13,30.54,0.6,712
+fndds_horseradish,Horseradish,spices_herbs,48,1.18,11.29,0.69,7.99,3.3,420
+fndds_wasabi_paste,Wasabi paste,spices_herbs,292,2.23,46.13,10.9,13.2,6.1,3390
+fndds_buffalo_sauce,Buffalo sauce,spices_herbs,11,1.21,0.75,0.71,0.12,0.6,2917
+fndds_kimchi,Kimchi,spices_herbs,15,1.1,2.4,0.5,1.06,1.6,498
+fndds_sauerkraut,Sauerkraut,spices_herbs,40,0.9,4.16,2.53,1.73,2.8,659
+fndds_olive_tapenade,Olive tapenade,spices_herbs,282,0.73,4.17,30.05,0.16,1.8,835
+fndds_relish_corn,"Relish, corn",spices_herbs,111,1.7,25.7,0.91,18.43,1.5,336
+fndds_pickles_dill,"Pickles, dill",spices_herbs,14,0.48,1.99,0.43,1.28,1,808
+fndds_okra_pickled,"Okra, pickled",spices_herbs,48,1.6,11.04,0.17,6.1,2.7,950
+fndds_olives_green,"Olives, green",spices_herbs,145,1.03,3.84,15.32,0.54,3.3,1556
+fndds_olives_black,"Olives, black",spices_herbs,116,0.84,6.04,10.9,0,1.6,735
+fndds_beets_pickled,"Beets, pickled",spices_herbs,65,0.8,16.28,0.08,11.05,0.8,149
+fndds_spaghetti_sauce,Spaghetti sauce,soups_sauces,51,1.41,8.05,1.48,5.5,1.8,419
+fndds_spaghetti_sauce_with_meat,Spaghetti sauce with meat,soups_sauces,90,5.94,6.54,4.36,4.47,1.5,412
+fndds_spaghetti_sauce_with_poultry,Spaghetti sauce with poultry,soups_sauces,75,6.29,6.54,2.62,4.47,1.5,410
+fndds_spaghetti_sauce_with_seafood,Spaghetti sauce with seafood,soups_sauces,64,5.33,7.09,1.48,4.47,1.5,432
+fndds_spaghetti_sauce_fat_free,"Spaghetti sauce, fat free",soups_sauces,24,1.2,5.31,0.3,3.56,1.5,474
+fndds_layer_dip,Layer dip,soups_sauces,146,5.41,6.67,11.33,1.71,2.1,538
+fndds_cheese_dip,Cheese dip,soups_sauces,163,3.14,7.86,13.27,0.29,0.3,656
+fndds_mole_sauce,Mole sauce,soups_sauces,75,0.98,10.77,3.82,7.1,1,493
+fndds_seafood_dip,Seafood dip,soups_sauces,337,6.18,4.2,32.8,1.95,0.2,715
+fndds_pesto_sauce,Pesto sauce,soups_sauces,580,8.61,5.67,59.17,0.7,1,988
+fndds_curry_sauce,Curry sauce,soups_sauces,95,1.39,5.03,8.22,3.37,1.4,383
+fndds_tzatziki_dip,Tzatziki dip,soups_sauces,91,5.22,4.1,6,2.5,0.2,307
+fndds_cheese_sauce,Cheese sauce,soups_sauces,163,3.14,7.86,13.27,0.29,0.3,656
+fndds_peanut_sauce,Peanut sauce,soups_sauces,257,6.31,22.02,16.02,17.07,1.8,1338
+fndds_eggplant_dip,Eggplant dip,soups_sauces,183,4.8,8.15,14.98,2.81,3.9,209
+fndds_garlic_sauce,Garlic sauce,soups_sauces,683,1.43,2.87,74.02,0.62,0.3,473
+fndds_artichoke_dip,Artichoke dip,soups_sauces,331,3.86,5.78,32.67,2.08,0.9,607
+fndds_cheese_fondue,Cheese fondue,soups_sauces,276,19.32,1.95,21.2,0.53,0,303
+fndds_honey,Honey,ingredients,304,0.3,82.4,0,82.12,0.2,4
+fndds_molasses,Molasses,ingredients,290,0,74.73,0.1,74.72,0,37
+fndds_sugar_brown,"Sugar, brown",ingredients,380,0.12,98.09,0,97.02,0,28
+fndds_sugar_cinnamon,"Sugar, cinnamon",ingredients,390,0.28,98.27,0.38,92.99,3.7,2
+fndds_sugar_substitute_and_sugar_blend,Sugar substitute and sugar blend,ingredients,399,0,99.35,0.31,99.22,0,1
+fndds_sugar_substitute_stevia_powder,"Sugar substitute, stevia, powder",ingredients,0,0,100,0,0,0,0
+fndds_sugar_substitute_stevia_liquid,"Sugar substitute, stevia, liquid",ingredients,51,0.8,11.99,0,0.01,0.7,210
+fndds_sugar_substitute_sucralose_powder,"Sugar substitute, sucralose, powder",ingredients,336,0,91.17,0,80.33,0,0
+fndds_sugar_substitute_saccharin_powder,"Sugar substitute, saccharin, powder",ingredients,360,0.94,89.11,0,85.19,0,428
+fndds_jam,Jam,ingredients,278,0.37,68.86,0.07,48.5,1.1,32
+fndds_jelly,Jelly,ingredients,266,0.15,69.95,0.02,51.22,1,30
+fndds_marmalade,Marmalade,ingredients,246,0.3,66.3,0,60,0.7,56
+fndds_corn_syrup,Corn syrup,ingredients,283,0,76.79,0.2,76.77,0,62
+fndds_dessert_dip,Dessert dip,ingredients,249,6.01,22.48,15.05,22.18,0,170
+fndds_guava_paste,Guava paste,ingredients,292,0.1,72.56,0.27,71.62,1.1,2
+fndds_simple_syrup,Simple syrup,ingredients,184,0,45.58,0.15,45.68,0,3
+fndds_fruit_butter,Fruit butter,ingredients,173,0.39,42.47,0.3,35.3,1.5,15
+fndds_pancake_syrup,Pancake syrup,ingredients,265,0,69.6,0.1,42,0,61
+fndds_chocolate_dip,Chocolate dip,ingredients,393,3.33,65.31,13.22,45.5,2,289
+fndds_nutritional_powder_mix_isopure,Nutritional powder mix (Isopure),ingredients,359,58.14,29.07,1.16,1.16,0,372
+fndds_nutritional_powder_mix_slim_fast,Nutritional powder mix (Slim Fast),ingredients,448,8.13,73.92,13.34,38.02,18.1,472
+fndds_nutritional_powder_mix_muscle_milk,Nutritional powder mix (Muscle Milk),ingredients,411,45.71,18.5,17.14,5.71,7.1,329
+fndds_nutritional_powder_mix_light_muscle_milk,"Nutritional powder mix, light (Muscle Milk)",ingredients,396,50,22,12,4,2,250
+fndds_nutritional_powder_mix_eas_soy_protein_powder,Nutritional powder mix (EAS Soy Protein Powder),ingredients,405,47.62,43.94,3.57,40.48,0,452

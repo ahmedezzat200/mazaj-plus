@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router';
 import { useAuth } from '../../../contexts/AuthContext';
+import { Loader2 } from 'lucide-react';
 
 interface FormData {
   email: string;
@@ -17,9 +18,6 @@ interface TouchedFields {
   email: boolean;
   password: boolean;
 }
-
-type UserRole = 'user' | 'admin';
-type OnboardingStatus = 'incomplete' | 'complete';
 
 export function LoginForm() {
   const navigate = useNavigate();
@@ -71,56 +69,46 @@ export function LoginForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    setTouched({
-      email: true,
-      password: true
-    });
+    setTouched({ email: true, password: true });
 
-    if (!isFormValid) {
-      return;
-    }
+    if (!isFormValid) return;
 
     setIsSubmitting(true);
     setCredentialsError(null);
 
     try {
       const result = await login({ email: formData.email, password: formData.password });
-      
+
       if (result.success) {
         setRedirecting(true);
         const user = result.data.user;
-        
-        // Admin user -> /admin
-        // Normal user with onboarding_complete = false -> /onboarding
-        // Normal user with onboarding_complete = true -> /dashboard
+
         let targetPath = '/dashboard';
         if (user.role === 'ADMIN') {
           targetPath = '/admin';
         } else if (!user.onboarding_complete) {
           targetPath = '/onboarding';
         }
-        
-        setRedirectMessage(user.role === 'ADMIN' 
+
+        setRedirectMessage(user.role === 'ADMIN'
           ? 'Login successful, redirecting to admin panel...'
-          : user.onboarding_complete 
-            ? 'Login successful, redirecting to dashboard...' 
+          : user.onboarding_complete
+            ? 'Login successful, redirecting to dashboard...'
             : 'Login successful, please complete your profile...');
-          
-        setTimeout(() => {
-          navigate(targetPath);
-        }, 1500);
+
+        navigate(targetPath);
       } else {
         setCredentialsError(result.error?.message || 'Invalid email or password. Please try again.');
         setIsSubmitting(false);
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       setCredentialsError('Unable to reach the server. Please check your connection.');
       setIsSubmitting(false);
     }
   };
 
   const getInputClassName = (field: keyof TouchedFields, hasError: boolean) => {
-    const baseClasses = "w-full px-4 py-3 bg-input-background border rounded-lg transition-all outline-none";
+    const baseClasses = "w-full px-4 py-3 bg-input-background border rounded-lg transition-all duration-200 outline-none text-sm";
 
     if ((touched[field] && hasError) || credentialsError) {
       return `${baseClasses} border-destructive focus:border-destructive focus:ring-2 focus:ring-destructive/20`;
@@ -135,37 +123,29 @@ export function LoginForm() {
 
   if (redirecting) {
     return (
-      <div className="bg-card rounded-2xl p-8 lg:p-12 border border-border shadow-sm">
+      <div className="bg-card rounded-2xl p-8 lg:p-12 border border-border shadow-sm animate-in fade-in duration-500">
         <div className="text-center max-w-md mx-auto">
           <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-            <svg className="w-8 h-8 text-primary animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-            </svg>
+            <Loader2 className="w-8 h-8 text-primary animate-spin" />
           </div>
-          <h2 className="text-2xl font-semibold text-foreground mb-3">
-            Login successful
-          </h2>
-          <p className="text-muted-foreground">
-            {redirectMessage}
-          </p>
+          <h2 className="text-2xl font-semibold text-foreground mb-3">Login successful</h2>
+          <p className="text-muted-foreground">{redirectMessage}</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="bg-card rounded-2xl p-8 lg:p-12 border border-border shadow-sm">
+    <div className="bg-card rounded-2xl p-8 lg:p-12 border border-border shadow-sm animate-in fade-in slide-in-from-bottom-4 duration-500">
       <div className="mb-8">
-        <h2 className="text-2xl font-semibold text-foreground mb-2">
-          Login to Mazaj+
-        </h2>
+        <h2 className="text-2xl font-semibold text-foreground mb-2">Login to Mazaj+</h2>
         <p className="text-sm text-muted-foreground">
           Access your profile, guidance, and plan history.
         </p>
       </div>
 
       {credentialsError && (
-        <div className="mb-6 p-4 bg-destructive/10 border border-destructive/30 rounded-lg flex items-start gap-3">
+        <div className="mb-6 p-4 bg-destructive/10 border border-destructive/30 rounded-lg flex items-start gap-3 animate-in fade-in duration-300">
           <svg className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
@@ -191,9 +171,7 @@ export function LoginForm() {
             placeholder="your@email.com"
           />
           {touched.email && errors.email && !credentialsError && (
-            <p className="mt-2 text-sm text-destructive flex items-center gap-1">
-              {errors.email}
-            </p>
+            <p className="mt-2 text-sm text-destructive">{errors.email}</p>
           )}
         </div>
 
@@ -217,7 +195,8 @@ export function LoginForm() {
             <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors duration-200"
+              aria-label={showPassword ? 'Hide password' : 'Show password'}
             >
               {showPassword ? (
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -232,52 +211,50 @@ export function LoginForm() {
             </button>
           </div>
           {touched.password && errors.password && !credentialsError && (
-            <p className="mt-2 text-sm text-destructive flex items-center gap-1">
-              {errors.password}
-            </p>
+            <p className="mt-2 text-sm text-destructive">{errors.password}</p>
           )}
         </div>
 
         <div className="flex items-center justify-end">
-          <a href="#forgot-password" className="text-sm text-primary hover:underline font-medium">
-            Forgot password?
-          </a>
+          <span className="text-sm text-muted-foreground cursor-not-allowed">
+            Forgot password? (coming soon)
+          </span>
         </div>
 
         <button
           type="submit"
           disabled={!isFormValid || isSubmitting}
-          className="w-full px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 active:scale-[0.98] transition-all duration-200 shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed font-medium"
         >
           {isSubmitting ? (
             <span className="flex items-center justify-center gap-2">
-              <svg className="w-5 h-5 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-              </svg>
-              Logging in...
+              <Loader2 className="w-4 h-4 animate-spin" />
+              Signing in…
             </span>
           ) : (
-            'Login'
+            'Sign In'
           )}
         </button>
 
         <p className="text-center text-sm text-muted-foreground">
           Don't have an account?{' '}
-          <Link to="/register" className="text-primary hover:underline font-medium">
+          <Link to="/register" className="text-primary hover:underline font-medium transition-colors">
             Create account
           </Link>
         </p>
       </form>
 
-      <div className="mt-6 p-4 bg-muted/30 rounded-lg border border-border">
-        <p className="text-xs text-muted-foreground mb-2 font-medium">Demo accounts:</p>
-        <ul className="text-xs text-muted-foreground space-y-1">
-          <li>• user@example.com / password123 (Free)</li>
-          <li>• pro@example.com / password123 (Pro)</li>
-          <li>• ultra@example.com / password123 (Ultra)</li>
-          <li>• admin@mazaj.com / admin123 (Admin)</li>
-        </ul>
-      </div>
+      {import.meta.env.DEV && (
+        <div className="mt-6 p-4 bg-muted/30 rounded-lg border border-border">
+          <p className="text-xs text-muted-foreground mb-2 font-medium">Demo accounts:</p>
+          <ul className="text-xs text-muted-foreground space-y-1">
+            <li>• user@example.com / password123 (Free)</li>
+            <li>• pro@example.com / password123 (Pro)</li>
+            <li>• ultra@example.com / password123 (Ultra)</li>
+            <li>• admin@mazaj.com / admin123 (Admin)</li>
+          </ul>
+        </div>
+      )}
 
       <div className="mt-8 pt-6 border-t border-border">
         <p className="text-xs text-muted-foreground text-center leading-relaxed">

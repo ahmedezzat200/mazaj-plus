@@ -8,8 +8,8 @@ import { Dashboard } from "./components/dashboard/Dashboard";
 import { ChatPage } from "./components/dashboard/chat/ChatPage";
 import { NutritionPlansPage } from "./components/dashboard/nutrition-plans/NutritionPlansPage";
 import { AlternativesPage } from "./components/dashboard/alternatives/AlternativesPage";
-import { FoodImageAnalysisPage } from "./components/dashboard/upload/FoodImageAnalysisPage";
-import { TrackingPage } from "./components/dashboard/tracking/TrackingPage";
+import { FoodImageAnalysisPage } from "./components/dashboard/FoodImageAnalysisPage";
+import { TrackingPage } from "./components/dashboard/TrackingPage";
 import { SubscriptionPage } from "./components/dashboard/subscription/SubscriptionPage";
 import { InfoPage } from "./components/info/InfoPage";
 import { AdminLayout } from "./components/admin/AdminLayout";
@@ -18,6 +18,10 @@ import { ManagementPage } from "./components/admin/ManagementPage";
 import { TipsSubscriptionPage } from "./components/admin/TipsSubscriptionPage";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import { ProfilePage } from "./components/dashboard/profile/ProfilePage";
+import { NotFoundPage } from "./components/NotFoundPage";
+import { ComingSoonCard } from "./components/admin/ComingSoonCard";
+import { AlternativesManagement } from "./components/admin/AlternativesManagement";
+import { SystemActivityFeed } from "./components/admin/SystemActivityFeed";
 
 export const router = createBrowserRouter([
   {
@@ -119,7 +123,7 @@ export const router = createBrowserRouter([
           },
           {
             path: "alternatives",
-            element: <div className="p-6">Healthy Alternatives Management (Coming Soon)</div>,
+            element: <AlternativesManagement />,
           },
           {
             path: "daily-tips",
@@ -131,14 +135,18 @@ export const router = createBrowserRouter([
           },
           {
             path: "activity",
-            element: <div className="p-6">Activity Monitoring (Coming Soon)</div>,
+            element: <div className="p-6"><SystemActivityFeed /></div>,
           },
           {
             path: "uploads",
-            element: <div className="p-6">Private upload data is not available in the admin interface.</div>,
+            element: <ComingSoonCard title="Private Uploads" description="Per Mazaj+ privacy policy, user-uploaded files (food images, InBody reports) are never shown in the admin interface. This restriction is enforced server-side." />,
           },
         ]
       }
     ],
+  },
+  {
+    path: "*",
+    element: <NotFoundPage />,
   },
 ]);

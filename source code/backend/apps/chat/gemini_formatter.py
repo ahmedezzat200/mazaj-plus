@@ -1,81 +1,157 @@
+import logging
 import os
 import warnings
-import logging
-from django.conf import settings
 
 logger = logging.getLogger(__name__)
 
-# Suppress the deprecation warning from google-generativeai if it is installed
 warnings.filterwarnings("ignore", category=FutureWarning, module="google.generativeai")
 
-def format_chat_reply_with_gemini(base_reply: str, foods: list[dict], warnings: list[dict], mode: str) -> str:
-    """
-    Optional Gemini formatting layer for chat responses.
-    Gemini only formats the reply_text; it does not decide foods or safety.
-    This function is designed to NEVER crash and always fallback to base_reply.
-    """
-    try:
-        api_key = os.getenv("GEMINI_API_KEY")
-        if not api_key:
-            return base_reply
+GEMINI_TEXT_MODELS = [
+    os.getenv("GEMINI_TEXT_MODEL", "").strip(),
+    "models/gemini-2.5-flash",
+    "models/gemini-2.0-flash",
+    "models/gemini-flash-latest",
+    "gemini-2.5-flash",
+    "gemini-2.0-flash",
+]
 
-        # Internal import to prevent top-level crash if dependency is missing
-        try:
-            import google.generativeai as genai
-        except ImportError:
-            logger.debug("Gemini formatter: google-generativeai package not installed. Falling back to base reply.")
-            return base_reply
+_MAZAJ_SYSTEM_PROMPT = """
+You are Mazaj+, a warm nutrition decision-support assistant.
+Your job is to make users feel understood, then give clear advisory nutrition guidance.
+
+Rules:
+1. Never diagnose, treat, prescribe medication, or claim medical certainty.
+2. Keep answers advisory and practical.
+3. Do not invent profile details, allergies, conditions, calories, or macros.
+4. If backend-provided profile context exists, use it carefully without exposing private details unnecessarily.
+5. For project/account/upload/subscription questions, do not invent. Say project data must come from Mazaj+ backend tools.
+6. For general wellness questions, answer from general knowledge in a concise, helpful way.
+7. Match the user's language when possible.
+8. Sound like a calm coach: acknowledge, answer, then offer a useful next step.
+"""
+
+
+def _get_genai_model():
+    api_key = os.getenv("GEMINI_API_KEY")
+    if not api_key:
+        return None
+    try:
+        import google.generativeai as genai
 
         genai.configure(api_key=api_key)
-        
-        # We only use gemini-1.5-flash for formatting
-        model = genai.GenerativeModel('gemini-2.0-flash')
-        
-        # Prepare safe context for Gemini
-        # We DO NOT send private user profile data (age, gender, specific allergy names, etc.)
+        for model_name in [name for name in GEMINI_TEXT_MODELS if name]:
+            try:
+                return genai.GenerativeModel(model_name)
+            except Exception as exc:
+                logger.warning("External AI API model init failed for %s: %s", model_name, exc)
+        return None
+    except ImportError:
+        logger.debug("External AI API package is not installed.")
+        return None
+    except Exception as exc:
+        logger.error("External AI API model init error: %s", exc)
+        return None
+
+
+def generate_gemini_chat_response(
+    user_message: str,
+    conversation_history: list[dict],
+    user_goal: str | None,
+    allergy_names: list[str],
+    condition_names: list[str],
+) -> str | None:
+    model = _get_genai_model()
+    if model is None:
+        return None
+
+    try:
+        profile_lines = []
+        if user_goal:
+            profile_lines.append(f"Nutrition goal: {user_goal}")
+        if allergy_names:
+            profile_lines.append(f"Allergies to be aware of: {', '.join(allergy_names)}")
+        if condition_names:
+            profile_lines.append(f"Health considerations: {', '.join(condition_names)}")
+
+        prompt_parts = [_MAZAJ_SYSTEM_PROMPT]
+        if profile_lines:
+            prompt_parts.append("User profile context:\n" + "\n".join(profile_lines))
+
+        recent = conversation_history[-8:] if len(conversation_history) > 8 else conversation_history
+        if recent:
+            history_lines = []
+            for turn in recent:
+                role = "User" if turn.get("sender") == "USER" else "Assistant"
+                history_lines.append(f"{role}: {turn.get('message', '')}")
+            prompt_parts.append("Conversation so far:\n" + "\n".join(history_lines))
+
+        prompt_parts.append(f"User: {user_message}")
+        prompt_parts.append("Assistant:")
+
+        response = model.generate_content("\n\n".join(prompt_parts), request_options={"timeout": 5.0})
+        text = getattr(response, "text", "") or ""
+        return text.strip() or None
+    except Exception as exc:
+        logger.error("Gemini conversational response error: %s", exc)
+        return None
+
+
+def generate_chat_reply(user_message: str, user_context: dict) -> str:
+    return generate_gemini_chat_response(
+        user_message=user_message,
+        conversation_history=[],
+        user_goal=user_context.get("goal"),
+        allergy_names=user_context.get("allergies", []) or [],
+        condition_names=user_context.get("health_conditions", []) or [],
+    ) or _fallback_reply(user_message)
+
+
+def _fallback_reply(user_message: str) -> str:
+    return (
+        "I am with you. The general AI reply service is not available right now, "
+        "but I can still help with Mazaj+ features, food checks, nutrition plans, and upload-based guidance."
+    )
+
+
+def format_chat_reply_with_gemini(base_reply: str, foods: list[dict], warnings: list[dict], mode: str) -> str:
+    model = _get_genai_model()
+    if model is None:
+        return base_reply
+
+    try:
         food_context = ""
         if foods:
-            food_context = "Safe foods identified by backend:\n"
-            for f in foods:
-                food_context += f"- {f['name']}: {f.get('reason', 'Recommended for current state')}\n"
-        
+            food_context = "Backend-approved foods:\n"
+            for food in foods:
+                food_context += f"- {food['name']}: {food.get('reason', 'Recommended by backend rules')}\n"
+
         warning_summary = ""
         if warnings:
-            warning_summary = f"Note: Backend identified {len(warnings)} items requiring caution due to user health profile. These are handled server-side."
+            warning_summary = (
+                f"Backend returned {len(warnings)} caution item(s). Keep the warning meaning intact."
+            )
 
-        prompt = f"""
-System: You are a text formatter for Mazaj+, a nutrition decision-support system.
+        prompt = f"""System: You format backend-approved Mazaj+ nutrition replies.
 Rules:
-1. You are only formatting backend-approved nutrition guidance.
-2. Use only the provided data.
-3. Do not add new foods.
-4. Do not remove foods.
-5. Do not change calories or macros.
-6. Do not invent medical claims or diagnose.
-7. Do not mention private user allergies or specific health conditions by name.
-8. Keep wording advisory-only.
-9. Keep it concise, friendly, and natural.
-10. If no foods are provided, ask the user to clarify their mood or food preference.
-11. Return plain text only.
+1. Make the wording warm, natural, and clear.
+2. Do not add foods, remove foods, change macros, or invent medical claims.
+3. Do not reveal private allergy or condition names unless already present in the backend reply.
+4. Keep safety refusals firm but helpful.
+5. Return plain text only.
 
-Current Backend Reply: {base_reply}
+Mode: {mode}
+Backend reply:
+{base_reply}
+
 {food_context}
 {warning_summary}
 
-Task: Rewrite the 'Current Backend Reply' to be more natural and engaging while strictly following the rules above.
+Rewrite the backend reply without changing its meaning.
 """
-        
-        response = model.generate_content(prompt)
-        
-        if response and response.text:
-            formatted_text = response.text.strip()
-            if formatted_text:
-                return formatted_text
-                
-        return base_reply
 
-    except Exception as e:
-        # Fallback to original text on any error
-        # We log the error but do not re-raise it
-        logger.error(f"Gemini formatter error: {str(e)}")
+        response = model.generate_content(prompt, request_options={"timeout": 5.0})
+        text = getattr(response, "text", "") or ""
+        return text.strip() or base_reply
+    except Exception as exc:
+        logger.error("Gemini formatter error: %s", exc)
         return base_reply

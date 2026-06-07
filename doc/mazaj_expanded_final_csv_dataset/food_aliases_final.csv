@@ -1,0 +1,583 @@
+﻿alias,food_key,language,source
+بذور دوار الشمس,sunflower_seeds,ar,manual
+برتقال,oranges_raw,ar,manual
+بروكلي,broccoli_raw,ar,manual
+بصل,yellow_onion_raw,ar,manual
+بياض بيض,large_egg_white,ar,manual
+بيض,large_egg_whole,ar,manual
+تفاح,apple_red_delicious,ar,manual
+تونة,tuna_canned,ar,manual
+تين مجفف,figs_dried,ar,manual
+ثوم,garlic_raw,ar,manual
+جزر,carrots_frozen,ar,manual
+حليب قليل الدسم,milk_2_percent,ar,manual
+حمص,hummus,ar,manual
+خبز أبيض,white_bread,ar,manual
+خبز قمح كامل,whole_wheat_bread,ar,manual
+خس,romaine_lettuce,ar,manual
+خوخ,peaches_raw,ar,manual
+دبوس دجاج,chicken_drumstick_cooked,ar,manual
+زبادي يوناني,greek_yogurt_plain,ar,manual
+زبدة فول سوداني,peanut_butter,ar,manual
+سكر,granulated_sugar,ar,manual
+شمام,cantaloupe_raw,ar,manual
+صدر دجاج,chicken_breast_cooked,ar,manual
+صفار بيض,large_egg_yolk,ar,manual
+طماطم,tomatoes_grape,ar,manual
+فراولة,strawberries_raw,ar,manual
+كرنب اجعد,kale_raw,ar,manual
+كمثرى,pears_raw,ar,manual
+كيوي,kiwi_raw,ar,manual
+لبن قليل الدسم,milk_2_percent,ar,manual
+لوز,almonds_dry_roasted,ar,manual
+موز,banana_ripe,ar,manual
+1 percent milk,milk_1_percent,en,manual
+2 percent milk,milk_2_percent,en,manual
+all purpose flour,flour_ap_unbleached,en,manual
+all purpose flour bleached,flour_ap_bleached,en,auto_name
+all purpose flour unbleached,flour_ap_unbleached,en,auto_name
+all purpose flour unenriched,flour_ap_unenriched,en,auto_name
+almond,almonds_dry_roasted,en,manual
+almonds,almonds_dry_roasted,en,manual
+almonds dry roasted,almonds_dry_roasted,en,auto_name
+american cheese,american_cheese,en,auto_key
+american cheese processed,american_cheese,en,auto_name
+american cheese restaurant,american_cheese_restaurant,en,auto_name
+apple,apple_red_delicious,en,manual
+apple fuji,apple_fuji,en,auto_name
+apple gala,apple_gala,en,auto_name
+apple granny smith,apple_granny_smith,en,auto_name
+apple honeycrisp,apple_honeycrisp,en,auto_name
+apple red delicious,apple_red_delicious,en,auto_name
+bacon,bacon_cooked,en,manual
+bacon cooked,bacon_cooked,en,auto_name
+banana,banana_ripe,en,manual
+banana overripe,banana_overripe,en,auto_name
+banana ripe,banana_ripe,en,auto_name
+bean pupusa,bean_pupusas,en,manual
+bean pupusas,bean_pupusas,en,auto_key
+bean pupusas latino,bean_pupusas,en,auto_name
+beef breakfast sausage,beef_breakfast_sausage,en,auto_name
+beef eye of round roast,beef_eye_round_raw,en,auto_simplified
+beef eye of round roast raw,beef_eye_round_raw,en,auto_name
+beef eye round raw,beef_eye_round_raw,en,auto_key
+beef hot dog,beef_hot_dog,en,auto_name
+beef tenderloin,beef_tenderloin_roasted,en,auto_simplified
+beef tenderloin roasted,beef_tenderloin_roasted,en,auto_name
+beef top loin steak,beef_top_loin_steak,en,auto_key
+beef top loin steak raw,beef_top_loin_steak,en,auto_name
+beef top round raw,beef_top_round_raw,en,auto_key
+beef top round roast,beef_top_round_raw,en,auto_simplified
+beef top round roast raw,beef_top_round_raw,en,auto_name
+bread,white_bread,en,manual
+bread flour white,flour_bread_white,en,auto_name
+broccoli,broccoli_raw,en,manual
+broccoli raw,broccoli_raw,en,auto_name
+brown rice flour,flour_rice_brown,en,auto_name
+canned tuna,tuna_canned,en,manual
+cantaloupe,cantaloupe_raw,en,manual
+cantaloupe raw,cantaloupe_raw,en,auto_name
+carrot,carrots_frozen,en,manual
+carrots,carrots_frozen,en,manual
+carrots frozen,carrots_frozen,en,auto_name
+cheddar,cheddar_cheese,en,manual
+cheddar cheese,cheddar_cheese,en,auto_name
+chicken breast,chicken_breast_cooked,en,manual
+chicken breast cooked,chicken_breast_cooked,en,auto_key
+chicken breast skinless boneless,chicken_breast_cooked,en,auto_name
+chicken drumstick,chicken_drumstick_cooked,en,auto_simplified
+chicken drumstick cooked,chicken_drumstick_cooked,en,auto_name
+chinese fried rice,fried_rice_chinese,en,manual
+chorizo pork,chorizo_pork,en,auto_name
+coconut oil,coconut_oil,en,auto_name
+cooked chicken breast,chicken_breast_cooked,en,manual
+cookies,oatmeal_raisin_cookies,en,manual
+corn flour,flour_corn_yellow,en,manual
+corn flour yellow,flour_corn_yellow,en,auto_name
+cottage cheese,cottage_cheese_lowfat,en,manual
+cottage cheese 2 percent,cottage_cheese_lowfat,en,auto_simplified
+cottage cheese 2 percent lowfat,cottage_cheese_lowfat,en,auto_name
+cottage cheese lowfat,cottage_cheese_lowfat,en,auto_key
+deli ham,deli_ham,en,auto_key
+deli ham sliced,deli_ham,en,auto_name
+diced tomatoes,diced_tomatoes_canned,en,auto_simplified
+diced tomatoes canned,diced_tomatoes_canned,en,auto_name
+dill pickles,dill_pickles,en,auto_name
+dried fig,figs_dried,en,manual
+dried figs,figs_dried,en,manual
+egg,large_egg_whole,en,manual
+egg white,egg_white_raw,en,auto_simplified
+egg white dried,egg_white_dried,en,auto_name
+egg white raw,egg_white_raw,en,auto_name
+egg whole dried,egg_whole_dried,en,auto_name
+egg whole raw,egg_whole_raw,en,auto_name
+egg yolk,egg_yolk_raw,en,auto_simplified
+egg yolk dried,egg_yolk_dried,en,auto_name
+egg yolk raw,egg_yolk_raw,en,auto_name
+fig,figs_dried,en,manual
+figs dried,figs_dried,en,auto_name
+flour ap bleached,flour_ap_bleached,en,auto_key
+flour ap unbleached,flour_ap_unbleached,en,auto_key
+flour ap unenriched,flour_ap_unenriched,en,auto_key
+flour bread white,flour_bread_white,en,auto_key
+flour corn yellow,flour_corn_yellow,en,auto_key
+flour pastry,flour_pastry,en,auto_key
+flour rice brown,flour_rice_brown,en,auto_key
+flour rice glutinous,flour_rice_glutinous,en,auto_key
+flour rice white,flour_rice_white,en,auto_key
+flour soy defatted,flour_soy_defatted,en,auto_key
+flour soy full fat,flour_soy_full_fat,en,auto_key
+flour whole wheat,flour_whole_wheat,en,auto_key
+fried rice,fried_rice_chinese,en,manual
+fried rice chinese,fried_rice_chinese,en,auto_key
+fried rice no meat chinese,fried_rice_chinese,en,auto_name
+fuji apple,apple_fuji,en,manual
+full fat milk,milk_whole,en,manual
+gala apple,apple_gala,en,manual
+garlic,garlic_raw,en,manual
+garlic raw,garlic_raw,en,auto_name
+glutinous rice flour,flour_rice_glutinous,en,auto_name
+granny smith apple,apple_granny_smith,en,manual
+granulated sugar,granulated_sugar,en,auto_name
+grape tomato,tomatoes_grape,en,manual
+grape tomatoes,tomatoes_grape,en,manual
+grapefruit juice,grapefruit_juice,en,auto_name
+greek yogurt,greek_yogurt_plain,en,auto_simplified
+greek yogurt plain,greek_yogurt_plain,en,auto_key
+greek yogurt plain nonfat,greek_yogurt_plain,en,auto_name
+greek yogurt strawberry,greek_yogurt_strawberry,en,auto_key
+greek yogurt strawberry nonfat,greek_yogurt_strawberry,en,auto_name
+green apple,apple_granny_smith,en,manual
+green beans,green_beans_canned,en,auto_simplified
+green beans canned,green_beans_canned,en,auto_name
+green olive,green_olives,en,manual
+green olives,green_olives,en,auto_key
+green olives stuffed,green_olives,en,auto_name
+grilled chicken breast,chicken_breast_cooked,en,manual
+ground turkey,ground_turkey_93_lean,en,manual
+ground turkey 93 lean,ground_turkey_93_lean,en,auto_key
+ground turkey 93 percent lean,ground_turkey_93_lean,en,auto_name
+haddock,haddock_raw,en,manual
+haddock raw,haddock_raw,en,auto_name
+ham,deli_ham,en,manual
+ham restaurant,ham_restaurant,en,auto_key
+ham sliced restaurant,ham_restaurant,en,auto_name
+honeycrisp apple,apple_honeycrisp,en,manual
+hot dog,beef_hot_dog,en,manual
+hummus,hummus,en,auto_name
+italian pork sausage,italian_pork_sausage,en,auto_name
+kale,kale_raw,en,manual
+kale frozen cooked,kale_frozen_cooked,en,auto_name
+kale raw,kale_raw,en,auto_name
+ketchup,ketchup,en,auto_name
+kiwi,kiwi_raw,en,manual
+kiwi raw,kiwi_raw,en,auto_name
+large egg,large_egg_whole,en,auto_simplified
+large egg white,large_egg_white,en,auto_name
+large egg whole,large_egg_whole,en,auto_name
+large egg yolk,large_egg_yolk,en,auto_name
+lean turkey,ground_turkey_93_lean,en,manual
+lettuce,romaine_lettuce,en,manual
+low fat milk,milk_1_percent,en,manual
+marinara,marinara_sauce,en,manual
+marinara pasta sauce,marinara_sauce,en,auto_name
+marinara sauce,marinara_sauce,en,auto_key
+milk 1 percent,milk_1_percent,en,auto_key
+milk 1 percent lowfat,milk_1_percent,en,auto_name
+milk 2 percent,milk_2_percent,en,auto_key
+milk 2 percent reduced fat,milk_2_percent,en,auto_name
+milk skim,milk_skim,en,auto_key
+milk skim nonfat,milk_skim,en,auto_name
+milk whole,milk_whole,en,auto_name
+mozzarella,mozzarella_cheese,en,manual
+mozzarella cheese,mozzarella_cheese,en,auto_key
+mozzarella cheese part skim,mozzarella_cheese,en,auto_name
+mustard,yellow_mustard,en,manual
+nectarine,nectarines_raw,en,manual
+nectarines,nectarines_raw,en,manual
+nectarines raw,nectarines_raw,en,auto_name
+nonfat milk,milk_skim,en,manual
+oatmeal cookie,oatmeal_raisin_cookies,en,manual
+oatmeal raisin cookie,oatmeal_raisin_cookies,en,manual
+oatmeal raisin cookies,oatmeal_raisin_cookies,en,auto_name
+olive,green_olives,en,manual
+olives,green_olives,en,manual
+onion,yellow_onion_raw,en,manual
+onion rings baked,onion_rings_baked,en,auto_key
+onion rings frozen baked,onion_rings_baked,en,auto_name
+orange,oranges_raw,en,manual
+oranges,oranges_raw,en,manual
+oranges raw,oranges_raw,en,auto_name
+overripe banana,banana_overripe,en,manual
+parmesan,parmesan_cheese,en,manual
+parmesan cheese,parmesan_cheese,en,auto_key
+parmesan cheese grated,parmesan_cheese,en,auto_name
+pastry flour,flour_pastry,en,auto_name
+peach,peaches_raw,en,manual
+peaches,peaches_raw,en,manual
+peaches raw,peaches_raw,en,auto_name
+peanut butter,peanut_butter,en,auto_key
+peanut butter smooth,peanut_butter,en,auto_name
+pear,pears_raw,en,manual
+pears,pears_raw,en,manual
+pears raw,pears_raw,en,auto_name
+pickle,dill_pickles,en,manual
+pickles,dill_pickles,en,manual
+plain greek yogurt,greek_yogurt_plain,en,manual
+pollock,pollock_raw,en,manual
+pollock raw,pollock_raw,en,auto_name
+pork tamale,pork_tamale,en,auto_key
+pork tamale latino,pork_tamale,en,auto_name
+porterhouse steak,porterhouse_steak,en,auto_key
+porterhouse steak raw,porterhouse_steak,en,auto_name
+queso seco,queso_seco,en,auto_key
+queso seco dry white cheese,queso_seco,en,auto_name
+red apple,apple_red_delicious,en,manual
+red onion,red_onion_raw,en,auto_simplified
+red onion raw,red_onion_raw,en,auto_name
+reduced fat milk,milk_2_percent,en,manual
+rice flour white,flour_rice_white,en,auto_name
+ricotta,ricotta_cheese,en,manual
+ricotta cheese,ricotta_cheese,en,auto_key
+ricotta cheese milk,ricotta_cheese,en,auto_simplified
+ricotta cheese whole milk,ricotta_cheese,en,auto_name
+ripe banana,banana_ripe,en,manual
+romaine,romaine_lettuce,en,manual
+romaine lettuce,romaine_lettuce,en,auto_key
+romaine lettuce raw,romaine_lettuce,en,auto_name
+salsa,salsa,en,auto_key
+salsa sauce,salsa,en,auto_name
+skim milk,milk_skim,en,manual
+soy flour,flour_soy_full_fat,en,manual
+soy flour defatted,flour_soy_defatted,en,auto_name
+soy flour full fat,flour_soy_full_fat,en,auto_name
+strawberries,strawberries_raw,en,manual
+strawberries raw,strawberries_raw,en,auto_name
+strawberry,strawberries_raw,en,manual
+strawberry greek yogurt,greek_yogurt_strawberry,en,manual
+sugar,granulated_sugar,en,manual
+sunflower seed,sunflower_seeds,en,manual
+sunflower seeds,sunflower_seeds,en,auto_key
+sunflower seeds dry roasted,sunflower_seeds,en,auto_name
+sweet and sour pork,sweet_sour_pork,en,manual
+sweet and sour pork chinese,sweet_sour_pork,en,auto_name
+sweet sour pork,sweet_sour_pork,en,auto_key
+swiss cheese,swiss_cheese,en,auto_name
+t bone steak grilled,tbone_steak_grilled,en,auto_name
+tbone steak grilled,tbone_steak_grilled,en,auto_key
+tomatoes grape,tomatoes_grape,en,auto_name
+tuna,tuna_canned,en,manual
+tuna canned,tuna_canned,en,auto_key
+tuna canned in water,tuna_canned,en,auto_name
+tuna in water,tuna_canned,en,auto_simplified
+turkey breakfast sausage,turkey_breakfast_sausage,en,auto_name
+turkey sausage,turkey_breakfast_sausage,en,manual
+wheat bread,whole_wheat_bread,en,auto_simplified
+wheat flour,flour_whole_wheat,en,auto_simplified
+white bread,white_bread,en,auto_name
+white flour,flour_ap_unbleached,en,manual
+white onion,white_onion_raw,en,auto_simplified
+white onion raw,white_onion_raw,en,auto_name
+white rice flour,flour_rice_white,en,manual
+white sugar,granulated_sugar,en,manual
+whole egg,large_egg_whole,en,manual
+whole milk,milk_whole,en,manual
+whole wheat bread,whole_wheat_bread,en,auto_name
+whole wheat flour,flour_whole_wheat,en,auto_name
+yellow mustard,yellow_mustard,en,auto_name
+yellow onion,yellow_onion_raw,en,auto_simplified
+yellow onion raw,yellow_onion_raw,en,auto_name
+grilled fish,grilled_fish,en,manual
+fish,grilled_fish,en,manual
+cooked fish,grilled_fish,en,manual
+سمك,grilled_fish,ar,manual
+سمك مشوي,grilled_fish,ar,manual
+salmon,salmon_grilled,en,manual
+grilled salmon,salmon_grilled,en,manual
+سلمون,salmon_grilled,ar,manual
+tilapia,tilapia_grilled,en,manual
+grilled tilapia,tilapia_grilled,en,manual
+بلطي,tilapia_grilled,ar,manual
+سمك بلطي,tilapia_grilled,ar,manual
+shrimp,shrimp_cooked,en,manual
+cooked shrimp,shrimp_cooked,en,manual
+جمبري,shrimp_cooked,ar,manual
+sardines,sardines_canned,en,manual
+canned sardines,sardines_canned,en,manual
+سردين,sardines_canned,ar,manual
+fried fish,fish_fried,en,manual
+سمك مقلي,fish_fried,ar,manual
+baked fish,fish_baked,en,manual
+سمك بالفرن,fish_baked,ar,manual
+cod,cod_baked,en,manual
+baked cod,cod_baked,en,manual
+sea bass,sea_bass_grilled,en,manual
+grilled sea bass,sea_bass_grilled,en,manual
+calamari,calamari_fried,en,manual
+fried calamari,calamari_fried,en,manual
+فراخ مشوية,chicken_breast_grilled,ar,manual
+صدر فراخ مشوي,chicken_breast_grilled,ar,manual
+fried chicken,chicken_fried,en,manual
+فراخ مقلية,chicken_fried,ar,manual
+chicken shawarma,chicken_shawarma,en,manual
+shawarma,chicken_shawarma,en,manual
+شاورما فراخ,chicken_shawarma,ar,manual
+شاورما,chicken_shawarma,ar,manual
+shawarma wrap,shawarma_chicken,en,manual
+chicken shawarma wrap,shawarma_chicken,en,manual
+beef burger,beef_burger,en,manual
+hamburger,beef_burger,en,manual
+برجر لحم,beef_burger,ar,manual
+burger,burger_beef,en,manual
+beef burger sandwich,burger_beef,en,manual
+برجر,burger_beef,ar,manual
+steak,beef_steak_grilled,en,manual
+grilled steak,beef_steak_grilled,en,manual
+ستيك,beef_steak_grilled,ar,manual
+beef kebab,beef_kebab,en,manual
+كباب لحم,beef_kebab,ar,manual
+meatballs,meatballs,en,manual
+كفتة كرات,meatballs,ar,manual
+turkey slices,turkey_slices,en,manual
+deli turkey,turkey_slices,en,manual
+beef sausage,sausage_beef,en,manual
+sausage,sausage_beef,en,manual
+سجق,sausage_beef,ar,manual
+هوت دوج,hot_dog,ar,manual
+lamb chop,lamb_chop_grilled,en,manual
+grilled lamb,lamb_chop_grilled,en,manual
+لحم ضأن مشوي,lamb_chop_grilled,ar,manual
+chicken nuggets,chicken_nuggets,en,manual
+nuggets,chicken_nuggets,en,manual
+ناجتس,chicken_nuggets,ar,manual
+fried chicken piece,fried_chicken_piece,en,manual
+قطعة فراخ مقلية,fried_chicken_piece,ar,manual
+kebab,kebab_grilled,en,manual
+grilled kebab,kebab_grilled,en,manual
+كباب,kebab_grilled,ar,manual
+kofta,kofta_grilled,en,manual
+grilled kofta,kofta_grilled,en,manual
+كفتة,kofta_grilled,ar,manual
+boiled egg,boiled_egg,en,manual
+بيضة مسلوقة,boiled_egg,ar,manual
+scrambled egg,scrambled_egg,en,manual
+بيض مخفوق,scrambled_egg,ar,manual
+fruit yogurt,yogurt_fruit,en,manual
+yogurt with fruit,yogurt_fruit,en,manual
+زبادي بالفواكه,yogurt_fruit,ar,manual
+cream cheese,cream_cheese,en,manual
+جبنة كريمي,cream_cheese,ar,manual
+feta cheese,feta_cheese,en,manual
+جبنة فيتا,feta_cheese,ar,manual
+labneh,labneh,en,manual
+لبنة,labneh,ar,manual
+rice,rice_white_cooked,en,manual
+white rice,rice_white_cooked,en,manual
+cooked rice,rice_white_cooked,en,manual
+رز,rice_white_cooked,ar,manual
+أرز,rice_white_cooked,ar,manual
+brown rice,rice_brown_cooked,en,manual
+cooked brown rice,rice_brown_cooked,en,manual
+أرز بني,rice_brown_cooked,ar,manual
+pasta,pasta_cooked,en,manual
+cooked pasta,pasta_cooked,en,manual
+مكرونة,pasta_cooked,ar,manual
+spaghetti,spaghetti_tomato_sauce,en,manual
+spaghetti tomato sauce,spaghetti_tomato_sauce,en,manual
+اسباجتي,spaghetti_tomato_sauce,ar,manual
+عيش أبيض,bread_white,ar,manual
+brown bread,bread_whole_wheat,en,manual
+عيش سن,bread_whole_wheat,ar,manual
+oats,oats_cooked,en,manual
+cooked oats,oats_cooked,en,manual
+oatmeal,oats_cooked,en,manual
+شوفان,oats_cooked,ar,manual
+cornflakes,cereal_cornflakes,en,manual
+cereal,cereal_cornflakes,en,manual
+كورن فليكس,cereal_cornflakes,ar,manual
+tortilla,tortilla_wrap,en,manual
+wrap,tortilla_wrap,en,manual
+خبز تورتيلا,tortilla_wrap,ar,manual
+pita bread,pita_bread,en,manual
+pita,pita_bread,en,manual
+عيش شامي,pita_bread,ar,manual
+couscous,couscous_cooked,en,manual
+كسكسي,couscous_cooked,ar,manual
+quinoa,quinoa_cooked,en,manual
+كينوا,quinoa_cooked,ar,manual
+baked potato,potato_baked,en,manual
+potato,potato_baked,en,manual
+بطاطس مشوية,potato_baked,ar,manual
+sweet potato,sweet_potato_baked,en,manual
+baked sweet potato,sweet_potato_baked,en,manual
+بطاطا,sweet_potato_baked,ar,manual
+baladi bread,baladi_bread,en,manual
+egyptian bread,baladi_bread,en,manual
+عيش بلدي,baladi_bread,ar,manual
+pizza,pizza_slice,en,manual
+pizza slice,pizza_slice,en,manual
+slice of pizza,pizza_slice,en,manual
+بيتزا,pizza_slice,ar,manual
+fries,french_fries,en,manual
+french fries,french_fries,en,manual
+بطاطس مقلية,french_fries,ar,manual
+alfredo pasta,pasta_alfredo,en,manual
+pasta alfredo,pasta_alfredo,en,manual
+lasagna,lasagna,en,manual
+لازانيا,lasagna,ar,manual
+turkey sandwich,sandwich_turkey,en,manual
+ساندوتش تركي,sandwich_turkey,ar,manual
+cheese sandwich,sandwich_cheese,en,manual
+ساندوتش جبنة,sandwich_cheese,ar,manual
+lentil soup,soup_lentil,en,manual
+شوربة عدس,soup_lentil,ar,manual
+chicken soup,soup_chicken,en,manual
+شوربة فراخ,soup_chicken,ar,manual
+falafel,falafel,en,manual
+فلافل,falafel,ar,manual
+taameya,falafel_taameya,en,manual
+falafel egyptian,falafel_taameya,en,manual
+طعمية,falafel_taameya,ar,manual
+koshari,koshari,en,manual
+kushari,koshari,en,manual
+كشري,koshari,ar,manual
+foul,foul_medames,en,manual
+fava beans,foul_medames,en,manual
+فول,foul_medames,ar,manual
+فول مدمس,foul_medames,ar,manual
+molokhia,molokhia,en,manual
+ملوخية,molokhia,ar,manual
+mahshi,mahshi,en,manual
+stuffed vegetables,mahshi,en,manual
+محشي,mahshi,ar,manual
+hawawshi,hawawshi,en,manual
+حواوشي,hawawshi,ar,manual
+water,water,en,manual
+مياه,water,ar,manual
+ماء,water,ar,manual
+sparkling water,sparkling_water,en,manual
+soda water,sparkling_water,en,manual
+مياه غازية,sparkling_water,ar,manual
+cola,cola_regular,en,manual
+coke,cola_regular,en,manual
+soda,cola_regular,en,manual
+soft drink,cola_regular,en,manual
+كوكاكولا,cola_regular,ar,manual
+كولا,cola_regular,ar,manual
+مشروب غازي,cola_regular,ar,manual
+diet cola,cola_diet,en,manual
+diet coke,cola_diet,en,manual
+دايت كولا,cola_diet,ar,manual
+orange juice,orange_juice,en,manual
+عصير برتقال,orange_juice,ar,manual
+apple juice,apple_juice,en,manual
+عصير تفاح,apple_juice,ar,manual
+coffee,coffee_black,en,manual
+black coffee,coffee_black,en,manual
+قهوة,coffee_black,ar,manual
+coffee with milk,coffee_milk_sugar,en,manual
+sweet coffee,coffee_milk_sugar,en,manual
+قهوة بلبن,coffee_milk_sugar,ar,manual
+tea,tea_unsweetened,en,manual
+unsweetened tea,tea_unsweetened,en,manual
+شاي,tea_unsweetened,ar,manual
+sweet tea,tea_sweetened,en,manual
+شاي بسكر,tea_sweetened,ar,manual
+energy drink,energy_drink,en,manual
+مشروب طاقة,energy_drink,ar,manual
+sports drink,sports_drink,en,manual
+مشروب رياضي,sports_drink,ar,manual
+lemonade,lemonade,en,manual
+ليمونادة,lemonade,ar,manual
+smoothie,smoothie_fruit,en,manual
+fruit smoothie,smoothie_fruit,en,manual
+سموذي,smoothie_fruit,ar,manual
+chips,potato_chips,en,manual
+potato chips,potato_chips,en,manual
+crisps,potato_chips,en,manual
+شيبسي,potato_chips,ar,manual
+popcorn,popcorn_plain,en,manual
+plain popcorn,popcorn_plain,en,manual
+فشار,popcorn_plain,ar,manual
+butter popcorn,popcorn_butter,en,manual
+فشار بالزبدة,popcorn_butter,ar,manual
+chocolate,chocolate_bar,en,manual
+chocolate bar,chocolate_bar,en,manual
+شوكولاتة,chocolate_bar,ar,manual
+chocolate chip cookies,cookies_chocolate_chip,en,manual
+بسكويت شوكولاتة,cookies_chocolate_chip,ar,manual
+chocolate cake,cake_chocolate,en,manual
+cake,cake_chocolate,en,manual
+كيك شوكولاتة,cake_chocolate,ar,manual
+vanilla ice cream,ice_cream_vanilla,en,manual
+ice cream,ice_cream_vanilla,en,manual
+ايس كريم,ice_cream_vanilla,ar,manual
+donut,donut_glazed,en,manual
+glazed donut,donut_glazed,en,manual
+دونات,donut_glazed,ar,manual
+gummy candy,candy_gummy,en,manual
+candy,candy_gummy,en,manual
+حلوى,candy_gummy,ar,manual
+granola bar,granola_bar,en,manual
+بار جرانولا,granola_bar,ar,manual
+mixed nuts,nuts_mixed,en,manual
+nuts,nuts_mixed,en,manual
+مكسرات,nuts_mixed,ar,manual
+peanuts,peanuts,en,manual
+فول سوداني,peanuts,ar,manual
+dates,dates,en,manual
+تمر,dates,ar,manual
+dark chocolate,dark_chocolate,en,manual
+شوكولاتة داكنة,dark_chocolate,ar,manual
+basbousa,basbousa,en,manual
+بسبوسة,basbousa,ar,manual
+kunafa,kunafa,en,manual
+كنافة,kunafa,ar,manual
+rice pudding,rice_pudding,en,manual
+ارز باللبن,rice_pudding,ar,manual
+أرز باللبن,rice_pudding,ar,manual
+grapes,grapes,en,manual
+عنب,grapes,ar,manual
+blueberries,blueberries,en,manual
+blueberry,blueberries,en,manual
+توت أزرق,blueberries,ar,manual
+mango,mango,en,manual
+مانجو,mango,ar,manual
+watermelon,watermelon,en,manual
+بطيخ,watermelon,ar,manual
+pineapple,pineapple,en,manual
+أناناس,pineapple,ar,manual
+avocado,avocado,en,manual
+أفوكادو,avocado,ar,manual
+steamed broccoli,broccoli_steamed,en,manual
+raw carrot,carrots_raw,en,manual
+cucumber,cucumber,en,manual
+خيار,cucumber,ar,manual
+tomato,tomato,en,manual
+spinach,spinach,en,manual
+سبانخ,spinach,ar,manual
+corn,corn_cooked,en,manual
+cooked corn,corn_cooked,en,manual
+ذرة,corn_cooked,ar,manual
+peas,peas_cooked,en,manual
+cooked peas,peas_cooked,en,manual
+بسلة,peas_cooked,ar,manual
+salad,mixed_salad,en,manual
+mixed salad,mixed_salad,en,manual
+سلطة,mixed_salad,ar,manual
+lentils,lentils_cooked,en,manual
+cooked lentils,lentils_cooked,en,manual
+عدس,lentils_cooked,ar,manual
+chickpeas,chickpeas_cooked,en,manual
+حمص حب,chickpeas_cooked,ar,manual
+black beans,beans_black,en,manual
+فاصوليا سوداء,beans_black,ar,manual
+kidney beans,beans_kidney,en,manual
+فاصوليا حمراء,beans_kidney,ar,manual
+tofu,tofu_firm,en,manual
+firm tofu,tofu_firm,en,manual
+توفو,tofu_firm,ar,manual
+veggie burger,veggie_burger,en,manual
+برجر نباتي,veggie_burger,ar,manual
+plain chicken breast,chicken_breast_cooked,en,manual
+whole grain bread,whole_wheat_bread,en,manual

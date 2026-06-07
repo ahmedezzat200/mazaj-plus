@@ -39,16 +39,15 @@ class LoginView(APIView):
             user_data = CurrentUserSerializer(user).data
             return success_response({"user": user_data})
         else:
-            return error_response("AUTHENTICATION_FAILED", "Invalid email or password.", stat=status.HTTP_401_UNAUTHORIZED)
+            return error_response("AUTHENTICATION_FAILED", "Invalid email or password.", stat=status.HTTP_400_BAD_REQUEST)
 
 class LogoutView(APIView):
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request):
         user = request.user
+        log_audit(actor=user, action="logout_success", resource_type="Session")
         logout(request)
-        if user.is_authenticated:
-            log_audit(actor=user, action="logout_success", resource_type="Session")
         return success_response({"message": "Successfully logged out."})
 
 class CurrentUserView(APIView):

@@ -1,9 +1,48 @@
 import { useState } from 'react';
-import { Outlet } from 'react-router';
+import { Outlet, useLocation, Link } from 'react-router';
 import { AdminSidebar } from './AdminSidebar';
 import { AdminTopBar } from './AdminTopBar';
-import { X } from 'lucide-react';
+import { X, ChevronRight } from 'lucide-react';
 import { Button } from '../ui/button';
+
+const PATH_LABELS: Record<string, string> = {
+  '': 'Dashboard',
+  'users': 'Users',
+  'food-data': 'Food Data',
+  'alternatives': 'Healthy Alternatives',
+  'daily-tips': 'Daily Tips',
+  'subscriptions': 'Subscriptions',
+  'activity': 'Activity Monitoring',
+  'uploads': 'Uploads',
+};
+
+function AdminBreadcrumbs() {
+  const location = useLocation();
+  const segments = location.pathname.replace(/^\/admin\/?/, '').split('/').filter(Boolean);
+
+  if (segments.length === 0) return null;
+
+  return (
+    <nav className="flex items-center gap-1 px-6 py-2 text-sm text-muted-foreground border-b border-border">
+      <Link to="/admin" className="hover:text-foreground transition-colors">Admin</Link>
+      {segments.map((seg, i) => {
+        const path = '/admin/' + segments.slice(0, i + 1).join('/');
+        const label = PATH_LABELS[seg] ?? seg;
+        const isLast = i === segments.length - 1;
+        return (
+          <span key={path} className="flex items-center gap-1">
+            <ChevronRight className="h-3 w-3" />
+            {isLast ? (
+              <span className="text-foreground font-medium">{label}</span>
+            ) : (
+              <Link to={path} className="hover:text-foreground transition-colors">{label}</Link>
+            )}
+          </span>
+        );
+      })}
+    </nav>
+  );
+}
 
 export function AdminLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -42,6 +81,9 @@ export function AdminLayout() {
       <div className="flex-1 flex flex-col min-w-0">
         {/* Top bar */}
         <AdminTopBar onMenuClick={() => setSidebarOpen(true)} />
+
+        {/* Breadcrumbs */}
+        <AdminBreadcrumbs />
 
         {/* Page content */}
         <main className="flex-1 overflow-auto">

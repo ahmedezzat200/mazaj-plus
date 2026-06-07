@@ -17,6 +17,7 @@ import {
   SelectValue,
 } from '../ui/select';
 import { toast } from 'sonner';
+import { adminApi } from '../../../lib/api';
 
 interface FoodItem {
   id: string;
@@ -35,9 +36,10 @@ interface EditFoodItemModalProps {
   item: FoodItem | null;
   isOpen: boolean;
   onClose: () => void;
+  onUpdated?: () => void;
 }
 
-export function EditFoodItemModal({ item, isOpen, onClose }: EditFoodItemModalProps) {
+export function EditFoodItemModal({ item, isOpen, onClose, onUpdated }: EditFoodItemModalProps) {
   const [formData, setFormData] = useState({
     name: '',
     calories: '',
@@ -75,12 +77,24 @@ export function EditFoodItemModal({ item, isOpen, onClose }: EditFoodItemModalPr
 
     setIsSubmitting(true);
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const result = await adminApi.editFood(Number(item!.id), {
+      name: formData.name,
+      calories: parseFloat(formData.calories),
+      protein_g: parseFloat(formData.protein) || 0,
+      fat_g: parseFloat(formData.fat) || 0,
+      carbs_g: parseFloat(formData.carbs) || 0,
+      category: formData.category,
+    });
 
-    toast.success('Food item updated successfully');
+    if (result.ok) {
+      toast.success('Food item updated successfully');
+      onUpdated?.();
+      onClose();
+    } else {
+      toast.error(result.error?.message || 'Failed to update food item');
+    }
+
     setIsSubmitting(false);
-    onClose();
   };
 
   const handleChange = (field: string, value: string) => {

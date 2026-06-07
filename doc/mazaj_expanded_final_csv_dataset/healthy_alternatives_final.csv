@@ -1,0 +1,93 @@
+﻿original_food_key,alternative_food_key,reason
+white_bread,whole_wheat_bread,Whole wheat bread provides more fiber than white bread.
+flour_ap_bleached,flour_whole_wheat,Whole wheat flour provides more fiber than refined all-purpose flour.
+flour_ap_unbleached,flour_whole_wheat,Whole wheat flour can support a more filling choice than refined flour.
+flour_ap_unenriched,flour_whole_wheat,Whole wheat flour is a higher-fiber option than unenriched refined flour.
+flour_bread_white,flour_whole_wheat,Whole wheat flour can be a higher-fiber option for baking when suitable.
+flour_rice_white,flour_rice_brown,Brown rice flour provides a less refined rice-based option.
+flour_pastry,flour_whole_wheat,Whole wheat flour can add more fiber than pastry flour when the recipe allows.
+milk_whole,milk_2_percent,Reduced-fat milk lowers fat while keeping a similar dairy profile.
+milk_whole,milk_1_percent,Low-fat milk can reduce total fat intake compared with whole milk.
+milk_2_percent,milk_1_percent,One percent milk provides a lighter option than two percent milk.
+milk_1_percent,milk_skim,Skim milk is the lowest-fat milk option in the current database.
+american_cheese,mozzarella_cheese,Part-skim mozzarella is a lighter cheese option than processed American cheese.
+american_cheese,swiss_cheese,Swiss cheese is lower in sodium than processed American cheese in the current database.
+parmesan_cheese,swiss_cheese,Swiss cheese is a lower-sodium cheese option in the current database.
+queso_seco,mozzarella_cheese,Part-skim mozzarella is a less salty cheese option than dry white cheese.
+cheddar_cheese,mozzarella_cheese,Part-skim mozzarella can be a lighter cheese choice than cheddar.
+ricotta_cheese,cottage_cheese_lowfat,Low-fat cottage cheese is a lighter dairy option than whole-milk ricotta.
+greek_yogurt_strawberry,greek_yogurt_plain,Plain nonfat Greek yogurt has less added sweetness than strawberry yogurt.
+beef_hot_dog,ground_turkey_93_lean,Lean ground turkey is a less processed protein option than a hot dog.
+beef_hot_dog,chicken_breast_cooked,Chicken breast is a leaner protein option than a hot dog.
+beef_breakfast_sausage,turkey_breakfast_sausage,Turkey breakfast sausage is a lighter option than beef breakfast sausage.
+beef_breakfast_sausage,chicken_breast_cooked,"Chicken breast is a leaner, less processed option."
+italian_pork_sausage,ground_turkey_93_lean,Lean ground turkey can reduce saturated fat compared with pork sausage.
+italian_pork_sausage,chicken_breast_cooked,Chicken breast is a leaner protein option than pork sausage.
+chorizo_pork,ground_turkey_93_lean,Lean ground turkey is a lighter protein choice than chorizo.
+chorizo_pork,chicken_breast_cooked,Chicken breast can replace chorizo when a leaner protein is preferred.
+bacon_cooked,deli_ham,"Deli ham is lower in calories and fat than bacon in the current database, but still high in sodium."
+bacon_cooked,chicken_breast_cooked,"Chicken breast is a leaner, less fatty protein option than bacon."
+deli_ham,chicken_breast_cooked,Chicken breast is a lower-sodium option than deli ham in the current database.
+ham_restaurant,chicken_breast_cooked,Chicken breast is a leaner and lower-sodium protein option.
+american_cheese_restaurant,mozzarella_cheese,Part-skim mozzarella is a lighter option than restaurant-style American cheese.
+tbone_steak_grilled,beef_tenderloin_roasted,Beef tenderloin is a leaner steak option in the current database.
+porterhouse_steak,beef_eye_round_raw,Eye of round is a leaner beef cut in the current database.
+beef_top_loin_steak,beef_top_round_raw,Top round is a leaner beef cut in the current database.
+ketchup,diced_tomatoes_canned,Diced tomatoes offer tomato flavor with less sugar than ketchup.
+ketchup,tomatoes_grape,Fresh tomatoes are a lighter tomato option than ketchup.
+salsa,diced_tomatoes_canned,Diced tomatoes can be a lower-sodium base compared with salsa.
+yellow_mustard,garlic_raw,Garlic can add flavor without relying on a salty condiment.
+dill_pickles,carrots_frozen,Carrots provide crunch with much less sodium than dill pickles.
+green_olives,tomatoes_grape,Grape tomatoes are a lower-sodium snack option than stuffed olives.
+marinara_sauce,diced_tomatoes_canned,Diced tomatoes can be used as a simpler sauce base with less sodium.
+granulated_sugar,strawberries_raw,Strawberries provide natural sweetness with fiber and less concentrated sugar.
+granulated_sugar,apple_granny_smith,Apple can add natural sweetness with fiber instead of refined sugar.
+oatmeal_raisin_cookies,apple_honeycrisp,Apple is a lighter sweet option with natural fiber.
+oatmeal_raisin_cookies,strawberries_raw,Strawberries are a lighter sweet option than cookies.
+figs_dried,strawberries_raw,Fresh strawberries are less sugar-dense than dried figs.
+onion_rings_baked,broccoli_raw,Broccoli is a lighter vegetable option than onion rings.
+onion_rings_baked,carrots_frozen,Carrots offer a vegetable side with less fat than onion rings.
+fried_rice_chinese,bean_pupusas,"Bean pupusas provide fiber-containing legumes, but portions should still be considered."
+sweet_sour_pork,chicken_breast_cooked,Chicken breast is a leaner protein option than sweet and sour pork.
+pork_tamale,bean_pupusas,Bean pupusas provide more legume-based fiber than pork tamales in the current database.
+coconut_oil,green_olives,"Olives provide fat in a whole-food form, though sodium should still be considered."
+peanut_butter,hummus,Hummus can be a savory spread option with legumes and less fat density per 100g.
+almonds_dry_roasted,sunflower_seeds,Sunflower seeds are an alternative crunchy seed option; portion size still matters.
+beef_hot_dog,hummus,Hummus can be used as a less processed snack or spread option.
+oatmeal_raisin_cookies,oranges_raw,Orange is a lighter sweet option with hydration and fiber.
+granulated_sugar,kiwi_raw,Kiwi provides natural sweetness with fiber and micronutrients.
+cola_regular,sparkling_water,Sparkling water can replace cola without added sugar.
+cola_regular,water,Water is the simplest zero-sugar drink option.
+cola_regular,cola_diet,Diet cola can reduce added sugar compared with regular cola.
+tea_sweetened,tea_unsweetened,Unsweetened tea avoids added sugar.
+coffee_milk_sugar,coffee_black,Black coffee avoids added sugar and extra calories.
+energy_drink,water,Water avoids added sugar and caffeine from energy drinks.
+sports_drink,water,Water is usually enough for regular hydration without added sugar.
+lemonade,water,Water avoids added sugar compared with lemonade.
+french_fries,potato_baked,Baked potato can be a lower-fat side than fried potatoes.
+french_fries,rice_white_cooked,Cooked rice can be a simpler lower-fat side compared with fried potatoes.
+potato_chips,popcorn_plain,Plain popcorn can provide crunch with less fat than chips.
+potato_chips,carrots_raw,Carrots provide crunch with less fat and sodium than chips.
+popcorn_butter,popcorn_plain,Plain popcorn reduces added fat compared with butter popcorn.
+chocolate_bar,dark_chocolate,Dark chocolate can be a more intense option with a smaller portion.
+cookies_chocolate_chip,apple,A whole apple provides natural sweetness and fiber.
+cake_chocolate,strawberries,Strawberries offer a lighter sweet option with fiber.
+ice_cream_vanilla,greek_yogurt_plain,Plain Greek yogurt can be a higher-protein lighter option.
+donut_glazed,banana,Banana provides natural sweetness and fiber.
+candy_gummy,grapes,Grapes can provide a naturally sweet alternative.
+burger_beef,chicken_breast_grilled,Grilled chicken breast is a leaner protein option.
+beef_burger,chicken_breast_grilled,Grilled chicken breast is a leaner protein option.
+chicken_fried,chicken_breast_grilled,Grilled chicken breast reduces frying fat.
+fried_chicken_piece,chicken_breast_grilled,Grilled chicken breast is a leaner choice than fried chicken.
+pizza_slice,mixed_salad,Mixed salad is a lighter side option with vegetables.
+bread_white,bread_whole_wheat,Whole wheat bread provides more fiber than white bread.
+orange_juice,orange,Whole orange provides fiber compared with juice.
+apple_juice,apple,Whole apple provides fiber compared with juice.
+pasta_alfredo,spaghetti_tomato_sauce,Tomato-based pasta is often lighter than creamy pasta.
+sausage_beef,turkey_slices,Turkey slices can be a leaner processed-meat option.
+hot_dog,chicken_breast_grilled,Grilled chicken breast is a leaner protein option.
+cake_chocolate,greek_yogurt_plain,Greek yogurt can be a lighter protein-rich sweet base.
+basbousa,dates,Dates can provide natural sweetness in a smaller portion.
+kunafa,strawberries,Strawberries are a lighter sweet option.
+hawawshi,sandwich_turkey,Turkey sandwich can be a lighter sandwich option.
+french_fries,sweet_potato_baked,Baked sweet potato is a filling option with fiber.

@@ -112,7 +112,7 @@ export function InfoFooter({ onNavigate }: InfoFooterProps) {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Mazaj+. An academic prototype nutrition decision-support platform.
+            © {new Date().getFullYear()} Mazaj+. A nutrition decision-support platform.
           </p>
         </div>
       </div>

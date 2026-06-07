@@ -43,10 +43,3 @@ def require_active_subscription(subscription):
     if not subscription or subscription.status != SubscriptionStatus.ACTIVE:
         raise SubscriptionRequiredError("User must have an active subscription.")
     return True
-
-def require_feature_access(user, feature_key):
-    """Ensure user has access and usage limits are not exceeded."""
-    if not user or not user.is_authenticated:
-        raise AuthenticationError("User must be authenticated.")
-    # TODO: Full feature access logic will be added in later phases.
-    raise NotImplementedError("Feature access logic is not fully implemented yet.")

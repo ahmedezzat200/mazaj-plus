@@ -1,5 +1,6 @@
 import { format } from 'date-fns';
 import { Leaf } from 'lucide-react';
+import { InBodyMarkdown } from './InBodyAdvisoryCard';
 
 interface AssistantMessageProps {
   content: string;
@@ -7,6 +8,8 @@ interface AssistantMessageProps {
 }
 
 export function AssistantMessage({ content, timestamp }: AssistantMessageProps) {
+  const hasMarkdown = /(^|\n)#{1,6}\s|(^|\n)\s*-\s|\*\*[^*]+\*\*/.test(content);
+
   return (
     <div className="flex justify-start">
       <div className="max-w-2xl">
@@ -16,7 +19,11 @@ export function AssistantMessage({ content, timestamp }: AssistantMessageProps) 
           </div>
           <div className="flex-1">
             <div className="bg-card border border-border rounded-2xl rounded-tl-sm px-5 py-4 shadow-sm">
-              <p className="text-sm leading-relaxed text-foreground whitespace-pre-wrap">{content}</p>
+              {hasMarkdown ? (
+                <InBodyMarkdown content={content} compact />
+              ) : (
+                <p className="text-sm leading-relaxed text-foreground whitespace-pre-wrap">{content}</p>
+              )}
             </div>
             <p className="text-xs text-muted-foreground mt-2">
               {format(timestamp, 'h:mm a')}

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+import { toast } from 'sonner';
 import { profileApi, optionsApi, UserProfileData } from '../../../../lib/api';
 import { useAuth } from '../../../../contexts/AuthContext';
-import { useOutletContext, Link } from 'react-router';
+import { useOutletContext, Link, useBlocker } from 'react-router';
 import { UserData } from '../DashboardLayout';
 import { Card, CardContent, CardHeader, CardTitle } from '../../ui/card';
 import { Button } from '../../ui/button';
@@ -24,6 +25,7 @@ export function ProfilePage() {
   
   const [loading, setLoading] = useState(true);
   const [isEditing, setIsEditing] = useState(false);
+  const [isDirty, setIsDirty] = useState(false);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
@@ -42,6 +44,15 @@ export function ProfilePage() {
   useEffect(() => {
     fetchInitialData();
   }, []);
+
+  useEffect(() => {
+    if (!isEditing || !isDirty) return;
+    const handler = (e: BeforeUnloadEvent) => { e.preventDefault(); };
+    window.addEventListener('beforeunload', handler);
+    return () => window.removeEventListener('beforeunload', handler);
+  }, [isEditing, isDirty]);
+
+  const blocker = useBlocker(isEditing && isDirty);
 
   const fetchInitialData = async () => {
     setLoading(true);
@@ -86,6 +97,7 @@ export function ProfilePage() {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
+    setIsDirty(true);
     setSuccess(null);
     setError(null);
   };
@@ -94,11 +106,12 @@ export function ProfilePage() {
     if (!isEditing) return;
     setFormData(prev => {
       const current = prev[type];
-      const next = current.includes(id) 
-        ? current.filter(i => i !== id) 
+      const next = current.includes(id)
+        ? current.filter(i => i !== id)
         : [...current, id];
       return { ...prev, [type]: next };
     });
+    setIsDirty(true);
     setSuccess(null);
     setError(null);
   };
@@ -122,15 +135,19 @@ export function ProfilePage() {
       const res = await profileApi.updateMe(payload);
       if (res.ok) {
         setSuccess('Profile updated successfully.');
+        toast.success('Profile updated');
         setProfile(res.profile || null);
         if (res.profile) updateFormDataFromProfile(res.profile);
         setIsEditing(false);
+        setIsDirty(false);
         await refreshUser();
       } else {
         setError(res.error?.message || 'Please check the profile information and try again.');
+        toast.error(res.error?.message || 'Could not save profile.');
       }
     } catch (err) {
       setError('Unable to reach the server. Please check your connection.');
+      toast.error('Unable to reach the server.');
     } finally {
       setSaving(false);
     }
@@ -139,6 +156,7 @@ export function ProfilePage() {
   const handleCancel = () => {
     if (profile) updateFormDataFromProfile(profile);
     setIsEditing(false);
+    setIsDirty(false);
     setError(null);
     setSuccess(null);
   };
@@ -165,6 +183,20 @@ export function ProfilePage() {
 
   return (
     <div className="p-4 md:p-6 lg:p-8 max-w-5xl mx-auto space-y-6">
+
+      {/* Unsaved changes blocker dialog */}
+      {blocker.state === 'blocked' && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+          <div className="bg-background rounded-xl shadow-xl p-6 max-w-sm w-full mx-4 space-y-4">
+            <h3 className="text-base font-semibold">Unsaved Changes</h3>
+            <p className="text-sm text-muted-foreground">You have unsaved profile changes. Are you sure you want to leave?</p>
+            <div className="flex justify-end gap-2">
+              <Button variant="outline" size="sm" onClick={() => blocker.reset()}>Stay</Button>
+              <Button variant="destructive" size="sm" onClick={() => blocker.proceed()}>Leave</Button>
+            </div>
+          </div>
+        </div>
+      )}
       
       {/* Messages */}
       {success && (

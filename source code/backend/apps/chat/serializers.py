@@ -6,9 +6,34 @@ class ChatMessageRequestSerializer(serializers.Serializer):
     session_id = serializers.IntegerField(required=False, allow_null=True)
 
 class ChatMessageSerializer(serializers.ModelSerializer):
+    foods = serializers.SerializerMethodField()
+    warnings = serializers.SerializerMethodField()
+    nutrition_plan = serializers.SerializerMethodField()
+    mood_name = serializers.SerializerMethodField()
+
     class Meta:
         model = ChatMessage
-        fields = ['id', 'sender', 'message', 'created_at']
+        fields = ['id', 'sender', 'message', 'created_at', 'foods', 'warnings', 'nutrition_plan', 'mood_name']
+
+    def get_foods(self, obj):
+        if hasattr(obj, 'recommendation') and obj.recommendation:
+            return obj.recommendation.recommended_foods
+        return []
+
+    def get_warnings(self, obj):
+        if hasattr(obj, 'recommendation') and obj.recommendation:
+            return obj.recommendation.warnings
+        return []
+
+    def get_nutrition_plan(self, obj):
+        if hasattr(obj, 'recommendation') and obj.recommendation:
+            return obj.recommendation.nutrition_plan
+        return None
+
+    def get_mood_name(self, obj):
+        if hasattr(obj, 'recommendation') and obj.recommendation:
+            return obj.recommendation.mood_name
+        return ""
 
 class ChatRecommendationSerializer(serializers.ModelSerializer):
     class Meta:

@@ -27,7 +27,7 @@ export function UpgradePanel({ currentTier }: UpgradePanelProps) {
   const message = getUpgradeMessage();
 
   return (
-    <Card className="bg-gradient-to-br from-accent/10 via-secondary/5 to-primary/5 border-accent/20">
+    <Card className="bg-gradient-to-br from-accent/10 via-secondary/5 to-primary/5 border-accent/20 hover:shadow-md transition-shadow duration-200">
       <CardContent className="p-6 md:p-8">
         <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
           <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">

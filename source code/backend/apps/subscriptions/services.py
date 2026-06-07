@@ -1,6 +1,6 @@
 from django.utils import timezone
 from django.db import transaction
-from .models import UsageLimitCounter, Subscription
+from .models import UsageLimitCounter, Subscription, SubscriptionCheckout
 from apps.common.enums import Tier, SubscriptionStatus, FeatureKey
 from apps.users.services import log_audit
 
@@ -78,7 +78,8 @@ def get_subscription_data(user):
         "tier": sub.tier,
         "is_active": is_active,
         "features": features,
-        "limits": limits
+        "limits": limits,
+        "expiry_date": sub.expiry_date.isoformat() if sub.expiry_date else None,
     }
 
 def upgrade_subscription(user, target_tier):
@@ -103,4 +104,48 @@ def upgrade_subscription(user, target_tier):
             resource_id=str(sub.id)
         )
     
+    return get_subscription_data(user)
+
+def create_subscription_checkout(user, target_tier):
+    if target_tier not in [Tier.PRO, Tier.ULTRA]:
+        raise ValueError("INVALID_TIER")
+    
+    checkout = SubscriptionCheckout.objects.create(
+        user=user,
+        target_tier=target_tier,
+        status='PENDING'
+    )
+    return checkout
+
+def complete_subscription_checkout(user, checkout_id):
+    try:
+        checkout = SubscriptionCheckout.objects.get(checkout_id=checkout_id, user=user)
+    except SubscriptionCheckout.DoesNotExist:
+        raise ValueError("CHECKOUT_NOT_FOUND")
+
+    if checkout.status != 'PENDING':
+        raise ValueError("CHECKOUT_NOT_PENDING")
+
+    with transaction.atomic():
+        sub, created = Subscription.objects.get_or_create(
+            user=user,
+            defaults={'tier': checkout.target_tier, 'status': SubscriptionStatus.ACTIVE, 'activation_date': timezone.now()}
+        )
+        if not created:
+            sub.tier = checkout.target_tier
+            sub.status = SubscriptionStatus.ACTIVE
+            sub.activation_date = timezone.now()
+            sub.save()
+
+        checkout.status = 'COMPLETED'
+        checkout.completed_at = timezone.now()
+        checkout.save()
+
+        log_audit(
+            actor=user,
+            action=f"subscription_upgraded_{checkout.target_tier}_via_checkout",
+            resource_type="Subscription",
+            resource_id=str(sub.id)
+        )
+
     return get_subscription_data(user)

@@ -1,0 +1,5 @@
+﻿source_key,source_name,source_url,allowed_use,notes
+usda_fooddata_central,USDA FoodData Central,https://fdc.nal.usda.gov/,Future row-level source verification and nutrition-value replacement,Official nutrition database. Preserve the exact FDC ID when values are imported.
+open_food_facts,Open Food Facts,https://world.openfoodfacts.org/,Future packaged-food coverage and barcode/product reference,Community-maintained data. Review values before enabling safety-sensitive use.
+mazaj_curated_demo,Mazaj+ Curated Demo Dataset,,Current academic prototype dataset,The current supplied files did not preserve row-level original source identifiers.
+usda_fooddata_central_fndds,USDA FoodData Central — FNDDS 2021-2023,https://fdc.nal.usda.gov/download-datasets.html,Offline import of official per-100g nutrient values for lookup and daily tracking,FDC ID is preserved in food_sources.csv. Imported rows are not enabled for recommendations or nutrition plans until Mazaj+ safety review is completed.

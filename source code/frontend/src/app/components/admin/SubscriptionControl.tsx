@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Search, Filter, Eye, Edit, Power, CheckCircle } from 'lucide-react';
 import { Card } from '../ui/card';
 import { Input } from '../ui/input';
@@ -21,81 +21,60 @@ import {
 } from '../ui/table';
 import { SubscriptionDetailDrawer } from './SubscriptionDetailDrawer';
 import { TierUpdateModal } from './TierUpdateModal';
-
-interface Subscription {
-  id: string;
-  userName: string;
-  email: string;
-  tier: 'Pro' | 'Ultra';
-  status: 'Active' | 'Inactive' | 'Cancelled';
-  activationDate: string;
-  paymentStatus: 'Paid' | 'Pending' | 'Failed';
-}
-
-const mockSubscriptions: Subscription[] = [
-  {
-    id: '1',
-    userName: 'Sarah Johnson',
-    email: 'sarah.j@example.com',
-    tier: 'Ultra',
-    status: 'Active',
-    activationDate: '2026-03-15',
-    paymentStatus: 'Paid',
-  },
-  {
-    id: '2',
-    userName: 'Michael Chen',
-    email: 'michael.chen@example.com',
-    tier: 'Pro',
-    status: 'Active',
-    activationDate: '2026-04-02',
-    paymentStatus: 'Paid',
-  },
-  {
-    id: '3',
-    userName: 'David Kim',
-    email: 'david.kim@example.com',
-    tier: 'Pro',
-    status: 'Active',
-    activationDate: '2026-03-28',
-    paymentStatus: 'Paid',
-  },
-  {
-    id: '4',
-    userName: 'Jessica Martinez',
-    email: 'jessica.m@example.com',
-    tier: 'Ultra',
-    status: 'Active',
-    activationDate: '2026-04-10',
-    paymentStatus: 'Pending',
-  },
-];
+import { adminApi, AdminSubscription } from '../../../lib/api';
+import { toast } from 'sonner';
 
 export function SubscriptionControl() {
   const [searchQuery, setSearchQuery] = useState('');
   const [tierFilter, setTierFilter] = useState('all');
-  const [subscriptions] = useState<Subscription[]>(mockSubscriptions);
-  const [selectedSubscription, setSelectedSubscription] = useState<Subscription | null>(null);
+  const [subscriptions, setSubscriptions] = useState<AdminSubscription[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [selectedSubscription, setSelectedSubscription] = useState<AdminSubscription | null>(null);
   const [isDetailOpen, setIsDetailOpen] = useState(false);
-  const [tierUpdateSubscription, setTierUpdateSubscription] = useState<Subscription | null>(null);
+  const [tierUpdateSubscription, setTierUpdateSubscription] = useState<AdminSubscription | null>(null);
+
+  const fetchSubscriptions = useCallback(async () => {
+    setLoading(true);
+    const result = await adminApi.getSubscriptions();
+    if (result.ok && result.data) {
+      setSubscriptions(result.data.subscriptions ?? []);
+    } else {
+      toast.error(result.error?.message || 'Failed to load subscriptions');
+    }
+    setLoading(false);
+  }, []);
+
+  useEffect(() => { fetchSubscriptions(); }, [fetchSubscriptions]);
+
+  const handleToggleStatus = async (sub: AdminSubscription) => {
+    const result = await adminApi.toggleSubscriptionStatus(Number(sub.id));
+    if (result.ok) {
+      toast.success(`Subscription ${sub.status === 'Active' ? 'deactivated' : 'activated'}`);
+      fetchSubscriptions();
+    } else {
+      toast.error(result.error?.message || 'Failed to update subscription');
+    }
+  };
 
   const filteredSubscriptions = subscriptions.filter((sub) => {
     const matchesSearch =
-      sub.userName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      sub.email.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesTier = tierFilter === 'all' || sub.tier === tierFilter;
+      sub.user_name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      sub.user_email.toLowerCase().includes(searchQuery.toLowerCase());
+    const tier = sub.tier?.toUpperCase() ?? '';
+    const matchesTier = tierFilter === 'all' || tier === tierFilter.toUpperCase();
     return matchesSearch && matchesTier;
   });
 
-  const handleViewSubscription = (subscription: Subscription) => {
-    setSelectedSubscription(subscription);
-    setIsDetailOpen(true);
+  const toDisplayTier = (tier?: string) => {
+    const t = tier?.toUpperCase();
+    if (t === 'PRO') return 'Pro';
+    if (t === 'ULTRA') return 'Ultra';
+    return 'Free';
   };
 
   return (
     <>
       <Card className="p-6">
-        {/* Search and Filters */}
         <div className="flex flex-col sm:flex-row gap-4 mb-6">
           <div className="flex-1 relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -119,7 +98,6 @@ export function SubscriptionControl() {
           </Select>
         </div>
 
-        {/* Subscriptions Table */}
         <div className="border border-border rounded-lg overflow-hidden">
           <Table>
             <TableHeader>
@@ -129,14 +107,19 @@ export function SubscriptionControl() {
                 <TableHead>Tier</TableHead>
                 <TableHead>Status</TableHead>
                 <TableHead>Activation Date</TableHead>
-                <TableHead>Payment Status</TableHead>
                 <TableHead className="text-right">Actions</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              {filteredSubscriptions.length === 0 ? (
+              {loading ? (
                 <TableRow>
-                  <TableCell colSpan={7} className="text-center py-12">
+                  <TableCell colSpan={6} className="text-center py-8 text-muted-foreground">
+                    Loading subscriptions...
+                  </TableCell>
+                </TableRow>
+              ) : filteredSubscriptions.length === 0 ? (
+                <TableRow>
+                  <TableCell colSpan={6} className="text-center py-12">
                     <CheckCircle className="h-12 w-12 mx-auto mb-3 text-muted-foreground" />
                     <h4 className="mb-2">No Subscriptions Found</h4>
                     <p className="text-sm text-muted-foreground">
@@ -147,45 +130,30 @@ export function SubscriptionControl() {
               ) : (
                 filteredSubscriptions.map((subscription) => (
                   <TableRow key={subscription.id}>
-                    <TableCell className="font-medium">{subscription.userName}</TableCell>
-                    <TableCell className="text-muted-foreground">{subscription.email}</TableCell>
+                    <TableCell className="font-medium">{subscription.user_name}</TableCell>
+                    <TableCell className="text-muted-foreground">{subscription.user_email}</TableCell>
                     <TableCell>
                       <Badge
-                        variant={subscription.tier === 'Ultra' ? 'default' : 'secondary'}
-                        className={subscription.tier === 'Ultra' ? 'bg-primary' : ''}
+                        variant={toDisplayTier(subscription.tier) === 'Ultra' ? 'default' : 'secondary'}
+                        className={toDisplayTier(subscription.tier) === 'Ultra' ? 'bg-primary' : ''}
                       >
-                        {subscription.tier}
+                        {toDisplayTier(subscription.tier)}
                       </Badge>
                     </TableCell>
                     <TableCell>
-                      <Badge
-                        variant={subscription.status === 'Active' ? 'default' : 'secondary'}
-                      >
+                      <Badge variant={subscription.status === 'Active' ? 'default' : 'secondary'}>
                         {subscription.status}
                       </Badge>
                     </TableCell>
                     <TableCell className="text-muted-foreground">
-                      {new Date(subscription.activationDate).toLocaleDateString()}
-                    </TableCell>
-                    <TableCell>
-                      <Badge
-                        variant={
-                          subscription.paymentStatus === 'Paid'
-                            ? 'default'
-                            : subscription.paymentStatus === 'Pending'
-                            ? 'secondary'
-                            : 'destructive'
-                        }
-                      >
-                        {subscription.paymentStatus}
-                      </Badge>
+                      {subscription.activation_date ? new Date(subscription.activation_date).toLocaleDateString() : '—'}
                     </TableCell>
                     <TableCell className="text-right">
                       <div className="flex items-center justify-end gap-2">
                         <Button
                           variant="ghost"
                           size="icon"
-                          onClick={() => handleViewSubscription(subscription)}
+                          onClick={() => { setSelectedSubscription(subscription); setIsDetailOpen(true); }}
                         >
                           <Eye className="h-4 w-4" />
                         </Button>
@@ -196,8 +164,13 @@ export function SubscriptionControl() {
                         >
                           <Edit className="h-4 w-4" />
                         </Button>
-                        <Button variant="ghost" size="icon">
-                          <Power className="h-4 w-4" />
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          title={subscription.is_active ? 'Deactivate' : 'Activate'}
+                          onClick={() => handleToggleStatus(subscription)}
+                        >
+                          <Power className={`h-4 w-4 ${subscription.status === 'Active' ? 'text-destructive' : 'text-primary'}`} />
                         </Button>
                       </div>
                     </TableCell>
@@ -209,18 +182,17 @@ export function SubscriptionControl() {
         </div>
       </Card>
 
-      {/* Subscription Detail Drawer */}
       <SubscriptionDetailDrawer
-        subscription={selectedSubscription}
+        subscription={selectedSubscription as any}
         isOpen={isDetailOpen}
         onClose={() => setIsDetailOpen(false)}
       />
 
-      {/* Tier Update Modal */}
       <TierUpdateModal
-        subscription={tierUpdateSubscription}
+        subscription={tierUpdateSubscription as any}
         isOpen={!!tierUpdateSubscription}
         onClose={() => setTierUpdateSubscription(null)}
+        onUpdated={fetchSubscriptions}
       />
     </>
   );

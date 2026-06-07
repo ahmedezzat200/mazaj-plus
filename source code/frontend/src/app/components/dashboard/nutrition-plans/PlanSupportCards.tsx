@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '../../ui/card';
 import { Badge } from '../../ui/badge';
+import { Button } from '../../ui/button';
 import { User, ShieldCheck, Crown, Info } from 'lucide-react';
 import { UserData } from '../DashboardLayout';
 import { NutritionPlanData } from './NutritionPlansPage';

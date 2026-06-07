@@ -5,7 +5,6 @@ export function Pricing() {
     {
       name: "Free",
       priceEGP: "0",
-      priceUSD: "0",
       period: "forever",
       description: "Perfect for getting started with nutrition guidance",
       features: [
@@ -20,8 +19,7 @@ export function Pricing() {
     },
     {
       name: "Pro",
-      priceEGP: "500",
-      priceUSD: "10",
+      priceEGP: "300",
       period: "per month",
       description: "Enhanced features for deeper insights",
       features: [
@@ -37,8 +35,7 @@ export function Pricing() {
     },
     {
       name: "Ultra",
-      priceEGP: "800",
-      priceUSD: "16",
+      priceEGP: "500",
       period: "per month",
       description: "Complete nutrition decision support",
       features: [
@@ -80,7 +77,6 @@ export function Pricing() {
                       <span className="text-4xl font-semibold text-foreground">{plan.priceEGP}</span>
                       <span className="text-muted-foreground">EGP / {plan.period.replace('per ', '')}</span>
                     </div>
-                    <p className="text-sm text-muted-foreground mt-0.5">${plan.priceUSD} USD / {plan.period.replace('per ', '')}</p>
                   </>
                 )}
               </div>

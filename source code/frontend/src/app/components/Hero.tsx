@@ -1,29 +1,49 @@
 import { Link } from 'react-router';
+import { motion } from 'motion/react';
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/30 py-16 md:py-24">
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
+      {/* animated gradient blobs */}
+      <div aria-hidden className="absolute -top-24 -left-24 w-[28rem] h-[28rem] rounded-full bg-gradient-to-br from-primary/30 to-secondary/20 blur-3xl opacity-60 animate-pulse pointer-events-none" />
+      <div aria-hidden className="absolute -bottom-32 -right-24 w-[32rem] h-[32rem] rounded-full bg-gradient-to-br from-accent/20 to-primary/20 blur-3xl opacity-50 animate-pulse pointer-events-none" />
+
+      <div className="relative max-w-[1440px] mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="max-w-2xl">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            className="max-w-2xl"
+          >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-6 leading-tight">
               Nutrition guidance that understands your context
             </h1>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Mazaj+ is a chat-driven, rule-based nutrition decision-support platform that provides personalized recommendations based on your unique profile, preferences, and health conditions.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/register" className="px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all shadow-sm hover:shadow-md text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="flex flex-col sm:flex-row gap-4"
+            >
+              <Link to="/register" className="px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
                 Create Free Account
               </Link>
               <Link to="/login" className="px-8 py-3 bg-card text-foreground border border-border rounded-lg hover:bg-muted/50 transition-colors text-center">
                 Login
               </Link>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
-          <div className="relative">
-            <div className="bg-card rounded-2xl shadow-2xl p-6 border border-border">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96, y: 16 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.15, ease: 'easeOut' }}
+            className="relative"
+          >
+            <div className="backdrop-blur-xl bg-card/80 dark:bg-white/5 rounded-2xl shadow-2xl p-6 border border-white/20">
               <div className="bg-muted/50 rounded-lg p-4 mb-4">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full bg-secondary flex-shrink-0"></div>
@@ -75,7 +95,7 @@ export function Hero() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -2,7 +2,11 @@ import { Leaf, AlertTriangle, User, MessageSquare } from 'lucide-react';
 import { Button } from '../../ui/button';
 import { Link } from 'react-router';
 
-export function NoSafeRecommendationCard() {
+interface NoSafeRecommendationCardProps {
+  content?: string;
+}
+
+export function NoSafeRecommendationCard({ content }: NoSafeRecommendationCardProps) {
   return (
     <div className="flex justify-start">
       <div className="max-w-2xl w-full">
@@ -17,11 +21,10 @@ export function NoSafeRecommendationCard() {
                   <AlertTriangle className="h-5 w-5 text-accent" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">Unable to Provide Safe Recommendation</h4>
+                  <h4 className="font-semibold text-foreground mb-1">Let's keep this safe</h4>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Based on your current health profile and the information provided, 
-                    I cannot generate a safe food recommendation at this time. 
-                    This is to ensure your wellbeing and safety.
+                    {content ||
+                      "I could not find a suitable recommendation for you right now. Try adding a bit more detail, updating your health info, or asking for a different option."}
                   </p>
                 </div>
               </div>

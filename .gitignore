@@ -32,6 +32,18 @@ yarn-debug.log*
 yarn-error.log*
 *.log
 
+# Local assistant/browser artifacts
+.claude/
+.playwright-mcp/
+CLAUDE.md
+source code/frontend/.claude/
+source code/frontend/test-results/
+test-results/
+*.png
+*.jpg
+*.jpeg
+*.webp
+
 # IDE and Cache
 .vscode/
 .idea/

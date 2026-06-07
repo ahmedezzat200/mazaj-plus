@@ -1,5 +1,5 @@
-import { AlertTriangle, Leaf, Sparkles } from 'lucide-react';
-import { BackendFoodItem, BackendWarning } from '../../../../lib/api';
+import { Leaf, Sparkles } from 'lucide-react';
+import { BackendFoodItem } from '../../../../lib/api';
 import { FoodCard } from './FoodCard';
 import { Button } from '../../ui/button';
 import { Badge } from '../../ui/badge';
@@ -7,12 +7,12 @@ import { Badge } from '../../ui/badge';
 interface RecommendationCardProps {
   content: string;
   foods: BackendFoodItem[];
-  warnings: BackendWarning[];
+  warnings: never[]; // Kept for type compat — always empty now
   suggestions: string[];
   onSuggestion: (suggestion: string) => void;
 }
 
-export function RecommendationCard({ content, foods, warnings, suggestions, onSuggestion }: RecommendationCardProps) {
+export function RecommendationCard({ content, foods, suggestions, onSuggestion }: RecommendationCardProps) {
   return (
     <div className="flex justify-start">
       <div className="max-w-3xl w-full">
@@ -44,28 +44,24 @@ export function RecommendationCard({ content, foods, warnings, suggestions, onSu
                 </p>
               )}
 
-              {/* Warnings section */}
-              {warnings.length > 0 && (
-                <div className="mt-4 space-y-2">
-                  <div className="flex items-center gap-2 text-amber-600">
-                    <AlertTriangle className="h-4 w-4 flex-shrink-0" />
-                    <span className="text-xs font-semibold uppercase tracking-wide">Profile Cautions</span>
-                  </div>
-                  {warnings.map((w, i) => (
-                    <div key={i} className="bg-amber-50 border border-amber-200 rounded-lg px-3 py-2 text-xs text-amber-800">
-                      <span className="font-medium">{w.food}:</span>{' '}
-                      {w.warnings.join(' ')}
-                    </div>
-                  ))}
-                </div>
-              )}
+              {/* No warnings section — unsafe foods are already excluded by backend */}
             </div>
 
             {/* Suggestion chips */}
-            {suggestions.length > 0 && (
+            {(suggestions.length > 0 || foods.length > 0) && (
               <div className="space-y-2 pl-11">
                 <p className="text-xs text-muted-foreground">What would you like to do next?</p>
                 <div className="flex flex-wrap gap-2">
+                  {foods.length > 0 && (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => onSuggestion('Give me another food')}
+                      className="rounded-full hover:bg-primary/5 hover:border-primary/20"
+                    >
+                      More options
+                    </Button>
+                  )}
                   {suggestions.map((suggestion) => (
                     <Button
                       key={suggestion}
@@ -86,4 +82,3 @@ export function RecommendationCard({ content, foods, warnings, suggestions, onSu
     </div>
   );
 }
-

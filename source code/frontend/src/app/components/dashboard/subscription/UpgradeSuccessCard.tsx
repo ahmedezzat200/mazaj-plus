@@ -16,9 +16,9 @@ export function UpgradeSuccessCard({ newTier, onReturnToDashboard }: UpgradeSucc
         <CheckCircle2 className="h-8 w-8 text-primary" />
       </div>
 
-      <h2 className="mb-2">Subscription Updated Successfully</h2>
+      <h2 className="mb-2">Payment successful</h2>
       <p className="text-muted-foreground mb-6">
-        Welcome to Mazaj+ {newTier}! Your plan has been activated and you now have access to all {newTier} features.
+        Your {newTier} subscription is now active. Welcome to Mazaj+ {newTier}! Your plan has been activated and you now have access to all {newTier} features.
       </p>
 
       <div className="inline-flex items-center justify-center gap-3 mb-8">

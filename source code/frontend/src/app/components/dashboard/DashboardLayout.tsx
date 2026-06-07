@@ -1,11 +1,12 @@
-import { useState } from 'react';
-import { Outlet, useLocation } from 'react-router';
+import { useState, useEffect } from 'react';
+import { Outlet, useLocation, useNavigate } from 'react-router';
 import { useAuth } from '../../../contexts/AuthContext';
 import { DashboardSidebar } from './DashboardSidebar';
 import { DashboardTopBar } from './DashboardTopBar';
 import { DashboardTopBarCustom } from './DashboardTopBarCustom';
 import { X, RotateCcw, Droplet } from 'lucide-react';
 import { Button } from '../ui/button';
+import { chatApi } from '../../../lib/api';
 
 export type UserTier = 'Free' | 'Pro' | 'Ultra';
 
@@ -19,6 +20,7 @@ export interface UserData {
 export function DashboardLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   
   const { user } = useAuth();
   
@@ -32,6 +34,56 @@ export function DashboardLayout() {
     tier: mappedTier,
   };
 
+  const [sessions, setSessions] = useState<any[]>([]);
+  const [isSessionsLoading, setIsSessionsLoading] = useState(false);
+  const [isSessionsError, setIsSessionsError] = useState(false);
+  const [currentSessionId, setCurrentSessionId] = useState<number | null>(null);
+
+  const fetchSessions = async () => {
+    setIsSessionsLoading(true);
+    setIsSessionsError(false);
+    try {
+      const res = await chatApi.listSessions();
+      if (res.ok) {
+        setSessions(res.sessions);
+      } else {
+        setIsSessionsError(true);
+      }
+    } catch {
+      setIsSessionsError(true);
+    } finally {
+      setIsSessionsLoading(false);
+    }
+  };
+
+  // Load history list on layout mount
+  useEffect(() => {
+    fetchSessions();
+    const saved = localStorage.getItem('mazaj_current_chat_session_id');
+    if (saved) {
+      const savedId = parseInt(saved, 10);
+      if (Number.isFinite(savedId) && savedId > 0) {
+        setCurrentSessionId(savedId);
+      }
+    }
+  }, []);
+
+  const handleSelectSession = (sessionId: number) => {
+    setCurrentSessionId(sessionId);
+    localStorage.setItem('mazaj_current_chat_session_id', String(sessionId));
+    if (location.pathname !== '/dashboard/chat') {
+      navigate('/dashboard/chat');
+    }
+  };
+
+  const handleNewChat = () => {
+    setCurrentSessionId(null);
+    localStorage.removeItem('mazaj_current_chat_session_id');
+    if (location.pathname !== '/dashboard/chat') {
+      navigate('/dashboard/chat');
+    }
+  };
+
   // Determine if we need custom top bar
   const isChatPage = location.pathname === '/dashboard/chat';
   const isPlanPage = location.pathname === '/dashboard/plan-chat';
@@ -39,10 +91,6 @@ export function DashboardLayout() {
   const isAlternativesPage = location.pathname === '/dashboard/alternatives';
   const isUploadPage = location.pathname === '/dashboard/upload';
   const isTrackingPage = location.pathname === '/dashboard/tracking';
-
-  const handleNewChat = () => {
-    window.location.reload();
-  };
 
   const handleLogWater = () => {
     const hydrationSection = document.getElementById('hydration-tracker');
@@ -82,7 +130,17 @@ export function DashboardLayout() {
           <X className="h-5 w-5" />
         </Button>
         
-        <DashboardSidebar userTier={userData.tier} onNavigate={() => setSidebarOpen(false)} />
+        <DashboardSidebar 
+          userTier={userData.tier} 
+          onNavigate={() => setSidebarOpen(false)} 
+          sessions={sessions}
+          activeSessionId={currentSessionId}
+          isSessionsLoading={isSessionsLoading}
+          isSessionsError={isSessionsError}
+          onSelectSession={handleSelectSession}
+          onNewChat={handleNewChat}
+          onRefreshSessions={fetchSessions}
+        />
       </aside>
 
       {/* Main content */}
@@ -168,7 +226,15 @@ export function DashboardLayout() {
 
         {/* Page content */}
         <main className="flex-1 overflow-auto">
-          <Outlet context={{ userData }} />
+          <Outlet context={{ 
+            userData,
+            currentSessionId,
+            setCurrentSessionId,
+            sessions,
+            fetchSessions,
+            onSelectSession: handleSelectSession,
+            onNewChat: handleNewChat
+          }} />
         </main>
       </div>
     </div>

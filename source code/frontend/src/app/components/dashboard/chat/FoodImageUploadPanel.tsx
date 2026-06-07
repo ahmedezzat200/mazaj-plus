@@ -100,7 +100,7 @@ export function FoodImageUploadPanel({ hasAccess }: FoodImageUploadPanelProps) {
       {panelState === 'idle' && (
         <div className="rounded-lg border border-dashed border-border bg-muted/20 p-4 text-center space-y-3">
           <p className="text-xs text-muted-foreground leading-relaxed">
-            Upload a food photo. Recognition is handled by the backend, and nutrition values come only from the Mazaj+ database.
+            Upload a clear food photo, and Mazaj+ will identify it and show simple nutrition guidance.
           </p>
           <Button variant="outline" size="sm" className="gap-2 w-full" onClick={() => inputRef.current?.click()}>
             <Upload className="h-3.5 w-3.5" />

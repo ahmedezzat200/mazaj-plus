@@ -1,0 +1,13 @@
+﻿parent_food_key,component_food_key,default_ratio,composition_note
+lamb_with_rice,roasted_lamb,0.4,Approximate demo ratio; do not use to estimate image portion size.
+lamb_with_rice,rice_white_cooked,0.6,Approximate demo ratio; do not use to estimate image portion size.
+chicken_with_rice,chicken_breast_grilled,0.35,Approximate demo ratio; do not use to estimate image portion size.
+chicken_with_rice,rice_white_cooked,0.65,Approximate demo ratio; do not use to estimate image portion size.
+fish_with_rice,grilled_fish,0.35,Approximate demo ratio; do not use to estimate image portion size.
+fish_with_rice,rice_white_cooked,0.65,Approximate demo ratio; do not use to estimate image portion size.
+kabsa_chicken,chicken_breast_grilled,0.3,Approximate demo ratio; do not use to estimate image portion size.
+kabsa_chicken,rice_white_cooked,0.7,Approximate demo ratio; do not use to estimate image portion size.
+mandi_chicken,chicken_breast_grilled,0.3,Approximate demo ratio; do not use to estimate image portion size.
+mandi_chicken,rice_white_cooked,0.7,Approximate demo ratio; do not use to estimate image portion size.
+biryani_chicken,chicken_breast_grilled,0.25,Approximate demo ratio; do not use to estimate image portion size.
+biryani_chicken,rice_white_cooked,0.75,Approximate demo ratio; do not use to estimate image portion size.

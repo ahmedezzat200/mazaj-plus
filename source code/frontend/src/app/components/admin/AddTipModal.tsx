@@ -18,16 +18,19 @@ import {
   SelectValue,
 } from '../ui/select';
 import { toast } from 'sonner';
+import { adminApi } from '../../../lib/api';
 
 interface AddTipModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onAdded?: () => void;
 }
 
-export function AddTipModal({ isOpen, onClose }: AddTipModalProps) {
+export function AddTipModal({ isOpen, onClose, onAdded }: AddTipModalProps) {
   const [formData, setFormData] = useState({
+    title: '',
     content: '',
-    displayDate: '',
+    displayOrder: '0',
     status: 'Active',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -35,20 +38,30 @@ export function AddTipModal({ isOpen, onClose }: AddTipModalProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.content) {
-      toast.error('Please enter tip content');
+    if (!formData.title || !formData.content) {
+      toast.error('Please enter tip title and content');
       return;
     }
 
     setIsSubmitting(true);
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const result = await adminApi.addTip({
+      title: formData.title,
+      content: formData.content,
+      display_order: parseInt(formData.displayOrder) || 0,
+      is_active: formData.status === 'Active',
+    });
 
-    toast.success('Daily tip added successfully');
+    if (result.ok) {
+      toast.success('Daily tip added successfully');
+      onAdded?.();
+      setFormData({ title: '', content: '', displayOrder: '0', status: 'Active' });
+      onClose();
+    } else {
+      toast.error(result.error?.message || 'Failed to add tip');
+    }
+
     setIsSubmitting(false);
-    setFormData({ content: '', displayDate: '', status: 'Active' });
-    onClose();
   };
 
   const handleChange = (field: string, value: string) => {
@@ -67,6 +80,17 @@ export function AddTipModal({ isOpen, onClose }: AddTipModalProps) {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
+            <Label htmlFor="title">Tip Title *</Label>
+            <Input
+              id="title"
+              placeholder="e.g., Hydration Reminder"
+              value={formData.title}
+              onChange={(e) => handleChange('title', e.target.value)}
+              required
+            />
+          </div>
+
+          <div className="space-y-2">
             <Label htmlFor="content">Tip Content *</Label>
             <Textarea
               id="content"
@@ -76,22 +100,17 @@ export function AddTipModal({ isOpen, onClose }: AddTipModalProps) {
               onChange={(e) => handleChange('content', e.target.value)}
               required
             />
-            <p className="text-xs text-muted-foreground">
-              Keep it concise and actionable (max 200 characters recommended)
-            </p>
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="displayDate">Display Date (Optional)</Label>
+            <Label htmlFor="displayOrder">Display Order</Label>
             <Input
-              id="displayDate"
-              type="date"
-              value={formData.displayDate}
-              onChange={(e) => handleChange('displayDate', e.target.value)}
+              id="displayOrder"
+              type="number"
+              min="0"
+              value={formData.displayOrder}
+              onChange={(e) => handleChange('displayOrder', e.target.value)}
             />
-            <p className="text-xs text-muted-foreground">
-              Leave blank to publish immediately
-            </p>
           </div>
 
           <div className="space-y-2">
@@ -102,7 +121,6 @@ export function AddTipModal({ isOpen, onClose }: AddTipModalProps) {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="Active">Active</SelectItem>
-                <SelectItem value="Scheduled">Scheduled</SelectItem>
                 <SelectItem value="Inactive">Inactive</SelectItem>
               </SelectContent>
             </Select>

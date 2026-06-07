@@ -1,0 +1,308 @@
+﻿food_key,condition_key,risk_level,reason
+almonds_dry_roasted,high_cholesterol,WARNING,High fat (57.8g/100g) though mainly heart-healthy unsaturated fat; moderate portions fine
+almonds_dry_roasted,hypertension,WARNING,Moderate sodium content (256mg/100g) from added salt; unsalted varieties preferred
+almonds_dry_roasted,obesity,WARNING,High caloric density (620 kcal/100g); nutritious but portion control is important for weight management
+american_cheese,high_cholesterol,WARNING,High saturated fat content (30.6g/100g); moderate portions advised
+american_cheese,hypertension,BLOCKED,Very high sodium content (1660mg/100g) is not suitable for sodium-restricted diets
+american_cheese,kidney_disease,BLOCKED,Very high sodium (1660mg/100g) and phosphorus; not suitable for kidney diets
+american_cheese,lactose_intolerance,WARNING,Processed cheese product; contains lactose
+american_cheese_restaurant,high_cholesterol,WARNING,High saturated fat content (31.1g/100g); moderate portions advised
+american_cheese_restaurant,hypertension,BLOCKED,Very high sodium content (1600mg/100g) requires avoidance for sodium management
+american_cheese_restaurant,kidney_disease,BLOCKED,Very high sodium (1600mg/100g) and phosphorus; not suitable for kidney diets
+american_cheese_restaurant,lactose_intolerance,WARNING,Contains dairy-derived lactose; individual tolerance varies
+apple_fuji,diabetes_type_2,WARNING,Higher natural sugar content (12.6g/100g) among apple varieties; moderate portions advised
+apple_gala,diabetes_type_2,WARNING,Moderate natural sugar content; suitable in controlled portions
+apple_honeycrisp,diabetes_type_2,WARNING,Higher natural sugar content (11.7g/100g); moderate portions advised
+apple_juice,diabetes_type_2,WARNING,Sugary drinks or juices may raise blood sugar quickly.
+apple_juice,obesity,WARNING,Sugary drinks can increase daily calorie intake without much fullness.
+apple_red_delicious,diabetes_type_2,WARNING,Moderate natural sugar content; suitable in controlled portions
+bacon_cooked,gout,WARNING,Processed pork with moderate purine content; limit in gout dietary plans
+bacon_cooked,high_cholesterol,BLOCKED,Very high saturated fat (36.5g/100g) and sodium; not suitable for cholesterol management
+bacon_cooked,hypertension,BLOCKED,Very high sodium content (1830mg/100g) is not suitable for sodium-restricted diets
+bacon_cooked,kidney_disease,BLOCKED,Extremely high sodium (1830mg/100g) and phosphorus; not suitable for kidney-restricted diets
+bacon_cooked,obesity,WARNING,High caloric density (500 kcal/100g) with high saturated fat; limit in weight-managed diets
+baladi_bread,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+banana_overripe,diabetes_type_2,WARNING,Higher carbohydrate availability as banana ripens; moderate portions advised
+banana_overripe,kidney_disease,WARNING,Higher potassium content as banana ripens; potassium management is important for kidney health
+banana_ripe,diabetes_type_2,WARNING,Moderate to high natural carbohydrate content (23g/100g); portion awareness advised
+banana_ripe,kidney_disease,WARNING,Moderate to high potassium content; kidney disease patients may need to limit potassium intake
+basbousa,diabetes_type_2,WARNING,Desserts can be high in sugar and require careful portion control.
+basbousa,obesity,WARNING,Desserts can add calories quickly and should be limited in portion size.
+bean_pupusas,diabetes_type_2,WARNING,Moderate carbohydrate content (31.5g/100g); portion awareness advised
+beef_breakfast_sausage,celiac_disease,WARNING,Processed meats may contain gluten-based fillers; verify label
+beef_breakfast_sausage,high_cholesterol,WARNING,High fat content (28.7g/100g); limit for cholesterol management
+beef_breakfast_sausage,hypertension,BLOCKED,High sodium content (866mg/100g) typical of processed breakfast meats
+beef_breakfast_sausage,obesity,WARNING,High caloric density (328 kcal/100g) and fat; limit in weight-managed diets
+beef_eye_round_raw,gout,WARNING,Red meat with moderate purine content; gout dietary guidelines suggest limiting red meat
+beef_hot_dog,celiac_disease,WARNING,May contain wheat-based fillers; check label for gluten-free certification
+beef_hot_dog,gout,WARNING,Processed meat product; moderate purine content warrants limiting in gout diets
+beef_hot_dog,high_cholesterol,WARNING,High fat content (28g/100g) in a processed meat product; limit consumption
+beef_hot_dog,hypertension,BLOCKED,High sodium content (872mg/100g) typical of processed meat products
+beef_hot_dog,obesity,WARNING,High caloric density (314 kcal/100g) processed meat; limit in weight-managed diets
+beef_tenderloin_roasted,gout,WARNING,Red meat with moderate purine content; limit frequency for gout management
+beef_tenderloin_roasted,kidney_disease,WARNING,High protein content (27.7g/100g); align portions with kidney diet protein limits
+beef_top_loin_steak,gout,WARNING,Red meat contains moderate to high purines; limit portion frequency for gout management
+beef_top_round_raw,gout,WARNING,Red meat with moderate purine content; limit frequency in gout management
+biryani_chicken,diabetes_type_2,WARNING,This mixed meal contains a concentrated carbohydrate portion; portion size should be considered for blood glucose management.
+biryani_chicken,hypertension,WARNING,Prepared mixed meals may contain substantial sodium; choose a moderate portion and lower-sodium preparation when possible.
+biryani_chicken,obesity,WARNING,This mixed meal can be calorie-dense depending on preparation and portion size.
+bread_white,celiac_disease,BLOCKED,Contains gluten (wheat); not safe for celiac disease
+bread_white,diabetes_type_2,WARNING,Refined carbohydrate source (49.2g/100g); whole wheat alternatives preferred
+bread_white,hypertension,WARNING,Moderate sodium content (477mg/100g) contributes to daily sodium intake
+bread_whole_wheat,celiac_disease,BLOCKED,Contains gluten (whole wheat); not safe for celiac disease
+bread_whole_wheat,hypertension,WARNING,Moderate sodium content (450mg/100g); portion awareness advised
+burger_beef,high_cholesterol,WARNING,This food can contain higher saturated fat depending on preparation.
+burger_beef,hypertension,WARNING,This food can be high in sodium depending on preparation.
+cake_chocolate,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+cake_chocolate,diabetes_type_2,WARNING,Desserts can be high in sugar and require careful portion control.
+cake_chocolate,obesity,WARNING,Desserts can add calories quickly and should be limited in portion size.
+calamari_fried,gout,WARNING,This food may be higher in purines or processed meat and should be limited for gout-sensitive diets.
+candy_gummy,diabetes_type_2,WARNING,Desserts can be high in sugar and require careful portion control.
+candy_gummy,obesity,WARNING,Desserts can add calories quickly and should be limited in portion size.
+cereal_cornflakes,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+cereal_cornflakes,diabetes_type_2,WARNING,Portions of refined or starchy carbohydrates can raise blood sugar.
+cheddar_cheese,high_cholesterol,WARNING,High saturated fat content (34g/100g); moderate portions advised
+cheddar_cheese,hypertension,WARNING,Moderate sodium content (654mg/100g); portion control advised
+cheddar_cheese,lactose_intolerance,WARNING,Aged cheeses have reduced lactose; individual tolerance varies
+cheddar_cheese,obesity,WARNING,High caloric density (408 kcal/100g); portion control is important
+chicken_breast_cooked,kidney_disease,WARNING,High protein content (32.1g/100g); portion sizes should align with individual kidney diet limits
+chicken_fried,high_cholesterol,WARNING,Fried foods can be high in fat depending on preparation.
+chicken_fried,obesity,WARNING,Fried foods can increase total calorie intake.
+chicken_nuggets,high_cholesterol,WARNING,Fried foods can be high in fat depending on preparation.
+chicken_nuggets,obesity,WARNING,Fried foods can increase total calorie intake.
+chicken_shawarma,hypertension,WARNING,This food can be high in sodium depending on preparation.
+chicken_shawarma,obesity,WARNING,Shawarma can be calorie-dense depending on sauces and portion size.
+chicken_with_rice,diabetes_type_2,WARNING,This mixed meal contains a concentrated carbohydrate portion; portion size should be considered for blood glucose management.
+chicken_with_rice,obesity,WARNING,This mixed meal can be calorie-dense depending on preparation and portion size.
+chocolate_bar,diabetes_type_2,WARNING,Desserts can be high in sugar and require careful portion control.
+chocolate_bar,obesity,WARNING,Desserts can add calories quickly and should be limited in portion size.
+chorizo_pork,celiac_disease,WARNING,Some chorizo preparations include gluten-containing ingredients; verify label
+chorizo_pork,gout,WARNING,Processed pork product with moderate purine content; limit for gout management
+chorizo_pork,high_cholesterol,WARNING,High saturated fat content (28.1g/100g); not suitable for frequent consumption
+chorizo_pork,hypertension,WARNING,High sodium content (983mg/100g); frequent consumption not advisable
+chorizo_pork,obesity,WARNING,High caloric density (346 kcal/100g) with high fat; limit in weight-managed diets
+coconut_oil,high_cholesterol,BLOCKED,Very high saturated fat content (99.1g/100g); not suitable for cholesterol management
+coconut_oil,obesity,WARNING,Very high caloric density (833 kcal/100g); use sparingly in weight-managed diets
+coffee_milk_sugar,lactose_intolerance,WARNING,Dairy foods may cause symptoms for lactose intolerance depending on tolerance.
+cola_regular,diabetes_type_2,BLOCKED,Sugary drinks or juices may raise blood sugar quickly.
+cola_regular,kidney_disease,WARNING,"This food may be high in sodium, additives, or phosphorus-sensitive ingredients."
+cola_regular,obesity,WARNING,Sugary drinks can increase daily calorie intake without much fullness.
+cookies_chocolate_chip,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+cookies_chocolate_chip,diabetes_type_2,WARNING,Desserts can be high in sugar and require careful portion control.
+cookies_chocolate_chip,obesity,WARNING,Desserts can add calories quickly and should be limited in portion size.
+cottage_cheese_lowfat,hypertension,WARNING,Moderate sodium content (321mg/100g); low-sodium varieties preferred
+cottage_cheese_lowfat,lactose_intolerance,BLOCKED,Contains lactose; not suitable for lactose intolerance
+cream_cheese,high_cholesterol,WARNING,This food can contain higher saturated fat depending on preparation.
+cream_cheese,lactose_intolerance,WARNING,Dairy foods may cause symptoms for lactose intolerance depending on tolerance.
+deli_ham,celiac_disease,WARNING,Processed deli meats may contain gluten-based additives; verify label
+deli_ham,gout,WARNING,This food may be higher in purines or processed meat and should be limited for gout-sensitive diets.
+deli_ham,hypertension,BLOCKED,High sodium content (1040mg/100g) typical of cured deli meats
+deli_ham,kidney_disease,BLOCKED,High sodium (1040mg/100g) and phosphorus additives common in processed meats
+dill_pickles,hypertension,BLOCKED,Very high sodium content (808mg/100g) from brining process
+donut_glazed,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+donut_glazed,diabetes_type_2,WARNING,Desserts can be high in sugar and require careful portion control.
+donut_glazed,obesity,WARNING,Desserts can add calories quickly and should be limited in portion size.
+egg_white_dried,hypertension,BLOCKED,Very high sodium content (1250mg/100g) in concentrated form; not suitable for sodium restriction
+egg_white_dried,kidney_disease,BLOCKED,Extremely high protein concentration (79.9g/100g); not suitable for protein-restricted kidney diets
+egg_whole_dried,high_cholesterol,WARNING,Concentrated fat and cholesterol content (39.8g/100g fat); portion awareness needed
+egg_whole_dried,obesity,WARNING,High caloric density (575 kcal/100g) in concentrated form; use carefully
+egg_whole_raw,high_cholesterol,WARNING,Contains dietary cholesterol; moderate consumption within a balanced diet is generally acceptable
+egg_yolk_dried,high_cholesterol,BLOCKED,Very high fat (55.5g/100g) and cholesterol concentration; not suitable for cholesterol management
+egg_yolk_dried,obesity,WARNING,Very high caloric density (654 kcal/100g); concentrated form requires careful portion control
+egg_yolk_raw,high_cholesterol,WARNING,High cholesterol content; consume in moderation as part of a balanced diet
+energy_drink,diabetes_type_2,BLOCKED,Sugary drinks or juices may raise blood sugar quickly.
+energy_drink,kidney_disease,WARNING,"This food may be high in sodium, additives, or phosphorus-sensitive ingredients."
+energy_drink,obesity,WARNING,Sugary drinks can increase daily calorie intake without much fullness.
+fatta_egyptian,celiac_disease,BLOCKED,Traditional Egyptian fatta contains bread and is not suitable for celiac disease unless a verified gluten-free version is used.
+fatta_egyptian,diabetes_type_2,WARNING,This mixed meal contains a concentrated carbohydrate portion; portion size should be considered for blood glucose management.
+fatta_egyptian,high_cholesterol,WARNING,This food may contain a higher amount of saturated fat depending on preparation.
+fatta_egyptian,hypertension,WARNING,Prepared mixed meals may contain substantial sodium; choose a moderate portion and lower-sodium preparation when possible.
+fatta_egyptian,obesity,WARNING,This mixed meal can be calorie-dense depending on preparation and portion size.
+feta_cheese,lactose_intolerance,WARNING,Dairy foods may cause symptoms for lactose intolerance depending on tolerance.
+figs_dried,diabetes_type_2,WARNING,High natural sugar concentration (47.9g/100g) warrants careful portion control
+figs_dried,kidney_disease,BLOCKED,Very high potassium and natural sugar concentration in dried form; not suitable for kidney diets
+figs_dried,obesity,WARNING,High caloric density from sugar concentration (249 kcal/100g); limit portions in calorie-managed plans
+fish_fried,high_cholesterol,WARNING,Fried foods can be high in fat depending on preparation.
+fish_fried,obesity,WARNING,Fried foods can increase total calorie intake.
+fish_with_rice,diabetes_type_2,WARNING,This mixed meal contains a concentrated carbohydrate portion; portion size should be considered for blood glucose management.
+fish_with_rice,obesity,WARNING,This mixed meal can be calorie-dense depending on preparation and portion size.
+flour_ap_bleached,celiac_disease,BLOCKED,Contains gluten (wheat flour); not safe for celiac disease
+flour_ap_bleached,diabetes_type_2,WARNING,Refined high-carbohydrate flour (77.3g/100g); whole grain alternatives preferred
+flour_ap_unbleached,celiac_disease,BLOCKED,Contains gluten (wheat flour); not safe for celiac disease
+flour_ap_unbleached,diabetes_type_2,WARNING,Refined high-carbohydrate flour (73.2g/100g); whole grain alternatives preferred
+flour_ap_unenriched,celiac_disease,BLOCKED,Contains gluten (wheat flour); not safe for celiac disease
+flour_ap_unenriched,diabetes_type_2,WARNING,Refined high-carbohydrate flour (74.6g/100g); whole grain alternatives preferred
+flour_bread_white,celiac_disease,BLOCKED,Contains gluten (bread flour); not safe for celiac disease
+flour_bread_white,diabetes_type_2,WARNING,Refined high-carbohydrate flour; whole grain alternatives preferred
+flour_pastry,celiac_disease,BLOCKED,Contains gluten (pastry flour); not safe for celiac disease
+flour_pastry,diabetes_type_2,WARNING,Refined high-carbohydrate flour; whole grain alternatives preferred
+flour_rice_glutinous,diabetes_type_2,WARNING,Very high carbohydrate content (80.1g/100g); moderate use advised
+flour_rice_white,diabetes_type_2,WARNING,High-carbohydrate refined flour (79.8g/100g); brown rice flour is a better alternative
+flour_soy_defatted,kidney_disease,BLOCKED,Very high protein content (51.1g/100g) and phosphorus; not suitable for kidney-restricted diets
+flour_soy_full_fat,kidney_disease,WARNING,High protein and phosphorus content; consult a dietitian for kidney diet guidance
+flour_whole_wheat,celiac_disease,BLOCKED,Contains gluten (whole wheat flour); not safe for celiac disease
+french_fries,high_cholesterol,WARNING,Fried foods can be high in fat depending on preparation.
+french_fries,hypertension,WARNING,This food can be high in sodium depending on preparation.
+french_fries,kidney_disease,WARNING,"This food may be high in sodium, additives, or phosphorus-sensitive ingredients."
+french_fries,obesity,WARNING,Fried foods can increase total calorie intake.
+fried_chicken_piece,high_cholesterol,WARNING,Fried foods can be high in fat depending on preparation.
+fried_chicken_piece,obesity,WARNING,Fried foods can increase total calorie intake.
+fried_rice_chinese,celiac_disease,WARNING,Typically prepared with soy sauce containing wheat; not suitable without verified GF soy sauce
+fried_rice_chinese,diabetes_type_2,WARNING,Moderate carbohydrate content (32.5g/100g); portion control advised
+granulated_sugar,diabetes_type_2,BLOCKED,Very high sugar content (99.8g/100g) is not suitable for blood glucose management
+granulated_sugar,obesity,WARNING,Provides calories with no nutritional benefit; minimize in weight-managed diets
+greek_yogurt_plain,lactose_intolerance,WARNING,Lower lactose content due to fermentation; individual tolerance varies
+greek_yogurt_strawberry,diabetes_type_2,WARNING,Contains added sugars (11.5g/100g); plain varieties are a more suitable alternative
+greek_yogurt_strawberry,lactose_intolerance,WARNING,Lower lactose content due to fermentation; individual tolerance varies
+green_olives,hypertension,BLOCKED,Very high sodium content (1620mg/100g) from brining process
+green_olives,kidney_disease,BLOCKED,Very high sodium (1620mg/100g) from brining; not suitable for kidney-restricted diets
+ground_turkey_93_lean,kidney_disease,WARNING,High protein content (27.1g/100g); portion sizes should align with kidney diet guidelines
+haddock_raw,gout,WARNING,Moderate purine content in white fish; limit frequency for gout management
+haddock_raw,kidney_disease,WARNING,High protein and phosphorus content; consult dietitian for appropriate portions
+ham_restaurant,hypertension,BLOCKED,High sodium content (1030mg/100g); not suitable for sodium-restricted diets
+ham_restaurant,kidney_disease,BLOCKED,High sodium (1030mg/100g); not suitable for sodium-restricted kidney diets
+hawawshi,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+hawawshi,hypertension,WARNING,This food can be high in sodium depending on preparation.
+hot_dog,gout,WARNING,This food may be higher in purines or processed meat and should be limited for gout-sensitive diets.
+hot_dog,high_cholesterol,WARNING,This food can contain higher saturated fat depending on preparation.
+hot_dog,hypertension,WARNING,This food can be high in sodium depending on preparation.
+hot_dog,kidney_disease,WARNING,"This food may be high in sodium, additives, or phosphorus-sensitive ingredients."
+ice_cream_vanilla,diabetes_type_2,WARNING,Desserts can be high in sugar and require careful portion control.
+ice_cream_vanilla,high_cholesterol,WARNING,This food can contain higher saturated fat depending on preparation.
+ice_cream_vanilla,lactose_intolerance,WARNING,Dairy foods may cause symptoms for lactose intolerance depending on tolerance.
+ice_cream_vanilla,obesity,WARNING,Desserts can add calories quickly and should be limited in portion size.
+italian_pork_sausage,celiac_disease,WARNING,May contain gluten-based fillers or seasonings; verify label
+italian_pork_sausage,gout,WARNING,Pork-based sausage with moderate purines; limit frequency for gout management
+italian_pork_sausage,high_cholesterol,WARNING,High fat content (26.2g/100g); moderate consumption advised
+italian_pork_sausage,hypertension,WARNING,High sodium content (766mg/100g) typical of cured pork products
+italian_pork_sausage,obesity,WARNING,High caloric density (322 kcal/100g); limit in weight-managed plans
+kabsa_chicken,diabetes_type_2,WARNING,This mixed meal contains a concentrated carbohydrate portion; portion size should be considered for blood glucose management.
+kabsa_chicken,hypertension,WARNING,Prepared mixed meals may contain substantial sodium; choose a moderate portion and lower-sodium preparation when possible.
+kabsa_chicken,obesity,WARNING,This mixed meal can be calorie-dense depending on preparation and portion size.
+kebab_grilled,hypertension,WARNING,This food can be high in sodium depending on preparation.
+ketchup,celiac_disease,WARNING,Some commercial ketchup formulations contain wheat-based thickeners; verify label
+ketchup,diabetes_type_2,BLOCKED,High sugar content (21.8g/100g) may significantly affect blood glucose levels
+ketchup,hypertension,WARNING,Moderate sodium content (949mg/100g) in typical condiment use
+ketchup,obesity,WARNING,High sugar content (21.8g/100g) adds hidden calories; use sparingly
+kofta_grilled,hypertension,WARNING,This food can be high in sodium depending on preparation.
+koshari,diabetes_type_2,WARNING,Portions of refined or starchy carbohydrates can raise blood sugar.
+kunafa,diabetes_type_2,WARNING,Desserts can be high in sugar and require careful portion control.
+kunafa,obesity,WARNING,Desserts can add calories quickly and should be limited in portion size.
+labneh,lactose_intolerance,WARNING,Dairy foods may cause symptoms for lactose intolerance depending on tolerance.
+lamb_shank_cooked,gout,WARNING,Red meat can be a purine source; portion size may need consideration for gout.
+lamb_shank_cooked,high_cholesterol,WARNING,This food may contain a higher amount of saturated fat depending on preparation.
+lamb_with_rice,diabetes_type_2,WARNING,This mixed meal contains a concentrated carbohydrate portion; portion size should be considered for blood glucose management.
+lamb_with_rice,gout,WARNING,Red meat can be a purine source; portion size may need consideration for gout.
+lamb_with_rice,high_cholesterol,WARNING,This food may contain a higher amount of saturated fat depending on preparation.
+lamb_with_rice,hypertension,WARNING,Prepared mixed meals may contain substantial sodium; choose a moderate portion and lower-sodium preparation when possible.
+lamb_with_rice,obesity,WARNING,This mixed meal can be calorie-dense depending on preparation and portion size.
+large_egg_whole,high_cholesterol,WARNING,Contains dietary cholesterol; consult dietary guidance for appropriate frequency
+large_egg_yolk,high_cholesterol,WARNING,High cholesterol content; moderate consumption advised
+lasagna,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+lemonade,diabetes_type_2,WARNING,Sugary drinks or juices may raise blood sugar quickly.
+lemonade,obesity,WARNING,Sugary drinks can increase daily calorie intake without much fullness.
+macaroni_bechamel,celiac_disease,BLOCKED,Macaroni is typically made from wheat and is not suitable for celiac disease unless a verified gluten-free version is used.
+macaroni_bechamel,diabetes_type_2,WARNING,This mixed meal contains a concentrated carbohydrate portion; portion size should be considered for blood glucose management.
+macaroni_bechamel,high_cholesterol,WARNING,This food may contain a higher amount of saturated fat depending on preparation.
+macaroni_bechamel,hypertension,WARNING,Prepared mixed meals may contain substantial sodium; choose a moderate portion and lower-sodium preparation when possible.
+macaroni_bechamel,lactose_intolerance,WARNING,Béchamel sauce commonly contains milk; a lactose-free preparation may be needed.
+macaroni_bechamel,obesity,WARNING,This mixed meal can be calorie-dense depending on preparation and portion size.
+mandi_chicken,diabetes_type_2,WARNING,This mixed meal contains a concentrated carbohydrate portion; portion size should be considered for blood glucose management.
+mandi_chicken,hypertension,WARNING,Prepared mixed meals may contain substantial sodium; choose a moderate portion and lower-sodium preparation when possible.
+mandi_chicken,obesity,WARNING,This mixed meal can be calorie-dense depending on preparation and portion size.
+marinara_sauce,celiac_disease,WARNING,Some commercial pasta sauces contain wheat-based thickeners; verify label
+marinara_sauce,hypertension,WARNING,Moderate sodium content (419mg/100g) from commercial preparation
+milk_1_percent,lactose_intolerance,BLOCKED,Contains lactose; not suitable for lactose intolerance
+milk_2_percent,lactose_intolerance,BLOCKED,Contains lactose; not suitable for lactose intolerance
+milk_skim,lactose_intolerance,BLOCKED,Contains lactose; not suitable for lactose intolerance
+milk_whole,high_cholesterol,WARNING,Higher saturated fat than reduced-fat options; lower-fat dairy alternatives preferred
+milk_whole,lactose_intolerance,BLOCKED,Contains lactose; not suitable for lactose intolerance
+mozzarella_cheese,high_cholesterol,WARNING,Moderate to high fat content (20.4g/100g); part-skim is preferred over full-fat
+mozzarella_cheese,hypertension,WARNING,Moderate sodium content (699mg/100g); fresh low-sodium mozzarella preferred
+mozzarella_cheese,lactose_intolerance,WARNING,Contains moderate lactose; individual tolerance varies
+oatmeal_raisin_cookies,celiac_disease,BLOCKED,Contains gluten (wheat-based); not safe for celiac disease
+oatmeal_raisin_cookies,diabetes_type_2,BLOCKED,High sugar content (34.8g/100g) and refined carbohydrates not suitable for blood glucose management
+oatmeal_raisin_cookies,obesity,WARNING,High caloric density (430 kcal/100g) with high sugar; limit in weight-managed plans
+onion_rings_baked,celiac_disease,BLOCKED,Breaded with wheat flour; not safe for celiac disease
+onion_rings_baked,high_cholesterol,WARNING,Fried foods can be high in fat depending on preparation.
+onion_rings_baked,hypertension,WARNING,Moderate sodium content (374mg/100g) from commercial processing
+onion_rings_baked,obesity,WARNING,Fried foods can increase total calorie intake.
+orange_juice,diabetes_type_2,WARNING,Sugary drinks or juices may raise blood sugar quickly.
+orange_juice,obesity,WARNING,Sugary drinks can increase daily calorie intake without much fullness.
+oranges_raw,kidney_disease,WARNING,Moderate potassium content; kidney diet guidelines may limit citrus fruit portions
+parmesan_cheese,high_cholesterol,WARNING,High fat content (28g/100g); use as a flavor accent in small amounts
+parmesan_cheese,hypertension,BLOCKED,Very high sodium content (1750mg/100g) requires avoidance for sodium management
+parmesan_cheese,kidney_disease,BLOCKED,Very high sodium (1750mg/100g) and phosphorus content; not suitable for kidney diets
+parmesan_cheese,lactose_intolerance,WARNING,Aged hard cheese with very low lactose; individual tolerance varies
+parmesan_cheese,obesity,WARNING,High caloric density (421 kcal/100g); use as a flavor accent in small amounts
+pasta_alfredo,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+pasta_alfredo,high_cholesterol,WARNING,This food can contain higher saturated fat depending on preparation.
+pasta_cooked,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+pasta_cooked,diabetes_type_2,WARNING,Portions of refined or starchy carbohydrates can raise blood sugar.
+peanut_butter,high_cholesterol,WARNING,High fat content (51.1g/100g) though predominantly unsaturated; portion control advised
+peanut_butter,hypertension,WARNING,Moderate sodium content (429mg/100g); unsalted varieties recommended
+peanut_butter,obesity,WARNING,High caloric density (597 kcal/100g); nutritious in moderation but portion control is essential
+pears_raw,kidney_disease,WARNING,Moderate potassium content; review with a renal dietitian for appropriate portions
+pita_bread,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+pizza_slice,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+pizza_slice,diabetes_type_2,WARNING,Portions of refined or starchy carbohydrates can raise blood sugar.
+pizza_slice,high_cholesterol,WARNING,This food can contain higher saturated fat depending on preparation.
+pizza_slice,hypertension,WARNING,This food can be high in sodium depending on preparation.
+pizza_slice,obesity,WARNING,Pizza can be calorie-dense depending on portion size.
+pollock_raw,gout,WARNING,Moderate purine content; moderate consumption within gout dietary guidelines
+pollock_raw,hypertension,WARNING,Moderate sodium content (333mg/100g); rinse before cooking if concerned
+pollock_raw,kidney_disease,WARNING,High protein content; portion sizes should be managed within kidney diet limits
+pork_tamale,celiac_disease,WARNING,Traditional masa is corn-based but cross-contamination risk exists; verify preparation
+pork_tamale,diabetes_type_2,WARNING,Moderate carbohydrate content from corn masa; portion control advised
+pork_tamale,hypertension,WARNING,Moderate sodium content (473mg/100g); traditional preparation varies
+porterhouse_steak,gout,WARNING,Red meat with moderate to high purines; limit for gout management
+potato_chips,high_cholesterol,WARNING,Fried foods can be high in fat depending on preparation.
+potato_chips,hypertension,WARNING,This food can be high in sodium depending on preparation.
+potato_chips,kidney_disease,WARNING,"This food may be high in sodium, additives, or phosphorus-sensitive ingredients."
+potato_chips,obesity,WARNING,Fried foods can increase total calorie intake.
+queso_seco,high_cholesterol,WARNING,High fat content (24.3g/100g); moderate portions advised
+queso_seco,hypertension,BLOCKED,Very high sodium content (1810mg/100g) is not suitable for sodium-restricted diets
+queso_seco,kidney_disease,BLOCKED,Very high sodium (1810mg/100g); not suitable for kidney-restricted diets
+queso_seco,lactose_intolerance,WARNING,Dry aged cheese with reduced lactose; individual tolerance varies
+rice_pudding,diabetes_type_2,WARNING,Desserts can be high in sugar and require careful portion control.
+rice_pudding,obesity,WARNING,Desserts can add calories quickly and should be limited in portion size.
+rice_white_cooked,diabetes_type_2,WARNING,Portions of refined or starchy carbohydrates can raise blood sugar.
+ricotta_cheese,high_cholesterol,WARNING,Moderate fat content (11g/100g); part-skim varieties are preferred
+ricotta_cheese,lactose_intolerance,BLOCKED,Fresh cheese with significant lactose content; not suitable for lactose intolerance
+roasted_lamb,gout,WARNING,Red meat can be a purine source; portion size may need consideration for gout.
+roasted_lamb,high_cholesterol,WARNING,This food may contain a higher amount of saturated fat depending on preparation.
+salsa,hypertension,WARNING,Moderate sodium content (656mg/100g) from commercial preparation
+sandwich_cheese,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+sandwich_cheese,hypertension,WARNING,This food can be high in sodium depending on preparation.
+sandwich_turkey,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+sandwich_turkey,hypertension,WARNING,This food can be high in sodium depending on preparation.
+sardines_canned,gout,WARNING,This food may be higher in purines or processed meat and should be limited for gout-sensitive diets.
+sausage_beef,gout,WARNING,This food may be higher in purines or processed meat and should be limited for gout-sensitive diets.
+sausage_beef,high_cholesterol,WARNING,This food can contain higher saturated fat depending on preparation.
+sausage_beef,hypertension,WARNING,This food can be high in sodium depending on preparation.
+sausage_beef,kidney_disease,WARNING,"This food may be high in sodium, additives, or phosphorus-sensitive ingredients."
+shawarma_chicken,hypertension,WARNING,This food can be high in sodium depending on preparation.
+shrimp_cooked,gout,WARNING,This food may be higher in purines or processed meat and should be limited for gout-sensitive diets.
+smoothie_fruit,diabetes_type_2,WARNING,Sugary drinks or juices may raise blood sugar quickly.
+smoothie_fruit,obesity,WARNING,Sugary drinks can increase daily calorie intake without much fullness.
+spaghetti_tomato_sauce,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+sports_drink,diabetes_type_2,WARNING,Sugary drinks or juices may raise blood sugar quickly.
+sports_drink,obesity,WARNING,Sugary drinks can increase daily calorie intake without much fullness.
+sunflower_seeds,high_cholesterol,WARNING,High fat (56.1g/100g) though predominantly unsaturated; moderate portions advised
+sunflower_seeds,hypertension,WARNING,Moderate sodium content (532mg/100g) from dry roasting with salt
+sunflower_seeds,obesity,WARNING,High caloric density (612 kcal/100g); limit portions in calorie-managed plans
+sweet_sour_pork,celiac_disease,WARNING,Battered preparation likely contains wheat; not suitable without verified GF preparation
+sweet_sour_pork,diabetes_type_2,WARNING,Moderate sugar content (10.3g/100g) and refined carbohydrates require portion awareness
+swiss_cheese,high_cholesterol,WARNING,High fat content (31g/100g); moderate portions advised
+swiss_cheese,lactose_intolerance,WARNING,Aged cheese with reduced lactose content; individual tolerance varies
+tbone_steak_grilled,gout,WARNING,Red meat with moderate to high purines; limit consumption frequency for gout management
+tbone_steak_grilled,high_cholesterol,WARNING,Moderate fat content (11.4g/100g); lean cuts are preferred for cholesterol management
+tea_sweetened,diabetes_type_2,WARNING,Sugary drinks or juices may raise blood sugar quickly.
+tea_sweetened,obesity,WARNING,Sugary drinks can increase daily calorie intake without much fullness.
+tortilla_wrap,celiac_disease,BLOCKED,Contains wheat/gluten and is not suitable for celiac disease.
+tuna_canned,gout,WARNING,Moderate to high purine content in fish; frequent consumption may be a concern for gout management
+tuna_canned,kidney_disease,WARNING,High protein and phosphorus content; portion control required for kidney diets
+turkey_breakfast_sausage,hypertension,WARNING,Moderate sodium content (599mg/100g); leaner but still processed
+turkey_slices,hypertension,WARNING,This food can be high in sodium depending on preparation.
+yellow_mustard,hypertension,BLOCKED,Very high sodium content (1100mg/100g) warrants avoidance in sodium-restricted diets
+yogurt_fruit,lactose_intolerance,WARNING,Dairy foods may cause symptoms for lactose intolerance depending on tolerance.

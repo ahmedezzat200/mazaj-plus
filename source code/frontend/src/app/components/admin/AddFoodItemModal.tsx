@@ -17,13 +17,15 @@ import {
   SelectValue,
 } from '../ui/select';
 import { toast } from 'sonner';
+import { adminApi } from '../../../lib/api';
 
 interface AddFoodItemModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onAdded?: () => void;
 }
 
-export function AddFoodItemModal({ isOpen, onClose }: AddFoodItemModalProps) {
+export function AddFoodItemModal({ isOpen, onClose, onAdded }: AddFoodItemModalProps) {
   const [formData, setFormData] = useState({
     name: '',
     calories: '',
@@ -46,22 +48,36 @@ export function AddFoodItemModal({ isOpen, onClose }: AddFoodItemModalProps) {
 
     setIsSubmitting(true);
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    toast.success('Food item added successfully');
-    setIsSubmitting(false);
-    setFormData({
-      name: '',
-      calories: '',
-      protein: '',
-      fat: '',
-      carbs: '',
-      category: 'Protein',
-      moodTag: 'Energizing',
-      dataSource: 'Manual',
+    const result = await adminApi.addFood({
+      name: formData.name,
+      calories: parseFloat(formData.calories),
+      protein_g: parseFloat(formData.protein) || 0,
+      fat_g: parseFloat(formData.fat) || 0,
+      carbs_g: parseFloat(formData.carbs) || 0,
+      category: formData.category,
+      mood_tag: formData.moodTag,
+      data_source: formData.dataSource,
     });
-    onClose();
+
+    if (result.ok) {
+      toast.success('Food item added successfully');
+      onAdded?.();
+      setFormData({
+        name: '',
+        calories: '',
+        protein: '',
+        fat: '',
+        carbs: '',
+        category: 'Protein',
+        moodTag: 'Energizing',
+        dataSource: 'Manual',
+      });
+      onClose();
+    } else {
+      toast.error(result.error?.message || 'Failed to add food item');
+    }
+
+    setIsSubmitting(false);
   };
 
   const handleChange = (field: string, value: string) => {

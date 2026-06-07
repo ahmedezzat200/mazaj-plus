@@ -46,7 +46,7 @@ export function ContactSection() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!validateForm()) {
@@ -56,13 +56,15 @@ export function ContactSection() {
 
     setState('loading');
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    const subject = encodeURIComponent(formData.subject);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
+    );
+    window.open(`mailto:support@mazaj.app?subject=${subject}&body=${body}`);
 
     setState('success');
-    toast.success('Message sent successfully');
+    toast.success('Mail client opened — please send the email to complete your message');
 
-    // Reset form after 3 seconds
     setTimeout(() => {
       setFormData({ name: '', email: '', subject: '', message: '' });
       setState('idle');

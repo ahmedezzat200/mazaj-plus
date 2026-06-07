@@ -1,18 +1,28 @@
 import { useState, useEffect } from 'react';
+import { motion } from 'motion/react';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Badge } from '../ui/badge';
-import { Lightbulb, Droplet, Target, Crown, MessageSquare, Loader2 } from 'lucide-react';
+import { Droplet, Target, Crown, MessageSquare, Loader2 } from 'lucide-react';
 import { UserTier } from './DashboardLayout';
 import { Progress } from '../ui/progress';
-import { tipsApi, hydrationApi, profileApi } from '../../../lib/api';
+import { hydrationApi, profileApi } from '../../../lib/api';
 
 interface SummaryWidgetsProps {
   userTier: UserTier;
 }
 
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08, delayChildren: 0.05 } },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 16 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: 'easeOut' as const } },
+};
+
 export function SummaryWidgets({ userTier }: SummaryWidgetsProps) {
   const [loading, setLoading] = useState(true);
-  const [tip, setTip] = useState<{ title: string; content: string } | null>(null);
   const [hydration, setHydration] = useState<{ current: number; target: number } | null>(null);
   const [goal, setGoal] = useState<string | null>(null);
 
@@ -20,15 +30,10 @@ export function SummaryWidgets({ userTier }: SummaryWidgetsProps) {
     async function fetchData() {
       setLoading(true);
       try {
-        const [tipRes, hydroRes, profileRes] = await Promise.all([
-          tipsApi.getDaily(),
+        const [hydroRes, profileRes] = await Promise.all([
           hydrationApi.getTarget(),
           profileApi.getMe()
         ]);
-
-        if (tipRes.ok && tipRes.tip) {
-          setTip(tipRes.tip);
-        }
 
         if (hydroRes.ok) {
           setHydration({
@@ -50,48 +55,35 @@ export function SummaryWidgets({ userTier }: SummaryWidgetsProps) {
     fetchData();
   }, []);
 
-  const hydrationPercent = hydration 
-    ? Math.min(Math.round((hydration.current / hydration.target) * 100), 100) 
+  const hydrationPercent = hydration
+    ? Math.min(Math.round((hydration.current / hydration.target) * 100), 100)
     : 0;
 
+  const tierConfig = {
+    Free: { bg: 'from-muted/50 to-muted/30', badge: 'bg-muted text-muted-foreground', label: 'Core features available' },
+    Pro: { bg: 'from-secondary/20 to-secondary/10', badge: 'bg-secondary text-secondary-foreground', label: 'Enhanced features unlocked' },
+    Ultra: { bg: 'from-primary/20 to-primary/10', badge: 'bg-primary text-primary-foreground', label: 'Full access enabled' },
+  };
+
+  const tc = tierConfig[userTier];
+
   return (
-    <div>
+    <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
       <h3 className="text-lg font-semibold text-foreground mb-4">Overview</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-        {/* Today's Nutrition Tip */}
-        <Card className="hover:shadow-md transition-shadow min-h-[160px]">
-          <CardHeader className="pb-3">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center">
-                <Lightbulb className="h-4 w-4 text-accent" />
-              </div>
-              <CardTitle className="text-sm">Today's Tip</CardTitle>
-            </div>
-          </CardHeader>
-          <CardContent>
-            {loading ? (
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Loader2 className="h-3 w-3 animate-spin" />
-                <span className="text-xs">Loading...</span>
-              </div>
-            ) : tip ? (
-              <p className="text-sm text-muted-foreground leading-relaxed italic">
-                "{tip.content}"
-              </p>
-            ) : (
-              <p className="text-sm text-muted-foreground leading-relaxed italic">
-                "Stay mindful of your nutrition choices today."
-              </p>
-            )}
-          </CardContent>
-        </Card>
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+      >
 
         {/* Hydration Progress */}
-        <Card className="hover:shadow-md transition-shadow min-h-[160px]">
+        <motion.div variants={itemVariants}>
+        <Card className="group bg-gradient-to-br from-blue-500/10 to-cyan-500/5 border-blue-200/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 min-h-[160px]">
           <CardHeader className="pb-3">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-secondary/20 flex items-center justify-center">
-                <Droplet className="h-4 w-4 text-secondary" />
+              <div className="w-8 h-8 rounded-lg bg-blue-500/15 flex items-center justify-center group-hover:bg-blue-500/25 transition-colors">
+                <Droplet className="h-4 w-4 text-blue-500" />
               </div>
               <CardTitle className="text-sm">Hydration</CardTitle>
             </div>
@@ -115,17 +107,19 @@ export function SummaryWidgets({ userTier }: SummaryWidgetsProps) {
               </>
             ) : (
               <p className="text-xs text-muted-foreground py-2">
-                Log your water intake in the Alternatives section to see progress.
+                Log water intake in the Alternatives section to see progress.
               </p>
             )}
           </CardContent>
         </Card>
+        </motion.div>
 
         {/* Wellness Goal */}
-        <Card className="hover:shadow-md transition-shadow min-h-[160px]">
+        <motion.div variants={itemVariants}>
+        <Card className="group bg-gradient-to-br from-primary/10 to-primary/5 border-primary/15 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 min-h-[160px]">
           <CardHeader className="pb-3">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-primary/15 flex items-center justify-center group-hover:bg-primary/25 transition-colors">
                 <Target className="h-4 w-4 text-primary" />
               </div>
               <CardTitle className="text-sm">Wellness Goal</CardTitle>
@@ -141,7 +135,7 @@ export function SummaryWidgets({ userTier }: SummaryWidgetsProps) {
               <>
                 <p className="text-xs text-muted-foreground mb-1">Your Focus</p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary" className="bg-primary/10 text-primary-foreground border-primary/20">
+                  <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
                     {goal || 'Complete profile'}
                   </Badge>
                 </div>
@@ -152,43 +146,34 @@ export function SummaryWidgets({ userTier }: SummaryWidgetsProps) {
             )}
           </CardContent>
         </Card>
+        </motion.div>
 
         {/* Current Tier */}
-        <Card className="hover:shadow-md transition-shadow min-h-[160px]">
+        <motion.div variants={itemVariants}>
+        <Card className={`group bg-gradient-to-br ${tc.bg} hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 min-h-[160px]`}>
           <CardHeader className="pb-3">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-primary/15 flex items-center justify-center group-hover:bg-primary/25 transition-colors">
                 <Crown className="h-4 w-4 text-primary" />
               </div>
               <CardTitle className="text-sm">Current Tier</CardTitle>
             </div>
           </CardHeader>
           <CardContent className="space-y-3">
-            <Badge 
-              variant="secondary" 
-              className={
-                userTier === 'Ultra' 
-                  ? 'bg-primary text-primary-foreground'
-                  : userTier === 'Pro'
-                  ? 'bg-secondary text-secondary-foreground'
-                  : 'bg-muted text-muted-foreground'
-              }
-            >
+            <Badge variant="secondary" className={tc.badge}>
               {userTier}
             </Badge>
-            <p className="text-xs text-muted-foreground">
-              {userTier === 'Free' && 'Core features available'}
-              {userTier === 'Pro' && 'Enhanced features unlocked'}
-              {userTier === 'Ultra' && 'Full access enabled'}
-            </p>
+            <p className="text-xs text-muted-foreground">{tc.label}</p>
           </CardContent>
         </Card>
+        </motion.div>
 
         {/* Recent Guidance */}
-        <Card className="hover:shadow-md transition-shadow min-h-[160px]">
+        <motion.div variants={itemVariants}>
+        <Card className="group bg-gradient-to-br from-secondary/10 to-secondary/5 border-secondary/15 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 min-h-[160px]">
           <CardHeader className="pb-3">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-secondary/20 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-secondary/20 flex items-center justify-center group-hover:bg-secondary/30 transition-colors">
                 <MessageSquare className="h-4 w-4 text-secondary" />
               </div>
               <CardTitle className="text-sm">Last Chat</CardTitle>
@@ -200,7 +185,8 @@ export function SummaryWidgets({ userTier }: SummaryWidgetsProps) {
             </p>
           </CardContent>
         </Card>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }

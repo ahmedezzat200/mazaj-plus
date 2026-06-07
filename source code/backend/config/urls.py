@@ -9,4 +9,5 @@ urlpatterns = [
     path('api/v1/chat/', include('apps.chat.urls')),
     path('api/v1/subscription/', include('apps.subscriptions.urls')),
     path('api/v1/', include('apps.common.urls')),
+    path('api/v1/admin/', include('apps.admin_portal.urls')),
 ]

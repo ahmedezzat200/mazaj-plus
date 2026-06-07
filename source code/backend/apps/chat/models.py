@@ -46,8 +46,10 @@ class ChatMessage(models.Model):
 
 class ChatRecommendation(models.Model):
     session = models.ForeignKey(ChatSession, on_delete=models.CASCADE, related_name='recommendations')
+    message = models.OneToOneField('ChatMessage', on_delete=models.CASCADE, null=True, blank=True, related_name='recommendation')
     mood_name = models.CharField(max_length=100, blank=True)
     recommended_foods = models.JSONField(default=list)
     blocked_foods = models.JSONField(default=list)
     warnings = models.JSONField(default=list)
+    nutrition_plan = models.JSONField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)

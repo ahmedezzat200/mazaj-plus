@@ -3,15 +3,38 @@ from apps.nutrition.models import UserHealthCondition, UserAllergy
 from apps.users.services import log_audit
 
 def update_user_mappings(user, conditions_list, allergies_list):
+    """
+    Atomically replaces the user's health condition and allergy mappings.
+
+    Both lists are replaced in full (delete-then-insert pattern) to keep the
+    stored data consistent with what the client submitted.  The caller is
+    responsible for ensuring IDs are valid before this function is called.
+
+    Args:
+        conditions_list: list of HealthCondition PKs, or None to skip update.
+        allergies_list:  list of Allergy PKs, or None to skip update.
+    """
     if conditions_list is not None:
         UserHealthCondition.objects.filter(user=user).delete()
-        new_conditions = [UserHealthCondition(user=user, health_condition_id=cid) for cid in conditions_list]
-        UserHealthCondition.objects.bulk_create(new_conditions)
+        new_conditions = [
+            UserHealthCondition(user=user, health_condition_id=cid)
+            for cid in conditions_list
+        ]
+        if new_conditions:
+            UserHealthCondition.objects.bulk_create(
+                new_conditions, ignore_conflicts=True
+            )
 
     if allergies_list is not None:
         UserAllergy.objects.filter(user=user).delete()
-        new_allergies = [UserAllergy(user=user, allergy_id=aid) for aid in allergies_list]
-        UserAllergy.objects.bulk_create(new_allergies)
+        new_allergies = [
+            UserAllergy(user=user, allergy_id=aid)
+            for aid in allergies_list
+        ]
+        if new_allergies:
+            UserAllergy.objects.bulk_create(
+                new_allergies, ignore_conflicts=True
+            )
 
 def submit_onboarding(user, validated_data):
     conditions = validated_data.pop('health_conditions', [])

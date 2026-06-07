@@ -1,0 +1,87 @@
+تقرير التحقق النهائي — Mazaj+ 1500-Food Dataset (Per 100 g)
+============================================================================
+الحالة: READY FOR IMPORT AS AN ACADEMIC PROTOTYPE DATASET
+
+ملخص العدد:
+- foods.csv: 232 -> 1500
+- USDA FNDDS foods added: 1268
+- food_aliases_final.csv: 787 -> 3440
+- food_nutrition_basis.csv: 1500
+- food_portions.csv: 1500
+- food_usage_policy.csv: 1500
+- food_sources.csv: 1500
+
+قاعدة القياس:
+- جميع قيم foods.csv محسوبة لكل 100 جرام.
+- جميع الأطعمة لديها صف في food_nutrition_basis.csv وصف مرجعي 100 جرام في food_portions.csv.
+- لا يجوز تقدير وزن الطبق أو إجمالي السعرات من الصورة تلقائيًا.
+
+تغطية المصدر:
+- تم تمثيل 156 فئة WWEIA غذائية من USDA FNDDS.
+- تم حفظ FDC ID لكل صف USDA جديد داخل food_sources.csv.
+- الأطعمة الجديدة مفعلة للبحث/الصور/التتبع فقط، وليست مفعلة للتوصيات أو الخطط.
+
+توزيع الأطعمة الجديدة حسب تصنيف Mazaj+:
+- baked_goods: 65
+- beef: 13
+- dairy_eggs: 98
+- drinks: 113
+- fast_food: 104
+- fats_oils: 39
+- fish_seafood: 27
+- fruits: 56
+- grains: 30
+- ingredients: 24
+- legumes_beans: 22
+- meat_poultry: 21
+- mixed_meals: 181
+- nuts_seeds: 14
+- poultry: 37
+- sausages_meats: 27
+- snacks: 85
+- soups_sauces: 41
+- soy: 7
+- spices_herbs: 27
+- sweets: 91
+- vegetables: 146
+
+نتائج التحقق:
+- PASS: foods_exactly_1500 (count=1500)
+- PASS: unique_food_key
+- PASS: food_key_max_length_100 (max=63)
+- PASS: unique_names_casefold
+- PASS: required_numeric_valid (bad=[])
+- PASS: optional_numeric_valid_or_blank (bad=[])
+- PASS: numeric_nonnegative (bad=[])
+- PASS: nutrition_values_reasonable (bad=[])
+- PASS: alias_unique_casefold
+- PASS: alias_food_refs_valid
+- PASS: allergen_food_refs_valid
+- PASS: allergen_keys_valid
+- PASS: condition_food_refs_valid
+- PASS: condition_keys_valid
+- PASS: mood_food_refs_valid
+- PASS: alternative_refs_valid
+- PASS: basis_all_foods_covered
+- PASS: portion_all_foods_covered
+- PASS: usage_all_foods_covered
+- PASS: source_all_foods_covered
+- PASS: basis_all_per_100g
+- PASS: reference_portions_100g
+- PASS: fndds_rows_lookup_tracking_only
+- PASS: fndds_rows_preserve_fdc_id
+- PASS: fndds_rows_exact_count_1268
+- PASS: fndds_category_coverage (represented=156)
+- PASS: all_csvs_parse_cleanly
+
+ملاحظات سلامة مهمة:
+- لم يتم توليد قواعد حساسية أو حالات صحية أو مزاج تلقائيًا للأطعمة الجديدة.
+- يجب احترام food_usage_policy.csv لمنع الأطعمة غير المراجعة من دخول توصيات المزاج أو خطط التغذية.
+- لا تزال مراجعة قواعد السلامة مطلوبة قبل تفعيل أي صف USDA جديد في التوصيات أو الخطط.
+
+قرار الجاهزية:
+- الملفات مترابطة وقابلة للاستيراد.
+- العدد النهائي هو 1500 أكلة.
+- لا توجد مراجع مكسورة داخل الملفات الأساسية.
+- الداتا مناسبة للديمو الأكاديمي والبحث وتحليل الصور والتتبع اليومي.
+- الداتا ليست قاعدة طبية، ولا يجوز اعتبار كل الأطعمة الجديدة آمنة للتوصية قبل المراجعة.

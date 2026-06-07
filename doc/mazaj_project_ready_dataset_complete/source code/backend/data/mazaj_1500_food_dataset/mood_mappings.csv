@@ -1,0 +1,146 @@
+﻿food_key,mood,reason
+almonds_dry_roasted,focus,Healthy fats and protein support sustained energy and concentration
+almonds_dry_roasted,stress,Balanced snack with protein and healthy fats for a satisfying routine
+apple_fuji,low_energy,Naturally sweet fruit option offering a gentle carbohydrate source
+apple_fuji,stress,Light portable snack suitable for a balanced nutrition routine
+apple_gala,low_energy,Sweet mild fruit with natural sugars for a light energy boost
+apple_granny_smith,low_energy,Tart refreshing fruit providing natural carbohydrates and fiber
+apple_honeycrisp,low_energy,Refreshing fruit with natural carbohydrates for a quick pick-me-up
+apple_honeycrisp,stress,Balanced light snack with fiber to support a steady routine
+apple_red_delicious,low_energy,Light fruit with natural sugars and fiber for a gentle energy lift
+apple_red_delicious,stress,Crisp light snack option that supports a balanced snacking routine
+banana,low_energy,Provides carbohydrates or protein that can support steady energy.
+banana_overripe,fatigue,Higher natural sugar content offers a fast carbohydrate source for energy
+banana_overripe,low_energy,Soft and easily digestible fruit for quick energy replenishment
+banana_ripe,fatigue,Provides quick natural carbohydrates and potassium for energy support
+banana_ripe,low_energy,Light fruit option with natural sugars for a quick refreshment boost
+bean_pupusas,fatigue,Carbohydrate and protein combination provides steady filling energy
+bean_pupusas,low_energy,Moderate carb and protein content offers a satisfying energy source
+beef_eye_round_raw,fatigue,Lean beef cut providing protein support for energy and recovery
+beef_tenderloin_roasted,fatigue,High-protein lean beef supporting energy recovery and satiety
+beef_tenderloin_roasted,focus,Complete protein source supporting sustained energy during demanding tasks
+beef_top_loin_steak,sadness,Satisfying protein-rich meal option offering comfort and substance
+beef_top_round_raw,fatigue,Lean protein-rich beef supporting energy and physical recovery
+blueberries,focus,Provides nutrients that may support steady focus as part of a balanced routine.
+bread_white,fatigue,Quick carbohydrate source providing fast energy in moderate portions
+bread_white,low_energy,Accessible carbohydrate option for a quick energy lift
+bread_whole_wheat,fatigue,Fiber-rich carbohydrate source supporting gradual energy release
+bread_whole_wheat,focus,Complex carbohydrates and fiber support steady energy and concentration
+bread_whole_wheat,low_energy,Provides complex carbohydrates for sustained and gentle energy support
+broccoli_raw,focus,Fiber and protein content supports steady digestion and alertness
+broccoli_raw,stress,Low-calorie nutrient-dense vegetable suitable for a balanced meal
+cantaloupe_raw,fatigue,High water content and natural sugars support hydration and energy
+cantaloupe_raw,low_energy,Light hydrating fruit offering quick natural carbohydrates
+carrots_frozen,focus,Natural carbohydrates and fiber provide a steady gentle energy source
+carrots_frozen,low_energy,Light vegetable with natural sugars for a mild energy lift
+cheddar_cheese,sadness,Rich comforting cheese suitable for a satisfying moderate portion
+chicken_breast_cooked,fatigue,High-protein lean option supporting muscle recovery and energy
+chicken_breast_cooked,focus,Lean high-protein food supporting sustained energy and concentration
+chicken_breast_cooked,stress,Lean protein-rich food supporting a balanced satisfying meal
+chicken_drumstick_cooked,fatigue,Protein and moderate fat content supports energy and satiety
+chicken_drumstick_cooked,sadness,Warm satisfying protein option suitable as a comforting meal
+chickpeas_cooked,fatigue,Provides protein and/or fiber that can support fullness and energy stability.
+coffee_black,focus,Provides nutrients that may support steady focus as part of a balanced routine.
+cottage_cheese_lowfat,focus,Protein-rich dairy option that supports steady energy and focus
+cottage_cheese_lowfat,stress,Light high-protein snack supporting a balanced low-calorie routine
+dark_chocolate,sadness,Can provide a small enjoyable sweet option while keeping portions mindful.
+dates,sadness,Can provide a small enjoyable sweet option while keeping portions mindful.
+deli_ham,fatigue,High-protein deli option supporting muscle energy and recovery
+deli_ham,focus,Lean protein source supporting sustained energy during tasks
+diced_tomatoes_canned,stress,Low-calorie versatile ingredient suitable for a light balanced meal
+egg_white_raw,focus,Lean protein source supporting steady energy and balanced nutrition
+egg_whole_raw,focus,Complete protein supports sustained mental and physical energy
+figs_dried,fatigue,Concentrated natural carbohydrates offer a quick dense energy source
+figs_dried,sadness,Naturally sweet comfort food option in moderate portions
+flour_corn_yellow,low_energy,Carbohydrate-rich flour providing an accessible energy source
+flour_rice_brown,focus,Whole grain flour with fiber supporting balanced steady energy
+flour_rice_brown,low_energy,Gluten-free complex carbohydrate supporting gentle energy replenishment
+flour_whole_wheat,focus,Whole grain flour high in fiber and protein supporting steady energy
+flour_whole_wheat,low_energy,Complex carbohydrate base ingredient supporting gradual energy release
+foul_medames,fatigue,Provides protein and/or fiber that can support fullness and energy stability.
+fried_rice_chinese,fatigue,Carbohydrate-rich dish providing energy and moderate satiety
+fried_rice_chinese,low_energy,Moderate carbohydrate meal offering accessible energy replenishment
+garlic_raw,focus,Aromatic ingredient with fiber and plant protein supporting balanced nutrition
+grapefruit_juice,fatigue,Quick liquid carbohydrate source to support energy replenishment
+grapefruit_juice,low_energy,Light citrus drink providing natural sugars for a refreshing lift
+greek_yogurt_plain,fatigue,Provides protein and/or fiber that can support fullness and energy stability.
+greek_yogurt_plain,focus,Protein content supports sustained energy and steady concentration
+greek_yogurt_plain,stress,High-protein light snack option supporting a balanced and satisfying routine
+greek_yogurt_strawberry,sadness,Naturally sweet creamy comfort option in a lighter balanced form
+greek_yogurt_strawberry,stress,Balanced light snack with protein and moderate carbohydrates
+green_beans_canned,focus,Provides fiber and protein for steady digestion and sustained energy
+green_beans_canned,stress,Low-calorie vegetable option supporting a light balanced routine
+green_olives,focus,Healthy fat content supports steady energy and balanced nutrition
+green_olives,stress,Moderate-portion snack with healthy fats suitable for a balanced routine
+grilled_fish,focus,Provides nutrients that may support steady focus as part of a balanced routine.
+ground_turkey_93_lean,focus,Lean protein source supporting steady energy and concentration
+ground_turkey_93_lean,stress,Low-fat high-protein option supporting a balanced nutritional routine
+haddock_raw,focus,Lean white fish with high protein content supporting sustained energy
+haddock_raw,stress,Low-calorie protein source suitable for a light balanced meal
+ham_restaurant,fatigue,Protein-rich option providing energy and satiety support
+hummus,focus,Plant protein and healthy fats support sustained energy and clarity
+hummus,stress,Balanced snack with plant protein and fiber supporting a light routine
+kale_frozen_cooked,focus,Cooked leafy green providing fiber and protein for steady sustained energy
+kale_frozen_cooked,stress,Warm light vegetable suitable as part of a balanced calming meal
+kale_raw,focus,Nutrient-dense leafy green supporting steady energy and balanced nutrition
+kale_raw,stress,Light vegetable option with fiber supporting a balanced routine
+kiwi_raw,focus,Provides natural carbohydrates and fiber to support steady energy levels
+kiwi_raw,low_energy,Refreshing light fruit with natural sugars for a quick energy lift
+large_egg_white,focus,High-protein low-fat option supporting lean energy and alertness
+large_egg_white,stress,Light high-protein food supporting a balanced nutritional routine
+large_egg_whole,fatigue,Balanced protein and fat content provides steady energy support
+large_egg_whole,focus,Complete protein source supporting sustained energy and concentration
+lentils_cooked,fatigue,Provides protein and/or fiber that can support fullness and energy stability.
+lentils_cooked,low_energy,Provides carbohydrates or protein that can support steady energy.
+marinara_sauce,stress,Light tomato-based sauce suitable for balanced lighter meals
+milk_1_percent,stress,Low-fat protein source supporting a balanced nutritional routine
+milk_2_percent,focus,Balanced dairy option with protein and carbohydrates for steady energy
+milk_skim,stress,Light protein-containing beverage suitable for a balanced routine
+milk_whole,fatigue,Provides protein and carbohydrates for energy and satiety support
+milk_whole,sadness,Warm comforting drink option with balanced macronutrients
+mixed_salad,stress,"A lighter option that can fit into a calm, balanced eating routine."
+mozzarella_cheese,focus,Protein and fat balance supports sustained energy during tasks
+mozzarella_cheese,sadness,Mild creamy cheese offering comfort in moderate portions
+nectarines_raw,low_energy,Natural sugars provide a gentle quick energy source
+nectarines_raw,stress,Light refreshing fruit suitable as a balanced snack option
+nuts_mixed,focus,Provides nutrients that may support steady focus as part of a balanced routine.
+oats_cooked,low_energy,Provides carbohydrates or protein that can support steady energy.
+oranges_raw,fatigue,Natural sugars and vitamin C content support energy and refreshment
+oranges_raw,low_energy,Hydrating fruit with natural carbohydrates for a quick uplift
+pasta_cooked,low_energy,Provides carbohydrates or protein that can support steady energy.
+peaches_raw,low_energy,Naturally sweet fruit with moderate carbohydrates for gentle energy
+peaches_raw,stress,Light hydrating fruit suitable as a calming balanced snack
+peanut_butter,fatigue,Calorie-dense protein snack providing lasting energy support
+peanut_butter,focus,Protein and healthy fat combination supports sustained concentration
+peanut_butter,sadness,Creamy satisfying comfort snack with protein in moderate portions
+pears_raw,low_energy,Provides natural carbohydrates and fiber for gentle energy support
+pears_raw,stress,Mild easily digestible fruit for a lighter balanced snack
+pollock_raw,focus,Lean protein-rich fish supporting steady energy and mental clarity
+pollock_raw,stress,Very low-calorie high-protein option for a light balanced routine
+pork_tamale,fatigue,Balanced carbohydrate and protein combination for moderate energy support
+pork_tamale,sadness,Traditional comforting meal option offering warmth and satisfaction
+red_onion_raw,focus,Fiber-containing vegetable that supports healthy digestion and balance
+rice_white_cooked,low_energy,Provides carbohydrates or protein that can support steady energy.
+ricotta_cheese,sadness,Creamy mild cheese offering a satisfying moderate comfort option
+ricotta_cheese,stress,Moderate-protein dairy option suitable for a balanced light meal
+romaine_lettuce,low_energy,Hydrating low-calorie vegetable as a refreshing light addition
+romaine_lettuce,stress,Very light low-calorie leafy option suitable for a light balanced meal
+salmon_grilled,focus,Provides nutrients that may support steady focus as part of a balanced routine.
+salsa,stress,Very low-calorie light condiment suitable for a balanced meal pairing
+strawberries,sadness,Can provide a small enjoyable sweet option while keeping portions mindful.
+strawberries_raw,fatigue,Natural sugars provide a gentle energy source with minimal heaviness
+strawberries_raw,stress,Low-calorie refreshing snack option for a lighter balanced routine
+sunflower_seeds,focus,Protein and healthy fat content supports steady energy and alertness
+sunflower_seeds,stress,Nutrient-dense snack option supporting a balanced portable routine
+swiss_cheese,focus,High-protein cheese providing sustained energy support
+tbone_steak_grilled,sadness,Hearty satisfying grilled protein offering comfort in moderate portions
+tea_unsweetened,stress,"A lighter option that can fit into a calm, balanced eating routine."
+tilapia_grilled,focus,Provides nutrients that may support steady focus as part of a balanced routine.
+tomatoes_grape,stress,Low-calorie light snack option supporting a balanced nutrition routine
+tuna_canned,fatigue,High-protein low-fat food supporting muscle recovery and energy
+tuna_canned,focus,Lean high-protein fish supporting sustained energy and concentration
+tuna_canned,stress,Light protein-rich option supporting a balanced meal routine
+turkey_breakfast_sausage,focus,Lean protein source supporting steady energy and concentration
+turkey_breakfast_sausage,stress,Lower-fat sausage option providing protein in a balanced morning routine
+white_onion_raw,focus,Provides dietary fiber supporting steady digestive balance
+yellow_onion_raw,focus,Fiber-rich vegetable suitable for balanced meal preparation

@@ -16,6 +16,7 @@ import {
   SelectValue,
 } from '../ui/select';
 import { toast } from 'sonner';
+import { adminApi } from '../../../lib/api';
 
 interface User {
   id: string;
@@ -27,9 +28,10 @@ interface EditUserTierModalProps {
   user: User | null;
   isOpen: boolean;
   onClose: () => void;
+  onUpdated?: () => void;
 }
 
-export function EditUserTierModal({ user, isOpen, onClose }: EditUserTierModalProps) {
+export function EditUserTierModal({ user, isOpen, onClose, onUpdated }: EditUserTierModalProps) {
   const [selectedTier, setSelectedTier] = useState<string>(user?.tier || 'Free');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -37,12 +39,16 @@ export function EditUserTierModal({ user, isOpen, onClose }: EditUserTierModalPr
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const result = await adminApi.updateUserTier(Number(user.id), selectedTier.toUpperCase());
+    if (result.ok) {
+      toast.success(`User tier updated to ${selectedTier}`);
+      onUpdated?.();
+      onClose();
+    } else {
+      toast.error(result.error?.message || 'Failed to update tier');
+    }
 
-    toast.success(`User tier updated to ${selectedTier}`);
     setIsSubmitting(false);
-    onClose();
   };
 
   if (!user) return null;

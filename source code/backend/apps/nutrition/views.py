@@ -87,9 +87,12 @@ class NutritionPlanListView(APIView):
         require_authenticated(request.user)
         if hasattr(request.user, 'profile') and request.user.profile.role == UserRole.ADMIN:
             return error_response("AUTHORIZATION_ERROR", "Admins cannot use the user-facing plan endpoints.")
-        plans = NutritionPlan.objects.filter(user=request.user).order_by('-created_at')
+        page = int(request.query_params.get('page', 1))
+        page_size = 10
+        offset = (page - 1) * page_size
+        plans = NutritionPlan.objects.filter(user=request.user).order_by('-created_at')[offset:offset + page_size]
         serializer = NutritionPlanSerializer(plans, many=True)
-        return success_response({"plans": serializer.data})
+        return success_response({"plans": serializer.data, "page": page})
 
 class NutritionPlanDetailView(APIView):
     permission_classes = [permissions.IsAuthenticated]
@@ -110,7 +113,7 @@ from .models import WaterIntakeLog
 from apps.common.enums import FeatureKey
 from django.utils import timezone
 from apps.subscriptions.services import check_and_increment_usage
-from .services import get_healthy_alternatives, get_daily_tip
+from .services import get_healthy_alternatives, get_daily_tip, get_hydration_guide_for_user
 
 class AlternativeSearchView(APIView):
     permission_classes = [permissions.IsAuthenticated]
@@ -170,12 +173,12 @@ class AlternativeSearchView(APIView):
             for alt in alts:
                 alt_list.append({
                     "original_food_name": alt.original_food_name,
-                    "alternative_food": { 
-                        "name": alt.alternative_food.name, 
-                        "calories": str(alt.alternative_food.calories), 
-                        "protein_g": str(alt.alternative_food.protein_g), 
-                        "carbs_g": str(alt.alternative_food.carbs_g), 
-                        "fat_g": str(alt.alternative_food.fat_g) 
+                    "alternative_food": {
+                        "name": alt.alternative_food.name,
+                        "calories": float(alt.alternative_food.calories),
+                        "protein_g": float(alt.alternative_food.protein_g),
+                        "carbs_g": float(alt.alternative_food.carbs_g),
+                        "fat_g": float(alt.alternative_food.fat_g)
                     },
                     "reason": alt.reason
                 })
@@ -217,10 +220,18 @@ class HydrationTargetView(APIView):
             user=request.user, logged_at__gte=today_start
         ).aggregate(total=Sum("amount_ml"))["total"] or 0
 
+        guide = get_hydration_guide_for_user(request.user)
+
         return success_response({
             "advisory": "Advisory only. Not medical advice.",
             "target_ml": target_ml,
-            "today_total_ml": today_total_ml
+            "today_total_ml": today_total_ml,
+            "guide": {
+                "title": guide.title,
+                "message": guide.message,
+                "min_cups": guide.min_cups,
+                "max_cups": guide.max_cups
+            } if guide else None
         })
 
 class HydrationLogView(APIView):
@@ -311,15 +322,15 @@ class DailyTipView(APIView):
         return success_response({"tip": serializer.data, "advisory": "Advisory only."})
 
 class HealthConditionListView(APIView):
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
 
     def get(self, request):
         conditions = HealthCondition.objects.filter(is_active=True).order_by('id')
-        data = [{'id': c.id, 'name': c.name} for c in conditions]
+        data = [{'id': c.id, 'name': c.name, 'description': c.description} for c in conditions]
         return success_response({'health_conditions': data})
 
 class AllergyListView(APIView):
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
 
     def get(self, request):
         allergies = Allergy.objects.filter(is_active=True).order_by('id')

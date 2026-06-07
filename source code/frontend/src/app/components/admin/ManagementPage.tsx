@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Plus } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
-import { AdminManagementBanner } from './AdminManagementBanner';
+import { AdminBanner } from './AdminBanner';
 import { ManagementStats } from './ManagementStats';
 import { UserManagement } from './UserManagement';
 import { FoodDataManagement } from './FoodDataManagement';
@@ -10,6 +10,7 @@ import { AddFoodItemModal } from './AddFoodItemModal';
 
 export function ManagementPage() {
   const [isAddFoodModalOpen, setIsAddFoodModalOpen] = useState(false);
+  const [foodRefreshKey, setFoodRefreshKey] = useState(0);
 
   return (
     <div className="min-h-full">
@@ -31,7 +32,7 @@ export function ManagementPage() {
 
       {/* Admin Boundary Banner */}
       <div className="max-w-7xl mx-auto px-6 pt-6">
-        <AdminManagementBanner />
+        <AdminBanner message="Operational Management Area: This interface is for account and food data management only. Do not access private chat messages, nutrition plans, health conditions, allergies, or body measurements." />
       </div>
 
       {/* Management Stats */}
@@ -52,7 +53,7 @@ export function ManagementPage() {
           </TabsContent>
 
           <TabsContent value="food" className="space-y-4">
-            <FoodDataManagement />
+            <FoodDataManagement refreshKey={foodRefreshKey} />
           </TabsContent>
         </Tabs>
       </div>
@@ -61,6 +62,7 @@ export function ManagementPage() {
       <AddFoodItemModal
         isOpen={isAddFoodModalOpen}
         onClose={() => setIsAddFoodModalOpen(false)}
+        onAdded={() => setFoodRefreshKey(k => k + 1)}
       />
     </div>
   );

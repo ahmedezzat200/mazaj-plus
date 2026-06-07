@@ -1,0 +1,227 @@
+﻿food_key,name,category,calories_kcal,protein_g,carbs_g,fat_g,sugar_g,fiber_g,sodium_mg
+hummus,Hummus,legumes_beans,229.0,7.35,14.9,17.1,0.34,5.4,438.0
+milk_2_percent,"Milk, 2% Reduced Fat",dairy_eggs,50.0,3.35,4.91,1.9,4.89,,39.0
+tomatoes_grape,"Tomatoes, Grape",vegetables,27.0,0.83,5.51,0.63,,2.1,6.0
+green_beans_canned,"Green Beans, Canned",vegetables,21.0,1.04,4.11,0.39,1.29,,282.0
+broccoli_raw,"Broccoli, Raw",vegetables,32.0,2.57,6.29,0.34,1.4,2.4,36.0
+milk_1_percent,"Milk, 1% Lowfat",dairy_eggs,43.0,3.38,5.19,0.95,4.96,,39.0
+milk_skim,"Milk, Skim (Nonfat)",dairy_eggs,34.0,3.43,4.89,0.08,5.05,,41.0
+milk_whole,"Milk, Whole",dairy_eggs,60.0,3.28,4.67,3.2,4.81,,38.0
+beef_hot_dog,Beef Hot Dog,sausages_meats,314.0,11.7,2.89,28.0,1.26,,872.0
+almonds_dry_roasted,"Almonds, Dry Roasted",nuts_seeds,620.0,20.4,16.2,57.8,4.17,11.0,256.0
+ricotta_cheese,"Ricotta Cheese, Whole Milk",dairy_eggs,157.0,7.81,6.86,11.0,,,105.0
+kale_raw,"Kale, Raw",vegetables,35.0,2.92,4.42,1.49,0.8,4.1,53.0
+egg_whole_raw,"Egg, Whole, Raw",dairy_eggs,150.0,12.3,0.91,10.3,,,121.0
+egg_white_raw,"Egg White, Raw",dairy_eggs,48.0,10.1,0.74,0.16,,,144.0
+egg_white_dried,"Egg White, Dried",dairy_eggs,376.0,79.9,6.02,0.65,,,1250.0
+salsa,Salsa Sauce,soups_sauces,29.0,1.44,6.74,0.19,3.81,1.8,656.0
+beef_breakfast_sausage,Beef Breakfast Sausage,sausages_meats,328.0,13.3,3.37,28.7,1.0,,866.0
+onion_rings_baked,"Onion Rings, Frozen Baked",vegetables,288.0,4.52,36.3,14.4,4.5,2.4,374.0
+dill_pickles,Dill Pickles,vegetables,12.0,0.48,1.99,0.43,1.28,1.0,808.0
+peanut_butter,"Peanut Butter, Smooth",legumes_beans,597.0,22.5,22.3,51.1,10.5,4.8,429.0
+parmesan_cheese,"Parmesan Cheese, Grated",dairy_eggs,421.0,29.6,12.4,28.0,0.07,,1750.0
+american_cheese,"American Cheese, Processed",dairy_eggs,366.0,18.0,5.27,30.6,2.63,,1660.0
+grapefruit_juice,Grapefruit Juice,fruits,37.0,0.55,7.59,0.7,7.72,0.2,1.0
+peaches_raw,"Peaches, Raw",fruits,42.0,0.91,10.1,0.27,8.39,1.5,13.0
+sunflower_seeds,"Sunflower Seeds, Dry Roasted",nuts_seeds,612.0,21.0,17.1,56.1,3.14,10.3,532.0
+italian_pork_sausage,Italian Pork Sausage,sausages_meats,322.0,18.2,2.15,26.2,1.46,,766.0
+white_bread,White Bread,baked_goods,270.0,9.43,49.2,3.59,5.34,2.3,477.0
+turkey_breakfast_sausage,Turkey Breakfast Sausage,sausages_meats,169.0,16.7,0.93,10.4,,,599.0
+swiss_cheese,Swiss Cheese,dairy_eggs,393.0,27.0,1.44,31.0,0.0,,185.0
+kale_frozen_cooked,"Kale, Frozen Cooked",vegetables,36.0,2.94,5.3,1.21,1.12,,16.0
+carrots_frozen,"Carrots, Frozen",vegetables,37.0,0.81,7.92,0.47,4.2,3.2,66.0
+yellow_mustard,Yellow Mustard,spices_herbs,61.0,4.25,5.3,3.38,1.42,4.3,1100.0
+figs_dried,"Figs, Dried",fruits,249.0,3.3,63.9,0.92,47.9,9.8,10.0
+kiwi_raw,"Kiwi, Raw",fruits,58.0,1.06,14.0,0.44,8.99,3.0,5.0
+cantaloupe_raw,"Cantaloupe, Raw",fruits,34.0,0.82,8.16,0.18,7.88,0.8,30.0
+nectarines_raw,"Nectarines, Raw",fruits,39.0,1.06,9.18,0.28,7.89,1.5,13.0
+oranges_raw,"Oranges, Raw",fruits,47.0,0.91,11.8,0.15,8.57,2.0,9.0
+strawberries_raw,"Strawberries, Raw",fruits,31.0,0.64,7.63,0.22,5.34,1.8,10.0
+romaine_lettuce,"Romaine Lettuce, Raw",vegetables,17.0,1.24,3.24,0.26,1.19,1.8,
+cheddar_cheese,Cheddar Cheese,dairy_eggs,408.0,23.3,2.44,34.0,0.33,,654.0
+cottage_cheese_lowfat,"Cottage Cheese, 2% Lowfat",dairy_eggs,84.0,11.0,4.31,2.3,4.1,,321.0
+mozzarella_cheese,"Mozzarella Cheese, Part-Skim",dairy_eggs,298.0,23.7,4.44,20.4,1.81,,699.0
+egg_whole_dried,"Egg, Whole, Dried",dairy_eggs,575.0,48.1,1.87,39.8,,,485.0
+egg_yolk_raw,"Egg Yolk, Raw",dairy_eggs,296.0,15.6,0.59,25.1,,,66.0
+egg_yolk_dried,"Egg Yolk, Dried",dairy_eggs,654.0,34.2,1.07,55.5,,,149.0
+queso_seco,Queso Seco (Dry White Cheese),dairy_eggs,326.0,24.5,2.07,24.3,0.43,,1810.0
+greek_yogurt_plain,"Greek Yogurt, Plain Nonfat",dairy_eggs,61.0,10.3,3.64,0.37,3.27,,36.0
+greek_yogurt_strawberry,"Greek Yogurt, Strawberry Nonfat",dairy_eggs,83.0,8.06,12.2,0.15,11.5,0.6,32.0
+coconut_oil,Coconut Oil,fats_oils,833.0,0.0,0.84,99.1,,,0.0
+ground_turkey_93_lean,"Ground Turkey, 93% Lean",poultry,220.0,27.1,0.0,11.6,,,90.0
+chicken_drumstick_cooked,"Chicken Drumstick, Cooked",poultry,156.0,23.9,0.0,5.95,,,117.0
+chicken_breast_cooked,"Chicken Breast, Skinless Boneless",poultry,166.0,32.1,0.0,3.24,,,47.0
+marinara_sauce,Marinara Pasta Sauce,soups_sauces,45.0,1.41,8.05,1.48,5.5,1.8,419.0
+deli_ham,"Deli Ham, Sliced",sausages_meats,106.0,16.7,0.27,3.73,,,1040.0
+pears_raw,"Pears, Raw",fruits,57.0,0.38,15.1,0.16,9.69,3.1,7.0
+green_olives,"Green Olives, Stuffed",fruits,130.0,1.15,4.96,12.9,0.0,4.0,1620.0
+chorizo_pork,"Chorizo, Pork",sausages_meats,346.0,19.3,2.63,28.1,,,983.0
+oatmeal_raisin_cookies,Oatmeal Raisin Cookies,baked_goods,430.0,5.79,69.6,14.3,34.8,3.3,314.0
+diced_tomatoes_canned,"Diced Tomatoes, Canned",vegetables,18.0,0.84,3.32,0.5,2.99,,125.0
+haddock_raw,"Haddock, Raw",fish_seafood,74.0,16.3,0.0,0.45,,,213.0
+pollock_raw,"Pollock, Raw",fish_seafood,56.0,12.3,0.0,0.41,,,333.0
+tuna_canned,"Tuna, Canned in Water",fish_seafood,90.0,19.0,0.08,0.94,0.0,,219.0
+granulated_sugar,Granulated Sugar,snacks,385.0,0.0,99.6,0.32,99.8,,1.0
+sweet_sour_pork,Sweet and Sour Pork (Chinese),restaurant_foods,260.0,8.88,25.5,13.6,10.3,1.0,304.0
+fried_rice_chinese,"Fried Rice, No Meat (Chinese)",restaurant_foods,174.0,3.84,32.5,3.19,0.62,,361.0
+pork_tamale,Pork Tamale (Latino),restaurant_foods,174.0,7.38,15.8,9.04,0.46,2.4,473.0
+bean_pupusas,Bean Pupusas (Latino),restaurant_foods,229.0,5.59,31.5,9.01,1.3,5.8,305.0
+beef_top_loin_steak,"Beef Top Loin Steak, Raw",beef,155.0,22.8,0.0,6.39,,,45.0
+beef_tenderloin_roasted,"Beef Tenderloin, Roasted",beef,176.0,27.7,0.0,6.36,,,54.0
+beef_eye_round_raw,"Beef Eye of Round Roast, Raw",beef,122.0,23.4,0.0,2.48,,,50.0
+beef_top_round_raw,"Beef Top Round Roast, Raw",beef,123.0,23.7,0.0,2.41,,,55.0
+tbone_steak_grilled,"T-Bone Steak, Grilled",beef,219.0,27.3,0.0,11.4,,,67.0
+porterhouse_steak,"Porterhouse Steak, Raw",beef,145.0,22.7,0.0,5.32,,,43.0
+whole_wheat_bread,Whole Wheat Bread,baked_goods,254.0,12.3,43.1,3.55,4.41,6.0,450.0
+ham_restaurant,"Ham, Sliced (Restaurant)",grains_pasta,121.0,19.6,2.36,3.68,2.2,,1030.0
+american_cheese_restaurant,American Cheese (Restaurant),dairy_eggs,375.0,17.5,6.35,31.1,3.76,,1600.0
+ketchup,Ketchup,vegetables,117.0,1.11,26.8,0.55,21.8,,949.0
+large_egg_white,Large Egg White,dairy_eggs,55.0,10.7,2.36,0.0,,,
+large_egg_yolk,Large Egg Yolk,dairy_eggs,334.0,16.2,1.02,28.8,,,
+large_egg_whole,"Large Egg, Whole",dairy_eggs,148.0,12.4,0.96,9.96,0.2,0.0,129.0
+bacon_cooked,"Bacon, Cooked",grains_pasta,500.0,40.9,2.1,36.5,3.14,,1830.0
+flour_ap_bleached,"All-Purpose Flour, Bleached",cereals_breakfast,366.0,10.9,77.3,1.48,,,2.0
+flour_ap_unbleached,"All-Purpose Flour, Unbleached",cereals_breakfast,358.0,13.1,73.2,1.48,,,4.0
+flour_ap_unenriched,"All-Purpose Flour, Unenriched",cereals_breakfast,362.0,12.0,74.6,1.7,,3.0,2.0
+flour_whole_wheat,Whole Wheat Flour,cereals_breakfast,370.0,15.1,71.2,2.73,,10.6,3.0
+flour_bread_white,"Bread Flour, White",cereals_breakfast,363.0,14.3,72.8,1.65,,,3.0
+flour_rice_white,"Rice Flour, White",cereals_breakfast,359.0,6.94,79.8,1.3,,0.5,5.0
+flour_corn_yellow,"Corn Flour, Yellow",cereals_breakfast,364.0,6.2,80.8,1.74,1.04,4.3,0.0
+red_onion_raw,"Red Onion, Raw",vegetables,44.0,0.94,9.93,0.1,5.76,2.2,1.0
+yellow_onion_raw,"Yellow Onion, Raw",vegetables,38.0,0.83,8.61,0.05,5.82,1.9,1.0
+banana_overripe,"Banana, Overripe",fruits,85.0,0.73,20.1,0.22,,1.7,
+banana_ripe,"Banana, Ripe",fruits,97.0,0.74,23.0,0.29,,1.7,0.0
+garlic_raw,"Garlic, Raw",vegetables,143.0,6.62,28.2,0.38,,2.7,
+flour_soy_defatted,"Soy Flour, Defatted",legumes_beans,366.0,51.1,32.9,3.33,,,2.0
+flour_soy_full_fat,"Soy Flour, Full-Fat",legumes_beans,452.0,38.6,27.9,20.7,,,2.0
+flour_rice_brown,Brown Rice Flour,cereals_breakfast,365.25,7.19,75.5,3.85,,,1.0
+flour_rice_glutinous,Glutinous Rice Flour,cereals_breakfast,358.0,6.69,80.1,1.16,,,6.0
+flour_pastry,Pastry Flour,cereals_breakfast,358.0,8.75,77.2,1.64,,,1.0
+white_onion_raw,"White Onion, Raw",vegetables,35.0,0.89,7.68,0.13,5.76,1.2,2.0
+apple_red_delicious,"Apple, Red Delicious",fruits,62.0,0.19,14.8,0.21,11.1,2.0,0.0
+apple_honeycrisp,"Apple, Honeycrisp",fruits,60.0,0.1,14.7,0.1,11.7,1.7,0.0
+apple_granny_smith,"Apple, Granny Smith",fruits,59.0,0.27,14.2,0.14,10.5,2.5,0.0
+apple_gala,"Apple, Gala",fruits,61.0,0.13,14.8,0.15,11.3,2.1,0.0
+apple_fuji,"Apple, Fuji",fruits,65.0,0.15,15.7,0.16,12.6,2.1,1.0
+grilled_fish,Grilled Fish,fish_seafood,180,26,0,8,0,0,120
+salmon_grilled,Grilled Salmon,fish_seafood,206,22,0,12,0,0,59
+tilapia_grilled,Grilled Tilapia,fish_seafood,128,26,0,2.7,0,0,56
+shrimp_cooked,Cooked Shrimp,fish_seafood,99,24,0.2,0.3,0,0,111
+sardines_canned,Canned Sardines,fish_seafood,208,25,0,11.5,0,0,505
+fish_fried,Fried Fish,fish_seafood,232,18,8,14,0.5,0.5,350
+fish_baked,Baked Fish,fish_seafood,150,25,0,5,0,0,90
+cod_baked,Baked Cod,fish_seafood,105,23,0,0.9,0,0,89
+sea_bass_grilled,Grilled Sea Bass,fish_seafood,124,23.6,0,2.6,0,0,70
+calamari_fried,Fried Calamari,fish_seafood,175,15,12,8,0.5,0.5,380
+chicken_breast_grilled,Grilled Chicken Breast,meat_poultry,165,31,0,3.6,0,0,74
+chicken_fried,Fried Chicken,meat_poultry,246,23,8,14,0.2,0.3,450
+chicken_shawarma,Chicken Shawarma,mixed_meals,215,17,18,9,2,1.5,480
+shawarma_chicken,Chicken Shawarma Wrap,mixed_meals,230,16,22,10,2,1.8,550
+beef_burger,Beef Burger,fast_food,250,17,21,12,4,1.2,460
+burger_beef,Beef Burger,fast_food,250,17,21,12,4,1.2,460
+beef_steak_grilled,Grilled Beef Steak,meat_poultry,217,26,0,12,0,0,60
+beef_kebab,Grilled Beef Kebab,meat_poultry,210,24,2,11,0.5,0.3,300
+meatballs,Meatballs,meat_poultry,202,14,8,13,1,1,520
+turkey_slices,Turkey Slices,meat_poultry,120,20,2,3,1,0,900
+sausage_beef,Beef Sausage,meat_poultry,301,12,2,27,1,0,900
+hot_dog,Hot Dog,fast_food,290,11,4,26,1.5,0,1090
+lamb_chop_grilled,Grilled Lamb Chop,meat_poultry,282,25,0,20,0,0,72
+chicken_nuggets,Chicken Nuggets,fast_food,296,15,18,19,0.5,1,557
+fried_chicken_piece,Fried Chicken Piece,fast_food,260,20,8,17,0.2,0.2,480
+kebab_grilled,Grilled Kebab,mixed_meals,215,23,3,12,0.5,0.5,350
+kofta_grilled,Grilled Kofta,middle_eastern,240,17,4,18,1,1,430
+boiled_egg,Boiled Egg,dairy_eggs,155,13,1.1,11,1.1,0,124
+scrambled_egg,Scrambled Egg,dairy_eggs,148,10,1.6,11,1.4,0,145
+yogurt_fruit,Fruit Yogurt,dairy_eggs,95,3.5,15,2,12,0,45
+cream_cheese,Cream Cheese,dairy_eggs,342,6,4,34,3.2,0,321
+feta_cheese,Feta Cheese,dairy_eggs,264,14,4,21,4,0,917
+labneh,Labneh,dairy_eggs,150,8,4,11,3,0,80
+rice_white_cooked,Cooked White Rice,grains,130,2.7,28,0.3,0.1,0.4,1
+rice_brown_cooked,Cooked Brown Rice,grains,123,2.7,25.6,1,0.2,1.8,4
+pasta_cooked,Cooked Pasta,grains,157,5.8,30.9,0.9,0.6,1.8,1
+spaghetti_tomato_sauce,Spaghetti with Tomato Sauce,mixed_meals,125,4.5,24,1.5,4,2.5,300
+bread_white,White Bread,grains,265,9,49,3.2,5,2.7,491
+bread_whole_wheat,Whole Wheat Bread,grains,247,13,41,4.2,6,7,400
+oats_cooked,Cooked Oats,grains,71,2.5,12,1.5,0.3,1.7,4
+cereal_cornflakes,Cornflakes Cereal,grains,357,7,84,0.4,8,3,729
+tortilla_wrap,Tortilla Wrap,grains,300,8,50,8,2,3,650
+pita_bread,Pita Bread,grains,275,9,56,1.2,1,2.2,536
+couscous_cooked,Cooked Couscous,grains,112,3.8,23,0.2,0.1,1.4,5
+quinoa_cooked,Cooked Quinoa,grains,120,4.4,21.3,1.9,0.9,2.8,7
+potato_baked,Baked Potato,vegetables,93,2.5,21,0.1,1.2,2.2,10
+sweet_potato_baked,Baked Sweet Potato,vegetables,90,2,20.7,0.2,6.5,3.3,36
+baladi_bread,Baladi Bread,middle_eastern,275,9,56,1.5,1.5,5,480
+pizza_slice,Pizza Slice,fast_food,266,11,33,10,3.6,2.3,598
+french_fries,French Fries,fast_food,312,3.4,41,15,0.3,3.8,210
+pasta_alfredo,Pasta Alfredo,mixed_meals,208,6,21,11,2,1.1,420
+lasagna,Lasagna,mixed_meals,163,11,14,7.5,3,1.5,460
+sandwich_turkey,Turkey Sandwich,mixed_meals,180,13,24,4,3,2,600
+sandwich_cheese,Cheese Sandwich,mixed_meals,300,12,30,15,4,2,650
+soup_lentil,Lentil Soup,legumes_beans,56,3.5,8,1.5,1.3,2.8,250
+soup_chicken,Chicken Soup,mixed_meals,36,3.5,3,1.2,1,0.5,343
+falafel,Falafel,middle_eastern,333,13,32,18,2,5,294
+falafel_taameya,Falafel / Taameya,middle_eastern,333,13,32,18,2,5,294
+koshari,Koshari,middle_eastern,160,5,29,3,3,4,250
+foul_medames,Foul Medames,middle_eastern,110,7.5,18,1.5,1,5.5,330
+molokhia,Molokhia,middle_eastern,45,3,7,1,1,3,250
+mahshi,Mahshi,middle_eastern,145,4,22,5,3,3,350
+hawawshi,Hawawshi,middle_eastern,285,13,28,14,2,2,560
+lentil_soup,Lentil Soup,middle_eastern,56,3.5,8,1.5,1.3,2.8,250
+water,Water,drinks,0,0,0,0,0,0,0
+sparkling_water,Sparkling Water,drinks,0,0,0,0,0,0,5
+cola_regular,Cola Regular,drinks,42,0,10.6,0,10.6,0,4
+cola_diet,Diet Cola,drinks,1,0,0.1,0,0,0,15
+orange_juice,Orange Juice,drinks,45,0.7,10.4,0.2,8.4,0.2,1
+apple_juice,Apple Juice,drinks,46,0.1,11.3,0.1,9.6,0.2,4
+coffee_black,Black Coffee,drinks,2,0.1,0,0,0,0,5
+coffee_milk_sugar,Coffee with Milk and Sugar,drinks,45,1.2,7,1.5,6.5,0,35
+tea_unsweetened,Unsweetened Tea,drinks,1,0,0,0,0,0,3
+tea_sweetened,Sweetened Tea,drinks,30,0,7.8,0,7.8,0,3
+energy_drink,Energy Drink,drinks,45,0,11,0,11,0,85
+sports_drink,Sports Drink,drinks,26,0,6.4,0,5.8,0,45
+lemonade,Lemonade,drinks,40,0,10,0,9,0,4
+smoothie_fruit,Fruit Smoothie,drinks,65,1,15,0.5,12,1.5,20
+potato_chips,Potato Chips,snacks,536,7,53,35,0.5,4.8,525
+popcorn_plain,Plain Popcorn,snacks,387,13,78,4.5,0.9,15,8
+popcorn_butter,Butter Popcorn,snacks,535,8,58,31,0.5,10,884
+chocolate_bar,Chocolate Bar,sweets,535,7,59,30,52,3.4,79
+cookies_chocolate_chip,Chocolate Chip Cookies,sweets,488,5.5,64,24,35,2.3,350
+cake_chocolate,Chocolate Cake,sweets,371,5,50,17,37,2,315
+ice_cream_vanilla,Vanilla Ice Cream,sweets,207,3.5,24,11,21,0.7,80
+donut_glazed,Glazed Donut,sweets,417,4.5,57,19,25,2,450
+candy_gummy,Gummy Candy,sweets,340,6,78,0.1,46,0,60
+granola_bar,Granola Bar,snacks,471,10,64,19,29,5,250
+nuts_mixed,Mixed Nuts,nuts_seeds,607,20,21,54,4,7,6
+peanuts,Peanuts,nuts_seeds,567,26,16,49,4,8.5,18
+dates,Dates,fruits,282,2.5,75,0.4,63,8,2
+dark_chocolate,Dark Chocolate,sweets,546,4.9,61,31,48,7,24
+basbousa,Basbousa,sweets,330,5,52,12,32,1.5,180
+kunafa,Kunafa,sweets,400,7,45,22,28,1,220
+rice_pudding,Rice Pudding,sweets,118,3.3,21,2,12,0.2,90
+banana,Banana,fruits,89,1.1,22.8,0.3,12.2,2.6,1
+apple,Apple,fruits,52,0.3,13.8,0.2,10.4,2.4,1
+orange,Orange,fruits,47,0.9,11.8,0.1,9.4,2.4,0
+grapes,Grapes,fruits,69,0.7,18.1,0.2,15.5,0.9,2
+strawberries,Strawberries,fruits,32,0.7,7.7,0.3,4.9,2,1
+blueberries,Blueberries,fruits,57,0.7,14.5,0.3,10,2.4,1
+mango,Mango,fruits,60,0.8,15,0.4,13.7,1.6,1
+watermelon,Watermelon,fruits,30,0.6,7.6,0.2,6.2,0.4,1
+pineapple,Pineapple,fruits,50,0.5,13.1,0.1,9.9,1.4,1
+avocado,Avocado,fruits,160,2,8.5,14.7,0.7,6.7,7
+pear,Pear,fruits,57,0.4,15,0.1,9.8,3.1,1
+kiwi,Kiwi,fruits,61,1.1,14.7,0.5,9,3,3
+broccoli_steamed,Steamed Broccoli,vegetables,35,2.4,7.2,0.4,1.4,3.3,41
+carrots_raw,Raw Carrots,vegetables,41,0.9,9.6,0.2,4.7,2.8,69
+cucumber,Cucumber,vegetables,15,0.7,3.6,0.1,1.7,0.5,2
+tomato,Tomato,vegetables,18,0.9,3.9,0.2,2.6,1.2,5
+lettuce,Lettuce,vegetables,15,1.4,2.9,0.2,0.8,1.3,28
+spinach,Spinach,vegetables,23,2.9,3.6,0.4,0.4,2.2,79
+corn_cooked,Cooked Corn,vegetables,96,3.4,21,1.5,4.5,2.4,1
+peas_cooked,Cooked Peas,vegetables,84,5.4,15.6,0.4,5.9,5.5,5
+mixed_salad,Mixed Salad,vegetables,25,1.5,5,0.3,2.5,2,25
+lentils_cooked,Cooked Lentils,legumes_beans,116,9,20,0.4,1.8,7.9,2
+chickpeas_cooked,Cooked Chickpeas,legumes_beans,164,8.9,27.4,2.6,4.8,7.6,7
+beans_black,Black Beans,legumes_beans,132,8.9,23.7,0.5,0.3,8.7,1
+beans_kidney,Kidney Beans,legumes_beans,127,8.7,22.8,0.5,0.3,6.4,1
+tofu_firm,Firm Tofu,soy,144,15.7,3.9,8.7,0.6,2.3,14
+veggie_burger,Veggie Burger,vegetarian,190,11,18,9,2,4,450

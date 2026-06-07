@@ -1,0 +1,26 @@
+﻿category_key,description,default_plan_role
+baked_goods,Breads and baked carbohydrate foods,carb_source
+beef,Beef cuts and preparations,protein_source
+dairy_eggs,Dairy products and egg foods,protein_source
+drinks,Water and beverages,not_for_plan
+fast_food,Fast-food items,not_for_plan
+fats_oils,Fats and oils,not_for_plan
+fish_seafood,Fish and seafood foods,protein_source
+fruits,Fresh and prepared fruits,fruit_snack
+grains,Cooked grains and grain staples,carb_source
+ingredients,Cooking ingredients not intended as standalone recommendations,not_for_plan
+legumes_beans,"Beans, lentils, chickpeas, and legume foods",protein_source
+meat_poultry,Prepared meat and poultry foods,protein_source
+middle_eastern,Middle Eastern and Egyptian prepared foods,mixed_meal
+mixed_meals,Prepared meals containing multiple food groups,mixed_meal
+nuts_seeds,Nuts and seeds,healthy_fat_snack
+poultry,Poultry cuts and preparations,protein_source
+restaurant_foods,Restaurant-style prepared foods,not_for_plan
+sausages_meats,Processed meats and sausages,not_for_plan
+snacks,Snack foods,not_for_plan
+soups_sauces,Soups and sauces,not_for_plan
+soy,Soy-based protein foods,protein_source
+spices_herbs,Spices and condiments,not_for_plan
+sweets,Desserts and sweets,not_for_plan
+vegetables,Vegetables and vegetable sides,vegetable_side
+vegetarian,Vegetarian prepared foods,protein_source

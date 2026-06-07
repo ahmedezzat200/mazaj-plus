@@ -1,0 +1,72 @@
+أنت تعمل داخل مشروع Mazaj+ المفتوح حاليًا.
+
+الداتا النهائية المعتمدة موجودة داخل المشروع في المسار النسبي:
+
+source code/backend/data/mazaj_1500_food_dataset
+
+المطلوب:
+استبدل داتا التغذية القديمة بهذه الداتا النهائية، مع الحفاظ على المستخدمين والبروفايلات والاشتراكات وبيانات الدفع.
+
+قواعد مهمة:
+1. لا تستخدم أي API خارجي لجلب داتا أثناء تشغيل الموقع.
+2. قاعدة بيانات Mazaj+ الداخلية هي مصدر القيم الغذائية.
+3. كل القيم في foods.csv محسوبة لكل 100 جرام.
+4. Gemini Vision يتعرف على اسم الطعام فقط ولا يحسب سعرات أو ماكروز.
+5. Gemini لا يولد ولا يعدل قرارات غذائية.
+6. يجب احترام food_usage_policy.csv.
+7. أطعمة USDA الجديدة تستخدم للبحث، تحليل الصور، عرض القيم الغذائية، والتتبع فقط.
+8. لا تستخدم أطعمة USDA الجديدة في توصيات المزاج أو خطط التغذية إلا إذا كانت recommendation_allowed=true أو plan_allowed=true.
+9. لا تستخدم أطعمة ليس لها safety rules في قرارات الحساسية أو الحالات الصحية.
+10. عند عدم وجود مطابقة، أرجع رسالة no-data واضحة بدل اختيار طعام قريب أو عشوائي.
+
+الملفات المطلوب استيرادها:
+- allergies.csv
+- health_conditions.csv
+- foods.csv
+- food_aliases_final.csv
+- food_allergens.csv
+- food_condition_rules.csv
+- mood_mappings.csv
+- healthy_alternatives_final.csv
+- hydration_guides_final.csv
+- food_nutrition_basis.csv
+- food_portions.csv
+- food_usage_policy.csv
+- food_categories.csv
+- food_components.csv
+- food_sources.csv
+- data_sources.csv
+
+المطلوب من أمر الاستيراد:
+1. يعمل validation لكل الملفات قبل مسح أي داتا.
+2. يوقف التنفيذ إذا وجد broken references أو duplicate keys أو قيم غذائية غير صالحة.
+3. يمسح فقط داتا التغذية القديمة والشات القديم إذا كان ذلك مطلوبًا.
+4. لا يمسح users أو profiles أو subscriptions أو payment records أو admin accounts.
+5. يستخدم transaction عشان لو حصل خطأ يرجع كل شيء كما كان.
+6. يدعم dry-run إن أمكن.
+7. يطبع imported counts لكل جدول.
+
+اختبارات ضرورية بعد الاستيراد:
+1. عدد foods = 1500.
+2. aliases حوالي 3440.
+3. كل food_key في aliases موجود في foods.
+4. كل food في food_usage_policy موجود في foods.
+5. food image lookup يستخدم aliases ثم foods.
+6. لا يوجد fish -> chicken fallback.
+7. لا يوجد random fallback.
+8. أطعمة USDA الجديدة لا تدخل في mood recommendations أو plans إلا حسب policy.
+9. المستخدمون والاشتراكات وبيانات الدفع ما زالت موجودة.
+
+لا تعمل commit.
+بعد التنفيذ اكتب تقريرًا يحتوي على:
+- files changed
+- migrations created إن وجدت
+- import command used
+- dry-run result
+- real import result
+- imported counts
+- tables cleared
+- tables not touched
+- food_usage_policy behavior
+- tests results
+- remaining limitations

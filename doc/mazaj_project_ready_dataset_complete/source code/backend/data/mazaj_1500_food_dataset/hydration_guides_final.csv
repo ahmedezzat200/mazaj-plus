@@ -1,0 +1,18 @@
+﻿guide_key,title,context_type,context_key,message,min_cups,max_cups
+celiac_hydration,Hydration and gluten-free routine,condition,celiac_disease,Keep water as your main drink while planning meals around gluten-free choices.,6,8
+cholesterol_hydration,Hydration and heart-friendly routine,condition,high_cholesterol,Choose water instead of sugary drinks as part of a heart-conscious daily routine.,6,8
+diabetes_hydration,Hydration and sugar control,condition,diabetes_type_2,Water is usually a better daily choice than sugary drinks for hydration support.,6,8
+exercise_day,Hydration on active days,general,general,"On active days, drink water before and after exercise and take small sips during longer sessions.",8,10
+fatigue_hydration,Hydration for fatigue,mood,fatigue,"When you feel tired, gentle hydration may support your energy routine. Drink water gradually during the day.",6,8
+focus_hydration,Hydration for focus,mood,focus,"For focus, keep a water bottle nearby and take short water breaks while studying or working.",6,8
+general_daily,Daily hydration,general,general,"Drink water regularly throughout the day. Needs can increase with heat, activity, or illness.",6,8
+gout_hydration,Hydration and gout routine,condition,gout,Regular water intake can support daily hydration habits. Follow professional guidance during flare-ups.,8,10
+hot_weather,Hot weather hydration,general,general,"In hot weather, keep water nearby and drink more often to replace fluid lost through sweating.",8,10
+hypertension_hydration,Hydration and blood pressure,condition,hypertension,Choose water more often and avoid relying on sugary or salty drinks.,6,8
+kidney_hydration,Hydration and kidney health,condition,kidney_disease,Hydration needs can vary with kidney conditions. Follow your clinician guidance and avoid making major changes without advice.,0,0
+lactose_hydration,Hydration and lactose intolerance,condition,lactose_intolerance,Water is a simple lactose-free hydration choice throughout the day.,6,8
+low_energy_hydration,Hydration for low energy,mood,low_energy,Low energy can feel worse when hydration is low. Keep water nearby and sip regularly.,6,8
+morning_hydration,Morning hydration,general,general,Start the day with water and keep small sips consistent instead of waiting until you feel very thirsty.,6,8
+obesity_hydration,Hydration and weight management,condition,obesity,Choosing water instead of sugary drinks can support a lower-calorie daily routine.,6,8
+sadness_hydration,Hydration during low mood,mood,sadness,"During low mood, small routines can help. Drinking water regularly is a simple supportive habit.",6,8
+stress_hydration,Hydration for stress,mood,stress,Keeping water nearby can support a calmer routine during stressful periods.,6,8

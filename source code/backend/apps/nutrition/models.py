@@ -2,6 +2,7 @@ from django.db import models
 from django.conf import settings
 
 class HealthCondition(models.Model):
+    key = models.CharField(max_length=255, unique=True, null=True, blank=True)
     name = models.CharField(max_length=255, unique=True)
     description = models.TextField(blank=True)
     is_active = models.BooleanField(default=True)
@@ -12,6 +13,7 @@ class HealthCondition(models.Model):
         return self.name
 
 class Allergy(models.Model):
+    key = models.CharField(max_length=255, unique=True, null=True, blank=True)
     name = models.CharField(max_length=255, unique=True)
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -49,12 +51,16 @@ class UserAllergy(models.Model):
 from apps.common.enums import SafetyRiskLevel
 
 class FoodItem(models.Model):
-    name = models.CharField(max_length=255, unique=True)
+    food_key = models.CharField(max_length=255, unique=True, null=True, blank=True)
+    name = models.CharField(max_length=255)
     category = models.CharField(max_length=100, blank=True)
     calories = models.DecimalField(max_digits=8, decimal_places=2)
     protein_g = models.DecimalField(max_digits=8, decimal_places=2)
     carbs_g = models.DecimalField(max_digits=8, decimal_places=2)
     fat_g = models.DecimalField(max_digits=8, decimal_places=2)
+    sugar_g = models.DecimalField(max_digits=8, decimal_places=2, null=True, blank=True)
+    fiber_g = models.DecimalField(max_digits=8, decimal_places=2, null=True, blank=True)
+    sodium_mg = models.DecimalField(max_digits=8, decimal_places=2, null=True, blank=True)
     description = models.TextField(blank=True)
     data_source = models.CharField(max_length=255, default="Manual Demo Data — placeholder")
     is_active = models.BooleanField(default=True)
@@ -204,3 +210,95 @@ class WaterIntakeLog(models.Model):
         indexes = [
             models.Index(fields=['user', 'logged_at']),
         ]
+
+class FoodAlias(models.Model):
+    alias = models.CharField(max_length=255, unique=True)
+    food = models.ForeignKey(FoodItem, on_delete=models.CASCADE, related_name='aliases')
+    language = models.CharField(max_length=10, default='en')
+    source = models.CharField(max_length=100, blank=True)
+
+    def __str__(self):
+        return f"{self.alias} -> {self.food.name}"
+
+class HydrationGuide(models.Model):
+    guide_key = models.CharField(max_length=255, unique=True)
+    title = models.CharField(max_length=255)
+    context_type = models.CharField(max_length=50) # e.g. general, mood, condition
+    context_key = models.CharField(max_length=255) # e.g. general, focus, diabetes_type_2
+    message = models.TextField()
+    min_cups = models.IntegerField(default=0)
+    max_cups = models.IntegerField(default=0)
+
+    def __str__(self):
+        return f"{self.title} ({self.guide_key})"
+
+class DataSource(models.Model):
+    source_key = models.CharField(max_length=255, unique=True)
+    source_name = models.CharField(max_length=255)
+    source_url = models.URLField(max_length=500, blank=True, null=True)
+    allowed_use = models.TextField(blank=True)
+    notes = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.source_name
+
+class FoodCategory(models.Model):
+    category_key = models.CharField(max_length=255, unique=True)
+    description = models.TextField(blank=True)
+    default_plan_role = models.CharField(max_length=100, blank=True)
+
+    def __str__(self):
+        return self.category_key
+
+class FoodNutritionBasis(models.Model):
+    food = models.ForeignKey(FoodItem, on_delete=models.CASCADE, unique=True, related_name='nutrition_basis')
+    nutrition_basis = models.CharField(max_length=50)
+    basis_amount_g = models.DecimalField(max_digits=8, decimal_places=2)
+    basis_note = models.TextField(blank=True)
+
+    def __str__(self):
+        return f"{self.food.food_key} nutrition basis"
+
+class FoodPortion(models.Model):
+    portion_key = models.CharField(max_length=255, unique=True)
+    food = models.ForeignKey(FoodItem, on_delete=models.CASCADE, related_name='portions')
+    portion_name = models.CharField(max_length=255)
+    grams = models.DecimalField(max_digits=8, decimal_places=2)
+    is_reference_portion = models.BooleanField(default=False)
+    portion_note = models.TextField(blank=True)
+
+    def __str__(self):
+        return f"{self.portion_key} ({self.grams}g)"
+
+class FoodSource(models.Model):
+    food = models.ForeignKey(FoodItem, on_delete=models.CASCADE, unique=True, related_name='sources')
+    source_type = models.CharField(max_length=100)
+    source_reference = models.CharField(max_length=255, blank=True, null=True, db_index=True)
+    source_note = models.TextField(blank=True)
+    source_review_status = models.CharField(max_length=100, blank=True)
+
+    def __str__(self):
+        return f"Source for {self.food.food_key}"
+
+class FoodUsagePolicy(models.Model):
+    food = models.ForeignKey(FoodItem, on_delete=models.CASCADE, unique=True, related_name='usage_policy')
+    image_lookup_allowed = models.BooleanField(default=False)
+    tracking_allowed = models.BooleanField(default=True)
+    recommendation_allowed = models.BooleanField(default=False)
+    plan_allowed = models.BooleanField(default=False)
+    safety_review_status = models.CharField(max_length=100, blank=True)
+    plan_role = models.CharField(max_length=100, blank=True)
+    notes = models.TextField(blank=True)
+
+    def __str__(self):
+        return f"Policy for {self.food.food_key}"
+
+class FoodComponent(models.Model):
+    parent_food = models.ForeignKey(FoodItem, on_delete=models.CASCADE, related_name='parent_components')
+    component_food = models.ForeignKey(FoodItem, on_delete=models.CASCADE, related_name='child_components')
+    default_ratio = models.DecimalField(max_digits=5, decimal_places=4)
+    composition_note = models.TextField(blank=True)
+
+    def __str__(self):
+        return f"{self.parent_food.food_key} -> {self.component_food.food_key} ({self.default_ratio})"
+

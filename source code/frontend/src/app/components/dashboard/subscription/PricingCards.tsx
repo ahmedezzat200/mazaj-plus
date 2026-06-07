@@ -1,8 +1,8 @@
-import { Check } from 'lucide-react';
-import { Card } from '../../ui/card';
+import { Check, X } from 'lucide-react';
 import { Button } from '../../ui/button';
 import { Badge } from '../../ui/badge';
 import { UserTier } from '../DashboardLayout';
+import { cn } from '../../ui/utils';
 
 interface PricingCardsProps {
   currentTier: UserTier;
@@ -92,75 +92,121 @@ export function PricingCards({ currentTier, onUpgrade }: PricingCardsProps) {
         const canUpgradeToPlan = canUpgrade(plan.tier);
 
         return (
-          <Card
+          <div
             key={plan.tier}
-            className={`p-6 flex flex-col ${
-              plan.highlighted
-                ? 'border-2 border-primary shadow-lg ring-2 ring-primary/10'
-                : ''
-            } ${isCurrentPlan ? 'border-2 border-primary/30 bg-primary/5' : ''}`}
+            className={cn(
+              'relative rounded-2xl transition-all duration-300',
+              // Pro: gradient border via padding trick
+              plan.tier === 'Pro' && !isCurrentPlan && 'p-[2px] bg-gradient-to-b from-primary via-primary/70 to-primary/30 hover:from-primary hover:to-primary/50 shadow-lg hover:shadow-xl',
+              // Ultra: glowing shadow effect
+              plan.tier === 'Ultra' && !isCurrentPlan && 'p-[2px] bg-gradient-to-b from-violet-500 via-purple-500 to-fuchsia-500 shadow-[0_0_24px_4px_rgba(139,92,246,0.25)] hover:shadow-[0_0_32px_8px_rgba(139,92,246,0.4)] hover:scale-[1.01]',
+              // Current plan
+              isCurrentPlan && 'ring-2 ring-primary/30',
+              // Default free card
+              plan.tier === 'Free' && 'hover:shadow-md hover:-translate-y-0.5',
+            )}
           >
-            {/* Header */}
-            <div className="mb-6">
-              <div className="flex items-center justify-between mb-2">
-                <h3>{plan.name}</h3>
-                {plan.highlighted && (
-                  <Badge variant="default" className="bg-primary text-primary-foreground">
-                    Popular
-                  </Badge>
-                )}
-                {isCurrentPlan && (
-                  <Badge variant="secondary">Current</Badge>
+            <div
+              className={cn(
+                'rounded-2xl bg-card p-6 flex flex-col h-full',
+                plan.tier === 'Pro' && !isCurrentPlan && 'rounded-[14px]',
+                plan.tier === 'Ultra' && !isCurrentPlan && 'rounded-[14px]',
+                isCurrentPlan && 'bg-primary/5',
+              )}
+            >
+              {/* Header */}
+              <div className="mb-6">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className={cn(
+                    'font-bold text-lg',
+                    plan.tier === 'Ultra' && 'bg-gradient-to-r from-violet-600 to-fuchsia-500 bg-clip-text text-transparent',
+                    plan.tier === 'Pro' && 'text-primary',
+                  )}>
+                    {plan.name}
+                  </h3>
+                  <div className="flex gap-2">
+                    {plan.highlighted && (
+                      <Badge variant="default" className="bg-primary text-primary-foreground text-xs">
+                        Popular
+                      </Badge>
+                    )}
+                    {plan.tier === 'Ultra' && (
+                      <Badge className="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white border-0 text-xs">
+                        Best Value
+                      </Badge>
+                    )}
+                    {isCurrentPlan && (
+                      <Badge variant="secondary" className="text-xs">Current</Badge>
+                    )}
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground">{plan.description}</p>
+              </div>
+
+              {/* Price */}
+              <div className="mb-6">
+                {plan.tier === 'Free' ? (
+                  <span className="text-2xl font-bold">Free</span>
+                ) : (
+                  <div className="flex items-baseline gap-1">
+                    <span className="text-2xl font-bold">
+                      {plan.tier === 'Pro' ? '300' : '500'}
+                    </span>
+                    <span className="text-sm text-muted-foreground">EGP / month</span>
+                  </div>
                 )}
               </div>
-              <p className="text-sm text-muted-foreground">{plan.description}</p>
-            </div>
 
-            {/* Features */}
-            <ul className="space-y-3 mb-6 flex-1">
-              {plan.features.map((feature, index) => (
-                <li key={index} className="flex items-start gap-2">
-                  <Check
-                    className={`h-4 w-4 mt-0.5 flex-shrink-0 ${
-                      feature.included
-                        ? 'text-primary'
-                        : 'text-muted-foreground opacity-30'
-                    }`}
-                  />
-                  <span
-                    className={`text-sm ${
-                      feature.included
-                        ? 'text-foreground'
-                        : 'text-muted-foreground line-through opacity-50'
-                    }`}
+              {/* Features */}
+              <ul className="space-y-2.5 mb-6 flex-1">
+                {plan.features.map((feature, index) => (
+                  <li key={index} className="flex items-start gap-2.5">
+                    {feature.included ? (
+                      <Check className={cn(
+                        'h-4 w-4 mt-0.5 flex-shrink-0',
+                        plan.tier === 'Ultra' ? 'text-violet-500' : 'text-primary'
+                      )} />
+                    ) : (
+                      <X className="h-4 w-4 mt-0.5 flex-shrink-0 text-muted-foreground/30" />
+                    )}
+                    <span
+                      className={cn(
+                        'text-sm',
+                        feature.included ? 'text-foreground' : 'text-muted-foreground/50 line-through'
+                      )}
+                    >
+                      {feature.text}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* CTA */}
+              <div>
+                {isCurrentPlan ? (
+                  <Button variant="outline" className="w-full" disabled>
+                    Current Plan
+                  </Button>
+                ) : canUpgradeToPlan ? (
+                  <Button
+                    className={cn(
+                      'w-full transition-all duration-200',
+                      plan.tier === 'Ultra' && 'bg-gradient-to-r from-violet-600 to-fuchsia-500 hover:from-violet-700 hover:to-fuchsia-600 text-white border-0 shadow-md hover:shadow-lg',
+                      plan.tier === 'Pro' && 'shadow-sm hover:shadow-md',
+                    )}
+                    variant={plan.highlighted ? 'default' : 'outline'}
+                    onClick={() => onUpgrade(plan.tier)}
                   >
-                    {feature.text}
-                  </span>
-                </li>
-              ))}
-            </ul>
-
-            {/* CTA */}
-            <div>
-              {isCurrentPlan ? (
-                <Button variant="outline" className="w-full" disabled>
-                  Current Plan
-                </Button>
-              ) : canUpgradeToPlan ? (
-                <Button
-                  className="w-full"
-                  variant={plan.highlighted ? 'default' : 'outline'}
-                  onClick={() => onUpgrade(plan.tier)}
-                >
-                  Upgrade to {plan.name}
-                </Button>
-              ) : (
-                <Button variant="ghost" className="w-full" disabled>
-                  Full Access Enabled
-                </Button>
-              )}
+                    Choose {plan.name}
+                  </Button>
+                ) : (
+                  <Button variant="ghost" className="w-full" disabled>
+                    Full Access Enabled
+                  </Button>
+                )}
+              </div>
             </div>
-          </Card>
+          </div>
         );
       })}
     </div>

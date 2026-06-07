@@ -18,34 +18,40 @@ import {
   SelectValue,
 } from '../ui/select';
 import { toast } from 'sonner';
+import { adminApi } from '../../../lib/api';
 
 interface DailyTip {
   id: string;
+  title?: string;
   content: string;
-  displayDate: string;
-  status: 'Active' | 'Scheduled' | 'Inactive';
+  display_order?: number;
+  is_active?: boolean;
+  status?: 'Active' | 'Inactive';
 }
 
 interface EditTipModalProps {
   tip: DailyTip | null;
   isOpen: boolean;
   onClose: () => void;
+  onUpdated?: () => void;
 }
 
-export function EditTipModal({ tip, isOpen, onClose }: EditTipModalProps) {
+export function EditTipModal({ tip, isOpen, onClose, onUpdated }: EditTipModalProps) {
   const [formData, setFormData] = useState({
+    title: '',
     content: '',
-    displayDate: '',
-    status: 'Active' as 'Active' | 'Scheduled' | 'Inactive',
+    displayOrder: '0',
+    status: 'Active' as 'Active' | 'Inactive',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
     if (tip) {
       setFormData({
+        title: tip.title || '',
         content: tip.content,
-        displayDate: tip.displayDate,
-        status: tip.status,
+        displayOrder: String(tip.display_order ?? 0),
+        status: (tip.is_active !== undefined ? (tip.is_active ? 'Active' : 'Inactive') : tip.status) as 'Active' | 'Inactive' || 'Active',
       });
     }
   }, [tip]);
@@ -60,12 +66,22 @@ export function EditTipModal({ tip, isOpen, onClose }: EditTipModalProps) {
 
     setIsSubmitting(true);
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const result = await adminApi.editTip(Number(tip!.id), {
+      title: formData.title || formData.content.slice(0, 50),
+      content: formData.content,
+      display_order: parseInt(formData.displayOrder) || 0,
+      is_active: formData.status === 'Active',
+    });
 
-    toast.success('Daily tip updated successfully');
+    if (result.ok) {
+      toast.success('Daily tip updated successfully');
+      onUpdated?.();
+      onClose();
+    } else {
+      toast.error(result.error?.message || 'Failed to update tip');
+    }
+
     setIsSubmitting(false);
-    onClose();
   };
 
   const handleChange = (field: string, value: string) => {
@@ -86,6 +102,16 @@ export function EditTipModal({ tip, isOpen, onClose }: EditTipModalProps) {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
+            <Label htmlFor="title">Tip Title</Label>
+            <input
+              id="title"
+              className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
+              value={formData.title}
+              onChange={(e) => handleChange('title', e.target.value)}
+            />
+          </div>
+
+          <div className="space-y-2">
             <Label htmlFor="content">Tip Content *</Label>
             <Textarea
               id="content"
@@ -97,12 +123,13 @@ export function EditTipModal({ tip, isOpen, onClose }: EditTipModalProps) {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="displayDate">Display Date</Label>
+            <Label htmlFor="displayOrder">Display Order</Label>
             <Input
-              id="displayDate"
-              type="date"
-              value={formData.displayDate}
-              onChange={(e) => handleChange('displayDate', e.target.value)}
+              id="displayOrder"
+              type="number"
+              min="0"
+              value={formData.displayOrder}
+              onChange={(e) => handleChange('displayOrder', e.target.value)}
             />
           </div>
 
@@ -114,7 +141,6 @@ export function EditTipModal({ tip, isOpen, onClose }: EditTipModalProps) {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="Active">Active</SelectItem>
-                <SelectItem value="Scheduled">Scheduled</SelectItem>
                 <SelectItem value="Inactive">Inactive</SelectItem>
               </SelectContent>
             </Select>

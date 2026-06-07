@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { api } from '../lib/api';
+import { api, setUnauthorizedHandler } from '../lib/api';
 
 interface User {
   id: number;
@@ -25,6 +25,13 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setUnauthorizedHandler(() => {
+      setUser(null);
+      window.location.assign('/login');
+    });
+  }, []);
 
   const refreshUser = async () => {
     setLoading(true);
